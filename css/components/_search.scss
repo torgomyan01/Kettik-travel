@@ -1,0 +1,137 @@
+.search{
+  width: 100%;
+  height: 23.75rem;
+  border-radius: 0 0 32px 32px;
+  background: url("../images/search-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  &-form{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    overflow: hidden;
+    @include flex('sb', 'c');
+    margin-top: 16px;
+
+
+    &-inp{
+      width: 100%;
+      padding-left: 24px;
+      @include flex('s', 'c');
+      position: relative;
+      height: 100%;
+      transition: 0.3s;
+      border: 2px solid transparent;
+      background-color: #fff;
+
+      &.focus{
+        border: 2px solid #FF7A00;
+
+        &:after{
+          opacity: 0;
+        }
+
+        path{
+          stroke:  #FF7A00;
+        }
+      }
+      &.back{
+        margin-left: -2px;
+      }
+      &.there{
+        overflow: hidden;
+        border-radius: 16px 0 0 16px;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 48px;
+        background-color: #D7DBDF;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+      }
+
+      svg{
+        margin-right: 8px;
+        *{
+          transition: 0.3s;
+        }
+      }
+      input{
+        color: #11181C;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.5px;
+        &::placeholder{
+          color: #687076;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 130%;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+    &-lr{
+      min-width: 36px;
+      height: 36px;
+      border-radius: 40px;
+      border: 1px solid #D7DBDF;
+      background: #FFF;
+      @include flex('c', 'c');
+      margin-right: -14px;
+      margin-left: -20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &-select{
+      width: 100%;
+      height: 100%;
+      @include flex('s', 'c');
+      padding-right: 1.8125rem;
+      cursor: pointer;
+      padding-left: 1.5rem;
+      background-color: #fff;
+      &-body{
+        width: 100%;
+      }
+      i{
+        font-size: 8px;
+      }
+      &-name{
+        color: #11181C;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -0.4px;
+      }
+      &-type{
+        color: #687076;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+      }
+    }
+    &-submit{
+      width: 100%;
+      height: 100%;
+      background-color: #FF7A00;
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: -0.4px;
+      border-radius: 0 16px 16px 0;
+    }
+  }
+
+}
