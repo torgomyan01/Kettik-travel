@@ -9,7 +9,7 @@ function $el(target){
 
 const searchFormInp = $('.search-form-inp');
 
-searchFormInp.forEach((input) => {
+searchFormInp.forEach((input, index) => {
   input.querySelector('input').addEventListener('focus', e => {
     input.classList.add('focus');
   })
