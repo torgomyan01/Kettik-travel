@@ -1,9 +1,6 @@
 @import "helper";
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -74,9 +71,56 @@ a {
 
 // COMPONENTS
 
+.default-switch{
+
+  input{
+    display: none;
+  }
+
+  input:checked ~ span{
+    background-color: #FF592C;
+    &:after{
+      left: 11px;
+    }
+  }
+
+  span{
+    width: 26px;
+    height: 16px;
+    background-color: #C1C8CD;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    transition: 0.3s;
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #FFF;
+      transition: 0.3s;
+    }
+
+  }
+
+
+}
+
+
+
 // NAVBAR
 @import "components/navbar";
 
 
 // SEARCH
 @import "components/search";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

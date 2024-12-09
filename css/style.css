@@ -399,9 +399,6 @@
   font-size: 6.25rem;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -463,6 +460,37 @@ a {
   .container {
     padding: 0 15px;
   }
+}
+
+.default-switch input {
+  display: none;
+}
+.default-switch input:checked ~ span {
+  background-color: #FF592C;
+}
+.default-switch input:checked ~ span:after {
+  left: 11px;
+}
+.default-switch span {
+  width: 26px;
+  height: 16px;
+  background-color: #C1C8CD;
+  border-radius: 10px;
+  position: relative;
+  display: block;
+  transition: 0.3s;
+}
+.default-switch span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #FFF;
+  transition: 0.3s;
 }
 
 .nav {
@@ -629,5 +657,9 @@ a {
   letter-spacing: -0.4px;
   border-radius: 0 16px 16px 0;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*# sourceMappingURL=style.css.map */
