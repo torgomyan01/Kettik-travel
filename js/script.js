@@ -7,6 +7,10 @@ function $el(target){
 }
 
 
+AOS.init({
+  duration: 1000
+})
+
 const searchFormInp = $('.search-form-inp');
 
 searchFormInp.forEach((input, index) => {

@@ -32,18 +32,18 @@
   background-size: cover;
 }
 
-$sizes: 1;
-
-
-@for $i from 2 through 100 {
-  $sizes: append($sizes, $i)
-}
-
-@each $size in $sizes {
-  .fs-#{$size} {
-    font-size: #{$size / 16}rem;
-  }
-}
+//$sizes: 1;
+//
+//
+//@for $i from 2 through 100 {
+//  $sizes: append($sizes, $i)
+//}
+//
+//@each $size in $sizes {
+//  .fs-#{$size} {
+//    font-size: #{$size / 16}rem;
+//  }
+//}
 
 // HELPER SECTION
 

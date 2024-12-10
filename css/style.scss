@@ -93,6 +93,7 @@ a {
     position: relative;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
 
     &:after{
       content: '';
