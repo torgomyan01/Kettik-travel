@@ -21,3 +21,22 @@ searchFormInp.forEach((input, index) => {
     input.classList.remove('focus');
   })
 })
+
+
+const sliderPartners = $('.slider-partners');
+
+sliderPartners.forEach((partner) => {
+  const logos = Array.from(partner.children);
+
+  Array.from({length: 30}).forEach((_, index) => {
+    const clonedLogos = logos.map((logo) => logo.cloneNode(true));
+    clonedLogos.forEach((clone) => partner.appendChild(clone));
+
+    if(index === 29){
+      partner.classList.add('start');
+    }
+  })
+
+
+
+})
