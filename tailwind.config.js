@@ -6,6 +6,7 @@ module.exports = {
         transparent: 'transparent',
         'grey': '#11181C',
         'blue': '#1150CB',
+        'orange': '#FF7A00',
       },
     },
   },
