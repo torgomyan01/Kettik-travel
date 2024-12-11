@@ -37,6 +37,38 @@ sliderPartners.forEach((partner) => {
     }
   })
 
-
-
 })
+
+
+
+// FUNCTION FOR OPEN MODALS
+
+
+const targetsModals = $('.target-modal');
+const modalClose = $('.modal-close');
+const modalFon = $('.modal-fon');
+
+targetsModals.forEach((target) => {
+  target.addEventListener('click', e => {
+    const getModalId = target.dataset.modalid;
+
+    if(getModalId){
+      $el(getModalId).classList.add('show');
+    }
+  })
+})
+
+modalClose.forEach((modalId) => closeModal(modalId))
+
+modalFon.forEach((modalId) => closeModal(modalId))
+
+
+function closeModal(modalId){
+  modalId.addEventListener('click', e => {
+    const getModalId = modalId.dataset.modalid;
+
+    if(getModalId){
+      $el(getModalId).classList.remove('show');
+    }
+  })
+}
