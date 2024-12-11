@@ -387,7 +387,7 @@
 
 
 
-<section class="mt-16">
+<section class="mt-16 hidden lg:block">
   <div class="container">
     <div class="flex justify-start items-center">
       <div class="w-[30%]" data-aos="fade">
@@ -426,20 +426,54 @@
 </section>
 
 
+<section class="block lg:hidden mt-16">
+  <div class="container">
+    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-16">
+      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232" height="146">
+      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+        Удобное время для звонка — выберите сами!
+      </h3>
+    </div>
+
+    <form action="/" method="post" class="mt-6">
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время">
+        <i class="icon-time-ok text-blue"></i>
+      </label>
+
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+    </form>
+  </div>
+</section>
+
+
 
 <footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
   <div class="container pt-[49px] pb-16">
-    <div class="flex justify-between items-center">
-      <div class="flex gap-[32px] items-center">
-        <a href="#" class="text-white">О сервисе</a>
-        <a href="#" class="text-white">Обратная связь</a>
+    <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
+      <a href="/" class="block md:hidden mb-6">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+      <div class="w-full flex gap-[16px] md:gap-[32px] items-start lg:items-center flex-col lg:flex-row">
+        <a href="#" class="text-white text-[16px]">О сервисе</a>
+        <a href="#" class="text-white text-[16px]">Обратная связь</a>
         <a href="tel:+998 20 007 007 0" class="text-white text-[18px] font-bold">+998 20 007 007 0</a>
-        <p class="text-white/70 text-[14px]">
-          <span class="text-white text-[32px]">007</span> Короткий номер для абонентов Билайн и OQ
+        <p class="text-white/70 text-[14px] flex sm:block justify-start items-start gap-2">
+          <span class="text-white text-[32px] mt-[-5px] sm:mt-0">007</span> Короткий номер для абонентов Билайн и OQ
         </p>
       </div>
 
-      <div class="flex gap-[24px] justify-between items-center">
+      <div class="flex gap-[24px] justify-between items-start lg:items-center mt-6 lg:mt-0">
         <a href="#" class="transition duration-300">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_3080_77184)">
@@ -494,15 +528,16 @@
       </div>
     </div>
 
-    <div class="w-full h-[1px] bg-[#fff]/30 my-16"></div>
+    <div class="w-full h-[1px] bg-[#fff]/30 my-8 md:my-16"></div>
 
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-start sm:items-center flex-col-reverse sm:flex-row">
       <span class="text-[14px] text-white/70">© 2024 Kettik. All rights reserved.</span>
-      <a href="/">
+
+      <a href="/" class="hidden md:block">
         <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
       </a>
 
-      <div class="flex justify-end items-center gap-8">
+      <div class="flex justify-end items-center gap-8 mb-6 sm:mb-0">
         <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
           Оферта
         </a>
