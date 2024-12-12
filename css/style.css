@@ -95,10 +95,6 @@ a {
   transition: 0.3s;
 }
 
-.btn {
-  border: none;
-}
-
 .slider-partners {
   transform: translateY(0);
 }
@@ -131,22 +127,19 @@ a {
 .modal.show {
   visibility: visible;
 }
-.modal.show .modal-fon {
-  backdrop-filter: blur(3px);
-}
 .modal-fon {
   width: 100%;
   height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.2784313725);
+  background-color: rgba(0, 0, 0, 0.41);
   backdrop-filter: blur(0);
 }
 .modal-body {
   width: 100%;
   max-width: 500px;
-  min-height: 400px;
+  min-height: 200px;
   background-color: #fff;
   border-radius: 24px;
   position: relative;
@@ -162,6 +155,35 @@ a {
 .modal-content {
   width: 100%;
   padding: 40px;
+}
+
+.def-input {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #D7DBDF;
+  background: #FFF;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 16px;
+}
+.def-input.disabled {
+  background: #EDF3FF;
+}
+.def-input.disabled input {
+  font-weight: bold;
+}
+.def-input input {
+  width: 100%;
+  height: 100%;
+  padding-left: 8px;
+  background-color: transparent;
+}
+.def-input i {
+  color: #1150CB;
+  font-size: 18px;
 }
 
 .nav {

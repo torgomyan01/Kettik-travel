@@ -46,11 +46,12 @@ sliderPartners.forEach((partner) => {
 
 const targetsModals = $('.target-modal');
 const modalClose = $('.modal-close');
+const closeModals = $('.close-modals');
 const modalFon = $('.modal-fon');
 
 targetsModals.forEach((target) => {
   target.addEventListener('click', e => {
-    const getModalId = target.dataset.modalid;
+    const getModalId = target.dataset.targetid;
 
     if(getModalId){
       $el(getModalId).classList.add('show');
@@ -59,6 +60,7 @@ targetsModals.forEach((target) => {
 })
 
 modalClose.forEach((modalId) => closeModal(modalId))
+closeModals.forEach((modalId) => closeModal(modalId))
 
 modalFon.forEach((modalId) => closeModal(modalId))
 
