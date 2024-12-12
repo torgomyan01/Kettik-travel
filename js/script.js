@@ -74,3 +74,15 @@ function closeModal(modalId){
     }
   })
 }
+
+
+
+// FOR MOBILE MENU
+const mobileMenu = $el('.mobile-menu-board');
+const menu = $el('.mobile-menu');
+
+
+mobileMenu.addEventListener('click', e => {
+  mobileMenu.classList.toggle('active')
+  console.log('ss')
+})
