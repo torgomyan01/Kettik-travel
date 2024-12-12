@@ -203,6 +203,18 @@ a {
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  .search {
+    background: url("../images/search-mobile-bg.jpg") no-repeat 0 center;
+    background-size: cover;
+  }
+}
+@media (max-width: 576px) {
+  .search {
+    background: url("../images/search-mobile-bg.jpg") no-repeat -12% center;
+    background-size: cover;
+  }
+}
 .search-form {
   width: 100%;
   height: 4rem;
