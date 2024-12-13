@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="fonts/style.css">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <script src="js/aos.js"></script>
+  <title>Search result</title>
+</head>
+<body class="bg-[#EDF3FF]">
+
+<nav class="nav flex justify-between items-center ">
+  <div class="container flex justify-between items-center">
+    <a href="/index.html" class="nav-logo">
+      <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
+    </a>
+
+    <div class="flex justify-center items-center">
+      <div class="bg-blue text-white rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Результаты поиска
+      </div>
+      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
+      <div class="bg-[#ECEEF0]  rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Бронирование
+      </div>
+      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
+      <div class="bg-[#ECEEF0]  rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Итоги и оплата
+      </div>
+    </div>
+
+
+    <div class="mobile-menu-board flex md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="justify-between gap-10 hidden md:flex">
+      <div class="text-gray-800 cursor-pointer flex items-center ">
+        Авиабилеты
+        <i class="icon-down ms-2 text-[8px]"></i>
+      </div>
+      <div class="flex justify-center items-center cursor-pointer target-modal" data-targetid="#modal-select-language">
+        <img src="images/ru-flag.png" alt="ru flag to change language site" width="24"
+             height="24" class="rounded-full me-2">
+        UZS
+      </div>
+      <div data-targetid="#sign-in"
+           class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-gray-800">
+        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                fill="#1150CB"/>
+        </svg>
+        Вход
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="search pt-12 pb-4 ">
+  <div class="container">
+
+    <form action="/" method="post" class="search-form">
+      <label class="search-form-inp there">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2202_5790)">
+            <path
+                d="M14.639 10.2577L19.4686 8.96358C19.981 8.82629 20.5269 8.89816 20.9862 9.16338C21.4456 9.4286 21.7808 9.86543 21.9181 10.3778C22.0554 10.8902 21.9835 11.4361 21.7183 11.8954C21.4531 12.3548 21.0162 12.69 20.5039 12.8273L6.01499 16.7096L1.5643 11.6905L4.46208 10.914L6.91157 12.3282L9.80934 11.5518L6.06576 5.30793L8.96353 4.53147L14.639 10.2577Z"
+                stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 21H21" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_2202_5790">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" placeholder="Oткуда" value="Ташкент">
+        <span class="text-[14px] text-[#7E868C] relative left-[-30px]">TAS</span>
+      </label>
+      <div class="search-form-lr">
+        <i class="icon-left-right"></i>
+      </div>
+      <label class="search-form-inp back">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_5023_210)">
+            <path
+                d="M15.4899 11.8106L20.3195 13.1047C20.8319 13.242 21.2687 13.5772 21.5339 14.0365C21.7992 14.4959 21.871 15.0418 21.7337 15.5542C21.5965 16.0665 21.2613 16.5034 20.8019 16.7686C20.3425 17.0338 19.7966 17.1057 19.2843 16.9684L4.79537 13.0861L3.4505 6.51408L6.34828 7.29053L7.76249 9.74002L10.6603 10.5165L10.5402 3.23736L13.4379 4.01382L15.4899 11.8106Z"
+                stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.33331 21H21.3333" stroke="#1150CB" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_5023_210">
+              <rect width="24" height="24" fill="white" transform="translate(0.333313)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" placeholder="Куда" value="Москва">
+        <span class="text-[14px] text-[#7E868C] relative left-[-15px]">MOW</span>
+      </label>
+      <div class="w-[1px] h-[48px] bg-[#D7DBDF] relative z-10 hidden xl:block"></div>
+      <div class="flex justify-center items-center w-full h-full relative">
+        <label class="search-form-inp pr-4">
+          <input type="text" placeholder="Отправление" value="25 окт, пт">
+          <!--          <i class="icon-calendar text-[22px] text-blue absolute left-[calc(100%_-_30px)] z-10 xl:relative bg-white"></i>-->
+        </label>
+        <div class="w-[1px] h-[24px] bg-[#D7DBDF] relative z-10 block xl:hidden"></div>
+        <label class="search-form-inp after:h-[24px]">
+          <input type="text" placeholder="Возвращение" value="26 окт, cб">
+        </label>
+        <i class="icon-close text-[#C1C8CD] ml-[-20px] relative z-10 left-[-10px] text-[20px] cursor-pointer"></i>
+      </div>
+      <div class="search-form-select">
+        <div class="search-form-select-body">
+          <div class="search-form-select-name">1 пассажир</div>
+          <div class="search-form-select-type">Эконом</div>
+        </div>
+        <i class="icon-down"></i>
+      </div>
+      <button class="search-form-submit" type="submit">Найти билеты</button>
+    </form>
+
+    <div class="flex items-center justify-start mt-5 gap-5 md:gap-20 flex-col md:flex-row">
+      <a href="#" class="flex justify-start items-center text-white text-[14px]">
+        <svg class="mr-2" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="12" r="3" fill="white"/>
+          <circle cx="17" cy="3" r="2.25" fill="white" stroke="white" stroke-width="1.5"/>
+          <path d="M10 12L3 3" stroke="white" stroke-width="1.5"/>
+          <path d="M10 12L16 5" stroke="white" stroke-width="1.5"/>
+          <circle cx="3" cy="3" r="3" fill="white"/>
+        </svg>
+        Сложный маршрут
+      </a>
+    </div>
+
+
+    <div class="w-full flex justify-between items-center gap-1 mt-10">
+      <div
+          class="min-w-[36px] w-[36px] h-[36px] border border-[#6A8AFF] hover:border-white transition rounded-[6px] flex justify-center items-center cursor-pointer">
+        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.66665 9.93411e-09C4.03484 9.93411e-09 4.33331 0.298477 4.33331 0.666667V9.72386L5.86191 8.19526C6.12226 7.93491 6.54437 7.93491 6.80472 8.19526C7.06507 8.45561 7.06507 8.87772 6.80472 9.13807L4.13805 11.8047C3.8777 12.0651 3.45559 12.0651 3.19524 11.8047L0.528575 9.13807C0.268226 8.87772 0.268226 8.45561 0.528575 8.19526C0.788925 7.93491 1.21103 7.93491 1.47138 8.19526L2.99998 9.72386V0.666667C2.99998 0.298477 3.29846 9.93411e-09 3.66665 9.93411e-09ZM9.86191 0.195262C10.1223 -0.0650874 10.5444 -0.0650874 10.8047 0.195262L13.4714 2.86193C13.7317 3.12228 13.7317 3.54439 13.4714 3.80474C13.211 4.06509 12.7889 4.06509 12.5286 3.80474L11 2.27614V11.3333C11 11.7015 10.7015 12 10.3333 12C9.96512 12 9.66665 11.7015 9.66665 11.3333V2.27614L8.13805 3.80474C7.8777 4.06509 7.45559 4.06509 7.19524 3.80474C6.93489 3.54439 6.93489 3.12228 7.19524 2.86193L9.86191 0.195262Z"
+                fill="#EDF3FF"/>
+        </svg>
+      </div>
+      <div
+          class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] bg-[#6A8AFF] transition rounded-[6px] flex justify-between items-center cursor-pointer">
+        Прямой
+        <i class="icon-close text-white"></i>
+      </div>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Багаж</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Цена</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Отправление</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Прибытие</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>В пути</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Авиакомпании</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+      <label class="w-full ">
+        <select
+            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          <option value="" selected>Аэропорты</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</div>
+
+
+<section class="pt-[24px]">
+  <div class="container">
+    <div class="w-full flex gap-6">
+
+      <div class="w-[310px] bg-white rounded-[24px] p-4 h-[fit-content]">
+
+        <div class="flex justify-between items-center">
+          <span class="text-nowrap">С багажем</span>
+          <label class="default-switch flex justify-start items-center text-white text-[14px]">
+            Только прямой рейс
+            <input type="checkbox">
+            <span class="ml-2"></span>
+          </label>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
+
+        <h5 class="text-[18px] font-bold mb-4">Пересадки</h5>
+
+        <div class="flex justify-start items-center gap-[8px]">
+          <div class="p-[7px_16px] bg-purple text-white text-[14px] rounded-[6px] cursor-pointer">
+            Неважно
+          </div>
+          <div
+              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+            0
+          </div>
+          <div
+              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+            1
+          </div>
+          <div
+              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+            2+
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center my-4">
+          <span class="text-nowrap">Без смены аэропорта</span>
+          <label class="default-switch flex justify-start items-center text-white text-[14px]">
+            Только прямой рейс
+            <input type="checkbox">
+            <span class="ml-2"></span>
+          </label>
+        </div>
+
+        <h5 class="text-[18px] font-bold mb-4">Время</h5>
+
+        <div class="flex justify-between items-center mb-6">
+          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
+            Отправление
+          </div>
+          <div
+              class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
+            Возвращение
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Время</h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              из Ташкента
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div
+              class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            00:05 — 23:54
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+          <div
+              class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          </div>
+        </div>
+
+
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Прилет</h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              в Москву
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div
+              class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            02:25 — 21:30
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+          <div
+              class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
+
+        <div class="w-full mb-4 flex justify-between items-center">
+          <h5 class="text-[18px] font-bold">Время в пути</h5>
+
+          <div
+              class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+            до 24 ч 00 мин
+            <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-4 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
+
+        <div class="w-full mb-4 flex justify-between items-center">
+          <h5 class="text-[18px] font-bold">Цена</h5>
+
+          <div
+              class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+            до 9 000 000 000 сум
+            <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-4 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+        </div>
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-2"></div>
+
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Цена</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Все</span>
+            <i class="icon-down text-[9px]"></i>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-2"></div>
+
+        <div>
+          <div class="flex justify-between items-center py-4 cursor-pointer">
+            <h5 class="text-[18px] font-bold">Авиакомпании</h5>
+            <div>
+              <span class="text-blue text-[14px] mr-2">Сбросить</span>
+              <i class="icon-down text-[9px] inline-block transform rotate-180 transition"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
+              Отправление
+            </div>
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
+              Возвращение
+            </div>
+          </div>
+          <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
+
+          <label class="flex justify-start items-start mb-3">
+            <input type="checkbox" class="mt-1 block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <span>
+              <span class="font-bold">
+              Несколько авиакомпаний
+              </span>
+              <span class="text-[14px] text-[#687076] leading-[116%]">
+                Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+              </span>
+            </span>
+          </label>
+          <label class="flex justify-start items-center mb-2">
+            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+            UZBEKISTAN AIR
+          </label>
+          <label class="flex justify-start items-center mb-2">
+            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+            AZERBAIJAN AIR
+          </label>
+          <label class="flex justify-start items-center mb-2">
+            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+            S7 Airlines
+          </label>
+          <label class="flex justify-start items-center mb-2">
+            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
+            Turkish Airlines
+          </label>
+          <label class="flex justify-start items-center mb-2">
+            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+            <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
+            AIR ASTANA
+          </label>
+
+          <div class="text-blue mt-4 text-[14px] cursor-pointer">
+            Показать все
+            <i class="icon-down text-[7px] text-blue ml-2"></i>
+          </div>
+          <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
+
+        </div>
+
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Аэропорты пересадок</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Все</span>
+            <i class="icon-down text-[9px]"></i>
+          </div>
+        </div>
+
+        <button class="w-full h-[64px] bg-[#D8EEFF] rounded-[24px] text-[#1150CB] mt-3">
+          Сбросить все фильтры
+        </button>
+
+
+
+
+
+      </div>
+
+      <div class="w-[calc(100%_-_310px)]">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
+          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+              </div>
+            </div>
+
+            <div class="w-full h-[1px] border border-dashed border-[#D7DBDF] my-6"></div>
+
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="ticket-dashed-silid"></div>
+          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+            <div class="flex justify-between items-start flex-col h-[80%]">
+              <h4 class="text-[18px] font-bold text-center w-full">
+                9 000 000 000 UZS
+              </h4>
+
+              <div >
+                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
+          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c gap-[8px]">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                  <img src="images/icons/t-logo.svg" alt="uz-air" width="30" height="30">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-15px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">16:30</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+
+                  <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                    <span class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                  </div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">
+                  1:10
+                </span>
+                <sup class="ml-2 text-[#687076]">+1</sup>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-blue bg-[#EDF3FF] px-1 rounded-[6px]">1 пересадка</span>
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+              </div>
+            </div>
+          </div>
+          <div class="ticket-dashed-silid"></div>
+          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+            <div class="flex justify-between items-start flex-col h-[80%]">
+              <h4 class="text-[18px] font-bold text-center w-full">
+                4 174 613 UZS
+              </h4>
+              <div >
+                <button class="btn bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
+          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c gap-[8px]">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                  <img src="images/icons/t-logo.svg" alt="uz-air" width="30" height="30">
+                  <img src="images/icons/as-logo.svg" alt="uz-air" width="30" height="30">
+                  <img src="images/icons/az-logo.svg" alt="uz-air" width="30" height="30">
+                  <img src="images/icons/s7-logo.svg" alt="uz-air" width="30" height="30">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-15px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">16:30</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+
+                  <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                    <span class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                    <span class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                  </div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">
+                  1:10
+                </span>
+                <sup class="ml-2 text-[#687076]">+1</sup>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-blue bg-[#EDF3FF] px-1 rounded-[6px]">2 пересадки</span>
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+              </div>
+            </div>
+          </div>
+          <div class="ticket-dashed-silid"></div>
+          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+            <div class="flex justify-between items-start flex-col h-[80%]">
+              <h4 class="text-[18px] font-bold text-center w-full">
+                4 174 613 UZS
+              </h4>
+              <div >
+                <button class="btn bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
+          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">
+                  <i class="icon-exclamation-solid mr-1 text-[12px] text-orange"></i>
+                  Москва (VKO)
+                </span>
+              </div>
+            </div>
+
+            <div class="w-full h-[1px] border border-dashed border-[#D7DBDF] my-6"></div>
+
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="ticket-dashed-silid"></div>
+          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+            <div class="flex justify-between items-start flex-col h-[80%]">
+              <h4 class="text-[18px] font-bold text-center w-full">
+                9 000 000 000 UZS
+              </h4>
+
+              <div >
+                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
+          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">
+                  Москва (VKO)
+                </span>
+              </div>
+            </div>
+
+            <div class="w-full h-[1px] border border-dashed border-[#D7DBDF] my-6"></div>
+
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Москва (VKO)</span>
+                <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+              </div>
+            </div>
+
+            <div class="w-full h-[1px] border border-dashed border-[#D7DBDF] my-6"></div>
+
+            <div>
+              <div class="flex-jsb-c mb-4">
+                <div class="flex-js-c">
+                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                </div>
+                <div class="flex-je-c">
+                  <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7033_4835)">
+                      <path d="M3.33334 12V8C3.33334 6.93913 3.75477 5.92172 4.50492 5.17157C5.25506 4.42143 6.27248 4 7.33334 4H8.66668C9.72754 4 10.745 4.42143 11.4951 5.17157C12.2453 5.92172 12.6667 6.93913 12.6667 8V12C12.6667 12.5304 12.456 13.0391 12.0809 13.4142C11.7058 13.7893 11.1971 14 10.6667 14H5.33334C4.80291 14 4.2942 13.7893 3.91913 13.4142C3.54406 13.0391 3.33334 12.5304 3.33334 12Z" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66666 4V3.33333C6.66666 2.97971 6.80713 2.64057 7.05718 2.39052C7.30723 2.14048 7.64637 2 7.99999 2C8.35361 2 8.69275 2.14048 8.9428 2.39052C9.19285 2.64057 9.33332 2.97971 9.33332 3.33333V4" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 14V11.3333C6 10.9797 6.14048 10.6406 6.39052 10.3905C6.64057 10.1405 6.97971 10 7.33333 10H8.66667C9.02029 10 9.35943 10.1405 9.60948 10.3905C9.85952 10.6406 10 10.9797 10 11.3333V14" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.33334 6.66663H8.66668" stroke="#7E868C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7033_4835">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-[14px]">1</span>
+                  <div class="w-[1px] h-[18px] bg-[#D7DBDF] mx-2"></div>
+                  <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="2.83337" width="11" height="9" rx="0.833333" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="3.16666" y1="3.5" x2="3.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <line x1="9.16666" y1="3.5" x2="9.16666" y2="11.1667" stroke="#7E868C" stroke-linecap="round"/>
+                    <path d="M8 3V1.66667C8 1.29848 7.70152 1 7.33333 1H4.66667C4.29848 1 4 1.29848 4 1.66667V3" stroke="#7E868C" stroke-linecap="round"/>
+                  </svg>
+                  <span class="text-[14px] text-[#7E868C] ml-2">0</span>
+                </div>
+              </div>
+              <div class="flex-js-c">
+                <span class="text-[14px]">пт 25 окт</span>
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                <span class="text-[14px] text-[#687076]">Отправление</span>
+              </div>
+              <div class="text-center text-[14px] mb-[-20px]">
+                3 ч 05 мин
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[18px] font-bold mr-6">18:20</span>
+                <div class="w-full flex justify-between items-center py-4 relative">
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                  <div class="w-full h-[2px] bg-[#D7DBDF]"></div>
+                  <div class="min-w-[8px] h-[8px] bg-white rounded-full border-[2px] border-[#C1C8CD]"></div>
+                </div>
+                <span class="text-[18px] font-bold ml-6">21:25</span>
+              </div>
+              <div class="flex-jsb-c">
+                <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
+                <span class="text-[14px] text-blue bg-[#EDF3FF] px-1 rounded-[6px]">1 пересадка</span>
+                <span class="text-[14px] text-[#687076]">
+                  Москва (VKO)
+                </span>
+              </div>
+            </div>
+
+          </div>
+          <div class="ticket-dashed-silid"></div>
+          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+            <div class="flex justify-between items-start flex-col h-[80%]">
+              <h4 class="text-[18px] font-bold text-center w-full">
+                9 000 000 000 UZS
+              </h4>
+
+              <div >
+                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
+  <div class="container pt-[49px] pb-16">
+    <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
+      <a href="/" class="block md:hidden mb-6">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+      <div class="w-full flex gap-[16px] md:gap-[32px] items-start lg:items-center flex-col lg:flex-row">
+        <a href="#" class="text-white text-[16px]">О сервисе</a>
+        <a href="#" class="text-white text-[16px]">Обратная связь</a>
+        <a href="tel:+998 20 007 007 0" class="text-white text-[18px] font-bold">+998 20 007 007 0</a>
+        <p class="text-white/70 text-[14px] flex sm:block justify-start items-start gap-2">
+          <span class="text-white text-[32px] mt-[-5px] sm:mt-0">007</span> Короткий номер для абонентов Билайн и OQ
+        </p>
+      </div>
+
+      <div class="flex gap-[24px] justify-between items-start lg:items-center mt-6 lg:mt-0">
+        <a href="#" class="transition duration-300">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77184)">
+              <path
+                  d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77184">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77187)">
+              <path
+                  d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.5 7.5V7.501" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77187">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77190)">
+              <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="#EDF3FF" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77190">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77193)">
+              <path
+                  d="M17 5H7C4.79086 5 3 6.79086 3 9V15C3 17.2091 4.79086 19 7 19H17C19.2091 19 21 17.2091 21 15V9C21 6.79086 19.2091 5 17 5Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9L15 12L10 15V9Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77193">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full h-[1px] bg-[#fff]/30 my-8 md:my-16"></div>
+
+    <div class="flex justify-between items-start sm:items-center flex-col-reverse sm:flex-row">
+      <span class="text-[14px] text-white/70">© 2024 Kettik. All rights reserved.</span>
+
+      <a href="/" class="hidden md:block">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+
+      <div class="flex justify-end items-center gap-8 mb-6 sm:mb-0">
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Оферта
+        </a>
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Пожелания
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal" id="sign-in">
+  <div class="modal-fon" data-modalid="#sign-in"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#sign-in">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Вход</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном
+        месте
+      </p>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <label class="def-input mb-2 pl-2">
+        <input type="password" required placeholder="Введите пароль">
+        <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
+      </label>
+
+      <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in"
+            data-targetid="#forgot-password">Забыли пароль?</span>
+      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
+
+      <button
+          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal"
+          data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля
+      </button>
+
+      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in"
+                           data-targetid="#register">Зарегистрируйся, это легко</span>
+      </p>
+
+      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+        <span
+            class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+      </div>
+
+      <button
+          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+        Продолжить через Google
+      </button>
+
+      <p class="text-[14px] text-[#687076]">
+        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут
+        обработаны в соответствии с нашей Политикой конфиденциальности.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="sign-in-not-pass">
+  <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Вход без пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
+      </p>
+
+      <label class="def-input mb-4">
+        <input type="text" required placeholder="Ваш Телефон или Email">
+      </label>
+
+
+      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
+
+      <button
+          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal"
+          data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем
+      </button>
+
+      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in"
+                           data-targetid="#register">Зарегистрируйся, это легко</span>
+      </p>
+
+      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+        <span
+            class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+      </div>
+
+      <button
+          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+        Продолжить через Google
+      </button>
+
+      <p class="text-[14px] text-[#687076]">
+        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут
+        обработаны в соответствии с нашей Политикой конфиденциальности.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="forgot-password">
+  <div class="modal-fon" data-modalid="#forgot-password"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#forgot-password">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с
+        инструкцией по восстановлению пароля
+      </p>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
+              data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить
+      </button>
+      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal"
+              data-targetid="#sign-in" data-modalid="#forgot-password">Назад
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="forgot-password-waiting">
+  <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        На ваш электронный адрес:
+      </p>
+
+      <label class="def-input mb-4 disabled">
+        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+      </label>
+
+      <p class="text-[16px] leading-[130%] mb-4">
+        отправлено письмо с инструкцией по восстановлению пароля. <br><br>
+        Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
+      </p>
+
+      <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password"
+            data-modalid="#forgot-password-waiting">
+        Изменить данные
+      </span>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals"
+              data-modalid="#forgot-password-waiting">OK
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="register">
+  <div class="modal-fon" data-modalid="#register"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#register">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
+              data-modalid="#register" data-targetid="#register-success">Далее
+      </button>
+
+      <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
+        Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="register-success">
+  <div class="modal-fon" data-modalid="#register-success"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#register-success">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Мы отправили временный код на почту:
+      </p>
+
+      <label class="def-input mb-4 disabled">
+        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+      </label>
+      <p class="text-[16px] leading-[130%] mb-3">
+        Введите код, полученный в письме
+      </p>
+      <label class="def-input mb-4 pl-1">
+        <input type="text" required placeholder="Введите код из х символов" class="pl-2">
+      </label>
+      <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
+              data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить
+      </button>
+      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal"
+              data-targetid="#register" data-modalid="#register-success">Назад
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-thanks">
+  <div class="modal-fon" data-modalid="#rmodal-thanks"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-thanks">+</div>
+
+    <div class="modal-content">
+
+      <div class="flex justify-start items-start">
+        <div
+            class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
+          <i class="icon-check text-white"></i>
+        </div>
+        <p class="text-[16px] leading-[130%] mb-3">
+          Введите код, полученный в письме
+        </p>
+      </div>
+
+      <label class="def-input mb-4">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_3066_45058)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z"
+                  fill="#1150CB"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_3066_45058">
+              <rect width="20" height="20" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals"
+              data-modalid="#modal-thanks">Подтвердить
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-select-currency">
+  <div class="modal-fon" data-modalid="#modal-select-currency"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-select-currency">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Выберите предпочтительные параметры валюты интерфейса
+      </p>
+
+      <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
+      <label>
+        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+          <option value="" selected>RUB - Российский рубль</option>
+          <option value="" selected>UZS - Узбекский сом</option>
+          <option value="" selected>USD - Доллар США</option>
+        </select>
+      </label>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-select-language">
+  <div class="modal-fon" data-modalid="#modal-select-language"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-select-language">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Выберите предпочтительные параметры языка интерфейса
+      </p>
+
+      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
+      <label>
+        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+          <option value="" selected>Русский</option>
+          <option value="">O'zbek</option>
+          <option value="">English</option>
+        </select>
+      </label>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

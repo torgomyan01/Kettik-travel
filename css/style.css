@@ -31,6 +31,7 @@
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   color: #11181C;
+  letter-spacing: -0.5px;
 }
 
 a {
@@ -74,6 +75,7 @@ a {
 }
 .default-switch span {
   width: 26px;
+  min-width: 26px;
   height: 16px;
   background-color: #C1C8CD;
   border-radius: 10px;
@@ -232,6 +234,20 @@ a {
 .mobile-menu-board span:nth-of-type(3) {
   transform: rotate(0);
   top: 0;
+}
+
+.ticket-dashed-silid {
+  width: 1px;
+  height: auto;
+  position: relative;
+}
+.ticket-dashed-silid:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: calc(100% - 42px);
+  border: 1px dashed #D7DBDF;
 }
 
 .nav {
