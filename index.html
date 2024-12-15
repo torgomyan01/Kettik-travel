@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <script src="js/aos.js"></script>
-  <title>Kettik</title>
+  <title>Welcome Kettik</title>
 </head>
 <body>
 
@@ -29,7 +29,10 @@
       <a href="search-result.html" target="_blank">- Search Result</a>
     </li>
     <li class="mb-3">
-      <a href="#components">- Components</a>
+      <a href="#Buttons">- Buttons</a>
+    </li>
+    <li class="mb-3">
+      <a href="#Switch">- Switch</a>
     </li>
     <li class="mb-3">
       <a href="#modals">- Modals</a>
@@ -39,7 +42,20 @@
 
 
 
-  <h3 id="components" class="mt-[200px] text-[30px] font-bold mb-3">#Components</h3>
+  <h3 id="Buttons" class="mt-[200px] text-[30px] font-bold mb-3">#Buttons</h3>
+  <div class="flex justify-start items-center flex-wrap gap-4">
+    <button class="w-[200px] bg-orange h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+    <button class="w-[200px] h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+  </div>
+
+  <h3 id="Switch" class="mt-[200px] text-[30px] font-bold mb-3">#Switch</h3>
+  <div class="flex justify-start items-center">
+    <label class="default-switch flex justify-start items-center text-white text-[14px] pl-0">
+      <input type="checkbox">
+      <span class="ml-2"></span>
+    </label>
+  </div>
+
   <h3 id="modals" class="mt-[200px] text-[30px] font-bold mb-3">#Modals</h3>
 
   <div class="flex flex-wrap justify-start items-start gap-4">
@@ -51,288 +67,298 @@
     <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#register">Регистрация</button>
     <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#register-success">Регистрация получить код</button>
     <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-thanks">Все успешно</button>
+
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-select-currency">Изменить валюта</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-select-language">Изменить язык</button>
   </div>
 
 
 
 
 
-  <div class="modal" id="sign-in">
-    <div class="modal-fon" data-modalid="#sign-in"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#sign-in">+</div>
 
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold">Вход</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном месте
-        </p>
-
-        <label class="def-input mb-4">
-          <i class="icon-mail"></i>
-          <input type="email" required placeholder="Ваш Email">
-        </label>
-
-        <label class="def-input mb-2 pl-2">
-          <input type="password" required placeholder="Введите пароль">
-          <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
-        </label>
-
-        <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#forgot-password">Забыли пароль?</span>
-        <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
-
-        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля</button>
-
-        <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-          Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
-        </p>
-
-        <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-          <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
-        </div>
-
-        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-          <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-          Продолжить через Google
-        </button>
-
-        <p class="text-[14px] text-[#687076]">
-          Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
-        </p>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="sign-in-not-pass">
-    <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold">Вход без пароля</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
-        </p>
-
-        <label class="def-input mb-4">
-          <input type="text" required placeholder="Ваш Телефон или Email">
-        </label>
-
-
-        <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
-
-        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем</button>
-
-        <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-          Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
-        </p>
-
-        <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-          <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
-        </div>
-
-        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-          <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-          Продолжить через Google
-        </button>
-
-        <p class="text-[14px] text-[#687076]">
-          Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
-        </p>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="forgot-password">
-    <div class="modal-fon" data-modalid="#forgot-password"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#forgot-password">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с инструкцией по восстановлению пароля
-        </p>
-
-        <label class="def-input mb-4">
-          <i class="icon-mail"></i>
-          <input type="email" required placeholder="Ваш Email">
-        </label>
-
-        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить</button>
-        <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#sign-in" data-modalid="#forgot-password">Назад</button>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="forgot-password-waiting">
-    <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          На ваш электронный адрес:
-        </p>
-
-        <label class="def-input mb-4 disabled">
-          <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-        </label>
-
-        <p class="text-[16px] leading-[130%] mb-4">
-          отправлено письмо с инструкцией по восстановлению пароля. <br><br>
-          Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
-        </p>
-
-        <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password" data-modalid="#forgot-password-waiting">
-        Изменить данные
-      </span>
-
-        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#forgot-password-waiting">OK</button>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal" id="register">
-    <div class="modal-fon" data-modalid="#register"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#register">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
-
-        <label class="def-input mb-4">
-          <i class="icon-mail"></i>
-          <input type="email" required placeholder="Ваш Email">
-        </label>
-
-        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#register" data-targetid="#register-success">Далее</button>
-
-        <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
-          Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
-        </p>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="register-success">
-    <div class="modal-fon" data-modalid="#register-success"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#register-success">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Мы отправили временный код на почту:
-        </p>
-
-        <label class="def-input mb-4 disabled">
-          <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-        </label>
-        <p class="text-[16px] leading-[130%] mb-3">
-          Введите код, полученный в письме
-        </p>
-        <label class="def-input mb-4 pl-1">
-          <input type="text" required placeholder="Введите код из х символов" class="pl-2">
-        </label>
-        <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
-
-        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить</button>
-        <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#register" data-modalid="#register-success">Назад</button>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="modal-thanks">
-    <div class="modal-fon" data-modalid="#rmodal-thanks"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#modal-thanks">+</div>
-
-      <div class="modal-content">
-
-        <div class="flex justify-start items-start">
-          <div class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
-            <i class="icon-check text-white"></i>
-          </div>
-          <p class="text-[16px] leading-[130%] mb-3">
-            Введите код, полученный в письме
-          </p>
-        </div>
-
-        <label class="def-input mb-4">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3066_45058)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z" fill="#1150CB"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_3066_45058">
-                <rect width="20" height="20" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-          <input type="email" required placeholder="Ваш Email">
-        </label>
-
-        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">Подтвердить</button>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal" id="modal-select-currency">
-    <div class="modal-fon" data-modalid="#modal-select-currency"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#modal-select-currency">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Выберите предпочтительные параметры валюты интерфейса
-        </p>
-
-        <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
-        <label>
-          <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-            <option value="" selected>RUB - Российский рубль</option>
-            <option value="" selected>UZS - Узбекский сом</option>
-            <option value="" selected>USD - Доллар США</option>
-          </select>
-        </label>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-select-language">
-    <div class="modal-fon" data-modalid="#modal-select-language"></div>
-    <div class="modal-body max-w-[396px]">
-      <div class="modal-close" data-modalid="#modal-select-language">+</div>
-
-      <div class="modal-content">
-        <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
-        <p class="text-[16px] leading-[130%] mb-4">
-          Выберите предпочтительные параметры языка интерфейса
-        </p>
-
-        <h4 class="text-[18px] font-bold mb-2">Язык</h4>
-        <label>
-          <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-            <option value="" selected>Русский</option>
-            <option value="">O'zbek</option>
-            <option value="">English</option>
-          </select>
-        </label>
-
-      </div>
-    </div>
-  </div>
 
 </div>
 
 
+<div class="modal" id="sign-in">
+  <div class="modal-fon" data-modalid="#sign-in"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#sign-in">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Вход</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном месте
+      </p>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <label class="def-input mb-2 pl-2">
+        <input type="password" required placeholder="Введите пароль">
+        <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
+      </label>
+
+      <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#forgot-password">Забыли пароль?</span>
+      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
+
+      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля</button>
+
+      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
+      </p>
+
+      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+        <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+      </div>
+
+      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+        Продолжить через Google
+      </button>
+
+      <p class="text-[14px] text-[#687076]">
+        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
+      </p>
+
+    </div>
+  </div>
+</div>
+<div class="modal" id="sign-in-not-pass">
+  <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Вход без пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
+      </p>
+
+      <label class="def-input mb-4">
+        <input type="text" required placeholder="Ваш Телефон или Email">
+      </label>
+
+
+      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
+
+      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем</button>
+
+      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
+      </p>
+
+      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+        <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+      </div>
+
+      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+        Продолжить через Google
+      </button>
+
+      <p class="text-[14px] text-[#687076]">
+        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
+      </p>
+
+    </div>
+  </div>
+</div>
+<div class="modal" id="forgot-password">
+  <div class="modal-fon" data-modalid="#forgot-password"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#forgot-password">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с инструкцией по восстановлению пароля
+      </p>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить</button>
+      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#sign-in" data-modalid="#forgot-password">Назад</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal" id="forgot-password-waiting">
+  <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        На ваш электронный адрес:
+      </p>
+
+      <label class="def-input mb-4 disabled">
+        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+      </label>
+
+      <p class="text-[16px] leading-[130%] mb-4">
+        отправлено письмо с инструкцией по восстановлению пароля. <br><br>
+        Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
+      </p>
+
+      <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password" data-modalid="#forgot-password-waiting">
+        Изменить данные
+      </span>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#forgot-password-waiting">OK</button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="register">
+  <div class="modal-fon" data-modalid="#register"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#register">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+
+      <label class="def-input mb-4">
+        <i class="icon-mail"></i>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#register" data-targetid="#register-success">Далее</button>
+
+      <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
+        Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+<div class="modal" id="register-success">
+  <div class="modal-fon" data-modalid="#register-success"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#register-success">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Мы отправили временный код на почту:
+      </p>
+
+      <label class="def-input mb-4 disabled">
+        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+      </label>
+      <p class="text-[16px] leading-[130%] mb-3">
+        Введите код, полученный в письме
+      </p>
+      <label class="def-input mb-4 pl-1">
+        <input type="text" required placeholder="Введите код из х символов" class="pl-2">
+      </label>
+      <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить</button>
+      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#register" data-modalid="#register-success">Назад</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-thanks">
+  <div class="modal-fon" data-modalid="#modal-thanks"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-thanks">+</div>
+
+    <div class="modal-content">
+
+      <div class="flex justify-start items-start">
+        <div class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
+          <i class="icon-check text-white"></i>
+        </div>
+        <p class="text-[16px] leading-[130%] mb-3">
+          Введите код, полученный в письме
+        </p>
+      </div>
+
+      <label class="def-input mb-4">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_3066_45058)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z" fill="#1150CB"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_3066_45058">
+              <rect width="20" height="20" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="email" required placeholder="Ваш Email">
+      </label>
+
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">Подтвердить</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-select-currency">
+  <div class="modal-fon" data-modalid="#modal-select-currency"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-select-currency">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Выберите предпочтительные параметры валюты интерфейса
+      </p>
+
+      <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
+      <label>
+        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+          <option value="" selected>RUB - Российский рубль</option>
+          <option value="" selected>UZS - Узбекский сом</option>
+          <option value="" selected>USD - Доллар США</option>
+        </select>
+      </label>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-select-language">
+  <div class="modal-fon" data-modalid="#modal-select-language"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-select-language">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Выберите предпочтительные параметры языка интерфейса
+      </p>
+
+      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
+      <label>
+        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+          <option value="" selected>Русский</option>
+          <option value="">O'zbek</option>
+          <option value="">English</option>
+        </select>
+      </label>
+
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 
 
