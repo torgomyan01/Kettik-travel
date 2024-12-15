@@ -250,6 +250,10 @@ a {
   border: 1px dashed #D7DBDF;
 }
 
+.scroll-bottom-none::-webkit-scrollbar {
+  height: 0;
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;

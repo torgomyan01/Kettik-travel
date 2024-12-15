@@ -14,7 +14,7 @@
   <script src="js/aos.js"></script>
   <title>Search result</title>
 </head>
-<body class="bg-[#EDF3FF]">
+<body>
 
 <nav class="nav flex justify-between items-center ">
   <div class="container flex justify-between items-center">
@@ -22,16 +22,16 @@
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
     </a>
 
-    <div class="flex justify-center items-center">
-      <div class="bg-blue text-white rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+    <div class="justify-center items-center hidden lg:flex">
+      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
         Результаты поиска
       </div>
       <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-[#ECEEF0]  rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+      <div class="bg-[#ECEEF0] text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
         Бронирование
       </div>
       <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-[#ECEEF0]  rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+      <div class="bg-[#ECEEF0] text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
         Итоги и оплата
       </div>
     </div>
@@ -65,10 +65,31 @@
   </div>
 </nav>
 
-<div class="search pt-12 pb-4 ">
+<div class="flex-jsb-c lg:hidden border-t p-[4px_16px] font-semibold">
+  <div>
+    <div class="flex-js-c text-[16px]">
+      Тaшкент
+      <i class="icon-arrow-right mx-2"></i>
+      Москва
+    </div>
+    <div class="flex-js-c text-[16px] mt-1">
+      пт 25 окт
+      <span class="w-[2px] h-[2px] bg-black rounded-full mx-1"></span>
+      <svg class="mr-1" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.45332 13.046H12.602C12.546 12.318 12.434 11.59 12.098 10.9174C11.818 10.3574 10.5853 9.90871 9.01665 9.29204L8.40065 9.12404L8.28865 9.01204C8.17665 8.84404 8.06465 8.67671 8.06465 8.50871C8.00865 8.17204 8.00865 7.72337 8.12065 7.33137L8.17665 7.21937L8.28865 7.10737C8.96065 6.37937 9.29665 5.42671 9.18465 4.41804C9.18465 2.90537 8.28865 1.89737 7.05598 1.89737C5.82332 1.89737 4.87132 2.90537 4.87132 4.36204C4.81641 4.85706 4.86795 5.35811 5.02248 5.83159C5.17701 6.30507 5.43096 6.74005 5.76732 7.10737L5.87932 7.33137C5.99132 7.72337 6.04732 8.17137 5.93532 8.56404C5.93532 8.67671 5.82332 8.90004 5.71132 9.01204L5.65532 9.12404L5.03932 9.34871C3.47065 9.90871 2.23798 10.4127 1.90198 10.9727C1.60895 11.6248 1.45565 12.3312 1.45332 13.046ZM12.7707 14.166H1.22998C1.1119 14.1677 0.994686 14.1456 0.885258 14.1012C0.775829 14.0568 0.676399 13.9909 0.59283 13.9075C0.509262 13.824 0.443246 13.7247 0.398676 13.6153C0.354105 13.506 0.331882 13.3888 0.333317 13.2707C0.333317 12.3174 0.557317 11.3654 0.893317 10.4694C1.39798 9.46004 2.74198 8.95604 4.64665 8.28404L4.87132 8.22804V7.77937C4.46123 7.31639 4.1503 6.77433 3.95768 6.18661C3.76506 5.59888 3.69483 4.97794 3.75132 4.36204C3.75065 2.34537 5.09465 0.833374 6.99998 0.833374C8.90532 0.833374 10.2493 2.34537 10.2493 4.41804C10.3613 5.59537 9.96932 6.88337 9.12932 7.77937C9.07331 7.92369 9.07331 8.08373 9.12932 8.22804L9.35265 8.28404C11.258 8.95671 12.602 9.46004 13.106 10.4694V10.5247C13.4987 11.4214 13.6667 12.318 13.6667 13.2707C13.6667 13.774 13.2753 14.166 12.7707 14.166Z" fill="#687076"/>
+      </svg>
+      1
+    </div>
+  </div>
+  <span class="text-blue text-[14px] cursor-pointer">
+    Изменить
+  </span>
+</div>
+
+<div class="search py-[6px] md:pt-12 md:pb-4 z-10 relative rounded-[0px]">
   <div class="container">
 
-    <form action="/" method="post" class="search-form">
+    <form action="/" method="post" class="search-form hidden md:flex">
       <label class="search-form-inp there">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_2202_5790)">
@@ -84,7 +105,7 @@
           </defs>
         </svg>
         <input type="text" placeholder="Oткуда" value="Ташкент">
-        <span class="text-[14px] text-[#7E868C] relative left-[-30px]">TAS</span>
+        <span class="text-[14px] text-[#7E868C] relative left-[-15px] xl:left-[-30px]">TAS</span>
       </label>
       <div class="search-form-lr">
         <i class="icon-left-right"></i>
@@ -117,9 +138,9 @@
         <label class="search-form-inp after:h-[24px]">
           <input type="text" placeholder="Возвращение" value="26 окт, cб">
         </label>
-        <i class="icon-close text-[#C1C8CD] ml-[-20px] relative z-10 left-[-10px] text-[20px] cursor-pointer"></i>
+        <i class="icon-close text-[#C1C8CD] ml-[-20px] relative z-10 left-[-15px] lg:left-[-10px] text-[20px] cursor-pointer"></i>
       </div>
-      <div class="search-form-select">
+      <div class="search-form-select pr-[15px]">
         <div class="search-form-select-body">
           <div class="search-form-select-name">1 пассажир</div>
           <div class="search-form-select-type">Эконом</div>
@@ -129,7 +150,7 @@
       <button class="search-form-submit" type="submit">Найти билеты</button>
     </form>
 
-    <div class="flex items-center justify-start mt-5 gap-5 md:gap-20 flex-col md:flex-row">
+    <div class="items-center justify-start mt-5 gap-5 md:gap-20 flex-col md:flex-row hidden md:flex">
       <a href="#" class="flex justify-start items-center text-white text-[14px]">
         <svg class="mr-2" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="10" cy="12" r="3" fill="white"/>
@@ -143,7 +164,7 @@
     </div>
 
 
-    <div class="w-full flex justify-between items-center gap-1 mt-10">
+    <div class="w-full flex justify-between items-center gap-1 md:mt-10 overflow-x-auto pb-1 scroll-bottom-none">
       <div
           class="min-w-[36px] w-[36px] h-[36px] border border-[#6A8AFF] hover:border-white transition rounded-[6px] flex justify-center items-center cursor-pointer">
         <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,13 +174,13 @@
         </svg>
       </div>
       <div
-          class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] bg-[#6A8AFF] transition rounded-[6px] flex justify-between items-center cursor-pointer">
+          class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] bg-[#6A8AFF] transition rounded-[6px] flex justify-between items-center cursor-pointer">
         Прямой
         <i class="icon-close text-white"></i>
       </div>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Багаж</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -168,7 +189,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Цена</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -177,7 +198,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Отправление</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -186,7 +207,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Прибытие</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -195,7 +216,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>В пути</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -204,7 +225,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Авиакомпании</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -213,7 +234,7 @@
       </label>
       <label class="w-full ">
         <select
-            class="w-full h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+            class="w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
           <option value="" selected>Аэропорты</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -225,11 +246,11 @@
 </div>
 
 
-<section class="pt-[24px]">
+<section class="bg-[#EDF3FF] pb-16 pt-[80px] mt-[-50px]">
   <div class="container">
     <div class="w-full flex gap-6">
 
-      <div class="w-[310px] bg-white rounded-[24px] p-4 h-[fit-content]">
+      <div class="w-[310px] bg-white rounded-[24px] p-4 h-[fit-content] hidden lg:block">
 
         <div class="flex justify-between items-center">
           <span class="text-nowrap">С багажем</span>
@@ -467,9 +488,9 @@
 
       </div>
 
-      <div class="w-[calc(100%_-_310px)]">
-        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
-          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+      <div class="w-full lg:w-[calc(100%_-_310px)]">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px] flex-col md:flex-row">
+          <div class="w-full md:w-[calc(100%_-_198px)] bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c">
@@ -582,22 +603,22 @@
 
           </div>
           <div class="ticket-dashed-silid"></div>
-          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+          <div class="w-full md:w-[198px] bg-white border-t md:border-t-0 rounded-[0_0_24px_24px] md:rounded-[24px] p-[15px] flex flex-col justify-end ">
             <div class="flex justify-between items-start flex-col h-[80%]">
               <h4 class="text-[18px] font-bold text-center w-full">
                 9 000 000 000 UZS
               </h4>
 
-              <div >
-                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
-                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              <div class="w-full block min-[450px]:flex md:block gap-[8px] mt-4 md:mt-0">
+                <button class="bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
-          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px] flex-col md:flex-row">
+          <div class="w-full md:w-[calc(100%_-_198px)] bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c gap-[8px]">
@@ -661,20 +682,20 @@
             </div>
           </div>
           <div class="ticket-dashed-silid"></div>
-          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+          <div class="w-full md:w-[198px] bg-white border-t md:border-t-0 rounded-[0_0_24px_24px] md:rounded-[24px] p-[15px] flex flex-col justify-end ">
             <div class="flex justify-between items-start flex-col h-[80%]">
               <h4 class="text-[18px] font-bold text-center w-full">
                 4 174 613 UZS
               </h4>
-              <div >
-                <button class="btn bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
-                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              <div class="w-full block min-[450px]:flex md:block gap-[8px] mt-4 md:mt-0">
+                <button class="bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
-          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px] flex-col md:flex-row">
+          <div class="w-full md:w-[calc(100%_-_198px)] bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c gap-[8px]">
@@ -742,21 +763,21 @@
             </div>
           </div>
           <div class="ticket-dashed-silid"></div>
-          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+          <div class="w-full md:w-[198px] bg-white border-t md:border-t-0 rounded-[0_0_24px_24px] md:rounded-[24px] p-[15px] flex flex-col justify-end ">
             <div class="flex justify-between items-start flex-col h-[80%]">
               <h4 class="text-[18px] font-bold text-center w-full">
                 4 174 613 UZS
               </h4>
-              <div >
-                <button class="btn bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
-                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              <div class="w-full block min-[450px]:flex md:block gap-[8px] mt-4 md:mt-0">
+                <button class="bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
-          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px] flex-col md:flex-row">
+          <div class="w-full md:w-[calc(100%_-_198px)] bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c">
@@ -872,22 +893,22 @@
 
           </div>
           <div class="ticket-dashed-silid"></div>
-          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+          <div class="w-full md:w-[198px] bg-white border-t md:border-t-0 rounded-[0_0_24px_24px] md:rounded-[24px] p-[15px] flex flex-col justify-end ">
             <div class="flex justify-between items-start flex-col h-[80%]">
               <h4 class="text-[18px] font-bold text-center w-full">
                 9 000 000 000 UZS
               </h4>
 
-              <div >
-                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
-                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              <div class="w-full block min-[450px]:flex md:block gap-[8px] mt-4 md:mt-0">
+                <button class="bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full flex-jsb-c items-stretch mb-[8px]">
-          <div class="w-[calc(100%_-_198px)] bg-white rounded-[24px] p-6">
+        <div class="w-full flex-jsb-c items-stretch mb-[8px] flex-col md:flex-row">
+          <div class="w-full md:w-[calc(100%_-_198px)] bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c">
@@ -1060,15 +1081,15 @@
 
           </div>
           <div class="ticket-dashed-silid"></div>
-          <div class="w-[198px] bg-white rounded-[24px] p-[15px] flex flex-col justify-end ">
+          <div class="w-full md:w-[198px] bg-white border-t md:border-t-0 rounded-[0_0_24px_24px] md:rounded-[24px] p-[15px] flex flex-col justify-end ">
             <div class="flex justify-between items-start flex-col h-[80%]">
               <h4 class="text-[18px] font-bold text-center w-full">
                 9 000 000 000 UZS
               </h4>
 
-              <div >
-                <button class="btn bg-orange w-full h-[44px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
-                <button class="btn w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
+              <div class="w-full block min-[450px]:flex md:block gap-[8px] mt-4 md:mt-0">
+                <button class="bg-orange w-full h-[40px] text-[15px] text-white rounded-[12px] mb-2">Выбрать</button>
+                <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB]">Другие тарифы</button>
               </div>
             </div>
           </div>
@@ -1079,8 +1100,88 @@
   </div>
 </section>
 
+<section class="mt-16 hidden lg:block bg-white pt-[24px] pb-[40px]">
+  <div class="container">
+    <div class="flex justify-start items-center">
+      <div class="w-[30%] aos-init aos-animate" data-aos="fade">
+        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
+        <div class="w-full flex justify-center items-center mt-6">
+          <a href="#">
+            <img src="images/icons/tg.png" alt="tg icon" class="w-[160px] h-auto" width="768" height="768">
+          </a>
+        </div>
+      </div>
+      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative overflow-hidden">
+        <img class="absolute right-0 bottom-0" src="images/home/feedback-vector.svg" alt="Удобное время для звонка — выберите сами!" width="356" height="204">
+        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
 
-<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
+        <div class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] overflow-hidden rounded-[16px] relative h-[64px]">
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Имя">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Номер телефона">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full flex justify-between items-center pr-6">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Удобное время">
+            <i class="icon-time-ok text-blue text-[24px]"></i>
+          </label>
+        </div>
+
+        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block lg:hidden mt-16 bg-white pb-[48px]">
+  <div class="container">
+    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-16">
+      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232" height="146">
+      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+        Удобное время для звонка — выберите сами!
+      </h3>
+    </div>
+
+    <form action="/" method="post" class="mt-6">
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время">
+        <i class="icon-time-ok text-blue"></i>
+      </label>
+
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+    </form>
+  </div>
+</section>
+
+
+<div class="flex lg:hidden w-full bg-gradient-to-b from-transparent to-white fixed bottom-0 left-0 p-4 gap-[8px]">
+  <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px]">
+    <i class="icon-filter mr-2 text-white relative top-[1px]"></i>
+    Фильтр
+  </button>
+  <button class="w-full h-[44px] bg-white border  text-[15px] font-bold rounded-[8px]">
+    <i class="icon-sort-amount-asc mr-2 relative top-1"></i>
+    Сортировка
+  </button>
+</div>
+
+
+<footer class="bg-blue rounded-[32px_32px_0_0]">
   <div class="container pt-[49px] pb-16">
     <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
       <a href="/" class="block md:hidden mb-6">
@@ -1181,321 +1282,6 @@
     </div>
   </div>
 </footer>
-
-
-<div class="modal" id="sign-in">
-  <div class="modal-fon" data-modalid="#sign-in"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#sign-in">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Вход</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном
-        месте
-      </p>
-
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <label class="def-input mb-2 pl-2">
-        <input type="password" required placeholder="Введите пароль">
-        <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
-      </label>
-
-      <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in"
-            data-targetid="#forgot-password">Забыли пароль?</span>
-      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
-
-      <button
-          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal"
-          data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля
-      </button>
-
-      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in"
-                           data-targetid="#register">Зарегистрируйся, это легко</span>
-      </p>
-
-      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-        <span
-            class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
-      </div>
-
-      <button
-          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-        Продолжить через Google
-      </button>
-
-      <p class="text-[14px] text-[#687076]">
-        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут
-        обработаны в соответствии с нашей Политикой конфиденциальности.
-      </p>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="sign-in-not-pass">
-  <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Вход без пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
-      </p>
-
-      <label class="def-input mb-4">
-        <input type="text" required placeholder="Ваш Телефон или Email">
-      </label>
-
-
-      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
-
-      <button
-          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal"
-          data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем
-      </button>
-
-      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in"
-                           data-targetid="#register">Зарегистрируйся, это легко</span>
-      </p>
-
-      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-        <span
-            class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
-      </div>
-
-      <button
-          class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-        Продолжить через Google
-      </button>
-
-      <p class="text-[14px] text-[#687076]">
-        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут
-        обработаны в соответствии с нашей Политикой конфиденциальности.
-      </p>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="modal" id="forgot-password">
-  <div class="modal-fon" data-modalid="#forgot-password"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#forgot-password">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с
-        инструкцией по восстановлению пароля
-      </p>
-
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
-              data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить
-      </button>
-      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal"
-              data-targetid="#sign-in" data-modalid="#forgot-password">Назад
-      </button>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="forgot-password-waiting">
-  <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        На ваш электронный адрес:
-      </p>
-
-      <label class="def-input mb-4 disabled">
-        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-      </label>
-
-      <p class="text-[16px] leading-[130%] mb-4">
-        отправлено письмо с инструкцией по восстановлению пароля. <br><br>
-        Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
-      </p>
-
-      <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password"
-            data-modalid="#forgot-password-waiting">
-        Изменить данные
-      </span>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals"
-              data-modalid="#forgot-password-waiting">OK
-      </button>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="modal" id="register">
-  <div class="modal-fon" data-modalid="#register"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#register">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
-
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
-              data-modalid="#register" data-targetid="#register-success">Далее
-      </button>
-
-      <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
-        Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
-      </p>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="register-success">
-  <div class="modal-fon" data-modalid="#register-success"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#register-success">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Мы отправили временный код на почту:
-      </p>
-
-      <label class="def-input mb-4 disabled">
-        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-      </label>
-      <p class="text-[16px] leading-[130%] mb-3">
-        Введите код, полученный в письме
-      </p>
-      <label class="def-input mb-4 pl-1">
-        <input type="text" required placeholder="Введите код из х символов" class="pl-2">
-      </label>
-      <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals"
-              data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить
-      </button>
-      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal"
-              data-targetid="#register" data-modalid="#register-success">Назад
-      </button>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal-thanks">
-  <div class="modal-fon" data-modalid="#rmodal-thanks"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-thanks">+</div>
-
-    <div class="modal-content">
-
-      <div class="flex justify-start items-start">
-        <div
-            class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
-          <i class="icon-check text-white"></i>
-        </div>
-        <p class="text-[16px] leading-[130%] mb-3">
-          Введите код, полученный в письме
-        </p>
-      </div>
-
-      <label class="def-input mb-4">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_3066_45058)">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z"
-                  fill="#1150CB"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_3066_45058">
-              <rect width="20" height="20" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals"
-              data-modalid="#modal-thanks">Подтвердить
-      </button>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal" id="modal-select-currency">
-  <div class="modal-fon" data-modalid="#modal-select-currency"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-currency">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры валюты интерфейса
-      </p>
-
-      <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>RUB - Российский рубль</option>
-          <option value="" selected>UZS - Узбекский сом</option>
-          <option value="" selected>USD - Доллар США</option>
-        </select>
-      </label>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal-select-language">
-  <div class="modal-fon" data-modalid="#modal-select-language"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-language">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры языка интерфейса
-      </p>
-
-      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>Русский</option>
-          <option value="">O'zbek</option>
-          <option value="">English</option>
-        </select>
-      </label>
-
-    </div>
-  </div>
-</div>
 
 
 <script src="js/script.js"></script>

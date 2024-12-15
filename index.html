@@ -16,826 +16,325 @@
 </head>
 <body>
 
-<nav class="nav flex justify-between items-center ">
-  <div class="container flex justify-between items-center">
-    <a href="/index.html" class="nav-logo">
-      <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
-    </a>
 
-    <div class="mobile-menu-board flex md:hidden">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="justify-between gap-10 hidden md:flex">
-      <div class="text-gray-800 cursor-pointer flex items-center ">
-        Авиабилеты
-        <i class="icon-down ms-2 text-[8px]"></i>
-      </div>
-      <div class="flex justify-center items-center cursor-pointer target-modal" data-targetid="#modal-select-language">
-        <img src="images/ru-flag.png" alt="ru flag to change language site" width="24"
-             height="24" class="rounded-full me-2">
-        UZS
-      </div>
-      <div data-targetid="#sign-in" class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-gray-800">
-        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z" fill="#1150CB"/>
-        </svg>
-        Вход
-      </div>
-    </div>
+<div class="container mt-40">
+  <h1 class="text-center text-[40px] mb-5 font-bold">Welcome to Kettik-Travel <span class="text-[red]">❤</span></h1>
+
+  <h3 class="mt-[100px] text-[30px] font-bold mb-3">#Pages</h3>
+  <ul>
+    <li class="mb-3">
+      <a href="home.html" target="_blank">- Home</a>
+    </li>
+    <li class="mb-3">
+      <a href="search-result.html" target="_blank">- Search Result</a>
+    </li>
+    <li class="mb-3">
+      <a href="#components">- Components</a>
+    </li>
+    <li class="mb-3">
+      <a href="#modals">- Modals</a>
+    </li>
+  </ul>
+
+
+
+
+  <h3 id="components" class="mt-[200px] text-[30px] font-bold mb-3">#Components</h3>
+  <h3 id="modals" class="mt-[200px] text-[30px] font-bold mb-3">#Modals</h3>
+
+  <div class="flex flex-wrap justify-start items-start gap-4">
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#sign-in">Логин</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#sign-in-not-pass">Быстрый вход без проля</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#forgot-password">Забыл пароль</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#forgot-password-waiting">забыл пароль получить код</button>
+
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#register">Регистрация</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#register-success">Регистрация получить код</button>
+    <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-thanks">Все успешно</button>
   </div>
-</nav>
 
-<div class="search pt-12 pb-14">
-  <div class="container">
-    <h1 class="text-[26px] md:text-[36px] lg:text-[58px] text-center text-white mb-6 md:md-0 leading-[116%]" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">Начни своё путешествие сейчас!</h1>
-    <div class="flex justify-start gap-8">
-      <div class="flex justify-center items-center flex-col text-white text-[14px] cursor-pointer">
-        <div class="w-16 h-16 rounded-3xl bg-white flex justify-center items-center mb-1">
-          <svg width="40" height="26" viewBox="0 0 40 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.6555 14.9773C24.2503 16.0379 22.0776 16.9387 21.1145 17.2018L18.1453 18.0138L13.715 25.7593L16.0027 25.9868C16.4227 26.0285 16.8465 25.9711 17.2417 25.8188C17.6368 25.6665 17.9928 25.4234 18.2825 25.1081L27.042 15.5746C27.1013 15.5152 27.1385 15.4364 27.1473 15.3518C27.156 15.2672 27.1357 15.1821 27.0898 15.1112C27.044 15.0404 26.9755 14.9882 26.8962 14.9638C26.8169 14.9393 26.7318 14.9441 26.6555 14.9773ZM39.9259 5.43511C38.4272 3.36072 33.3858 3.84985 32.4102 4.11297C32.3505 4.12911 32.2908 4.14526 32.2311 4.16301L32.2358 4.15978L32.2279 4.16301L25.98 7.18502L7.30583 0.217169C6.79441 0.0214465 6.2443 -0.0433582 5.70305 0.0283566C4.30102 0.23106 2.96954 0.786874 1.82715 1.64631L16.2821 11.8762L10.2761 14.7804L2.20943 12.9637C2.17852 12.9567 2.14625 12.9603 2.11751 12.9739L0.0850051 13.9353C0.063126 13.9455 0.0440599 13.9611 0.0295234 13.9808C0.0149869 14.0005 0.00543659 14.0235 0.00173224 14.0479C-0.0019721 14.0723 0.000285917 14.0973 0.00830296 14.1205C0.01632 14.1438 0.0298443 14.1647 0.0476582 14.1812C0.974295 15.0404 5.55327 19.2587 5.55327 19.2587C5.6448 19.3431 5.75312 19.4059 5.87069 19.4428C5.98825 19.4797 6.11224 19.4899 6.23402 19.4726L9.71459 18.9772C9.83276 18.9604 9.94983 18.9361 10.0651 18.9046L20.7988 15.9717C23.0563 15.3551 33.202 10.6429 35.2914 9.55322C36.168 9.18677 40.625 6.85732 39.9259 5.43511Z" fill="#1150CB"/>
-          </svg>
-        </div>
-        Авиабилеты
-      </div>
-      <div class="flex justify-center items-center flex-col text-white text-[14px] cursor-pointer">
-        <div class="w-16 h-16 rounded-3xl bg-transparent flex justify-center items-center mb-1">
-          <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-2">
-            <g clip-path="url(#clip0_2249_1041)">
-              <path d="M30.5944 13.0049C27.3397 13.0049 24.7011 10.3664 24.7011 7.11171C24.7011 3.85699 27.3397 1.21851 30.5944 1.21851C33.8491 1.21851 36.4876 3.85699 36.4876 7.11163C36.4876 10.3663 33.849 13.0049 30.5944 13.0049ZM30.5944 2.50755C28.0516 2.50755 25.9902 4.56891 25.9902 7.11171C25.9902 9.65451 28.0516 11.7158 30.5944 11.7158C33.1371 11.7158 35.1985 9.65451 35.1985 7.11171C35.1985 4.56891 33.1371 2.50755 30.5944 2.50755Z" fill="white"/>
-              <path d="M30.6171 7.47654H28.5562C28.3286 7.47654 28.144 7.30422 28.144 7.07654C28.144 6.84886 28.3286 6.67654 28.5562 6.67654H30.2018V3.50054C30.2018 3.27278 30.3742 3.08838 30.6018 3.08838C30.8295 3.08838 31.0018 3.27286 31.0018 3.50054V7.12782C31.0018 7.35542 30.8447 7.47654 30.6171 7.47654ZM9.57215 15.114C8.10767 15.5367 6.31671 13.7803 5.83231 12.1029C5.34783 10.4245 6.25247 9.09982 7.71703 8.6767C9.18223 8.25438 10.653 8.89342 11.1377 10.5717C11.6216 12.2488 11.0373 14.6911 9.57215 15.114Z" fill="white"/>
-              <path d="M1.11157 10.6977C1.84669 10.4258 2.66285 10.8018 2.93445 11.537L7.93837 23.3842L20.0966 24.2083C20.9536 24.2663 21.6847 24.8498 21.9314 25.6726L24.4849 36.52C24.7136 37.2831 24.2806 38.087 23.5176 38.3159C23.3793 38.3574 23.2399 38.377 23.1028 38.377C22.4823 38.377 21.9091 37.9689 21.7217 37.3441L21.4799 36.6766H8.03541L8.00405 37.067C8.00405 37.8472 7.37157 38.482 6.59133 38.482C5.81117 38.482 5.17861 37.8506 5.17861 37.0703L4.40669 25.7183L0.272209 12.5203C0.000608444 11.7851 0.376369 10.9693 1.11157 10.6977Z" fill="white"/>
-              <path d="M7.99424 20.3383C7.61424 17.897 8.1256 16.536 9.60368 16.0906C10.532 15.8423 11.5446 16.0542 12.2259 16.7315C13.1459 17.553 14.649 21.1123 15.3096 22.6443L8.78144 22.2019L7.99424 20.3383ZM23.1158 25.3174C23.1048 25.2805 23.0929 25.2441 23.0806 25.2078C23.406 25.2355 23.7394 25.2637 24.0841 25.2931C24.6719 25.343 25.2031 25.6613 25.5254 26.1557L31.385 36.0429C31.8225 36.7144 31.6328 37.6131 30.961 38.0499C30.717 38.2093 30.4422 38.2852 30.171 38.2852C29.6972 38.2852 29.232 38.0531 28.9546 37.626L24.5654 31.4657L23.135 25.3891C23.1294 25.3651 23.123 25.3411 23.1158 25.3174ZM30.5082 32.1123C30.4516 29.0004 30.2399 25.6365 29.5901 25.6365H26.6758L26.5891 25.5078C26.5802 25.4927 26.571 25.5189 26.5614 25.5042C26.209 24.9632 25.7118 24.5965 25.135 24.3565H38.4572C38.8386 24.3565 39.1473 24.6154 39.1473 24.9967C39.1473 25.3773 38.8386 25.6365 38.4572 25.6365H32.7694C31.9567 25.6365 31.8291 30.8983 31.8331 34.3555L30.5082 32.1123ZM32.8571 36.8365H35.0818C35.4627 36.8365 35.7715 37.1755 35.7715 37.5565C35.7715 37.9373 35.4627 38.2765 35.0818 38.2765H32.4513C32.6148 38.0365 32.733 37.6918 32.7989 37.38C32.835 37.2091 32.8541 36.9965 32.8571 36.8365Z" fill="white"/>
-              <path d="M27.0002 18.8365H29.1561L29.394 19.3165H26.7623L27.0002 18.8365Z" fill="white"/>
-              <path d="M29.4944 20.2429C29.5144 20.2647 29.5241 20.2999 29.5215 20.3293L29.3668 22.0266C29.362 22.0807 29.3166 22.1166 29.2622 22.1166H29.1203L28.9822 23.4766H27.174L27.0359 22.1166H26.864C26.8096 22.1166 26.7642 22.0837 26.7592 22.0296L26.6046 20.3253C26.602 20.296 26.6118 20.2675 26.6317 20.2457C26.6516 20.224 26.6798 20.1966 26.7093 20.1966H26.8303L26.7622 19.6366H29.3939L29.3258 20.1966H29.4167C29.4463 20.1966 29.4744 20.2212 29.4944 20.2429ZM26.9494 20.5166L27.0712 21.8766H29.0551L29.1768 20.5166H26.9494Z" fill="white"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_2249_1041">
-                <rect width="40.3814" height="40" fill="white" transform="matrix(-1 0 0 1 39.8067 0)"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        Лаунжи
-      </div>
-    </div>
 
-    <form action="/" method="post" class="search-form">
-      <label class="search-form-inp there">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_2202_5790)">
-            <path d="M14.639 10.2577L19.4686 8.96358C19.981 8.82629 20.5269 8.89816 20.9862 9.16338C21.4456 9.4286 21.7808 9.86543 21.9181 10.3778C22.0554 10.8902 21.9835 11.4361 21.7183 11.8954C21.4531 12.3548 21.0162 12.69 20.5039 12.8273L6.01499 16.7096L1.5643 11.6905L4.46208 10.914L6.91157 12.3282L9.80934 11.5518L6.06576 5.30793L8.96353 4.53147L14.639 10.2577Z" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3 21H21" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_2202_5790">
-              <rect width="24" height="24" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <input type="text" placeholder="Oткуда">
-      </label>
-      <div class="search-form-lr">
-        <i class="icon-left-right"></i>
-      </div>
-      <label class="search-form-inp back">
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_5023_210)">
-            <path d="M15.4899 11.8106L20.3195 13.1047C20.8319 13.242 21.2687 13.5772 21.5339 14.0365C21.7992 14.4959 21.871 15.0418 21.7337 15.5542C21.5965 16.0665 21.2613 16.5034 20.8019 16.7686C20.3425 17.0338 19.7966 17.1057 19.2843 16.9684L4.79537 13.0861L3.4505 6.51408L6.34828 7.29053L7.76249 9.74002L10.6603 10.5165L10.5402 3.23736L13.4379 4.01382L15.4899 11.8106Z" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.33331 21H21.3333" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_5023_210">
-              <rect width="24" height="24" fill="white" transform="translate(0.333313)"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <input type="text" placeholder="Куда">
-      </label>
-      <div class="w-[1px] h-[48px] bg-[#D7DBDF] relative z-10 hidden xl:block"></div>
-     <div class="flex justify-center items-center w-full h-full relative">
-       <label class="search-form-inp pr-4">
-         <input type="text" placeholder="Отправление">
-         <i class="icon-calendar text-[22px] text-blue absolute left-[calc(100%_-_30px)] z-10 xl:relative bg-white"></i>
-       </label>
-       <div class="w-[1px] h-[24px] bg-[#D7DBDF] relative z-10 block xl:hidden"></div>
-       <label class="search-form-inp">
-         <input type="text" placeholder="Возвращение">
-       </label>
-     </div>
-      <div class="search-form-select">
-        <div class="search-form-select-body">
-          <div class="search-form-select-name">1 пассажир</div>
-          <div class="search-form-select-type">Эконом</div>
-        </div>
-        <i class="icon-down"></i>
-      </div>
-      <button class="search-form-submit" type="submit">Найти билеты</button>
-    </form>
 
-    <div class="flex items-center justify-start mt-5 gap-5 md:gap-20 flex-col md:flex-row">
-      <a href="#" class="flex justify-start items-center text-white text-[14px]">
-        <svg class="mr-2" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="12" r="3" fill="white"/>
-          <circle cx="17" cy="3" r="2.25" fill="white" stroke="white" stroke-width="1.5"/>
-          <path d="M10 12L3 3" stroke="white" stroke-width="1.5"/>
-          <path d="M10 12L16 5" stroke="white" stroke-width="1.5"/>
-          <circle cx="3" cy="3" r="3" fill="white"/>
-        </svg>
-        Сложный маршрут
-      </a>
-      <div class="flex justify-start items-center">
-        <label class="default-switch flex justify-start items-center text-white text-[14px]">
-          Только прямой рейс
-          <input type="checkbox">
-          <span class="ml-2"></span>
+
+
+  <div class="modal" id="sign-in">
+    <div class="modal-fon" data-modalid="#sign-in"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#sign-in">+</div>
+
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold">Вход</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном месте
+        </p>
+
+        <label class="def-input mb-4">
+          <i class="icon-mail"></i>
+          <input type="email" required placeholder="Ваш Email">
         </label>
-      </div>
-    </div>
-  </div>
-</div>
 
+        <label class="def-input mb-2 pl-2">
+          <input type="password" required placeholder="Введите пароль">
+          <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
+        </label>
 
-<section class="selectMe mt-16">
-  <div class="container max-w-7xl">
-    <div class="grid grid-cols-1 md:grid-cols-3 md:h-[335px] gap-6">
-      <div class="h-full p-6 rounded-3xl bg-[#DEEAFF] relative flex md:block justify-start items-center" data-aos="fade-up" data-aos-delay="100">
-        <img class="block md:hidden mr-4" src="images/home/best-star.svg" alt="best-star" width="52" height="52">
-        <h3 class="text-gray text-[18px] md:text-[26px] font-bold leading-none md:mb-4">Лучшие цены на рынке Узбекистана</h3>
-        <p class="text-gray w-full max-w-[220px] relative hidden md:block">
-          Найдите выгодные авиабилеты без переплат — лучшие предложения для вашего комфортного путешествия!
+        <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#forgot-password">Забыли пароль?</span>
+        <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
+
+        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля</button>
+
+        <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+          Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
         </p>
-        <img class="absolute right-0 bottom-0 w-[237px] h-auto hidden lg:block" src="images/home/woman-with-ticket-sitting-on-her-luggage.svg" alt="Лучшие цены на рынке Узбекистана" width="300" height="300">
-      </div>
-      <div class="h-full p-6 rounded-3xl bg-[#D8EEFF] relative flex md:block justify-start items-center" data-aos="fade-up" data-aos-delay="400">
-        <img class="block md:hidden mr-4" src="images/home/online-booking.svg" alt="best-star" width="52" height="52">
-        <h3 class="text-gray text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
-          Удобное онлайн бронирование
-        </h3>
-        <p class="text-gray w-full max-w-[170px] hidden md:block">
-          Легко и быстро бронируйте билеты на любые рейсы c удобными фильтрами и календарём цен.
+
+        <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+          <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+        </div>
+
+        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+          <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+          Продолжить через Google
+        </button>
+
+        <p class="text-[14px] text-[#687076]">
+          Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
         </p>
-        <img class="absolute right-[10px] bottom-0 w-[164px] h-auto hidden lg:block" src="images/home/the-girl-dreams-of-traveling.svg" alt="Удобное онлайн бронирование" width="300" height="300">
+
       </div>
-      <div class="h-full p-6 rounded-3xl bg-[#FFF3D3] relative flex md:block justify-start items-center" data-aos="fade-up" data-aos-delay="800">
-        <img class="block md:hidden mr-4" src="images/home/247hr-call-service.svg" alt="best-star" width="52" height="52">
-        <h3 class="text-gray text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
-          Круглосуточная поддержка 24/7
-        </h3>
-        <p class="text-gray w-full max-w-[210px] relative hidden md:block">
-          Мы готовы помочь вам в решении всех  вопросов связанных с путешествием в любое время суток.
+    </div>
+  </div>
+  <div class="modal" id="sign-in-not-pass">
+    <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
+
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold">Вход без пароля</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
         </p>
-        <img class="absolute right-[10px] bottom-0 w-[225px] h-auto hidden lg:block" src="images/home/soild-III.svg" alt="Удобное онлайн бронирование" width="225" height="143">
-      </div>
-    </div>
-  </div>
-</section>
+
+        <label class="def-input mb-4">
+          <input type="text" required placeholder="Ваш Телефон или Email">
+        </label>
 
 
-<section class="populars mt-16 font-bold">
-  <div class="container">
-    <h3 class="text-[24px] md:text-[36px] text-gray mb-6" data-aos="fade">Популярное сейчас</h3>
+        <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class="w-full">
-        <div class="w-full h-[340px] rounded-[24px] overflow-hidden group" data-aos="fade-up">
-          <div class="bg-[#EDF3FF] w-full flex justify-start items-center h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-            <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-            <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-            <span class="text-[18px] font-bold group-hover:text-white transition">Москва</span>
-          </div>
-          <img class="rounded-[24px] mt-[-30px] w-full h-auto object-cover object-center" src="images/home/moscow.png" alt="moscow" width="770" height="490">
-        </div>
+        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем</button>
 
-        <div class="w-full flex justify-start items-start gap-6 mt-6">
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-[#EDF3FF] w-full flex justify-start items-center flex-wrap h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition">Алматы</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center" src="images/home/Алматы.png" alt="moscow" width="1040" height="694">
-          </div>
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
-            <div class="bg-[#EDF3FF] w-full flex justify-start flex-wrap items-center h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition">Душанбе</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center" src="images/home/Душанбе.png" alt="moscow" width="720" height="405">
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-6">
-        <div class="w-[50%]"  data-aos="fade-up" data-aos-delay="500">
-          <div class="w-full h-[662px] rounded-[24px] overflow-hidden group">
-            <div class="bg-[#EDF3FF] w-full flex justify-start items-center flex-wrap h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition">Стамбул</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[600px] object-cover object-center" src="images/home/Стамбул.png" alt="moscow" width="1272" height="1920">
-          </div>
-        </div>
-        <div class="w-[50%]">
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
-            <div class="bg-[#EDF3FF] w-full flex justify-start items-center flex-wrap h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition">Бишкек</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center" src="images/home/Бишкек.png" alt="moscow" width="800" height="485">
-          </div>
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden mt-6 group" data-aos="fade-up" data-aos-delay="700">
-            <div class="bg-[#EDF3FF] w-full flex justify-start items-center flex-wrap h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-gray-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-gray-500 group-hover:text-white transition"></i>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition">Шарм-эль-Шейх </span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center" src="images/home/Шарм-эль-Шейх.png" alt="moscow" width="1920" height="1130">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="mt-16">
-  <div class="container">
-    <div class="flex justify-center items-center gap-10 flex-col lg:flex-row">
-      <div class=" w-full max-w-[532px]">
-        <h2 class="text-4xl text-gray font-bold mb-6 text-center lg:text-left">
-          Летайте надежными авиакомпаниями
-        </h2>
-        <h4 class="text-lg text-gray-700 text-center lg:text-left">
-          Мы сотрудничаем только с проверенными и надёжными авиаперевозчиками, которые обеспечивают высокий уровень комфорта и безопастности.
-        </h4>
-      </div>
-      <div class="flex gap-10 mt-[60px] lg:mt-0">
-        <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/logo-partner-uz-airways.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/газпром.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/airlines.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/роскосмос.svg" alt="logo-partner-uz-airways" width="160" height="40">
-          </div>
-        </div>
-        <div class="w-full md:w-[150px] h-[500px] mt-[-50px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/Ржд.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/air-arabia.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/полииметал.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/polish-airlines.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/centerumair.svg" alt="logo-partner-uz-airways" width="160" height="40">
-          </div>
-        </div>
-        <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/qatar.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/emirats.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/korean-air.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/china-soutern.svg" alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/fly-arystan.svg" alt="logo-partner-uz-airways" width="160" height="40">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="mt-16">
-  <div class="container">
-    <h3 class="text-[24px] md:text-[36px] text-gray mb-6 font-bold">Вопросы и ответы</h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="flex flex-col gap-6">
-        <div class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] bg-[#EDF8FF] relative" data-aos="fade-up">
-          <h3 class="text-[26px] text-gray w-full max-w-[160px] font-bold relative z-10 leading-[116%]">
-            Как купить у нас билет?
-          </h3>
-          <img src="images/home/quation-1.svg" class="absolute right-0 bottom-0" alt="quation-1" width="406" height="250">
-        </div>
-        <div class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] bg-[#EDF8FF] relative" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-[26px] text-gray w-full max-w-[180px] font-bold relative z-10 leading-[116%]">
-            Как оплатить заказ на Kettik?
-          </h3>
-          <img src="images/home/quation-2.svg" class="absolute right-[-20px] bottom-[-40px]" alt="quation-2.svg" width="406" height="250">
-        </div>
-      </div>
-      <div>
-        <div class="w-full h-[400px] sm:h-[500px] rounded-[24px] overflow-hidden p-[32px] bg-[#51B5FF] relative" data-aos="fade-up" data-aos-delay="400">
-          <h3 class="text-[26px] text-gray w-full font-bold relative z-10 leading-[116%]">
-            Как выбрать виакомпанию для перелёта?
-          </h3>
-          <img src="images/home/quation-3.svg" class="absolute right-0 bottom-[-20px] w-full" alt="quation-3" width="406" height="250">
-        </div>
-      </div>
-      <div>
-        <div class="w-full h-[412px] rounded-[24px] overflow-hidden p-[32px] bg-[#EDF8FF] relative" data-aos="fade-up" data-aos-delay="600">
-          <h3 class="text-[26px] text-gray w-full font-bold relative z-10 leading-[116%]">
-            Как купить у нас лаунж?
-          </h3>
-          <img src="images/home/quation-vector.svg" class="absolute right-0 top-[20%] w-full" alt="quation-3" width="406" height="250">
-          <img src="images/home/quation-4.svg" class="absolute left-[50%] bottom-5 transform translate-x-[-50%] w-[80%]" alt="quation-4" width="406" height="250">
-        </div>
-
-        <button class="btn w-full h-[64px] text-[18px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB] mt-6"  data-aos="fade" data-aos-delay="1000">Посмотреть все</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mt-16">
-  <div class="container">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden p-[16px_24px] sm:p-[32px] border border-[#FFE3A5] relative hover:bg-white transition" data-aos="fade-up" data-aos-delay="200">
-        <div class="hidden w-[220px] h-[220px] sm:flex justify-center items-center bg-white rounded-full absolute top-[-30%] right-[10px]">
-          <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60" class="mt-7">
-        </div>
-
-        <div class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-          <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60" class="w-[64px] h-auto block sm:hidden">
-          <h3 class="text-[18px] sm:text-[26px] font-bold text-gray">Оплата онлайн</h3>
-          <h4 class="text-[18px] text-gray hidden sm:block">Быстро и безопасно через наш сайт</h4>
-        </div>
-      </div>
-      <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden p-[16px_24px] sm:p-[32px] border border-[#FFE3A5] relative hover:bg-white transition" data-aos="fade-up" data-aos-delay="500">
-        <div class="hidden w-[220px] h-[220px] sm:flex justify-center items-center bg-white rounded-full absolute top-[-30%] right-[10px]">
-          <img src="images/home/beepul.svg" alt="Приложение Beepul" class="mt-7">
-        </div>
-
-        <div class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-          <img src="images/home/beepul.svg" alt="logo site" width="135" height="60" class="w-[64px] h-auto block sm:hidden">
-          <h3 class="text-[18px] sm:text-[26px] font-bold text-gray">Приложение Beepul</h3>
-          <h4 class="text-[18px] text-gray hidden sm:block">Платите через мобильное приложение</h4>
-        </div>
-      </div>
-      <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden p-[16px_24px] sm:p-[32px] border border-[#FFE3A5] relative hover:bg-white transition" data-aos="fade-up" data-aos-delay="800">
-        <div class="hidden w-[220px] h-[220px] sm:flex justify-center items-center bg-white rounded-full absolute top-[-30%] right-[10px]">
-          <img src="images/home/belline.svg" alt="Офисы Билайн" class="mt-7">
-        </div>
-
-        <div class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-          <img src="images/home/belline.svg" alt="logo site" width="135" height="60" class="w-[64px] h-auto block sm:hidden">
-          <h3 class="text-[18px] sm:text-[26px] font-bold text-gray">Офисы Билайн</h3>
-          <h4 class="text-[18px] text-gray hidden sm:block">Оплатите на месте в ближайшем офисе.</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mt-16 hidden lg:block">
-  <div class="container">
-    <div class="flex justify-start items-center">
-      <div class="w-[30%]" data-aos="fade">
-        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
-        <div class="w-full flex justify-center items-center mt-6">
-          <a href="#">
-            <img src="images/icons/tg.png" alt="tg icon" class="w-[160px] h-auto" width="768" height="768">
-          </a>
-        </div>
-      </div>
-      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative overflow-hidden">
-        <img class="absolute right-0 bottom-0" src="images/home/feedback-vector.svg" alt="Удобное время для звонка — выберите сами!" width="356" height="204">
-        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
-
-        <div class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] overflow-hidden rounded-[16px] relative h-[64px]">
-          <label class="w-full h-full">
-            <input class="w-full h-full pl-[24px]" type="text" placeholder="Имя">
-          </label>
-          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
-          <label class="w-full h-full">
-            <input class="w-full h-full pl-[24px]" type="text" placeholder="Номер телефона">
-          </label>
-          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
-          <label class="w-full h-full flex justify-between items-center pr-6">
-            <input class="w-full h-full pl-[24px]" type="text" placeholder="Удобное время">
-            <i class="icon-time-ok text-blue text-[24px]"></i>
-          </label>
-        </div>
-
-        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
-        
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="block lg:hidden mt-16">
-  <div class="container">
-    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
-      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
-      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
-    </div>
-    <div class="flex justify-center items-center flex-col mt-16">
-      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232" height="146">
-      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
-        Удобное время для звонка — выберите сами!
-      </h3>
-    </div>
-
-    <form action="/" method="post" class="mt-6">
-      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
-        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
-      </label>
-      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
-        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
-      </label>
-      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
-        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время">
-        <i class="icon-time-ok text-blue"></i>
-      </label>
-
-      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
-    </form>
-  </div>
-</section>
-
-
-
-<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
-  <div class="container pt-[49px] pb-16">
-    <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
-      <a href="/" class="block md:hidden mb-6">
-        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
-      </a>
-      <div class="w-full flex gap-[16px] md:gap-[32px] items-start lg:items-center flex-col lg:flex-row">
-        <a href="#" class="text-white text-[16px]">О сервисе</a>
-        <a href="#" class="text-white text-[16px]">Обратная связь</a>
-        <a href="tel:+998 20 007 007 0" class="text-white text-[18px] font-bold">+998 20 007 007 0</a>
-        <p class="text-white/70 text-[14px] flex sm:block justify-start items-start gap-2">
-          <span class="text-white text-[32px] mt-[-5px] sm:mt-0">007</span> Короткий номер для абонентов Билайн и OQ
+        <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
+          Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
         </p>
-      </div>
 
-      <div class="flex gap-[24px] justify-between items-start lg:items-center mt-6 lg:mt-0">
-        <a href="#" class="transition duration-300">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3080_77184)">
-              <path d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_3080_77184">
-                <rect width="24" height="24" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3080_77187)">
-              <path d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16.5 7.5V7.501" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_3080_77187">
-                <rect width="24" height="24" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3080_77190)">
-              <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_3080_77190">
-                <rect width="24" height="24" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3080_77193)">
-              <path d="M17 5H7C4.79086 5 3 6.79086 3 9V15C3 17.2091 4.79086 19 7 19H17C19.2091 19 21 17.2091 21 15V9C21 6.79086 19.2091 5 17 5Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M10 9L15 12L10 15V9Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_3080_77193">
-                <rect width="24" height="24" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </div>
-    </div>
+        <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
+          <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
+        </div>
 
-    <div class="w-full h-[1px] bg-[#fff]/30 my-8 md:my-16"></div>
+        <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
+          <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
+          Продолжить через Google
+        </button>
 
-    <div class="flex justify-between items-start sm:items-center flex-col-reverse sm:flex-row">
-      <span class="text-[14px] text-white/70">© 2024 Kettik. All rights reserved.</span>
+        <p class="text-[14px] text-[#687076]">
+          Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
+        </p>
 
-      <a href="/" class="hidden md:block">
-        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
-      </a>
-
-      <div class="flex justify-end items-center gap-8 mb-6 sm:mb-0">
-        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
-          Оферта
-        </a>
-        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
-          Пожелания
-        </a>
       </div>
     </div>
   </div>
-</footer>
+  <div class="modal" id="forgot-password">
+    <div class="modal-fon" data-modalid="#forgot-password"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#forgot-password">+</div>
 
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с инструкцией по восстановлению пароля
+        </p>
 
+        <label class="def-input mb-4">
+          <i class="icon-mail"></i>
+          <input type="email" required placeholder="Ваш Email">
+        </label>
 
-<div class="modal" id="sign-in">
-  <div class="modal-fon" data-modalid="#sign-in"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#sign-in">+</div>
+        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить</button>
+        <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#sign-in" data-modalid="#forgot-password">Назад</button>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Вход</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Получайте лучшие предложения, сохраняйте данные для удобного бронирования и собирайте все свои поездки в одном месте
-      </p>
-
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <label class="def-input mb-2 pl-2">
-        <input type="password" required placeholder="Введите пароль">
-        <i class="icon-eye !text-[#889096] mr-2 cursor-pointer"></i>
-      </label>
-
-      <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#forgot-password">Забыли пароль?</span>
-      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
-
-      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля</button>
-
-      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
-      </p>
-
-      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-        <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
       </div>
-
-      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-        Продолжить через Google
-      </button>
-
-      <p class="text-[14px] text-[#687076]">
-        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
-      </p>
-
     </div>
   </div>
-</div>
+  <div class="modal" id="forgot-password-waiting">
+    <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
 
-<div class="modal" id="sign-in-not-pass">
-  <div class="modal-fon" data-modalid="#sign-in-not-pass"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          На ваш электронный адрес:
+        </p>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Вход без пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Укажите почту или телефон, с которым вы покупали билет, чтобы получить код для быстрого входа в аккаунт
-      </p>
+        <label class="def-input mb-4 disabled">
+          <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+        </label>
 
-      <label class="def-input mb-4">
-        <input type="text" required placeholder="Ваш Телефон или Email">
-      </label>
+        <p class="text-[16px] leading-[130%] mb-4">
+          отправлено письмо с инструкцией по восстановлению пароля. <br><br>
+          Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
+        </p>
 
-
-      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Получить код</button>
-
-      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in" data-modalid="#sign-in-not-pass">Войти с паролем</button>
-
-      <p class="flex justify-start items-center py-3 text-nowrap tracking-[-0.5px]">
-        Нет профиля? <span class="text-blue block ml-1 target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#register">Зарегистрируйся, это легко</span>
-      </p>
-
-      <div class="w-full h-[1px] relative bg-[#DFE3E6] my-6">
-        <span class="absolute left-[50%] top-[-10px] px-2 bg-white transform translate-x-[-50%] text-[14px] text-[#889096]">или</span>
-      </div>
-
-      <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] flex justify-center items-center mb-2">
-        <img class="mr-2" src="images/icons/google.svg" alt="google" width="16" height="16">
-        Продолжить через Google
-      </button>
-
-      <p class="text-[14px] text-[#687076]">
-        Использование учетной записи регулируется настоящими Условиями использования. Ваши персональные данные будут обработаны в соответствии с нашей Политикой конфиденциальности.
-      </p>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="modal" id="forgot-password">
-  <div class="modal-fon" data-modalid="#forgot-password"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#forgot-password">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Впишите адрес электронной почты, который был указан при регистрации. На него вам будет направлено письмо с инструкцией по восстановлению пароля
-      </p>
-
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#forgot-password" data-targetid="#forgot-password-waiting">Продолжить</button>
-      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#sign-in" data-modalid="#forgot-password">Назад</button>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="forgot-password-waiting">
-  <div class="modal-fon" data-modalid="#forgot-password-waiting"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        На ваш электронный адрес:
-      </p>
-
-      <label class="def-input mb-4 disabled">
-        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-      </label>
-
-      <p class="text-[16px] leading-[130%] mb-4">
-        отправлено письмо с инструкцией по восстановлению пароля. <br><br>
-        Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
-      </p>
-
-      <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password" data-modalid="#forgot-password-waiting">
+        <span class="mb-4 text-blue block close-modals target-modal cursor-pointer" data-targetid="#forgot-password" data-modalid="#forgot-password-waiting">
         Изменить данные
       </span>
 
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#forgot-password-waiting">OK</button>
+        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#forgot-password-waiting">OK</button>
 
+      </div>
     </div>
   </div>
-</div>
 
 
+  <div class="modal" id="register">
+    <div class="modal-fon" data-modalid="#register"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#register">+</div>
 
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
 
-<div class="modal" id="register">
-  <div class="modal-fon" data-modalid="#register"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#register">+</div>
+        <label class="def-input mb-4">
+          <i class="icon-mail"></i>
+          <input type="email" required placeholder="Ваш Email">
+        </label>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#register" data-targetid="#register-success">Далее</button>
 
-      <label class="def-input mb-4">
-        <i class="icon-mail"></i>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
+        <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
+          Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
+        </p>
 
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-modalid="#register" data-targetid="#register-success">Далее</button>
-
-      <p class="flex justify-start items-center pt-2 text-nowrap tracking-[-0.5px]">
-        Уже зарегистрированы? <a href="#" class="text-blue block ml-1">Войти в аккаунт</a>
-      </p>
-
+      </div>
     </div>
   </div>
-</div>
+  <div class="modal" id="register-success">
+    <div class="modal-fon" data-modalid="#register-success"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#register-success">+</div>
 
-<div class="modal" id="register-success">
-  <div class="modal-fon" data-modalid="#register-success"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#register-success">+</div>
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Мы отправили временный код на почту:
+        </p>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Зарегистрироваться сейчас</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Мы отправили временный код на почту:
-      </p>
-
-      <label class="def-input mb-4 disabled">
-        <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
-      </label>
-      <p class="text-[16px] leading-[130%] mb-3">
-        Введите код, полученный в письме
-      </p>
-      <label class="def-input mb-4 pl-1">
-        <input type="text" required placeholder="Введите код из х символов" class="pl-2">
-      </label>
-      <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить</button>
-      <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#register" data-modalid="#register-success">Назад</button>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal-thanks">
-  <div class="modal-fon" data-modalid="#rmodal-thanks"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-thanks">+</div>
-
-    <div class="modal-content">
-
-      <div class="flex justify-start items-start">
-        <div class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
-          <i class="icon-check text-white"></i>
-        </div>
+        <label class="def-input mb-4 disabled">
+          <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
+        </label>
         <p class="text-[16px] leading-[130%] mb-3">
           Введите код, полученный в письме
         </p>
+        <label class="def-input mb-4 pl-1">
+          <input type="text" required placeholder="Введите код из х символов" class="pl-2">
+        </label>
+        <a href="#" class="mb-4 text-blue block">Отправить код повторно</a>
+
+        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 target-modal close-modals" data-targetid="#modal-thanks" data-modalid="#register-success">Подтвердить</button>
+        <button class="bg-transparent w-full h-[44px] text-[16px] font-bold rounded-[12px] mb-2 close-modals target-modal" data-targetid="#register" data-modalid="#register-success">Назад</button>
+
       </div>
-
-      <label class="def-input mb-4">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_3066_45058)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z" fill="#1150CB"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_3066_45058">
-              <rect width="20" height="20" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <input type="email" required placeholder="Ваш Email">
-      </label>
-
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">Подтвердить</button>
     </div>
   </div>
+  <div class="modal" id="modal-thanks">
+    <div class="modal-fon" data-modalid="#rmodal-thanks"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#modal-thanks">+</div>
+
+      <div class="modal-content">
+
+        <div class="flex justify-start items-start">
+          <div class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
+            <i class="icon-check text-white"></i>
+          </div>
+          <p class="text-[16px] leading-[130%] mb-3">
+            Введите код, полученный в письме
+          </p>
+        </div>
+
+        <label class="def-input mb-4">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3066_45058)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 2.49998C5.85778 2.49998 2.49992 5.85784 2.49992 9.99998C2.49992 11.8509 3.17043 13.5453 4.28181 14.8534C5.0455 13.9258 6.20298 13.3333 7.49992 13.3333H12.4999C13.7969 13.3333 14.9543 13.9258 15.718 14.8534C16.8294 13.5453 17.4999 11.8509 17.4999 9.99998C17.4999 5.85784 14.1421 2.49998 9.99992 2.49998ZM16.1418 16.8049C17.9993 15.1273 19.1666 12.7 19.1666 9.99998C19.1666 4.93737 15.0625 0.833313 9.99992 0.833313C4.93731 0.833313 0.833252 4.93737 0.833252 9.99998C0.833252 12.7 2.00058 15.1273 3.85808 16.8049C3.86774 16.814 3.87765 16.8229 3.88779 16.8316C5.50967 18.2837 7.65168 19.1666 9.99992 19.1666C12.3482 19.1666 14.4902 18.2837 16.112 16.8316C16.1222 16.8229 16.1321 16.814 16.1418 16.8049ZM14.5004 16.0001C14.0438 15.3921 13.3171 15 12.4999 15H7.49992C6.68278 15 5.95603 15.3921 5.4994 16.0001C6.75298 16.9419 8.31128 17.5 9.99992 17.5C11.6886 17.5 13.2469 16.9419 14.5004 16.0001ZM9.99992 5.41665C8.61921 5.41665 7.49992 6.53593 7.49992 7.91665C7.49992 9.29736 8.61921 10.4166 9.99992 10.4166C11.3806 10.4166 12.4999 9.29736 12.4999 7.91665C12.4999 6.53593 11.3806 5.41665 9.99992 5.41665ZM5.83325 7.91665C5.83325 5.61546 7.69873 3.74998 9.99992 3.74998C12.3011 3.74998 14.1666 5.61546 14.1666 7.91665C14.1666 10.2178 12.3011 12.0833 9.99992 12.0833C7.69873 12.0833 5.83325 10.2178 5.83325 7.91665Z" fill="#1150CB"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3066_45058">
+                <rect width="20" height="20" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <input type="email" required placeholder="Ваш Email">
+        </label>
+
+        <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="modal-select-currency">
+    <div class="modal-fon" data-modalid="#modal-select-currency"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#modal-select-currency">+</div>
+
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Выберите предпочтительные параметры валюты интерфейса
+        </p>
+
+        <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
+        <label>
+          <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+            <option value="" selected>RUB - Российский рубль</option>
+            <option value="" selected>UZS - Узбекский сом</option>
+            <option value="" selected>USD - Доллар США</option>
+          </select>
+        </label>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-select-language">
+    <div class="modal-fon" data-modalid="#modal-select-language"></div>
+    <div class="modal-body max-w-[396px]">
+      <div class="modal-close" data-modalid="#modal-select-language">+</div>
+
+      <div class="modal-content">
+        <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Выберите предпочтительные параметры языка интерфейса
+        </p>
+
+        <h4 class="text-[18px] font-bold mb-2">Язык</h4>
+        <label>
+          <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+            <option value="" selected>Русский</option>
+            <option value="">O'zbek</option>
+            <option value="">English</option>
+          </select>
+        </label>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
-<div class="modal" id="modal-select-currency">
-  <div class="modal-fon" data-modalid="#modal-select-currency"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-currency">+</div>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры валюты интерфейса
-      </p>
 
-      <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>RUB - Российский рубль</option>
-          <option value="" selected>UZS - Узбекский сом</option>
-          <option value="" selected>USD - Доллар США</option>
-        </select>
-      </label>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal-select-language">
-  <div class="modal-fon" data-modalid="#modal-select-language"></div>
-  <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-language">+</div>
-
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры языка интерфейса
-      </p>
-
-      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>Русский</option>
-          <option value="">O'zbek</option>
-          <option value="">English</option>
-        </select>
-      </label>
-
-    </div>
-  </div>
-</div>
 
 
 <script src="js/script.js"></script>

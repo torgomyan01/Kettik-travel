@@ -284,6 +284,12 @@ a {
   }
 }
 
+.scroll-bottom-none{
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
 // NAVBAR
 @import "components/navbar";
 
