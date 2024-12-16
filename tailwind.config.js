@@ -15,6 +15,9 @@ module.exports = {
       },
     },
   },
+  variants: {
+    display: ['show'],
+  },
   plugins: [
     function ({ addComponents }) {
       const flexClasses = {
@@ -23,15 +26,30 @@ module.exports = {
           justifyContent: 'space-between',
           alignItems: 'center',
         },
+        '.flex-jsb-s': {
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'start',
+        },
         '.flex-js-c': {
           display: 'flex',
           justifyContent: 'flex-start',
           alignItems: 'center',
         },
+        '.flex-js-s': {
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'start',
+        },
         '.flex-jc-c': {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+        },
+        '.flex-jc-s': {
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'start',
         },
         '.flex-jse-c': {
           display: 'flex',

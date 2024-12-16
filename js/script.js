@@ -49,7 +49,20 @@ const modalClose = $('.modal-close');
 const closeModals = $('.close-modals');
 const modalFon = $('.modal-fon');
 
+const modalChangeRate = $('.open-modal-rate');
+const modalChangeRateClose = $('.change-rate .icon-close');
+
 targetsModals.forEach((target) => {
+  target.addEventListener('click', e => {
+    const getModalId = target.dataset.targetid;
+
+    if(getModalId){
+      $el(getModalId).classList.add('show');
+    }
+  })
+})
+
+modalChangeRate.forEach((target) => {
   target.addEventListener('click', e => {
     const getModalId = target.dataset.targetid;
 
@@ -64,6 +77,8 @@ closeModals.forEach((modalId) => closeModal(modalId))
 
 modalFon.forEach((modalId) => closeModal(modalId))
 
+modalChangeRateClose.forEach((modalId) => closeModal(modalId))
+
 
 function closeModal(modalId){
   modalId.addEventListener('click', e => {
@@ -75,6 +90,23 @@ function closeModal(modalId){
   })
 }
 
+
+
+
+const mobileFilter = $('.mobile-filter');
+const mobileFilterClose = $('.mobile-filter-body .close');
+
+mobileFilterClose.forEach((modalId) => closeModal(modalId))
+
+mobileFilter.forEach((target) => {
+  target.addEventListener('click', e => {
+    const getModalId = target.dataset.targetid;
+
+    if(getModalId){
+      $el(getModalId).classList.add('show');
+    }
+  })
+})
 
 
 // FOR MOBILE MENU
