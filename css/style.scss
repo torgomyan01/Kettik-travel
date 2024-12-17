@@ -82,7 +82,7 @@ a {
   input:checked ~ span{
     background-color: #FF592C;
     &:after{
-      left: 11px;
+      left: 12px;
     }
   }
 
@@ -169,6 +169,10 @@ a {
     background-color: #fff;
     border-radius: 24px;
     position: relative;
+    
+    @media  (max-width: 768px) {
+      width: calc(100% - 20px);
+    }
   }
 
   &-close{
@@ -183,6 +187,10 @@ a {
   &-content{
     width: 100%;
     padding: 40px;
+
+    @media (max-width: 768px){
+      padding: 40px 20px 20px;
+    }
   }
 
 }
@@ -289,6 +297,11 @@ a {
     height: 0;
   }
 }
+.scroll-right-none{
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
 
 
 .change-rate{
@@ -327,6 +340,14 @@ a {
     background-color: #EDF3FF;
     .container{
       padding: 24px;
+
+      &::-webkit-scrollbar{
+        width: 0;
+      }
+
+      @media (max-width: 768px){
+        padding: 16px;
+      }
     }
   }
 }

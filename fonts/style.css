@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5sdgaj');
-  src:  url('fonts/icomoon.eot?5sdgaj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5sdgaj') format('truetype'),
-    url('fonts/icomoon.woff?5sdgaj') format('woff'),
-    url('fonts/icomoon.svg?5sdgaj#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9uufs8');
+  src:  url('fonts/icomoon.eot?9uufs8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9uufs8') format('truetype'),
+    url('fonts/icomoon.woff?9uufs8') format('woff'),
+    url('fonts/icomoon.svg?9uufs8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -48,6 +48,9 @@
 }
 .icon-mail:before {
   content: "\e904";
+}
+.icon-arrow-thin-left:before {
+  content: "\e90c";
 }
 .icon-exclamation-solid:before {
   content: "\e908";
