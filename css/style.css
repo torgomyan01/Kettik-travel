@@ -38,21 +38,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media (max-width: 992px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  html {
-    font-size: 13px;
-  }
-}
 .container {
   width: 100%;
   max-width: 1440px;
@@ -323,6 +308,55 @@ a {
 
 .border-b {
   border-bottom: 1px solid #D7DBDF;
+}
+
+.def-checkout-input {
+  position: relative;
+  width: 100%;
+}
+.def-checkout-input.active input {
+  border: 1px solid #484747;
+}
+.def-checkout-input.active .def-checkout-input-pl {
+  opacity: 0;
+}
+.def-checkout-input input {
+  width: 100%;
+  display: block;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #C1C8CD;
+  background: transparent;
+  padding-left: 12px;
+  transition: 0.3s;
+  z-index: 1;
+  position: relative;
+}
+.def-checkout-input-pl {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 100%;
+  min-height: 52px;
+  white-space: nowrap;
+  color: #7E868C;
+  font-size: 16px;
+  overflow-x: auto;
+  padding: 0 12px 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.def-checkout-input-pl::-webkit-scrollbar {
+  height: 3px;
+  cursor: pointer;
+}
+.def-checkout-input-pl::-webkit-scrollbar-thumb {
+  background: #3FC431;
+  border-radius: 10px;
+}
+.def-checkout-input-pl::-webkit-scrollbar-thumb:hover {
+  background: #2a8f20;
 }
 
 .nav {

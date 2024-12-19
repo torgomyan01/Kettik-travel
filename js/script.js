@@ -118,3 +118,37 @@ mobileMenu?.addEventListener('click', e => {
   mobileMenu.classList.toggle('active')
   console.log('ss')
 })
+
+
+
+const input = document.getElementById('animated-placeholder-input');
+const placeholder = document.querySelector('.placeholder');
+
+// Hide placeholder on focus and restore it on blur if the input is empty
+input?.addEventListener('focus', () => {
+  placeholder.style.display = 'none';
+});
+
+input?.addEventListener('blur', () => {
+  if (!input.value) {
+    placeholder.style.display = 'block';
+  }
+});
+
+
+
+const defCheckoutInput = $('.def-checkout-input input');
+
+defCheckoutInput.forEach((input) => {
+  input.addEventListener('focus', e => {
+    input.parentElement.parentElement.classList.add('active');
+  })
+  input.addEventListener('blur', e => {
+
+    if(input.value === ''){
+      input.parentElement.parentElement.classList.remove('active');
+    }
+
+  })
+})
+
