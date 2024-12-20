@@ -69,79 +69,249 @@
 <section class="bg-[#EDF3FF] pb-[100px] mb-[-50px]">
   <div class="container pt-[24px]">
     <div class="w-full flex-jsb-s gap-6">
-      <div class="w-[calc(100%_-_420px)]">
+      <div class="w-full lg:w-[calc(100%_-_420px)]">
         <div class="w-full bg-white rounded-[24px]">
-          <h3 class="font-bold text-[22px] p-[16px_24px] border-b">Авиабилеты</h3>
+          <h3 class="font-bold text-[18px] lg:text-[22px] p-[16px_24px] border-b">Авиабилеты</h3>
 
           <div class="p-[0_24px]">
-            <div class="flex-jsb-s pb-6 border-b pt-4">
-              <div class="flex-js-s">
-                <img src="images/icons/air-top.svg" alt="air-top" width="24" height="24" class="mr-4">
-                <div>
-                  <div class="flex-js-c font-bold">
-                    Ташкент
-                    <i class="icon-arrow-right mx-2 text-[#C1C8CD] text-[10px]"></i>
-                    Москва
+            <div class="group ">
+              <div class="flex-jsb-s pb-6 border-b pt-4">
+                <div class="flex-js-s">
+                  <img src="images/icons/air-top.svg" alt="air-top" width="24" height="24" class="mr-4">
+                  <div>
+                    <div class="flex-js-c font-bold">
+                      Ташкент
+                      <i class="icon-arrow-right mx-2 text-[#C1C8CD] text-[10px]"></i>
+                      Москва
+                    </div>
+                    <p class="text-[14px]">прямой</p>
+                    <div class="flex-js-c text-[14px]">
+                      пт 25 окт
+                      —
+                      пт 25 окт
+                      <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                      4ч 25 мин
+                      <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                      <img src="images/icons/user.svg" alt="user" width="16" height="16" class="mr-1 mb-1">
+                      4
+                    </div>
                   </div>
-                  <p class="text-[14px]">прямой</p>
-                  <div class="flex-js-c text-[14px]">
-                    пт 25 окт
-                    —
-                    пт 25 окт
-                    <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-                    4ч 25 мин
-                    <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-                    <img src="images/icons/user.svg" alt="user" width="16" height="16" class="mr-1 mb-1">
-                    4
+                </div>
+                <div class="mileage-cards group">
+                  <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c cursor-pointer transition transform group-[.active]:-rotate-180">
+                    <i class="icon-down text-[8px] mt-[2px]"></i>
                   </div>
                 </div>
               </div>
-              <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c cursor-pointer">
-                <i class="icon-down text-[8px] mt-[2px]"></i>
+              <div class="w-full pt-4 mileage-cards-body hidden">
+                <div class="flex-jsb-s">
+                  <div class="flex-js-s">
+                    <img src="images/icons/uz-air.svg" alt="uz air" width="32" height="32" class="w-[24px] h-[24px] mr-4 mt-1">
+                    <div>
+                      <h4 class="text-[16px]">UZBEKISTAN AIR</h4>
+                      <div class="text-[14px] text-[#687076] flex-js-c">
+                        рейс SU 1871
+                        <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                        Airbus A320 neo
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-jc-c text-[14px]">
+                    <svg class="mr-[6px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3081_84741)">
+                        <path d="M10.6667 6.66691H13.3334C13.687 6.66691 14.0261 6.80739 14.2762 7.05744C14.5262 7.30748 14.6667 7.64662 14.6667 8.00024C14.6667 8.35387 14.5262 8.69301 14.2762 8.94305C14.0261 9.1931 13.687 9.33358 13.3334 9.33358H10.6667L8.00004 14.0002H6.00004L7.33337 9.33358H4.66671L3.33337 10.6669H1.33337L2.66671 8.00024L1.33337 5.33358H3.33337L4.66671 6.66691H7.33337L6.00004 2.00024H8.00004L10.6667 6.66691Z" stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3081_84741">
+                          <rect width="16" height="16" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    4ч 25 мин
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="w-[1px] h-[calc(100%_-_66px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
+
+                  <div class="flex-js-s mt-6 mb-4 relative z-10">
+                    <div class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-1"></div>
+                    <div class="w-[80px]">
+                      <h4 class="font-bold">18:30</h4>
+                      <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Ташкент</h4>
+                      <p class="text-[14px] text-[#687076]">
+                        Международный аэропорт Ташкент имени Ислама Каримова
+                      </p>
+                      <p class="text-[14px] text-[#687076]">
+                        Терминал А
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex-js-s mt-6 mb-4 relative z-10">
+                    <div class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-2"></div>
+                    <div class="w-[80px]">
+                      <h4 class="font-bold">20:55</h4>
+                      <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Ташкент</h4>
+                      <p class="text-[14px] text-[#687076]">
+                        Международный аэропорт Ташкент имени Ислама Каримова
+                      </p>
+                      <p class="text-[14px] text-[#687076]">
+                        Терминал А
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full bg-[#F8F9FA] p-[10px] rounded-[8px] text-[14px] flex-js-c gap-[8px]">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3081_84793)">
+                      <path d="M8.00004 10.6668V8.00016M8.00004 5.3335H8.00671M14.6667 8.00016C14.6667 11.6821 11.6819 14.6668 8.00004 14.6668C4.31814 14.6668 1.33337 11.6821 1.33337 8.00016C1.33337 4.31826 4.31814 1.3335 8.00004 1.3335C11.6819 1.3335 14.6667 4.31826 14.6667 8.00016Z" stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3081_84793">
+                        <rect width="16" height="16" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Местное время отправления и прибытия
+                </div>
+
+                <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
               </div>
             </div>
-            <div class="flex-jsb-s pb-6 pt-4">
-              <div class="flex-js-s">
-                <img src="images/icons/air-top.svg" alt="air-top" width="24" height="24" class="mr-4">
-                <div>
-                  <div class="flex-js-c font-bold">
-                    Ташкент
-                    <i class="icon-arrow-right mx-2 text-[#C1C8CD] text-[10px]"></i>
-                    Москва
+            <div>
+              <div class="flex-jsb-s pb-6 pt-4">
+                <div class="flex-js-s">
+                  <img src="images/icons/air-top.svg" alt="air-top" width="24" height="24" class="mr-4">
+                  <div>
+                    <div class="flex-js-c font-bold">
+                      Ташкент
+                      <i class="icon-arrow-right mx-2 text-[#C1C8CD] text-[10px]"></i>
+                      Москва
+                    </div>
+                    <p class="text-[14px]">прямой</p>
+                    <div class="flex-js-c text-[14px]">
+                      сб 26 окт
+                      —
+                      вс 27 окт
+                      <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                      3 ч 05 мин
+                      <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                      <img src="images/icons/user.svg" alt="user" width="16" height="16" class="mr-1 mb-1">
+                      4
+                    </div>
                   </div>
-                  <p class="text-[14px]">прямой</p>
-                  <div class="flex-js-c text-[14px]">
-                    сб 26 окт
-                    —
-                    вс 27 окт
-                    <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-                    3 ч 05 мин
-                    <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-                    <img src="images/icons/user.svg" alt="user" width="16" height="16" class="mr-1 mb-1">
-                    4
+                </div>
+                <div class="mileage-cards group">
+                  <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c cursor-pointer transition transform group-[.active]:-rotate-180">
+                    <i class="icon-down text-[8px] mt-[2px]"></i>
                   </div>
                 </div>
               </div>
-              <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c cursor-pointer">
-                <i class="icon-down text-[8px] mt-[2px]"></i>
+              <div class="w-full pt-4 mileage-cards-body hidden">
+                <div class="flex-jsb-s">
+                  <div class="flex-js-s">
+                    <img src="images/icons/uz-air.svg" alt="uz air" width="32" height="32" class="w-[24px] h-[24px] mr-4 mt-1">
+                    <div>
+                      <h4 class="text-[16px]">UZBEKISTAN AIR</h4>
+                      <div class="text-[14px] text-[#687076] flex-js-c">
+                        рейс SU 1871
+                        <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                        Airbus A320 neo
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-jc-c text-[14px]">
+                    <svg class="mr-[6px]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3081_84741)">
+                        <path d="M10.6667 6.66691H13.3334C13.687 6.66691 14.0261 6.80739 14.2762 7.05744C14.5262 7.30748 14.6667 7.64662 14.6667 8.00024C14.6667 8.35387 14.5262 8.69301 14.2762 8.94305C14.0261 9.1931 13.687 9.33358 13.3334 9.33358H10.6667L8.00004 14.0002H6.00004L7.33337 9.33358H4.66671L3.33337 10.6669H1.33337L2.66671 8.00024L1.33337 5.33358H3.33337L4.66671 6.66691H7.33337L6.00004 2.00024H8.00004L10.6667 6.66691Z" stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3081_84741">
+                          <rect width="16" height="16" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    4ч 25 мин
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="w-[1px] h-[calc(100%_-_66px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
+
+                  <div class="flex-js-s mt-6 mb-4 relative z-10">
+                    <div class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-1"></div>
+                    <div class="w-[80px]">
+                      <h4 class="font-bold">18:30</h4>
+                      <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Ташкент</h4>
+                      <p class="text-[14px] text-[#687076]">
+                        Международный аэропорт Ташкент имени Ислама Каримова
+                      </p>
+                      <p class="text-[14px] text-[#687076]">
+                        Терминал А
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex-js-s mt-6 mb-4 relative z-10">
+                    <div class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-2"></div>
+                    <div class="w-[80px]">
+                      <h4 class="font-bold">20:55</h4>
+                      <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Ташкент</h4>
+                      <p class="text-[14px] text-[#687076]">
+                        Международный аэропорт Ташкент имени Ислама Каримова
+                      </p>
+                      <p class="text-[14px] text-[#687076]">
+                        Терминал А
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full bg-[#F8F9FA] p-[10px] rounded-[8px] text-[14px] flex-js-c gap-[8px]">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3081_84793)">
+                      <path d="M8.00004 10.6668V8.00016M8.00004 5.3335H8.00671M14.6667 8.00016C14.6667 11.6821 11.6819 14.6668 8.00004 14.6668C4.31814 14.6668 1.33337 11.6821 1.33337 8.00016C1.33337 4.31826 4.31814 1.3335 8.00004 1.3335C11.6819 1.3335 14.6667 4.31826 14.6667 8.00016Z" stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3081_84793">
+                        <rect width="16" height="16" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Местное время отправления и прибытия
+                </div>
+
+                <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full  bg-white rounded-[24px] mt-6">
-          <div class="p-[16px_24px] border-b flex-jsb-c">
-            <h3 class="font-bold text-[22px]">Выбор тарифа</h3>
+        <div class="w-full md:bg-white rounded-[24px] mt-6">
+          <div class="p-[16px_24px] pb-[40px] md:pb-4 bg-white md:bg-transparent md:border-b flex-jsb-s sm:flex-jsb-c flex-col sm:flex-row rounded-[24px_24px_0_0] md:rounded-0">
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Выбор тарифа</h3>
             <div class="text-[14px] text-blue flex-je-c cursor-pointer target-modal" data-targetid="#info-rate">
               Полная информация о тарифе
               <img src="images/icons/warning-rounded.svg" alt="warning-rounded.svg" width="20" height="20" class="ml-2">
             </div>
           </div>
 
-          <div class="p-[0_24px] grid grid-cols-3 gap-[8px] py-6">
-            <div class="rounded-[24px] border border-[#3FC431] p-4 flex-jsb-s flex-col">
+          <div class="md:p-[0_24px] grid grid-cols-1 xl:grid-cols-3 gap-[8px] py-6 mt-[-50px] md:mt-0">
+            <div class="rounded-[24px] bg-white border border-[#3FC431] p-4 flex-jsb-s flex-col">
               <div>
-                <div class="mb-[40px] h-[245px]">
+                <div class="md:mb-[40px] h-[245px]">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-top-gray.svg" alt="air-top-gray" width="24" height="24" class="mr-[8px]">
                     Вылет
@@ -169,7 +339,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="">
+                <div class="hidden md:block">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-down-gray.svg" alt="icon" width="24" height="24" class="mr-[8px]">
                     Обратный рейс
@@ -202,9 +372,9 @@
                 Выбран
               </button>
             </div>
-            <div class="rounded-[24px] border border-[#C4D7FF] p-4 flex-jsb-s flex-col">
+            <div class="rounded-[24px] bg-white border border-[#C4D7FF] p-4 flex-jsb-s flex-col">
               <div>
-                <div class="mb-[40px]  h-[245px]">
+                <div class="md:mb-[40px]  h-[245px]">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-top-gray.svg" alt="air-top-gray" width="24" height="24" class="mr-[8px]">
                     Вылет
@@ -233,7 +403,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="">
+                <div class="hidden md:block">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-down-gray.svg" alt="icon" width="24" height="24" class="mr-[8px]">
                     Обратный рейс
@@ -267,9 +437,9 @@
                 Выбрать
               </button>
             </div>
-            <div class="rounded-[24px] border border-[#C4D7FF] p-4 flex-jsb-s flex-col">
+            <div class="rounded-[24px] bg-white border border-[#C4D7FF] p-4 flex-jsb-s flex-col">
               <div>
-                <div class="mb-[40px]  h-[245px]">
+                <div class="md:mb-[40px]  h-[245px]">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-top-gray.svg" alt="air-top-gray" width="24" height="24" class="mr-[8px]">
                     Вылет
@@ -300,7 +470,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="">
+                <div class="hidden md:block">
                   <div class="flex-js-c font-bold mb-1">
                     <img src="images/icons/air-down-gray.svg" alt="icon" width="24" height="24" class="mr-[8px]">
                     Обратный рейс
@@ -341,12 +511,12 @@
 
         <div class="w-full  bg-white rounded-[24px] mt-6">
           <div class="p-[16px_24px] border-b flex-js-c">
-            <h3 class="font-bold text-[22px]">Главный пассажир</h3>
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Главный пассажир</h3>
             <span class="text-gray ml-2 mt-1">Взрослый (старше 18 лет)</span>
           </div>
 
           <div class="p-6">
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
                 <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
                 <label>
@@ -376,7 +546,7 @@
                 </label>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -421,7 +591,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -476,8 +646,8 @@
 
             <h3 class="text-[18px] font-bold mt-6 mb-4">Мильные карты</h3>
 
-            <div class="flex-js-s gap-6 mb-6">
-              <label class="block w-[calc((100%_/_3)_-_17px)]">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+              <label class="block w-full xl:w-[calc((100%_/_3)_-_17px)]">
                 <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="">Выбрать авиакомпанию</option>
@@ -488,7 +658,7 @@
                   <option value="">Национальное удостоверение личности</option>
                 </select>
               </label>
-              <div class="def-checkout-input w-[calc((100%_/_3)_-_17px)]">
+              <div class="def-checkout-input xl:w-[calc((100%_/_3)_-_17px)]">
                 <span class="text-[14px] mb-1 text-gray">Номер карты</span>
                 <label>
                   <input type="text">
@@ -502,12 +672,12 @@
 
         <div class="w-full  bg-white rounded-[24px] mt-6">
           <div class="p-[16px_24px] border-b flex-js-c">
-            <h3 class="font-bold text-[22px]">Второй пассажир</h3>
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Второй пассажир</h3>
             <span class="text-gray ml-2 mt-1">Взрослый (старше 18 лет)</span>
           </div>
 
           <div class="p-6">
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
                 <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
                 <label>
@@ -537,7 +707,7 @@
                 </label>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -582,7 +752,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -644,8 +814,8 @@
               </span>
             </div>
 
-            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
-              <label class="block w-[calc(100%_/_3)]">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 hidden mileage-cards-body">
+              <label class="block w-full xl:w-[calc(100%_/_3)]">
                 <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="">Выбрать авиакомпанию</option>
@@ -656,7 +826,7 @@
                   <option value="">Национальное удостоверение личности</option>
                 </select>
               </label>
-              <div class="def-checkout-input w-[calc(100%_/_3)]">
+              <div class="def-checkout-input xl:w-[calc(100%_/_3)]">
                 <span class="text-[14px] mb-1 text-gray">Номер карты</span>
                 <label>
                   <input type="text">
@@ -670,12 +840,12 @@
 
         <div class="w-full  bg-white rounded-[24px] mt-6">
           <div class="p-[16px_24px] border-b flex-js-c">
-            <h3 class="font-bold text-[22px]">Третий пассажир</h3>
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Третий пассажир</h3>
             <span class="text-gray ml-2 mt-1">Взрослый (старше 18 лет)</span>
           </div>
 
           <div class="p-6">
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
                 <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
                 <label>
@@ -705,7 +875,7 @@
                 </label>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -750,7 +920,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -812,8 +982,8 @@
               </span>
             </div>
 
-            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
-              <label class="block w-[calc(100%_/_3)]">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 hidden mileage-cards-body">
+              <label class="block w-full xl:w-[calc(100%_/_3)]">
                 <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="">Выбрать авиакомпанию</option>
@@ -824,7 +994,7 @@
                   <option value="">Национальное удостоверение личности</option>
                 </select>
               </label>
-              <div class="def-checkout-input w-[calc(100%_/_3)]">
+              <div class="def-checkout-input xl:w-[calc(100%_/_3)]">
                 <span class="text-[14px] mb-1 text-gray">Номер карты</span>
                 <label>
                   <input type="text">
@@ -838,12 +1008,12 @@
 
         <div class="w-full  bg-white rounded-[24px] mt-6">
           <div class="p-[16px_24px] border-b flex-js-c">
-            <h3 class="font-bold text-[22px]">Четвертый пассажир</h3>
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Четвертый пассажир</h3>
             <span class="text-gray ml-2 mt-1">Мледенец до 2 лет (без места)</span>
           </div>
 
           <div class="p-6">
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
                 <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
                 <label>
@@ -873,7 +1043,7 @@
                 </label>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -918,7 +1088,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-js-s gap-6 mb-6">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -980,8 +1150,8 @@
               </span>
             </div>
 
-            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
-              <label class="block w-[calc(100%_/_3)]">
+            <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 hidden mileage-cards-body">
+              <label class="block w-full xl:w-[calc(100%_/_3)]">
                 <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="">Выбрать авиакомпанию</option>
@@ -992,7 +1162,7 @@
                   <option value="">Национальное удостоверение личности</option>
                 </select>
               </label>
-              <div class="def-checkout-input w-[calc(100%_/_3)]">
+              <div class="def-checkout-input xl:w-[calc(100%_/_3)]">
                 <span class="text-[14px] mb-1 text-gray">Номер карты</span>
                 <label>
                   <input type="text">
@@ -1003,9 +1173,10 @@
           </div>
 
         </div>
+
         <div class="w-full  bg-white rounded-[24px] mt-6">
           <div class="p-[16px_24px] border-b flex-js-c">
-            <h3 class="font-bold text-[22px]">Контактные данные</h3>
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Контактные данные</h3>
           </div>
 
           <div class="p-6">
@@ -1013,7 +1184,7 @@
               Уже зарегистрированы? <a href="#" class="text-blue">Войдите</a> в личный кабинет, и ваши данные подставятся автоматически —  покупка займет всего пару минут!
             </p>
 
-            <div class="flex-jsb-c mt-6 gap-6">
+            <div class="flex-jsb-c flex-col xl:flex-row mt-6 gap-6">
               <div class="def-checkout-input">
                 <span class="text-[14px] mb-1 text-gray">Email <i class="text-[red]">*</i></span>
                 <label>
@@ -1038,7 +1209,7 @@
 
         </div>
       </div>
-      <div class="w-[420px] bg-white rounded-[24px] h-[fit-content] sticky top-[24px]">
+      <div class="w-[420px] bg-white rounded-[24px] h-[fit-content] sticky top-[24px] hidden lg:block">
         <h3 class="text-[22px] p-[16px_24px] border-b font-bold">Оплата</h3>
         <div class="p-4">
           <h5 class="text-[16px] leading-[140%] mb-6">
@@ -1055,14 +1226,14 @@
           </div>
 
           <label class="flex-js-s">
-            <input type="checkbox" width="20" height="20" checked class="min-w-[20px] h-[20px] mt-2 me-2">
+            <input type="checkbox" width="20" height="20" id="go-checkout" class="min-w-[20px] h-[20px] mt-2 me-2">
             <span class="text-[16px] text-[#687076]">
               Нажимая <span class="font-bold">Продолжить</span>, вы соглашаетесь с тем, что прочитали и принимаете
               <a href="#" class="text-blue">условия использованиия, политику конфеденциальности</a> и правила применения тарифов
             </span>
           </label>
 
-          <button class="w-full mt-9 bg-orange h-[64px] text-[18px] text-white rounded-[12px]">
+          <button class="w-full mt-9 bg-orange h-[64px] text-[18px] text-white rounded-[12px] disabled:bg-[#DFE3E6] btn-go-checkout" disabled>
             Продолжить
           </button>
         </div>
@@ -1246,6 +1417,16 @@
   </div>
 </footer>
 
+
+<div class="flex lg:hidden w-full bg-gradient-to-b from-transparent to-white fixed bottom-0 left-0 p-4 gap-[8px] z-10">
+  <button class="w-full h-[44px] bg-orange text-white text-[15px] font-bold rounded-[8px] flex-jsb-c px-4">
+    9 000 000 000 UZS
+
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52827 3.5286C5.78862 3.26825 6.21073 3.26825 6.47108 3.5286L10.4711 7.5286C10.7314 7.78895 10.7314 8.21106 10.4711 8.47141L6.47108 12.4714C6.21073 12.7318 5.78862 12.7318 5.52827 12.4714C5.26792 12.2111 5.26792 11.7889 5.52827 11.5286L9.05687 8L5.52827 4.47141C5.26792 4.21106 5.26792 3.78895 5.52827 3.5286Z" fill="white"/>
+    </svg>
+  </button>
+</div>
 
 <div class="modal" id="info-rate">
   <div class="modal-fon" data-modalid="#info-rate"></div>

@@ -167,3 +167,20 @@ mileageCards.forEach((mileageCard, index) => {
   })
 })
 
+
+
+
+const goCheckout = $el('#go-checkout');
+const BtnGoCheckout = $el('.btn-go-checkout');
+
+
+goCheckout.addEventListener('input', function(){
+  if(this.checked){
+    BtnGoCheckout.removeAttribute('disabled')
+  } else {
+    BtnGoCheckout.setAttribute('disabled', 'true')
+  }
+})
+
+
+
