@@ -386,11 +386,11 @@
               </label>
               <div class="w-full block">
                 <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
-                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
-                  <div class="w-[50%] h-full border-r border-[#C1C8CD] flex-jc-c font-bold cursor-pointer">
+                <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+                  <div class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
                     Мужской
                   </div>
-                  <div class="w-[50%] h-full flex-jc-c cursor-pointer">
+                  <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#C1C8CD] rounded-[0_8px_8px_0]">
                     Женский
                   </div>
                 </div>
@@ -477,6 +477,174 @@
             <h3 class="text-[18px] font-bold mt-6 mb-4">Мильные карты</h3>
 
             <div class="flex-js-s gap-6 mb-6">
+              <label class="block w-[calc((100%_/_3)_-_17px)]">
+                <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="">Выбрать авиакомпанию</option>
+                  <option value="">Национальный паспорт</option>
+                  <option value="">Свидетельство о рождении</option>
+                  <option value="">Дипломатический паспорт</option>
+                  <option value="">Вид на жительство</option>
+                  <option value="">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input w-[calc((100%_/_3)_-_17px)]">
+                <span class="text-[14px] mb-1 text-gray">Номер карты</span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Номер карты</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full  bg-white rounded-[24px] mt-6">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[22px]">Второй пассажир</h3>
+            <span class="text-gray ml-2 mt-1">Взрослый (старше 18 лет)</span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex-js-s gap-6 mb-6">
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Имя</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Отчество</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Узбекистан</option>
+                  <option value="Узбекистан">Руссия</option>
+                </select>
+              </label>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+                  <div class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
+                    Мужской
+                  </div>
+                  <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#C1C8CD] rounded-[0_8px_8px_0]">
+                    Женский
+                  </div>
+                </div>
+              </div>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Заграничный паспорт</option>
+                  <option value="Узбекистан">Национальный паспорт</option>
+                  <option value="Узбекистан">Свидетельство о рождении</option>
+                  <option value="Узбекистан">Дипломатический паспорт</option>
+                  <option value="Узбекистан">Вид на жительство</option>
+                  <option value="Узбекистан">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Серия и номер документа</span>
+                </label>
+              </div>
+              <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span>Действителен до <i class="text-[red]">*</i></span>
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Без срока действия
+                </label>
+              </span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-js-c mt-6 mb-4">
+              <h3 class="text-[18px] font-bold">Мильные карты</h3>
+
+              <span class="ml-3 text-blue cursor-pointer mileage-cards group flex-js-c">
+                Развернуть
+                <i class="icon-down text-[7px] transform text-blue group group-[.active]:-rotate-180 group-[.active]:mb-1 ml-1 mt-1"></i>
+              </span>
+            </div>
+
+            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
               <label class="block w-[calc(100%_/_3)]">
                 <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
@@ -494,6 +662,376 @@
                   <input type="text">
                   <span class="def-checkout-input-pl">Номер карты</span>
                 </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full  bg-white rounded-[24px] mt-6">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[22px]">Третий пассажир</h3>
+            <span class="text-gray ml-2 mt-1">Взрослый (старше 18 лет)</span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex-js-s gap-6 mb-6">
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Имя</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Отчество</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Узбекистан</option>
+                  <option value="Узбекистан">Руссия</option>
+                </select>
+              </label>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+                  <div class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
+                    Мужской
+                  </div>
+                  <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#C1C8CD] rounded-[0_8px_8px_0]">
+                    Женский
+                  </div>
+                </div>
+              </div>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Заграничный паспорт</option>
+                  <option value="Узбекистан">Национальный паспорт</option>
+                  <option value="Узбекистан">Свидетельство о рождении</option>
+                  <option value="Узбекистан">Дипломатический паспорт</option>
+                  <option value="Узбекистан">Вид на жительство</option>
+                  <option value="Узбекистан">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Серия и номер документа</span>
+                </label>
+              </div>
+              <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span>Действителен до <i class="text-[red]">*</i></span>
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Без срока действия
+                </label>
+              </span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-js-c mt-6 mb-4">
+              <h3 class="text-[18px] font-bold">Мильные карты</h3>
+
+              <span class="ml-3 text-blue cursor-pointer mileage-cards group flex-js-c">
+                Развернуть
+                <i class="icon-down text-[7px] transform text-blue group group-[.active]:-rotate-180 group-[.active]:mb-1 ml-1 mt-1"></i>
+              </span>
+            </div>
+
+            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
+              <label class="block w-[calc(100%_/_3)]">
+                <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="">Выбрать авиакомпанию</option>
+                  <option value="">Национальный паспорт</option>
+                  <option value="">Свидетельство о рождении</option>
+                  <option value="">Дипломатический паспорт</option>
+                  <option value="">Вид на жительство</option>
+                  <option value="">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input w-[calc(100%_/_3)]">
+                <span class="text-[14px] mb-1 text-gray">Номер карты</span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Номер карты</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full  bg-white rounded-[24px] mt-6">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[22px]">Четвертый пассажир</h3>
+            <span class="text-gray ml-2 mt-1">Мледенец до 2 лет (без места)</span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex-js-s gap-6 mb-6">
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Имя</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+                </label>
+              </div>
+              <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Отчество</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Узбекистан</option>
+                  <option value="Узбекистан">Руссия</option>
+                </select>
+              </label>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+                  <div class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
+                    Мужской
+                  </div>
+                  <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#C1C8CD] rounded-[0_8px_8px_0]">
+                    Женский
+                  </div>
+                </div>
+              </div>
+              <div class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-js-s gap-6 mb-6">
+              <label class="w-full block">
+                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="Узбекистан">Заграничный паспорт</option>
+                  <option value="Узбекистан">Национальный паспорт</option>
+                  <option value="Узбекистан">Свидетельство о рождении</option>
+                  <option value="Узбекистан">Дипломатический паспорт</option>
+                  <option value="Узбекистан">Вид на жительство</option>
+                  <option value="Узбекистан">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Серия и номер документа</span>
+                </label>
+              </div>
+              <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span>Действителен до <i class="text-[red]">*</i></span>
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Без срока действия
+                </label>
+              </span>
+                <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+                  <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                    ДД
+                  </div>
+                  <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                    <option value="">Выберете месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                  </select>
+                  <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                    ГГГГ
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-js-c mt-6 mb-4">
+              <h3 class="text-[18px] font-bold">Мильные карты</h3>
+
+              <span class="ml-3 text-blue cursor-pointer mileage-cards group flex-js-c">
+                Развернуть
+                <i class="icon-down text-[7px] transform text-blue group group-[.active]:-rotate-180 group-[.active]:mb-1 ml-1 mt-1"></i>
+              </span>
+            </div>
+
+            <div class="flex-js-s gap-6 mb-6 hidden mileage-cards-body">
+              <label class="block w-[calc(100%_/_3)]">
+                <span class="block text-[14px] mb-1 text-gray">Авиакомпания </span>
+                <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+                  <option value="">Выбрать авиакомпанию</option>
+                  <option value="">Национальный паспорт</option>
+                  <option value="">Свидетельство о рождении</option>
+                  <option value="">Дипломатический паспорт</option>
+                  <option value="">Вид на жительство</option>
+                  <option value="">Национальное удостоверение личности</option>
+                </select>
+              </label>
+              <div class="def-checkout-input w-[calc(100%_/_3)]">
+                <span class="text-[14px] mb-1 text-gray">Номер карты</span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Номер карты</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-full  bg-white rounded-[24px] mt-6">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[22px]">Контактные данные</h3>
+          </div>
+
+          <div class="p-6">
+            <p>
+              Уже зарегистрированы? <a href="#" class="text-blue">Войдите</a> в личный кабинет, и ваши данные подставятся автоматически —  покупка займет всего пару минут!
+            </p>
+
+            <div class="flex-jsb-c mt-6 gap-6">
+              <div class="def-checkout-input">
+                <span class="text-[14px] mb-1 text-gray">Email <i class="text-[red]">*</i></span>
+                <label>
+                  <input type="text">
+                  <span class="def-checkout-input-pl">Email</span>
+                </label>
+              </div>
+
+              <div class="w-full block ">
+                <span class="text-[14px] mb-1 text-gray">Номер телефона <i class="text-[red]">*</i></span>
+                <div class="flex-js-c border border-[#C1C8CD] rounded-[8px] h-[44px] overflow-hidden">
+                  <div class="flex-jsb-c pl-2 w-[115px] border-r border-[#C1C8CD] pr-2 cursor-pointer">
+                    <img src="images/icons/uzbekistan-fleg.svg" alt="uzbekistan-fleg" width="20" height="20">
+                    +998
+                    <i class="icon-down text-[6px]"></i>
+                  </div>
+                  <input type="text" class="w-full pl-2 h-full" value="99 9999 9999" placeholder="Номер телефона">
+                </div>
               </div>
             </div>
           </div>
@@ -533,6 +1071,78 @@
   </div>
 </section>
 
+
+
+<section class="mt-16 hidden lg:block bg-white pt-[24px] pb-[40px]">
+  <div class="container">
+    <div class="flex justify-start items-center">
+      <div class="w-[30%] aos-init aos-animate" data-aos="fade">
+        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
+        <div class="w-full flex justify-center items-center mt-6">
+          <a href="#">
+            <img src="images/icons/tg.png" alt="tg icon" class="w-[160px] h-auto" width="768" height="768">
+          </a>
+        </div>
+      </div>
+      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative overflow-hidden">
+        <img class="absolute right-0 bottom-0" src="images/home/feedback-vector.svg"
+             alt="Удобное время для звонка — выберите сами!" width="356" height="204">
+        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
+
+        <div
+            class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] overflow-hidden rounded-[16px] relative h-[64px]">
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Имя">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Номер телефона">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full flex justify-between items-center pr-6">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Удобное время">
+            <i class="icon-time-ok text-blue text-[24px]"></i>
+          </label>
+        </div>
+
+        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block lg:hidden mt-16 bg-white pb-[48px]">
+  <div class="container">
+    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-16">
+      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232"
+           height="146">
+      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+        Удобное время для звонка — выберите сами!
+      </h3>
+    </div>
+
+    <form action="/" method="post" class="mt-6">
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время">
+        <i class="icon-time-ok text-blue"></i>
+      </label>
+
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+    </form>
+  </div>
+</section>
 
 <footer class="bg-blue rounded-[32px_32px_0_0]">
   <div class="container pt-[49px] pb-16">

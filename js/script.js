@@ -152,3 +152,18 @@ defCheckoutInput.forEach((input) => {
   })
 })
 
+const mileageCards = $('.mileage-cards');
+const mileageCardsBody = $('.mileage-cards-body');
+
+
+mileageCards.forEach((mileageCard, index) => {
+  mileageCard.addEventListener('click', e => {
+    if(mileageCard.classList.contains('active')) {
+      mileageCardsBody[index].classList.add('hidden');
+    } else {
+      mileageCardsBody[index].classList.remove('hidden');
+    }
+    mileageCard.classList.toggle('active');
+  })
+})
+
