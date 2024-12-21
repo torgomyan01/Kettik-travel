@@ -267,3 +267,61 @@ cardBack.forEach((backBtn) => {
   })
 })
 
+
+const inputs = $(".num-input");
+const codeError = $el("#code-error");
+const btnSuccess = $el(".btn-success");
+
+inputs.forEach((input, index) => {
+  input.addEventListener("keydown", (e) => {
+    if (
+      e.key !== "Backspace" &&
+      e.key !== "ArrowLeft" &&
+      e.key !== "ArrowRight" &&
+      !/^\d$/.test(e.key)
+    ) {
+      e.preventDefault();
+    }
+
+    if (e.key === "Backspace" && input.value === "" && index > 0) {
+      inputs[index - 1].focus();
+    }
+  });
+
+  input.addEventListener("input", (e) => {
+    const value = e.target.value;
+
+    if (/^\d$/.test(value)) {
+      if (index + 1 < inputs.length) {
+        inputs[index + 1].focus();
+      }
+    } else {
+      e.target.value = "";
+    }
+  });
+
+  input.addEventListener("keyup", () => {
+    checkInputs();
+  });
+});
+
+
+function checkInputs() {
+  const values = Array.from(inputs).map(input => input.value).join("");
+
+  const allFilled = Array.from(inputs).every(input => input.value !== "");
+
+  if (allFilled) {
+    if (values === "112233") {
+      codeError.classList.add('hidden');
+      btnSuccess.removeAttribute('disabled');
+    } else {
+      codeError.classList.remove('hidden');
+      btnSuccess.setAttribute('disabled', 'true');
+    }
+  } else {
+    console.log('please write all input')
+    codeError.classList.add('hidden');
+    btnSuccess.setAttribute('disabled', 'true');
+  }
+}
