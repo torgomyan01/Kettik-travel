@@ -174,7 +174,7 @@ const goCheckout = $el('#go-checkout');
 const BtnGoCheckout = $el('.btn-go-checkout');
 
 
-goCheckout.addEventListener('input', function(){
+goCheckout?.addEventListener('input', function(){
   if(this.checked){
     BtnGoCheckout.removeAttribute('disabled')
   } else {
@@ -183,4 +183,87 @@ goCheckout.addEventListener('input', function(){
 })
 
 
+
+const defTooltip = $('.def-tooltip');
+let idT = '';
+
+defTooltip.forEach((tooltipId) => {
+  tooltipId.addEventListener('mouseenter', e => {
+    idT = `and_tooltip_${Math.floor(Math.random() * 5000)}`;
+    const getElemPos = tooltipId.getBoundingClientRect();
+    const getTitle = tooltipId.title;
+
+    const contentType = tooltipId.dataset.img;
+
+    document.body.insertAdjacentHTML('beforeend', `
+      <div id="${idT}" class="def-tooltip-body" style="left: ${getElemPos.x}px; top: ${getElemPos.y}px">
+          ${PrintBodyTooltip(contentType, getTitle)}
+      </div>
+    `)
+  })
+
+  tooltipId.addEventListener('mouseout', e => {
+    const getElem = $el(`#${idT}`);
+    getElem.outerHTML = '';
+  })
+})
+
+
+function PrintBodyTooltip(type, content){
+  if(type){
+    return `<img src="${content}" alt="Image tooltip" />`
+  } else {
+    return content
+  }
+}
+
+
+
+const selectCardCheckout = $('[name="select-card"]');
+const cardSolid = $el('#card-solid');
+const buy = $el('.buy');
+const cardBack = $('.card-back');
+const checkoutCardsBody = $('.checkout-cards-body');
+
+selectCardCheckout.forEach((input) => {
+  input.addEventListener('change', e => {
+    const status = e.target.value;
+
+    selectCardCheckout.forEach((el) => {
+      $el(`#${el.value}`).classList.add('hidden');
+      el.parentElement.classList.add('hidden');
+      el.classList.add('hidden');
+    })
+
+    cardBack.forEach((el) => {
+      el.classList.remove('hidden');
+    })
+
+    $el(`#${status}`).classList.remove('hidden');
+    input.parentElement.classList.remove('hidden');
+    cardSolid.classList.add('hidden')
+    buy.removeAttribute('disabled');
+
+  })
+})
+
+cardBack.forEach((backBtn) => {
+  backBtn.addEventListener('click', e => {
+    cardSolid.classList.remove('hidden')
+    checkoutCardsBody.forEach((el) => {
+      el.classList.add('hidden');
+    })
+
+    selectCardCheckout.forEach((el) => {
+      el.parentElement.classList.remove('hidden');
+      el.classList.remove('hidden');
+    })
+
+    cardBack.forEach((el) => {
+      el.classList.add('hidden');
+    })
+
+    buy.setAttribute('disabled', 'true');
+  })
+})
 

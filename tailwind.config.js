@@ -10,9 +10,13 @@ module.exports = {
         'blue': '#1150CB',
         'orange': '#FF7A00',
         'purple': '#6A8AFF',
+        'borderColor': '#D7DBDF',
       },
       transitionDuration: {
         DEFAULT: '300ms',
+      },
+      borderColor: {
+        DEFAULT: "#D7DBDF"
       },
     },
   },

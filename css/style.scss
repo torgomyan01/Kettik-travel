@@ -423,6 +423,36 @@ a {
 }
 
 
+.def-tooltip-body{
+  position: fixed;
+  background: #687076;
+  color: #fff;
+  z-index: 10;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transform: translate(-10px, calc(-100% - 10px));
+  max-width: 223px;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+
+  &:after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: calc(100% - 1px);
+    width: 16px;
+    height: 9px;
+    background: #6a7076;
+    clip-path: polygon(50% 100%, 1% 0, 100% 0);
+  }
+
+
+}
+
 
 // NAVBAR
 @import "components/navbar";
