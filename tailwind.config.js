@@ -1,4 +1,48 @@
+const flexClasses = {
+  '.flex-jsb-c': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  '.flex-jsb-s': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'start',
+  },
+  '.flex-js-c': {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  '.flex-js-s': {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'start',
+  },
+  '.flex-jc-c': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  '.flex-jc-s': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'start',
+  },
+  '.flex-jse-c': {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  '.flex-je-c': {
+    display: 'flex',
+    justifyContent: 'e',
+    alignItems: 'center',
+  },
+}
+
 module.exports = {
+  mode: 'jit',
   content: ["./*.html"],
   theme: {
     extend: {
@@ -25,49 +69,6 @@ module.exports = {
   },
   plugins: [
     function ({ addComponents }) {
-      const flexClasses = {
-        '.flex-jsb-c': {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        },
-        '.flex-jsb-s': {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'start',
-        },
-        '.flex-js-c': {
-          display: 'flex',
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-        },
-        '.flex-js-s': {
-          display: 'flex',
-          justifyContent: 'flex-start',
-          alignItems: 'start',
-        },
-        '.flex-jc-c': {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        },
-        '.flex-jc-s': {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'start',
-        },
-        '.flex-jse-c': {
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-        },
-        '.flex-je-c': {
-          display: 'flex',
-          justifyContent: 'e',
-          alignItems: 'center',
-        },
-        // Կարող եք ավելացնել ավելի շատ դասեր ըստ պահանջի
-      };
 
       addComponents(flexClasses);
     },

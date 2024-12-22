@@ -152,6 +152,12 @@ defCheckoutInput.forEach((input) => {
   })
 })
 
+defCheckoutInput.forEach((input) => {
+  if(input.value){
+    input.parentElement.parentElement.classList.add('active');
+  }
+})
+
 const mileageCards = $('.mileage-cards');
 const mileageCardsBody = $('.mileage-cards-body');
 
@@ -365,11 +371,21 @@ setTimeout(() => {
   waiting?.classList.add('hidden');
 }, 3000)
 
-sendCode.addEventListener('click', (e) => {
+sendCode?.addEventListener('click', (e) => {
   success.classList.remove('hidden')
   codeWriting.classList.add('hidden')
 })
 
 
+const navUserProfile = $el('.nav-user-profile');
+const navUserProfileBody = $el('#nav-user-profile-body');
+const navUserProfileFon = $el('#nav-user-profile-fon');
 
+navUserProfile?.addEventListener('click',openCloseNavUserMenu)
+navUserProfileFon?.addEventListener('click',openCloseNavUserMenu)
+
+function openCloseNavUserMenu(){
+  navUserProfileBody.classList.toggle('hidden')
+  navUserProfileFon.classList.toggle('hidden')
+}
 

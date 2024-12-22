@@ -109,10 +109,10 @@ a {
   top: 0;
   left: 0;
   z-index: 10000;
-  visibility: hidden;
+  display: none;
 }
 .modal.show {
-  visibility: visible;
+  display: flex;
 }
 .modal-fon {
   width: 100%;
@@ -384,6 +384,10 @@ a {
   height: 9px;
   background: #6a7076;
   clip-path: polygon(50% 100%, 1% 0, 100% 0);
+}
+
+.box-shadow-user {
+  box-shadow: 0px 2px 4px 0px rgba(17, 80, 203, 0.1), 0px 24px 60px 0px rgba(17, 80, 203, 0.05), 0px 12px 24px 0px rgba(17, 80, 203, 0.05);
 }
 
 .nav {
