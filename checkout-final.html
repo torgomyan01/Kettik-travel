@@ -16,7 +16,7 @@
 </head>
 <body class="bg-[#EDF3FF]">
 
-<nav class="nav flex justify-between items-center ">
+<nav class="nav flex justify-between items-center">
   <div class="container flex justify-between items-center">
     <a href="/index.html" class="nav-logo">
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
@@ -65,9 +65,54 @@
   </div>
 </nav>
 
-<div class="w-full h-screen flex-jc-s mt-[46px]">
-  <div class="w-full max-w-[456px] bg-white rounded-[24px] p-[40px]">
-    <h3 class="text-[22px] font-bold">Подтвердите операцию</h3>
+<div class="w-full h-screen flex-js-c flex-col md:mt-[46px] top-0 fixed md:relative" id="waiting">
+  <div class="flex-jsb-c w-full h-[57px] bg-white px-6 border-b flex md:hidden">
+    <i class="icon-arrow-right inline-block transform rotate-180 text-[15px]"></i>
+    <h3 class="text-[18px] font-bold text-center">Код подтвержден успешно</h3>
+    <i class="icon-close text-[20px]"></i>
+  </div>
+  <div class="w-full md:max-w-[456px] bg-white md:rounded-[24px] p-[20px] md:p-[40px] pt-[40px] h-full md:h-auto">
+
+    <div class="flex-js-c md:flex-js-s flex-col md:flex-row">
+      <div class="loading mr-3 mt-2">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18.3335" width="3.33333" height="10" rx="1.66667" fill="#E6E8EB"/>
+          <rect x="28.2495" y="14.1074" width="3.33333" height="10" rx="1.66667" transform="rotate(-135 28.2495 14.1074)" fill="#E6E8EB"/>
+          <rect x="30" y="21.6666" width="3.33333" height="10" rx="1.66667" transform="rotate(-90 30 21.6666)" fill="#E6E8EB"/>
+          <rect x="25.8926" y="28.2496" width="3.33333" height="10" rx="1.66667" transform="rotate(-45 25.8926 28.2496)" fill="#E6E8EB"/>
+          <rect x="18.3335" y="30" width="3.33333" height="10" rx="1.66667" fill="#E6E8EB"/>
+          <rect x="7.03613" y="35.3207" width="3.33333" height="10" rx="1.66667" transform="rotate(-135 7.03613 35.3207)" fill="#E6E8EB"/>
+          <rect y="21.6666" width="3.33333" height="10" rx="1.66667" transform="rotate(-90 0 21.6666)" fill="#E6E8EB"/>
+          <rect x="4.6792" y="7.03638" width="3.33333" height="10" rx="1.66667" transform="rotate(-45 4.6792 7.03638)" fill="#E6E8EB"/>
+        </svg>
+      </div>
+      <div>
+        <h3 class="text-[22px] font-bold text-center md:text-left hidden md:block">Код подтвержден успешно</h3>
+        <p class="mb-2 text-center md:text-left">Мы проверяем вашу карту, это может занять несколько секунд </p>
+        <p class="text-[14px] text-gray text-center md:text-left">
+          Если с платежом возникнут проблемы, мы сообщим вам об этом
+        </p>
+
+        <a href="checkout-step-3.html" class="hidden md:block">
+          <button class="mt-6 bg-[#ECEEF0] h-[44px] rounded-[8px] text-[#889096] px-4">
+            <i class="icon-arrow-right inline-block transform rotate-180 text-[#889096] mr-2"></i>
+            Назад
+          </button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="w-full h-screen flex-js-c flex-col md:mt-[46px] hidden top-0 fixed md:relative" id="code-writing">
+  <div class="flex-jsb-c w-full h-[57px] bg-white px-6 border-b flex md:hidden">
+    <i class="icon-arrow-right inline-block transform rotate-180 text-[15px]"></i>
+    <h3 class="text-[18px] font-bold text-center">Подтвердите операцию</h3>
+    <i class="icon-close text-[20px]"></i>
+  </div>
+  <div class="w-full md:max-w-[456px] bg-white md:rounded-[24px] p-[20px] md:p-[40px] pt-[40px] h-full md:h-auto">
+    <h3 class="text-[22px] font-bold hidden md:block">Подтвердите операцию</h3>
     <p class="mb-2">Введите код, отправленный на ваш номер </p>
 
     <div class="w-full h-[44px] rounded-[8px] bg-[#EDF3FF] font-bold text-[16px] flex-js-c px-4 mb-2">
@@ -77,9 +122,10 @@
       Не получили код? Запросите снова или выберите другой способ оплаты
     </p>
 
-    <form action="/">
+<!--    THIS HAVE FORM -->
+    <div>
       <div class="mt-6 flex-jsb-c gap-[8px]">
-        <input type="text" maxlength="1" class="w-full h-[56px] border rounded-[8px] transition text-center focus:border-purple num-input">
+        <input type="text" maxlength="1" class="w-full h-[56px] border rounded-[8px] transition text-center focus:border- purple num-input">
         <input type="text" maxlength="1" class="w-full h-[56px] border rounded-[8px] transition text-center focus:border-purple num-input">
         <input type="text" maxlength="1" class="w-full h-[56px] border rounded-[8px] transition text-center focus:border-purple num-input">
         <input type="text" maxlength="1" class="w-full h-[56px] border rounded-[8px] transition text-center focus:border-purple num-input">
@@ -88,15 +134,38 @@
       </div>
       <p class="text-[#C61208] text-[12px] mt-1 hidden" id="code-error">Неверный код. Попробуйте снова</p>
 
-      <button class="w-full bg-orange h-[40px] text-[15px] text-white rounded-[12px] mt-14 disabled:bg-[#ECEEF0] disabled:text-[#889096] btn-success" disabled>
+      <button id="send-code" class="w-full bg-orange h-[40px] text-[15px] text-white rounded-[12px] mt-4 sm:mt-14 disabled:bg-[#ECEEF0] disabled:text-[#889096] btn-success" disabled>
         Подтвердить
       </button>
-    </form>
+    </div>
 
     <div class="text-[15px] mt-6 text-center">
       Отправить код повторно через
       <span class="text-blue">00:60</span>
     </div>
+  </div>
+</div>
+
+<div class="w-full h-screen flex-js-c flex-col md:mt-[46px] hidden top-0 fixed md:relative" id="success">
+  <div class="flex-jsb-c w-full h-[57px] bg-white px-6 border-b flex md:hidden">
+    <i class="icon-arrow-right inline-block transform rotate-180 text-[15px]"></i>
+    <h3 class="text-[18px] font-bold text-center">Оплата успешно завершена</h3>
+    <i class="icon-close text-[20px]"></i>
+  </div>
+  <div class="w-full md:max-w-[456px] bg-white md:rounded-[24px] p-[20px] md:p-[40px] pt-[40px] h-full md:h-auto">
+
+    <div class="flex-jc-c md:flex-js-s flex-col md:flex-row">
+      <img src="images/icons/green-check-max.svg" alt="check icon" width="40" height="40" class="md:mr-3 mt-2">
+      <div>
+        <h3 class="text-[22px] font-bold text-center md:text-left hidden md:block">Оплата успешно завершена!</h3>
+        <p class="mb-2 text-center md:text-left">
+          Ваша оплата была успешно проведена
+        </p>
+
+        <button class="w-full bg-orange h-[40px] text-[15px] text-white rounded-[12px] mt-6">Забрать квитанцию </button>
+      </div>
+    </div>
+
   </div>
 </div>
 

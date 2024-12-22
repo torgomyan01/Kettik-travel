@@ -318,10 +318,58 @@ function checkInputs() {
     } else {
       codeError.classList.remove('hidden');
       btnSuccess.setAttribute('disabled', 'true');
+      inputs.forEach((_input) => {
+        _input.style.borderColor = 'red';
+      })
     }
   } else {
     console.log('please write all input')
     codeError.classList.add('hidden');
     btnSuccess.setAttribute('disabled', 'true');
+    inputs.forEach((_input) => {
+      _input.style.borderColor = '#6A8AFF';
+    })
   }
 }
+
+const svgLoading = $('.loading svg');
+
+svgLoading.forEach((svg) => {
+  let activeCount = 0;
+  const rects = svg.querySelectorAll('rect');
+  setInterval(() => {
+    rects.forEach((rect) => {
+      rect.setAttribute('fill', '#E6E8EB');
+    })
+    rects[activeCount].setAttribute('fill', '#1150CB');
+    rects[activeCount].style.transition = '0.2s';
+    if(rects[activeCount - 1]){
+      rects[activeCount - 1].style.transition = '0.8s';
+    }
+    activeCount += 1;
+    if(activeCount === rects.length) {
+      activeCount = 0;
+    }
+  }, 130)
+})
+
+
+const codeWriting = $el("#code-writing");
+const waiting = $el("#waiting");
+const sendCode = $el("#send-code");
+const success = $el("#success");
+
+
+setTimeout(() => {
+  codeWriting?.classList.remove('hidden');
+  waiting?.classList.add('hidden');
+}, 3000)
+
+sendCode.addEventListener('click', (e) => {
+  success.classList.remove('hidden')
+  codeWriting.classList.add('hidden')
+})
+
+
+
+
