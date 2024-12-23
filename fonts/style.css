@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9uufs8');
-  src:  url('fonts/icomoon.eot?9uufs8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9uufs8') format('truetype'),
-    url('fonts/icomoon.woff?9uufs8') format('woff'),
-    url('fonts/icomoon.svg?9uufs8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6h9ovt');
+  src:  url('fonts/icomoon.eot?6h9ovt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6h9ovt') format('truetype'),
+    url('fonts/icomoon.woff?6h9ovt') format('woff'),
+    url('fonts/icomoon.svg?6h9ovt#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,11 +34,29 @@
 .icon-filter:before {
   content: "\e90b";
 }
+.icon-arrow_drop_down:before {
+  content: "\e912";
+}
+.icon-download:before {
+  content: "\e911";
+}
 .icon-clear:before {
   content: "\e906";
 }
 .icon-close:before {
   content: "\e906";
+}
+.icon-clock:before {
+  content: "\e910";
+}
+.icon-time:before {
+  content: "\e90f";
+}
+.icon-chevron-right:before {
+  content: "\e90d";
+}
+.icon-chevron-left:before {
+  content: "\e90e";
 }
 .icon-check:before {
   content: "\e901";
