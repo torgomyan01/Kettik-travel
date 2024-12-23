@@ -389,3 +389,18 @@ function openCloseNavUserMenu(){
   navUserProfileFon.classList.toggle('hidden')
 }
 
+
+
+const addDocModal = $('.add-doc-modal');
+
+addDocModal.forEach((doc) => {
+  const _btn = doc.querySelector('button');
+  doc.querySelector('.example').classList.remove('hidden');
+  const example = `${doc.querySelector('.example').outerHTML}`;
+
+  doc.querySelector('.example').outerHTML = '';
+
+  _btn.addEventListener('click', (e) => {
+    doc.insertAdjacentHTML('afterbegin', example)
+  })
+})

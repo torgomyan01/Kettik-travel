@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="fonts/style.css">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <script src="js/aos.js"></script>
+  <title>Route Details</title>
+</head>
+<body>
+
+<nav class="nav flex justify-between items-center border-b">
+  <div class="container flex justify-between items-center">
+    <a href="/index.html" class="nav-logo">
+      <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
+    </a>
+
+    <div class="mobile-menu-board flex md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="justify-between gap-10 hidden md:flex">
+      <div class="text-black-800 cursor-pointer flex items-center ">
+        Авиабилеты
+        <i class="icon-down ms-2 text-[8px]"></i>
+      </div>
+      <div class="flex justify-center items-center cursor-pointer target-modal" data-targetid="#modal-select-language">
+        <img src="images/ru-flag.png" alt="ru flag to change language site" width="24"
+             height="24" class="rounded-full me-2">
+        UZS
+      </div>
+      <div
+          class="relative">
+        <div
+            class="nav-user-profile relative z-10 bg-white cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
+          <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                  fill="#1150CB"/>
+          </svg>
+          Артем Архангельский
+        </div>
+
+        <div
+            class="z-10 w-[240px] bg-white rounded-[8px] box-shadow-user absolute left-0 top-[calc(100%_+_5px)] p-[8px] hidden"
+            id="nav-user-profile-body">
+          <div class="px-[8px] flex-js-c gap-[8px] border-b py-2">
+            <img src="images/user-avatar-menu.svg" alt="avatr" width="32" height="32">
+            <div>
+              <h4 class="text-[16px]">Артем Архангельский</h4>
+              <h5 class="text-[12px] text-gray">artyom.arkhangelsky@gmail.com</h5>
+            </div>
+          </div>
+          <a href="orders.html">
+            <div
+                class="px-[8px] flex-js-c gap-[8px] transition hover:bg-[#FFFAEC] rounded-[8px] py-2 mt-1 cursor-pointer">
+              <img src="images/icons/orders.svg" alt="orders icon" width="24" height="24">
+              <h4 class="text-[16px]">Заказы</h4>
+            </div>
+          </a>
+          <div
+              class="px-[8px] flex-js-c gap-[8px] transition hover:bg-[#FFFAEC] rounded-[8px] py-2 mb-1 cursor-pointer">
+            <img src="images/icons/Outline.svg" alt="orders icon" width="24" height="24">
+            <h4 class="text-[16px]">Пассажиры</h4>
+          </div>
+          <div class="w-full h-[1px] bg-borderColor"></div>
+          <div
+              class="px-[8px] flex-js-c gap-[8px] transition hover:bg-[#FFFAEC] rounded-[8px] py-2 mt-1 cursor-pointer">
+            <img src="images/icons/logout.svg" alt="orders icon" width="24" height="24">
+            <h4 class="text-[16px]">Выйти из аккаунта</h4>
+          </div>
+        </div>
+        <div class="fixed top-0 left-0 w-full h-screen bg-transparent hidden" id="nav-user-profile-fon"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section>
+  <div class="container max-w-[960px] pt-8">
+
+    <div class="flex-js-c gap-4">
+      <div class="w-[40px] min-w-[40px] h-[40px] rounded-full bg-[#EDF3FF] flex-jc-c cursor-pointer">
+        <i class="icon-chevron-left mr-[2px] text-[18px]"></i>
+      </div>
+      <h4 class="text-[18px] font-bold">Заказы</h4>
+    </div>
+    <h3 class="text-[26px] font-bold mt-6">Данные пассажира</h3>
+
+    <div class="w-full flex-js-c mt-8">
+      <div class="w-[220px] h-[45px] transition cursor-pointer flex-jc-c border-b-[2px] border-[#FF7A00] font-bold">
+        Hanna Kolomiitseva-Terets
+      </div>
+      <div class="w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
+        Alla GUZHVA
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-[#EDF3FF] pb-16">
+  <div class="container py-8 max-w-[960px]">
+
+    <div class="w-full bg-white rounded-[24px] overflow-hidden mt-6">
+      <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
+        <h3 class="text-[22px] font-bold">Персональные данные</h3>
+      </div>
+      <div class="p-6">
+
+        <div class="w-full grid grid-cols-2 gap-[8px] mb-6">
+          <div>
+            <h5 class="text-[14px] text-gray">ФИО</h5>
+            <h4 class="text-[16px] font-bold">Hanna Kolomiitseva-Terets</h4>
+          </div>
+          <div>
+            <h5 class="text-[14px] text-gray">Гражданство</h5>
+            <h4 class="text-[16px] font-bold">Украина</h4>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 gap-[8px]">
+          <div>
+            <h5 class="text-[14px] text-gray">Дата рождения</h5>
+            <h4 class="text-[16px] font-bold">27 июня 1998 г.  </h4>
+          </div>
+          <div>
+            <h5 class="text-[14px] text-gray">Пол</h5>
+            <h4 class="text-[16px] font-bold">Женский</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="w-full bg-white rounded-[24px] overflow-hidden mt-6">
+      <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
+        <h3 class="text-[22px] font-bold">Проезной документ</h3>
+      </div>
+      <div class="p-6">
+
+        <div class="w-full grid grid-cols-3 gap-[8px] mb-6">
+          <div>
+            <h5 class="text-[14px] text-gray">Тип документа</h5>
+            <h4 class="text-[16px] font-bold">Паспорт заграничный</h4>
+          </div>
+          <div>
+            <h5 class="text-[14px] text-gray">Номер документа</h5>
+            <h4 class="text-[18px] font-bold">GE103215</h4>
+          </div>
+          <div>
+            <h5 class="text-[14px] text-gray">Срок действия</h5>
+            <h4 class="text-[16px] font-bold">27 июня 1932 г.  </h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="w-full bg-white rounded-[24px] overflow-hidden mt-6">
+      <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
+        <h3 class="text-[22px] font-bold">Контактные данные</h3>
+      </div>
+      <div class="p-6">
+
+        <div class="w-full grid grid-cols-2 gap-[8px] mb-6">
+          <div>
+            <h5 class="text-[14px] text-gray">Электронная почта</h5>
+            <h4 class="text-[16px] font-bold">koloma@ukr.net</h4>
+          </div>
+          <div>
+            <h5 class="text-[14px] text-gray">Телефон</h5>
+            <h4 class="text-[18px] font-bold">+4854007632</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="container py-16">
+    <div class="flex-js-c gap-16">
+      <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
+      <div class="w-full">
+        <h3 class="text-[26px] font-bold mb-4">Заголовок для формы</h3>
+        <form action="/" class="w-full">
+          <div class="w-full flex-jsb-c rounded-[16px] px-6 h-[64px] bg-[#EDF3FF] overflow-hidden">
+            <input type="text" class="w-full h-full bg-transparent" placeholder="Ваше имя">
+            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
+            <input type="email" class="w-full h-full bg-transparent pl-6" placeholder="Ваш email">
+            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
+            <select class="w-full h-full bg-transparent pl-6">
+              <option value="Выбрать тему собщения">Выбрать тему собщения</option>
+              <option value="Выбрать тему собщения">1</option>
+              <option value="Выбрать тему собщения">2</option>
+              <option value="Выбрать тему собщения">3</option>
+              <option value="Выбрать тему собщения">4</option>
+            </select>
+          </div>
+
+          <textarea class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4" placeholder="О чем вы хотите спросить?"></textarea>
+
+          <button class="w-[300px] bg-orange h-[64px] text-[18px] text-white rounded-[12px] mt-6">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
+  <div class="container pt-[49px] pb-16">
+    <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
+      <a href="/" class="block md:hidden mb-6">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+      <div class="w-full flex gap-[16px] md:gap-[32px] items-start lg:items-center flex-col lg:flex-row">
+        <a href="#" class="text-white text-[16px]">О сервисе</a>
+        <a href="#" class="text-white text-[16px]">Обратная связь</a>
+        <a href="tel:+998 20 007 007 0" class="text-white text-[18px] font-bold">+998 20 007 007 0</a>
+        <p class="text-white/70 text-[14px] flex sm:block justify-start items-start gap-2">
+          <span class="text-white text-[32px] mt-[-5px] sm:mt-0">007</span> Короткий номер для абонентов Билайн и OQ
+        </p>
+      </div>
+
+      <div class="flex gap-[24px] justify-between items-start lg:items-center mt-6 lg:mt-0">
+        <a href="#" class="transition duration-300">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77184)">
+              <path
+                  d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77184">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77187)">
+              <path
+                  d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.5 7.5V7.501" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77187">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77190)">
+              <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="#EDF3FF" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77190">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77193)">
+              <path
+                  d="M17 5H7C4.79086 5 3 6.79086 3 9V15C3 17.2091 4.79086 19 7 19H17C19.2091 19 21 17.2091 21 15V9C21 6.79086 19.2091 5 17 5Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9L15 12L10 15V9Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77193">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full h-[1px] bg-[#fff]/30 my-8 md:my-16"></div>
+
+    <div class="flex justify-between items-start sm:items-center flex-col-reverse sm:flex-row">
+      <span class="text-[14px] text-white/70">© 2024 Kettik. All rights reserved.</span>
+
+      <a href="/" class="hidden md:block">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+
+      <div class="flex justify-end items-center gap-8 mb-6 sm:mb-0">
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Оферта
+        </a>
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Пожелания
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal" id="modal-select-language">
+  <div class="modal-fon" data-modalid="#modal-select-language"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close" data-modalid="#modal-select-language">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Выберите предпочтительные параметры языка интерфейса
+      </p>
+
+      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
+      <label>
+        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+          <option value="" selected>Русский</option>
+          <option value="">O'zbek</option>
+          <option value="">English</option>
+        </select>
+      </label>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="change-owner-info">
+  <div class="modal-fon" data-modalid="#change-owner-info"></div>
+  <div class="modal-body max-w-[868px]">
+    <div class="modal-close" data-modalid="#change-owner-info">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold mb-2">Редактирование данных владельца учетной записи</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Внесите все данные точно так, как они указаны в паспорте / удостоверении личности для регистрации пассажиров в
+        авиакомпаниях. Изменения не отразяться на бронированиях сделаных ранее.
+      </p>
+
+      <div class="mt-6">
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="АРТЕМ">
+              <span class="def-checkout-input-pl">Имя</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="Архангельский">
+              <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" checked class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+            <label>
+              <input type="text">
+              <span class="def-checkout-input-pl">Отчество</span>
+            </label>
+          </div>
+        </div>
+
+
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Email <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="tartyom.arkhangelsky@gmail.com">
+              <span class="def-checkout-input-pl">Email</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Текущий Пароль <i class="text-[red]">*</i></span>
+            <label class="relative">
+              <input type="password" value="112233">
+              <span class="def-checkout-input-pl">Пароль</span>
+              <i class="icon-eye absolute right-2 top-[38px] cursor-pointer z-10 text-[#6E7491]"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-js-s gap-[8px] mt-10">
+        <button class="h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] px-3 close-modals"
+                data-modalid="#change-owner-info">
+          Отменить
+        </button>
+        <button class="w-[220px] h-[44px] text-white bg-[#3FC431] text-[15px] rounded-[12px]">
+          Сохранить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
