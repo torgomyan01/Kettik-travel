@@ -19,6 +19,11 @@ const flexClasses = {
     justifyContent: 'flex-start',
     alignItems: 'start',
   },
+  '.flex-js-e': {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'end',
+  },
   '.flex-jc-c': {
     display: 'flex',
     justifyContent: 'center',
