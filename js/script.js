@@ -112,11 +112,12 @@ mobileFilter.forEach((target) => {
 // FOR MOBILE MENU
 const mobileMenu = $el('.mobile-menu-board');
 const menu = $el('.mobile-menu');
+const mobileMenuBody = $el('.mobile-menu-body');
 
 
 mobileMenu?.addEventListener('click', e => {
   mobileMenu.classList.toggle('active')
-  console.log('ss')
+  mobileMenuBody.classList.toggle('active')
 })
 
 

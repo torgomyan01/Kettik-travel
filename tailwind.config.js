@@ -39,6 +39,11 @@ const flexClasses = {
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
+  '.flex-jsa-c': {
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
   '.flex-je-c': {
     display: 'flex',
     justifyContent: 'e',
