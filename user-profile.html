@@ -115,25 +115,25 @@
 <section>
   <div class="container  max-w-[960px]">
     <div class="flex-js-s pt-[32px]">
-      <div class="w-[64px] h-[64px] rounded-full overflow-hidden bg-[#F2F4F9] mr-4">
+      <div class="w-[56px] md:w-[64px] h-[56px] md:h-[64px] rounded-full overflow-hidden bg-[#F2F4F9] mr-4">
         <img src="images/user-avatar.png" alt="user avatar" class="w-full h-full object-cover rounded-full">
       </div>
       <div>
-        <h2 class="text-[36px] font-bold">Артем Архангельский</h2>
+        <h2 class="text-[18px] md:text-[36px] font-bold">Артем Архангельский</h2>
         <div class="text-[16px] text-gray">artyom.arkhangelsky@gmail.com</div>
       </div>
     </div>
 
     <div class="w-full flex-js-c mt-8">
       <a href="orders.html"
-          class="w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
+          class="w-full md:w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
         Заказы
       </a>
       <a href="passengers.html"
-          class="w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
+          class="w-full md:w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
         Пассажиры
       </a>
-      <div class="w-[200px] h-[45px] transition cursor-pointer flex-jc-c border-b-[2px] border-[#FF7A00] font-bold">
+      <div class="w-full md:w-[200px] h-[45px] transition cursor-pointer flex-jc-c border-b-[2px] border-[#FF7A00] font-bold">
         Настройки
       </div>
     </div>
@@ -144,12 +144,12 @@
 <div class="bg-[#EDF3FF] py-[32px]">
   <div class="container max-w-[960px]">
     <div class="w-full bg-white rounded-[24px] overflow-hidden">
-      <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
-        <h3 class="text-[22px] font-bold">Изображение профиля</h3>
+      <div class="w-full h-[72px] md:h-[56px] flex-js-c pl-[24px] border-b">
+        <h3 class="text-[18px] md:text-[22px] font-bold">Изображение профиля</h3>
       </div>
       <div class="p-6">
-        <div class="flex-js-s pt-[32px]">
-          <div class="w-[64px] h-[64px] rounded-full overflow-hidden bg-[#F2F4F9] mr-4">
+        <div class="flex-js-s md:pt-[32px]">
+          <div class="w-[56px] min-w-[56px] md:w-[64px] h-[56px] md:h-[64px] rounded-full overflow-hidden bg-[#F2F4F9] mr-4">
             <img src="images/user-avatar.png" alt="user avatar" class="w-full h-full object-cover rounded-full">
           </div>
           <div>
@@ -165,20 +165,20 @@
     </div>
 
     <div class="w-full bg-white rounded-[24px] overflow-hidden mt-6">
-      <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
-        <h3 class="text-[22px] font-bold">Данные владельца учетной записи</h3>
+      <div class="w-full h-[72px] md:h-[56px] flex-js-c pl-[24px] border-b">
+        <h3 class="text-[18px] md:text-[22px] font-bold">Данные владельца учетной записи</h3>
       </div>
       <div class="p-6">
-        <div class="w-full flex-jsb-c">
-          <div>
+        <div class="w-full flex-js-s md:flex-jsb-c flex-col md:flex-row">
+          <div class="mb-3 md:mb-0">
             <h5 class="text-[14px] text-gray">Личные данные</h5>
             <h4 class="text-[16px] font-bold">Артем Архангельский</h4>
           </div>
-          <div>
+          <div class="mb-3 md:mb-0">
             <h5 class="text-[14px] text-gray">Email</h5>
             <h4 class="text-[16px] font-bold">tartyom.arkhangelsky@gmail.com</h4>
           </div>
-          <div>
+          <div class="mb-3 md:mb-0">
             <h5 class="text-[14px] text-gray">Пароль</h5>
             <h4 class="text-[16px] font-bold">********</h4>
           </div>
@@ -192,7 +192,7 @@
 </div>
 
 
-<section>
+<section class="hidden lg:block">
   <div class="container py-16">
     <div class="flex-js-c gap-16">
       <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
@@ -226,6 +226,35 @@
   </div>
 </section>
 
+<section class="block lg:hidden mt-16">
+  <div class="container">
+    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-16">
+      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232" height="146">
+      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+        Удобное время для звонка — выберите сами!
+      </h3>
+    </div>
+
+    <form action="/" method="post" class="mt-6">
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время" value="СР, 12:15">
+        <i class="icon-time-ok text-blue"></i>
+      </label>
+
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+    </form>
+  </div>
+</section>
 
 <footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
   <div class="container pt-[49px] pb-16">
@@ -354,7 +383,7 @@
 </div>
 
 
-<div class="modal" id="change-owner-info">
+<div class="modal show" id="change-owner-info">
   <div class="modal-fon" data-modalid="#change-owner-info"></div>
   <div class="modal-body max-w-[868px]">
     <div class="modal-close" data-modalid="#change-owner-info">+</div>
