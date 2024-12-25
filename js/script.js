@@ -16,7 +16,7 @@ const searchVector = $el('.search .vector');
 
 
 setTimeout(() => {
-  searchVector.classList.add('active');
+  searchVector?.classList.add('active');
 }, 1000)
 
 
@@ -414,3 +414,25 @@ addDocModal.forEach((doc) => {
     doc.insertAdjacentHTML('afterbegin', example)
   })
 })
+
+new Swiper(".mySwiper", {
+  slidesPerView: 3, // Ցուցադրվող սլայդերի քանակը
+  slidesPerGroup: 1, // Միաժամանակ անցնող սլայդերի քանակը
+  spaceBetween: 10, // Սլայդերի միջև հեռավորություն (ըստ անհրաժեշտության)
+  loop: true, // Սլայդերի անվերջ պտույտ
+
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: '#next-slider',
+  },
+});

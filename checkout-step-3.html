@@ -22,21 +22,6 @@
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
     </a>
 
-    <div class="justify-center items-center hidden lg:flex">
-      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Результаты поиска
-      </div>
-      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Бронирование
-      </div>
-      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Итоги и оплата
-      </div>
-    </div>
-
-
     <div class="mobile-menu-board flex md:hidden">
       <span></span>
       <span></span>
@@ -52,12 +37,9 @@
              height="24" class="rounded-full me-2">
         UZS
       </div>
-      <div data-targetid="#sign-in"
-           class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
+      <div data-targetid="#sign-in" class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
         <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
-                fill="#1150CB"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z" fill="#1150CB"/>
         </svg>
         Вход
       </div>
@@ -65,7 +47,7 @@
   </div>
 </nav>
 
-<div class="mobile-menu bg-white w-full h-[calc(100vh_-56px)] fixed top-[56px] left-0">
+<div class="mobile-menu-body bg-white w-full h-[calc(100vh_-56px)] fixed top-[56px] left-0 z-[1000]">
   <div class="pt-[71px] p-6 flex-jsb-s flex-col h-full">
     <ul>
       <li class="mb-10">
@@ -74,7 +56,7 @@
       <li class="mb-10">
         <a href="#" class="text-[16px] font-bold">Лаунжи</a>
       </li>
-      <li class="mb-10 flex-js-c cursor-pointer">
+      <li class="mb-10 flex-js-c cursor-pointer target-modal" data-targetid="#sign-in">
         <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z" fill="#1150CB"></path>
         </svg>
@@ -94,8 +76,8 @@
           </div>
         </div>
         <div class="flex-je-c">
-          <b class="mr-2">UZS</b>
-          <i class="icon-chevron-right text-[20px] mb-[2px]"></i>
+          <b class="mr-1">UZS</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
         </div>
       </div>
       <div class="flex-jsb-c mb-16">
@@ -107,8 +89,8 @@
           </div>
         </div>
         <div class="flex-je-c">
-          <b class="mr-2">RU</b>
-          <i class="icon-chevron-right text-[20px] mb-[2px]"></i>
+          <b class="mr-1">RU</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
         </div>
       </div>
 
@@ -382,7 +364,7 @@
                   <h4 class="text-[14px] text-gray">Заграничный паспорт, MT 123456, 27 июня 1998 </h4>
                 </div>
               </div>
-              <span class="text-blue text-[15px] cursor-pointer font-semibold">Изменить</span>
+              <span class="text-blue text-[15px] cursor-pointer font-semibold target-modal" data-targetid="#change-owner-info">Изменить</span>
             </div>
 
             <div class="flex-jsb-c min-h-[47px] mb-6">
@@ -393,7 +375,7 @@
                   <h4 class="text-[14px] text-gray">Национальный паспорт, ИЕ 1234567, 30 мая 1999  </h4>
                 </div>
               </div>
-              <span class="text-blue text-[15px] cursor-pointer font-semibold">Изменить</span>
+              <span class="text-blue text-[15px] cursor-pointer font-semibold target-modal" data-targetid="#change-passengers-info">Изменить</span>
             </div>
 
           </div>
@@ -782,6 +764,430 @@
         <p class="text-[16px] leading-[130%] mb-4">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem cumque, distinctio dolorum et expedita facilis harum libero minima nam nesciunt nisi nobis placeat porro quisquam reiciendis sint, sunt totam.</span><span>Dolores saepe totam voluptatem! Eius eligendi eos minus optio possimus quos, recusandae? Aliquid aperiam doloribus, in possimus quod voluptas. Accusamus accusantium, culpa dicta ducimus iste quidem rerum sapiente tempora! Laborum!</span><span>Alias earum natus nobis repudiandae sit voluptatem? Accusantium animi asperiores at atque corporis debitis et exercitationem facere maiores, maxime nihil officia officiis quam quia similique sit tempore ut vitae voluptatem.</span><span>Ab ad aliquid aperiam consectetur hic id magnam optio perferendis, recusandae tenetur totam velit voluptas? Aliquam dolorem, esse ex ipsa nostrum quae quibusdam reiciendis repellat sint suscipit temporibus, vel voluptate.</span><span>Accusamus aliquid asperiores assumenda aut autem beatae corporis deleniti, dignissimos dolor excepturi expedita facilis, fugiat hic ipsa ipsum labore laboriosam omnis placeat provident, quod quos sapiente suscipit tenetur vero vitae?</span><span>A doloremque facilis illum laborum magnam minima officia voluptas voluptates. Asperiores culpa dicta dolores, illum in ipsa laboriosam, laborum magni perspiciatis quas quos sapiente sint ut veniam voluptas. Fugit, nam!</span><span>Adipisci aliquid amet dignissimos fuga ipsa iusto necessitatibus pariatur quia ratione? Accusamus assumenda, debitis eligendi eum iure maxime natus nisi, placeat quaerat quod reprehenderit repudiandae ut vel vero voluptates voluptatibus.</span><span>Asperiores aut cum, debitis deserunt distinctio dolorem ducimus ea eos est fugiat fugit id impedit laboriosam maiores minima numquam odit pariatur quaerat quibusdam quos reprehenderit sapiente soluta suscipit, ullam veniam.</span><span>Ab alias aliquam cupiditate iste minima optio, rem rerum tenetur? Accusamus amet, animi et fuga harum ipsa itaque omnis reiciendis sed. Hic ipsa quis tenetur. Exercitationem explicabo ipsam molestiae veritatis.</span><span>Aspernatur, aut corporis cumque dignissimos in nemo quas velit! Architecto aspernatur at delectus deserunt, dicta dolore eligendi illo inventore laborum libero magni modi obcaecati, provident quas quisquam, repellendus sit tempore.</span><span>Commodi deserunt distinctio ducimus fugit id, natus necessitatibus nesciunt odit ratione rem sequi veniam vero voluptatum. Aut eos illo iste magni numquam, porro praesentium reiciendis repudiandae similique voluptates. Amet, voluptatum!</span><span>Accusamus accusantium alias amet aut cupiditate earum eos eveniet exercitationem facilis, fugit harum, ipsam laborum maiores maxime nam necessitatibus numquam quas, quidem recusandae repellat sint sit unde vel veritatis voluptatum.</span><span>Ab accusantium aliquam ea et illo illum iure provident quia reiciendis, repellendus tenetur vitae? Cum nemo possimus quis quos? Impedit, laudantium maiores modi ratione recusandae reiciendis rem repellendus veniam voluptatum!</span><span>Consequuntur esse fuga hic impedit magni, modi nobis quam quasi saepe ut. A ad facere officia porro repellat rerum soluta temporibus velit veniam. Eos eum maxime nostrum repudiandae sequi sunt?</span><span>Aperiam architecto assumenda aut commodi consectetur cupiditate dignissimos dolor, doloribus eligendi eos excepturi in inventore iusto laudantium minus molestiae molestias, necessitatibus nesciunt, nostrum placeat porro praesentium quasi quibusdam saepe sit.</span><span>Alias amet aperiam blanditiis consequuntur culpa debitis dolore dolorem eligendi eum eveniet excepturi fugiat impedit ipsa nostrum officiis possimus quas quasi recusandae similique tempore temporibus totam ullam vel veniam, voluptate?</span><span>Ad aspernatur beatae consequuntur corporis cum impedit odio quasi quo saepe totam. Alias aliquid asperiores culpa cupiditate delectus enim eveniet fuga iste, maiores omnis quam sint tempora ullam vitae voluptatem!</span><span>Ducimus esse explicabo placeat sed voluptatum. Blanditiis corporis distinctio dolore dolorem ducimus impedit iste maiores omnis possimus recusandae reprehenderit tempore, totam vero. Ducimus eligendi illo in minus, numquam officia placeat!</span><span>A adipisci aspernatur beatae culpa delectus dignissimos doloribus eaque enim esse excepturi facilis harum impedit ipsam, libero molestias necessitatibus, nihil quam quo quos, sapiente sint sunt tenetur ullam unde vitae!</span><span>Aliquam at deserunt dolor ex ipsa modi nesciunt officiis perferendis perspiciatis, quis ratione sint tenetur voluptatum! Accusamus architecto commodi debitis, dolor esse iure laudantium maxime nesciunt nisi sapiente, vero voluptatum!</span><span>Adipisci amet architecto, beatae commodi deserunt doloribus ducimus ea eius eum ex inventore iusto laborum nam nihil non, nulla optio perferendis quam quod quos saepe sequi unde vel, velit voluptates?</span><span>A alias assumenda at beatae consequuntur cumque ea earum esse et fuga in, ipsum laudantium molestias neque officiis omnis perspiciatis quaerat quisquam quos reiciendis saepe sequi sit suscipit voluptate voluptatem.</span><span>Aliquam aperiam aut dignissimos et excepturi exercitationem expedita facere fugiat hic ipsa ipsam iure, laborum laudantium magnam nisi numquam officiis quaerat rem rerum sapiente sed sequi sunt tempore totam voluptatibus.</span><span>A asperiores consequatur dolor, dolorem impedit iste itaque, magni maxime minus nobis nulla optio praesentium, quam quas quis rem tempore vel voluptas voluptates voluptatibus? Autem expedita explicabo quis ratione veniam?</span><span>Consequatur cum, cumque dolorem est eum eveniet exercitationem expedita fugiat incidunt iusto magni natus necessitatibus non quidem quisquam quos, ratione repellat rerum saepe soluta suscipit temporibus unde velit voluptate voluptatum!</span><span>Aliquam animi cumque doloribus eos error impedit minus molestias perspiciatis, quasi rem sit, temporibus velit. Hic iste nam necessitatibus sed vero. Ad architecto delectus eos explicabo illum modi rem tempora?</span><span>Accusamus, animi architecto assumenda culpa cumque cupiditate eligendi, eos error facere illum in incidunt libero magnam minus, molestias nemo omnis perferendis possimus quia vel! Doloribus facere iusto magni nihil perferendis.</span><span>A ab aliquam amet animi consequatur dicta dignissimos dolor eius est harum ipsum iste minima molestiae mollitia nemo quae, quo sit voluptate. A blanditiis cum distinctio fuga harum, quisquam reiciendis?</span><span>Alias autem consequatur deleniti dolores doloribus, explicabo ipsa itaque laudantium magnam nobis nostrum odio odit omnis perspiciatis quia recusandae repellat sit tenetur. Dicta dolor laborum, provident quibusdam soluta tempora voluptatum.</span><span>Consectetur consequuntur dicta eligendi incidunt itaque laboriosam numquam odio optio, pariatur, porro possimus provident qui quod sunt unde veritatis vero. Alias cum et, facere illum minima minus neque numquam quam.</span>
         </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="change-owner-info">
+  <div class="modal-fon" data-modalid="#change-owner-info"></div>
+  <div class="modal-body max-w-[900px]">
+    <div class="modal-close" data-modalid="#change-owner-info">+</div>
+
+    <div class="modal-content p-6">
+      <h4 class="text-[26px] font-bold mb-2">Редактирование данных владельца учетной записи</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Внесите все данные точно так, как они указаны в паспорте / удостоверении личности для регистрации пассажиров в
+        авиакомпаниях. Изменения не отразяться на бронированиях сделаных ранее.
+      </p>
+
+      <div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="NIKOLAY">
+              <span class="def-checkout-input-pl">Имя</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="Bernd Ottovordemgentschenfelde">
+              <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c active">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" checked width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+            <label>
+              <input type="text">
+              <span class="def-checkout-input-pl">Отчество</span>
+            </label>
+          </div>
+        </div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <label class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+            <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+              <option value="Узбекистан" selected>Узбекистан</option>
+              <option value="Узбекистан">Руссия</option>
+            </select>
+          </label>
+          <div class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+            <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+              <div
+                  class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
+                Мужской
+              </div>
+              <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#C1C8CD] rounded-[0_8px_8px_0]">
+                Женский
+              </div>
+            </div>
+          </div>
+          <div class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+            <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+              <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                ДД
+              </div>
+              <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                <option value="">Выберете месяц</option>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+              </select>
+              <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                ГГГГ
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <label class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Тип документа <i class="text-[red]">*</i></span>
+            <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+              <option value="Узбекистан">Заграничный паспорт</option>
+              <option value="Узбекистан">Национальный паспорт</option>
+              <option value="Узбекистан">Свидетельство о рождении</option>
+              <option value="Узбекистан">Дипломатический паспорт</option>
+              <option value="Узбекистан">Вид на жительство</option>
+              <option value="Узбекистан">Национальное удостоверение личности</option>
+            </select>
+          </label>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text">
+              <span class="def-checkout-input-pl">Серия и номер документа</span>
+            </label>
+          </div>
+          <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                  <span>Действителен до <i class="text-[red]">*</i></span>
+
+                  <label class="flex-je-c text-[14px]">
+                    <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                    Без срока действия
+                  </label>
+              </span>
+            <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+              <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                ДД
+              </div>
+              <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                <option value="">Выберете месяц</option>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+              </select>
+              <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                ГГГГ
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 add-doc-modal">
+
+        <!--        THIS IS BLOCK ADD NEW DOCUMENT, IT CLOSED, REMOVE Hidden class-->
+
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 example hidden">
+          <label class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Тип документа  <i class="text-[red]">*</i></span>
+            <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+              <option value="Узбекистан">Заграничный паспорт</option>
+              <option value="Узбекистан">Национальный паспорт</option>
+              <option value="Узбекистан">Свидетельство о рождении</option>
+              <option value="Узбекистан">Дипломатический паспорт</option>
+              <option value="Узбекистан">Вид на жительство</option>
+              <option value="Узбекистан">Национальное удостоверение личности</option>
+            </select>
+          </label>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="ИС 123456">
+              <span class="def-checkout-input-pl">Серия и номер документа</span>
+            </label>
+          </div>
+          <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span>Действителен до <i class="text-[red]">*</i></span>
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Без срока действия
+                </label>
+              </span>
+            <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+              <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                ДД
+              </div>
+              <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                <option value="">Выберете месяц</option>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+              </select>
+              <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                ГГГГ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--        THIS IS BLOCK ADD NEW DOCUMENT-->
+
+        <button class="text-blue text-[15px] cursor-pointer flex-js-c">
+          <i class="icon-plus mr-1 text-blue"></i>
+          Добавить документ
+        </button>
+      </div>
+
+
+      <h3 class="text-[22px] font-bold mb-6 mt-10">Контактные данные</h3>
+
+      <div class="flex-jsb-c flex-col xl:flex-row mt-6 gap-6">
+        <div class="def-checkout-input">
+          <span class="text-[14px] mb-1 text-gray flex-js-c">
+            Email <i class="text-[red]">*</i>
+          </span>
+          <label>
+            <input type="text">
+            <span class="def-checkout-input-pl">Email</span>
+          </label>
+        </div>
+
+        <div class="w-full block ">
+          <span class="text-[14px] mb-1 text-gray flex-js-c">
+            Номер телефона <i class="text-[red]">*</i>
+          </span>
+          <div class="flex-js-c border border-[#C1C8CD] rounded-[8px] h-[44px] overflow-hidden">
+            <div class="flex-jsb-c pl-2 w-[115px] border-r border-[#C1C8CD] pr-2 cursor-pointer">
+              <img src="images/icons/uzbekistan-fleg.svg" alt="uzbekistan-fleg" width="20" height="20">
+              +998
+              <i class="icon-down text-[6px]"></i>
+            </div>
+            <input type="text" class="w-full pl-2 h-full" value="99 9999 9999" placeholder="Номер телефона">
+          </div>
+        </div>
+      </div>
+
+      <button class="text-[15px] text-blue mt-4">Добавить пароль</button>
+
+      <div class="flex-js-e mt-4">
+        <div class="def-checkout-input w-[calc(50%_-_12px)] mr-4">
+          <span class="text-[14px] mb-1 text-gray">Пароль <i class="text-[red]">*</i></span>
+          <label class="relative">
+            <input type="password" value="112233">
+            <span class="def-checkout-input-pl">Пароль</span>
+            <i class="icon-eye absolute right-2 top-[38px] cursor-pointer z-10 text-[#6E7491]"></i>
+          </label>
+        </div>
+
+        <button class="text-blue mb-3 target-modal close-modals" data-modalid="#change-owner-info" data-targetid="#change-password">Изменить  прароль</button>
+      </div>
+      <div class="mt-12">
+        <button class="h-[44px] bg-white border  text-[15px] rounded-[8px] px-4 close-modals"
+                data-modalid="#change-owner-info">
+          Закрыть
+        </button>
+        <button class="h-[44px] px-6 text-white bg-[#3FC431] text-[15px] rounded-[12px] close-modals"
+                data-modalid="#change-owner-info">
+          Сохранить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="change-passengers-info">
+  <div class="modal-fon" data-modalid="#change-passengers-info"></div>
+  <div class="modal-body max-w-[900px]">
+    <div class="modal-close" data-modalid="#change-passengers-info">+</div>
+
+    <div class="modal-content p-6">
+      <h4 class="text-[26px] font-bold mb-2">Редактирование данных пассажира</h4>
+      <p class="text-[16px] leading-[130%] mb-4">
+        Внесите все данные точно так, как они указаны в паспорте / удостоверении личности <br> для регистрации пассажиров в авиакомпаниях
+      </p>
+
+      <div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="GALINA">
+              <span class="def-checkout-input-pl">Имя</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+            <label>
+              <input type="text" value="PETROVA">
+              <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+            </label>
+          </div>
+          <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 text-gray flex-jsb-c active">
+                Отчество
+
+                <label class="flex-je-c text-[14px]">
+                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  Нет отчества
+                </label>
+              </span>
+            <label>
+              <input type="text" value="VIKTOROVNA">
+              <span class="def-checkout-input-pl">Отчество</span>
+            </label>
+          </div>
+        </div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <label class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+            <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+              <option value="Узбекистан" selected>Узбекистан</option>
+              <option value="Узбекистан">Руссия</option>
+            </select>
+          </label>
+          <div class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+            <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
+              <div
+                  class="w-[50%] h-full border border-[#C1C8CD] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer ">
+                Мужской
+              </div>
+              <div class="w-[50%] h-full flex-jc-c cursor-pointer border border-[#3FC431] bg-[#E6FCD6] rounded-[0_8px_8px_0]">
+                Женский
+              </div>
+            </div>
+          </div>
+          <div class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+            <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+              <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                ДД
+              </div>
+              <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                <option value="">Выберете месяц</option>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+              </select>
+              <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                ГГГГ
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+          <label class="w-full block">
+            <span class="block text-[14px] mb-1 text-gray">Тип документа</span>
+            <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
+              <option value="Узбекистан">Заграничный паспорт</option>
+              <option value="Узбекистан">Национальный паспорт</option>
+              <option value="Узбекистан">Свидетельство о рождении</option>
+              <option value="Узбекистан">Дипломатический паспорт</option>
+              <option value="Узбекистан">Вид на жительство</option>
+              <option value="Узбекистан">Национальное удостоверение личности</option>
+            </select>
+          </label>
+          <div class="def-checkout-input">
+            <span class="text-[14px] mb-1 text-gray">Номер документа </span>
+            <label>
+              <input type="text">
+              <span class="def-checkout-input-pl">Серия и номер документа</span>
+            </label>
+          </div>
+          <div class="w-full block">
+                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                  <span>Действителен до</span>
+
+                  <label class="flex-je-c text-[14px]">
+                    <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                    Без срока действия
+                  </label>
+              </span>
+            <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
+              <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
+                ДД
+              </div>
+              <select class="pl-2 pr-2 border-r border-[#C1C8CD] h-full text-[#7E868C] text-[14px]">
+                <option value="">Выберете месяц</option>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+              </select>
+              <div class="w-[50%] h-full text-gray flex-jc-c cursor-pointer">
+                ГГГГ
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mt-12 flex-js-c gap-[8px]">
+        <button class="text-[#FF592C] mr-2 flex-js-c text-[15px] close-modals target-modal" data-targetid="#delete-passengers" data-modalid="#change-passengers-info">
+          <img src="images/icons/delate-orange.svg" alt="delate-orange" width="24" height="24" class="mr-1">
+          Удалить пассажира
+        </button>
+        <button class="h-[44px] px-6 text-white bg-[#3FC431] text-[15px] rounded-[12px] close-modals"
+                data-modalid="#change-passengers-info">
+          Сохранить
+        </button>
       </div>
 
     </div>

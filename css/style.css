@@ -424,12 +424,22 @@ a {
 .search {
   width: 100%;
   border-radius: 0 0 32px 32px;
-  background-size: cover;
+  background: #1150CB;
   position: relative;
 }
 @media (max-width: 1280px) {
   .search {
     height: auto;
+  }
+}
+.search.no-anim {
+  background: #1150CB url("../images/search-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .search.no-anim {
+    background: #1150CB;
+    background-size: cover;
   }
 }
 .search .vector {

@@ -22,21 +22,6 @@
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
     </a>
 
-    <div class="justify-center items-center hidden lg:flex">
-      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Результаты поиска
-      </div>
-      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-[#ECEEF0] text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Бронирование
-      </div>
-      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
-      <div class="bg-[#ECEEF0] text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
-        Итоги и оплата
-      </div>
-    </div>
-
-
     <div class="mobile-menu-board flex md:hidden">
       <span></span>
       <span></span>
@@ -52,12 +37,9 @@
              height="24" class="rounded-full me-2">
         UZS
       </div>
-      <div data-targetid="#sign-in"
-           class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
+      <div data-targetid="#sign-in" class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
         <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
-                fill="#1150CB"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z" fill="#1150CB"/>
         </svg>
         Вход
       </div>
@@ -65,7 +47,7 @@
   </div>
 </nav>
 
-<div class="mobile-menu bg-white w-full h-[calc(100vh_-56px)] fixed top-[56px] left-0">
+<div class="mobile-menu-body bg-white w-full h-[calc(100vh_-56px)] fixed top-[56px] left-0 z-[1000]">
   <div class="pt-[71px] p-6 flex-jsb-s flex-col h-full">
     <ul>
       <li class="mb-10">
@@ -74,7 +56,7 @@
       <li class="mb-10">
         <a href="#" class="text-[16px] font-bold">Лаунжи</a>
       </li>
-      <li class="mb-10 flex-js-c cursor-pointer">
+      <li class="mb-10 flex-js-c cursor-pointer target-modal" data-targetid="#sign-in">
         <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z" fill="#1150CB"></path>
         </svg>
@@ -94,8 +76,8 @@
           </div>
         </div>
         <div class="flex-je-c">
-          <b class="mr-2">UZS</b>
-          <i class="icon-chevron-right text-[20px] mb-[2px]"></i>
+          <b class="mr-1">UZS</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
         </div>
       </div>
       <div class="flex-jsb-c mb-16">
@@ -107,8 +89,8 @@
           </div>
         </div>
         <div class="flex-je-c">
-          <b class="mr-2">RU</b>
-          <i class="icon-chevron-right text-[20px] mb-[2px]"></i>
+          <b class="mr-1">RU</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
         </div>
       </div>
 
@@ -153,8 +135,8 @@
   </span>
 </div>
 
-<div class="search py-[6px] md:pt-12 md:pb-4 z-10 relative rounded-[0px]">
-  <div class="container">
+<div class="search no-anim py-[6px] md:pt-12 md:pb-4 z-10 relative rounded-[0px]">
+  <div class="container pr-0 lg:pr-0">
 
     <form action="/" method="post" class="search-form hidden md:flex">
       <label class="search-form-inp there">
@@ -232,61 +214,63 @@
 
 
     <div
-        data-targetid="#max-filter"
-        class="mobile-filter w-full flex lg:hidden justify-between items-center gap-1 md:mt-10 overflow-x-auto pb-1 scroll-bottom-none ">
-      <div
-          class="min-w-[36px] w-[36px] h-[36px] border border-[#6A8AFF] hover:border-white transition rounded-[6px] flex justify-center items-center cursor-pointer">
+
+        class="w-full flex lg:hidden justify-between items-center gap-1 md:mt-10 ">
+      <div data-targetid="#max-filter"
+          class="mobile-filter min-w-[36px] w-[36px] h-[36px] border border-[#6A8AFF] hover:border-white transition rounded-[6px] flex justify-center items-center cursor-pointer">
         <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.66665 9.93411e-09C4.03484 9.93411e-09 4.33331 0.298477 4.33331 0.666667V9.72386L5.86191 8.19526C6.12226 7.93491 6.54437 7.93491 6.80472 8.19526C7.06507 8.45561 7.06507 8.87772 6.80472 9.13807L4.13805 11.8047C3.8777 12.0651 3.45559 12.0651 3.19524 11.8047L0.528575 9.13807C0.268226 8.87772 0.268226 8.45561 0.528575 8.19526C0.788925 7.93491 1.21103 7.93491 1.47138 8.19526L2.99998 9.72386V0.666667C2.99998 0.298477 3.29846 9.93411e-09 3.66665 9.93411e-09ZM9.86191 0.195262C10.1223 -0.0650874 10.5444 -0.0650874 10.8047 0.195262L13.4714 2.86193C13.7317 3.12228 13.7317 3.54439 13.4714 3.80474C13.211 4.06509 12.7889 4.06509 12.5286 3.80474L11 2.27614V11.3333C11 11.7015 10.7015 12 10.3333 12C9.96512 12 9.66665 11.7015 9.66665 11.3333V2.27614L8.13805 3.80474C7.8777 4.06509 7.45559 4.06509 7.19524 3.80474C6.93489 3.54439 6.93489 3.12228 7.19524 2.86193L9.86191 0.195262Z"
                 fill="#EDF3FF"/>
         </svg>
       </div>
-      <div data-targetid="#transplants"
-           class="mobile-filter w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] bg-[#6A8AFF] transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Прямой
-        <i class="icon-close text-white"></i>
-      </div>
-      <div
-          data-targetid="#baggage"
-          class="mobile-filter w-full min-w-[100px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Багаж
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div data-targetid="#price"
+     <div class="flex-js-c overflow-x-auto pb-1 scroll-bottom-none gap-1 mt-1 pr-4">
+       <div data-targetid="#transplants"
+            class="mobile-filter w-full min-w-[110px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] bg-[#6A8AFF] transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         Прямой
+         <i class="icon-close text-white"></i>
+       </div>
+       <div
+           data-targetid="#baggage"
            class="mobile-filter w-full min-w-[100px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Цена
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div
-          data-targetid="#time-pilot"
-          class="mobile-filter w-full min-w-[130px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Отправление
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div
-          data-targetid="#time-pilot"
-          class="mobile-filter w-full min-w-[130px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Прибытие
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div
-          data-targetid="#time"
-          class="mobile-filter w-full min-w-[100px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        В пути
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div
-          data-targetid="#avaiacompany"
-          class="mobile-filter w-full min-w-[150px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Авиакомпании
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
-      <div data-targetid="#airports"
+         Багаж
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div data-targetid="#price"
+            class="mobile-filter w-full min-w-[100px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         Цена
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div
+           data-targetid="#time-pilot"
            class="mobile-filter w-full min-w-[130px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
-        Аэропорты
-        <i class="icon-down text-[5px] text-white"></i>
-      </div>
+         Отправление
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div
+           data-targetid="#time-pilot"
+           class="mobile-filter w-full min-w-[130px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         Прибытие
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div
+           data-targetid="#time"
+           class="mobile-filter w-full min-w-[100px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         В пути
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div
+           data-targetid="#avaiacompany"
+           class="mobile-filter w-full min-w-[150px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         Авиакомпании
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+       <div data-targetid="#airports"
+            class="mobile-filter w-full min-w-[130px] h-[36px] text-[14px] text-white p-[0_16px] border border-[#6A8AFF] hover:border-white bg-transparent transition rounded-[6px] flex justify-between items-center cursor-pointer">
+         Аэропорты
+         <i class="icon-down text-[5px] text-white"></i>
+       </div>
+     </div>
     </div>
   </div>
 </div>
@@ -1327,7 +1311,7 @@
 
 
 <div class="flex lg:hidden w-full bg-gradient-to-b from-transparent to-white fixed bottom-0 left-0 p-4 gap-[8px]">
-  <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px]">
+  <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px] target-modal" data-targetid="#max-filter">
     <i class="icon-filter mr-2 text-white relative top-[1px]"></i>
     Фильтр
   </button>
@@ -1600,27 +1584,27 @@
         </span>
       </span>
     </label>
-    <label class="flex justify-start items-center mb-2 text-[16px]">
+    <label class="flex justify-start items-center mb-3 text-[16px]">
       <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
       <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
       UZBEKISTAN AIR
     </label>
-    <label class="flex justify-start items-center mb-2 text-[16px]">
+    <label class="flex justify-start items-center mb-3 text-[16px]">
       <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
       <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
       AZERBAIJAN AIR
     </label>
-    <label class="flex justify-start items-center mb-2 text-[16px]">
+    <label class="flex justify-start items-center mb-3 text-[16px]">
       <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
       <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
       S7 Airlines
     </label>
-    <label class="flex justify-start items-center mb-2 text-[16px]">
+    <label class="flex justify-start items-center mb-3 text-[16px]">
       <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
       <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
       Turkish Airlines
     </label>
-    <label class="flex justify-start items-center mb-2 text-[16px]">
+    <label class="flex justify-start items-center mb-3 text-[16px]">
       <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
       <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
       AIR ASTANA
@@ -2254,9 +2238,9 @@
 
 <div class="fixed top-0 left-0 bg-white w-full h-[100vh] z-[1000] mobile-filter-body" id="max-filter">
     <div class="w-full h-[57px] border-b flex-jsb-c p-4">
-      <i class="icon-arrow-thin-left cursor-pointer text-[18px] close" data-modalid="#max-filter"></i>
+      <i class="icon-arrow-thin-left cursor-pointer text-[18px] close-modals" data-modalid="#max-filter"></i>
       <h4 class="text-center text-[18px] font-bold">Фильтры</h4>
-      <i class="icon-close text-[22px] close" data-modalid="#max-filter"></i>
+      <i class="icon-close text-[22px] close-modals" data-modalid="#max-filter"></i>
     </div>
 
   <div class="h-[calc(100vh_-_100px)] overflow-y-auto scroll-right-none">
@@ -2436,27 +2420,27 @@
               </span>
             </span>
         </label>
-        <label class="flex justify-start items-center mb-2 text-[16px]">
+        <label class="flex justify-start items-center mb-3 text-[16px]">
           <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
           <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
           UZBEKISTAN AIR
         </label>
-        <label class="flex justify-start items-center mb-2 text-[16px]">
+        <label class="flex justify-start items-center mb-3 text-[16px]">
           <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
           <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
           AZERBAIJAN AIR
         </label>
-        <label class="flex justify-start items-center mb-2 text-[16px]">
+        <label class="flex justify-start items-center mb-3 text-[16px]">
           <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
           <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
           S7 Airlines
         </label>
-        <label class="flex justify-start items-center mb-2 text-[16px]">
+        <label class="flex justify-start items-center mb-3 text-[16px]">
           <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
           <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
           Turkish Airlines
         </label>
-        <label class="flex justify-start items-center mb-2 text-[16px]">
+        <label class="flex justify-start items-center mb-3 text-[16px]">
           <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
           <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
           AIR ASTANA
