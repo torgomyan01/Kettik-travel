@@ -11,6 +11,15 @@ AOS.init({
   duration: 1000
 })
 
+
+const searchVector = $el('.search .vector');
+
+
+setTimeout(() => {
+  searchVector.classList.add('active');
+}, 1000)
+
+
 const searchFormInp = $('.search-form-inp');
 
 searchFormInp.forEach((input, index) => {

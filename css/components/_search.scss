@@ -1,23 +1,44 @@
 .search{
   width: 100%;
   border-radius: 0 0 32px 32px;
-  background: url("../images/search-bg.jpg") no-repeat center center;
+  //background: url("../images/search-bg.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
   @media  (max-width: 1280px) {
     height: auto;
   }
 
 
-  @media (max-width: 768px){
-    background: url("../images/search-mobile-bg.jpg") no-repeat 0 center;
-    background-size: cover;
+  .vector{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    path {
+      stroke-dasharray: 6500;
+      stroke-dashoffset: 6500;
+      transition: stroke-dashoffset 4s ease-out;
+    }
+
+    &.active{
+      path{
+        stroke-dashoffset: 0;
+      }
+    }
   }
 
-
-  @media (max-width: 576px){
-    background: url("../images/search-mobile-bg.jpg") no-repeat -12% center;
-    background-size: cover;
-  }
+  //@media (max-width: 768px){
+  //  background: url("../images/search-mobile-bg.jpg") no-repeat center 20%;
+  //  background-size: cover;
+  //}
+  //
+  //
+  //@media (max-width: 576px){
+  //  background: url("../images/search-mobile-bg.jpg") no-repeat -12% 20%;
+  //  background-size: cover;
+  //}
 
   &-form{
     width: 100%;

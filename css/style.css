@@ -424,25 +424,29 @@ a {
 .search {
   width: 100%;
   border-radius: 0 0 32px 32px;
-  background: url("../images/search-bg.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
 }
 @media (max-width: 1280px) {
   .search {
     height: auto;
   }
 }
-@media (max-width: 768px) {
-  .search {
-    background: url("../images/search-mobile-bg.jpg") no-repeat 0 center;
-    background-size: cover;
-  }
+.search .vector {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
 }
-@media (max-width: 576px) {
-  .search {
-    background: url("../images/search-mobile-bg.jpg") no-repeat -12% center;
-    background-size: cover;
-  }
+.search .vector path {
+  stroke-dasharray: 6500;
+  stroke-dashoffset: 6500;
+  transition: stroke-dashoffset 4s ease-out;
+}
+.search .vector.active path {
+  stroke-dashoffset: 0;
 }
 .search-form {
   width: 100%;
