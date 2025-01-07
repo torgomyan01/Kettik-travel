@@ -87,8 +87,6 @@ a {
 }
 .slider-partners.start {
   animation: anim-partners infinite 400s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
 }
 @keyframes anim-partners {
   0% {
