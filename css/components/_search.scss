@@ -25,6 +25,11 @@
     transform: translateX(-50%);
     height: 100%;
     width: 100%;
+
+    @media (max-width: 768px){
+      top: -18%;
+    }
+
     path {
       stroke-dasharray: 6500;
       stroke-dashoffset: 6500;

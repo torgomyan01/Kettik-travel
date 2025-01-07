@@ -492,6 +492,11 @@ a {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .search .vector {
+    top: -18%;
+  }
+}
 .search .vector path {
   stroke-dasharray: 6500;
   stroke-dashoffset: 6500;

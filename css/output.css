@@ -555,6 +555,12 @@ a {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .search .vector {
+    top: -18%;
+  }
+}
+
 .search .vector path {
   stroke-dasharray: 6500;
   stroke-dashoffset: 6500;
@@ -1968,12 +1974,20 @@ video {
   height: 24px;
 }
 
+.h-\[250px\]{
+  height: 250px;
+}
+
 .h-\[260px\]{
   height: 260px;
 }
 
 .h-\[288px\]{
   height: 288px;
+}
+
+.h-\[296px\]{
+  height: 296px;
 }
 
 .h-\[2px\]{
@@ -2032,16 +2046,8 @@ video {
   height: 57px;
 }
 
-.h-\[600px\]{
-  height: 600px;
-}
-
 .h-\[64px\]{
   height: 64px;
-}
-
-.h-\[662px\]{
-  height: 662px;
 }
 
 .h-\[72px\]{
@@ -2091,14 +2097,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[296px\]{
-  height: 296px;
-}
-
-.h-\[250px\]{
-  height: 250px;
 }
 
 .max-h-\[calc\(100vh_-_100px\)\]{
@@ -3693,12 +3691,12 @@ video {
     display: none;
   }
 
-  .sm\:h-\[662px\]{
-    height: 662px;
-  }
-
   .sm\:h-\[600px\]{
     height: 600px;
+  }
+
+  .sm\:h-\[662px\]{
+    height: 662px;
   }
 
   .sm\:min-h-\[252px\]{
@@ -3717,12 +3715,20 @@ video {
     align-items: center;
   }
 
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
   .sm\:p-\[32px\]{
     padding: 32px;
   }
 
   .sm\:pb-3{
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:pl-6{
+    padding-left: 1.5rem;
   }
 
   .sm\:pl-8{
