@@ -4068,4 +4068,10 @@ video {
   }
 }
 
+@media (min-width: 1281px){
+  .min-\[1281px\]\:block{
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
