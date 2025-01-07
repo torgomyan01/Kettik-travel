@@ -670,7 +670,7 @@
       </label>
 
       <span class="mb-4 text-blue block target-modal close-modals cursor-pointer" data-modalid="#sign-in" data-targetid="#forgot-password">Забыли пароль?</span>
-      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Отправить</button>
+      <button class="btn bg-orange w-full h-[44px] text-[18px] text-white rounded-[12px] mb-2">Войти</button>
 
       <button class="w-full h-[44px] bg-white border border-[#DFE3E6] rounded-[12px] text-[15px] close-modals target-modal" data-targetid="#sign-in-not-pass" data-modalid="#sign-in">Быстрый вход без проля</button>
 
@@ -767,15 +767,15 @@
 
     <div class="modal-content">
       <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
+      <p class="text-[16px] leading-[130%] mb-2">
         На ваш электронный адрес:
       </p>
 
-      <label class="def-input mb-4 disabled">
+      <label class="def-input mb-2 disabled">
         <input type="email" required placeholder="Ваш Email" disabled value="******@gmail.com">
       </label>
 
-      <p class="text-[16px] leading-[130%] mb-4">
+      <p class="text-[16px] leading-[130%] mb-2">
         отправлено письмо с инструкцией по восстановлению пароля. <br><br>
         Если в течение 5 мин не получили письмо, пожалуйста, проверьте SPAM
       </p>
@@ -853,11 +853,11 @@
     <div class="modal-content">
 
       <div class="flex justify-start items-start">
-        <div class="w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
+        <div class="w-[48px] min-w-[48px] h-[48px] mr-[16px] bg-[#3FC431] rounded-full flex justify-center items-center text-[25px] mb-6">
           <i class="icon-check text-white"></i>
         </div>
         <p class="text-[16px] leading-[130%] mb-3">
-          Введите код, полученный в письме
+          Ваш код успешно подтвержден, представьтесь, пожалуйста
         </p>
       </div>
 
@@ -872,10 +872,12 @@
             </clipPath>
           </defs>
         </svg>
-        <input type="email" required placeholder="Ваш Email">
+        <input type="text" required placeholder="Ваше Имя ">
       </label>
 
-      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">Подтвердить</button>
+      <button class="bg-orange w-full h-[44px] text-[16px] text-white rounded-[12px] mb-2 close-modals" data-modalid="#modal-thanks">
+        Войти
+      </button>
     </div>
   </div>
 </div>
