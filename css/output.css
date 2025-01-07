@@ -42,6 +42,11 @@ a {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -2319,16 +2324,16 @@ video {
   min-width: 40px;
 }
 
+.min-w-\[48px\]{
+  min-width: 48px;
+}
+
 .min-w-\[56px\]{
   min-width: 56px;
 }
 
 .min-w-\[8px\]{
   min-width: 8px;
-}
-
-.min-w-\[48px\]{
-  min-width: 48px;
 }
 
 .max-w-7xl{
