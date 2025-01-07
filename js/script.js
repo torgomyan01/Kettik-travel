@@ -415,24 +415,27 @@ addDocModal.forEach((doc) => {
   })
 })
 
-new Swiper(".mySwiper", {
-  slidesPerView: 3, // Ցուցադրվող սլայդերի քանակը
-  slidesPerGroup: 1, // Միաժամանակ անցնող սլայդերի քանակը
-  spaceBetween: 10, // Սլայդերի միջև հեռավորություն (ըստ անհրաժեշտության)
-  loop: true, // Սլայդերի անվերջ պտույտ
 
-  breakpoints: {
-    300: {
-      slidesPerView: 1,
+if($el(".mySwiper")){
+  new Swiper(".mySwiper", {
+    slidesPerView: 3, // Ցուցադրվող սլայդերի քանակը
+    slidesPerGroup: 1, // Միաժամանակ անցնող սլայդերի քանակը
+    spaceBetween: 10, // Սլայդերի միջև հեռավորություն (ըստ անհրաժեշտության)
+    loop: true, // Սլայդերի անվերջ պտույտ
+
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+      },
     },
-    768: {
-      slidesPerView: 2,
+    navigation: {
+      nextEl: '#next-slider',
     },
-    1280: {
-      slidesPerView: 3,
-    },
-  },
-  navigation: {
-    nextEl: '#next-slider',
-  },
-});
+  });
+}
