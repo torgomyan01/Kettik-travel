@@ -452,6 +452,7 @@ picker.forEach((item) => {
   let scrollTop = 0;
   let activeItem = 0;
 
+  let isScrolling;
 
   item.addEventListener('scroll', (e) => {
     e.preventDefault();
@@ -465,29 +466,44 @@ picker.forEach((item) => {
 
     const active = activeItem >= items.length - 1 ? items.length - 1 : activeItem;
 
-    console.log(active)
     items[active].classList.add('active');
+
+    // Մաքրում ենք նախորդ timeout-ը, քանի դեռ սքրոլը չի կանգնել
+    clearTimeout(isScrolling);
+
+    // Սահմանում ենք նոր timeout
+    isScrolling = setTimeout(() => {
+      pickerCorrections(item, scrollTop, activeItem, itemHeight)
+    }, 200); // 100ms անց սքրոլի կանգը կհայտնաբերվի
 
   });
 
 
   item.addEventListener('wheel', (event) => {
-    pickerCorrections(item, scrollTop, activeItem, itemHeight)
+    event.preventDefault();
+
+
+    if(event.deltaY > 0) {
+      activeItem += 1;
+    } else {
+      activeItem -= 1;
+    }
+
+
+    const top = activeItem * itemHeight;
+    item.scrollTo({ top: top, behavior: 'smooth' });
   });
 
 
-  item.addEventListener('touchend', (event) => {
-    pickerCorrections(item, scrollTop, activeItem, itemHeight)
-  });
+  // item.addEventListener('touchend', (event) => {
+  //   pickerCorrections(item, scrollTop, activeItem, itemHeight)
+  // });
 
 })
 
 
 function pickerCorrections(item, scrollTop, activeItem, itemHeight){
   const top = activeItem * itemHeight;
-
-
-  console.log(scrollTop, activeItem * itemHeight)
 
   item.scrollTo({ top: top, behavior: 'smooth' });
 
