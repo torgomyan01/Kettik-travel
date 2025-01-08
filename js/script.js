@@ -468,19 +468,18 @@ picker.forEach((item) => {
 
     items[active - 1] ? items[active - 1].style.transform = 'scale(0.8)' : null;
     items[active - 2] ? items[active - 2].style.transform = 'scale(0.6)' : null;
-
+    items[active].style.transform = 'scale(0.9)';
     items[active + 1] ?  items[active + 1].style.transform = 'scale(0.8)' : null;
     items[active + 2] ? items[active + 2].style.transform = 'scale(0.6)' : null
 
-
-    items[active].classList.add('active');
-    items[active].style.transform = 'scale(1)';
 
     clearTimeout(isScrolling);
 
     isScrolling = setTimeout(() => {
       pickerCorrections(item, scrollTop, activeItem, itemHeight)
-    }, 200);
+      items[active].classList.add('active');
+      items[active].style.transform = 'scale(1)';
+    }, 100);
 
   });
 

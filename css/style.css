@@ -525,7 +525,6 @@ input:focus {
   letter-spacing: -0.5px;
   position: relative;
   z-index: 1;
-  transition: 0.3s;
   transform: scale(0.6);
 }
 .time-picker .picker .item:nth-of-type(2) {
