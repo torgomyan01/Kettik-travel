@@ -589,10 +589,17 @@ input:focus {
   letter-spacing: -0.5px;
   position: relative;
   z-index: 1;
+  transition: 0.3s;
+  transform: scale(0.6);
+}
+
+.time-picker .picker .item:nth-of-type(2) {
+  transform: scale(0.8);
 }
 
 .time-picker .picker .item.active {
   color: #11181C;
+  transform: scale(1);
 }
 
 .nav {

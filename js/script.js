@@ -466,15 +466,21 @@ picker.forEach((item) => {
 
     const active = activeItem >= items.length - 1 ? items.length - 1 : activeItem;
 
-    items[active].classList.add('active');
+    items[active - 1] ? items[active - 1].style.transform = 'scale(0.8)' : null;
+    items[active - 2] ? items[active - 2].style.transform = 'scale(0.6)' : null;
 
-    // Մաքրում ենք նախորդ timeout-ը, քանի դեռ սքրոլը չի կանգնել
+    items[active + 1] ?  items[active + 1].style.transform = 'scale(0.8)' : null;
+    items[active + 2] ? items[active + 2].style.transform = 'scale(0.6)' : null
+
+
+    items[active].classList.add('active');
+    items[active].style.transform = 'scale(1)';
+
     clearTimeout(isScrolling);
 
-    // Սահմանում ենք նոր timeout
     isScrolling = setTimeout(() => {
       pickerCorrections(item, scrollTop, activeItem, itemHeight)
-    }, 200); // 100ms անց սքրոլի կանգը կհայտնաբերվի
+    }, 200);
 
   });
 
@@ -482,22 +488,15 @@ picker.forEach((item) => {
   item.addEventListener('wheel', (event) => {
     event.preventDefault();
 
-
     if(event.deltaY > 0) {
       activeItem += 1;
     } else {
       activeItem -= 1;
     }
 
-
     const top = activeItem * itemHeight;
     item.scrollTo({ top: top, behavior: 'smooth' });
   });
-
-
-  // item.addEventListener('touchend', (event) => {
-  //   pickerCorrections(item, scrollTop, activeItem, itemHeight)
-  // });
 
 })
 
@@ -506,6 +505,5 @@ function pickerCorrections(item, scrollTop, activeItem, itemHeight){
   const top = activeItem * itemHeight;
 
   item.scrollTo({ top: top, behavior: 'smooth' });
-
 
 }
