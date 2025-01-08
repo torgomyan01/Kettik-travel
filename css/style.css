@@ -177,6 +177,12 @@ input:focus {
   top: 0;
   left: 0;
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-tooltip.show {
+  opacity: 1;
+  visibility: visible;
 }
 .modal-tooltip-fon {
   background-color: rgba(0, 0, 0, 0.71);
@@ -533,6 +539,20 @@ input:focus {
 .time-picker .picker .item.active {
   color: #11181C;
   transform: scale(1);
+}
+
+.desktop-select-time-fon {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+  display: none;
+}
+.desktop-select-time-fon.show {
+  display: block;
 }
 
 .nav {

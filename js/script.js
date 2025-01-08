@@ -442,13 +442,13 @@ if($el(".mySwiper")){
 
 
 const picker = $('.time-picker .picker');
-const pickerItem = $el('.time-picker .picker .item').getBoundingClientRect();
+const inputSelectTime = $el('.input-select-time');
+const selectBodyTime = $el('.select-body-time');
 
 
-
-picker.forEach((item) => {
+picker?.forEach((item) => {
   const items = item.querySelectorAll('.item');
-  const itemHeight = pickerItem.height + 8;
+  const itemHeight = 44;
   let scrollTop = 0;
   let activeItem = 0;
 
@@ -479,6 +479,17 @@ picker.forEach((item) => {
       pickerCorrections(item, scrollTop, activeItem, itemHeight)
       items[active].classList.add('active');
       items[active].style.transform = 'scale(1)';
+
+
+
+
+      const day = $el('.desktop-select-time .days .active').innerHTML;
+      const hours = $el('.desktop-select-time .hours .active').innerHTML;
+      const minutes = $el('.desktop-select-time .minutes .active').innerHTML;
+
+
+      inputSelectTime.querySelector('input').value = `${day}, ${hours}:${minutes}`;
+
     }, 100);
 
   });
@@ -493,6 +504,8 @@ picker.forEach((item) => {
       activeItem -= 1;
     }
 
+    console.log(itemHeight)
+
     const top = activeItem * itemHeight;
     item.scrollTo({ top: top, behavior: 'smooth' });
   });
@@ -506,3 +519,53 @@ function pickerCorrections(item, scrollTop, activeItem, itemHeight){
   item.scrollTo({ top: top, behavior: 'smooth' });
 
 }
+
+
+const targetModalToolTip = $('.target-tooltip');
+const closeToolTipMobile = $('.close-tooltip');
+
+
+targetModalToolTip?.forEach((item) => {
+  item.addEventListener('click', e => {
+    const getModalId = item.dataset.targetid;
+
+    if(getModalId){
+      $el(getModalId).classList.add('show');
+    }
+  })
+})
+
+closeToolTipMobile?.forEach((item) => {
+  item.addEventListener('click', e => {
+    const getModalId = item.dataset.targetid;
+
+    if(getModalId){
+      $el(getModalId).classList.remove('show');
+    }
+  })
+})
+
+const saveSelectedTime = $el('.save-selected-time');
+const selectTimeInput = $el('.select-time-input');
+
+saveSelectedTime?.addEventListener('click', function(){
+  const day = $el('.mobile-select-data .days .active').innerHTML;
+  const hours = $el('.mobile-select-data .hours .active').innerHTML;
+  const minutes = $el('.mobile-select-data .minutes .active').innerHTML;
+
+  selectTimeInput.value = `${day}, ${hours}:${minutes}`;
+})
+
+
+const desktopSelectTimeFon = $el('.desktop-select-time-fon');
+
+inputSelectTime?.addEventListener('click', function (){
+  selectBodyTime.classList.toggle('hidden');
+  desktopSelectTimeFon.classList.toggle('show');
+  document.body.classList.toggle('overflow-hidden');
+})
+desktopSelectTimeFon?.addEventListener('click', function (){
+  selectBodyTime.classList.toggle('hidden');
+  desktopSelectTimeFon.classList.toggle('show');
+  document.body.classList.toggle('overflow-hidden');
+})

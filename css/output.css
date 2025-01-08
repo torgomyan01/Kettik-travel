@@ -199,6 +199,13 @@ input:focus {
   top: 0;
   left: 0;
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-tooltip.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-tooltip-fon {
@@ -599,6 +606,21 @@ input:focus {
 .time-picker .picker .item.active {
   color: #11181C;
   transform: scale(1);
+}
+
+.desktop-select-time-fon {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+  display: none;
+}
+
+.desktop-select-time-fon.show {
+  display: block;
 }
 
 .nav {
@@ -1669,6 +1691,10 @@ video {
   top: -70px;
 }
 
+.top-\[100\%\]{
+  top: 100%;
+}
+
 .top-\[18px\]{
   top: 18px;
 }
@@ -1991,6 +2017,10 @@ video {
 
 .mt-\[2px\]{
   margin-top: 2px;
+}
+
+.mt-\[3px\]{
+  margin-top: 3px;
 }
 
 .mt-\[60px\]{
@@ -2316,6 +2346,10 @@ video {
 
 .w-\[310px\]{
   width: 310px;
+}
+
+.w-\[328px\]{
+  width: 328px;
 }
 
 .w-\[36px\]{
@@ -2676,6 +2710,10 @@ video {
 
 .rounded-3xl{
   border-radius: 1.5rem;
+}
+
+.rounded-\[0_0_24px_0\]{
+  border-radius: 0 0 24px 0;
 }
 
 .rounded-\[0_0_24px_24px\]{
