@@ -439,3 +439,57 @@ if($el(".mySwiper")){
     },
   });
 }
+
+
+const picker = $('.time-picker .picker');
+const pickerItem = $el('.time-picker .picker .item').getBoundingClientRect();
+
+
+
+picker.forEach((item) => {
+  const items = item.querySelectorAll('.item');
+  const itemHeight = pickerItem.height + 8;
+  let scrollTop = 0;
+  let activeItem = 0;
+
+
+  item.addEventListener('scroll', (e) => {
+    e.preventDefault();
+
+    scrollTop = item.scrollTop;
+    activeItem = Math.floor((scrollTop + 8) / itemHeight);
+
+    items.forEach((_it) => {
+      _it.classList.remove('active');
+    })
+
+    const active = activeItem >= items.length - 1 ? items.length - 1 : activeItem;
+
+    console.log(active)
+    items[active].classList.add('active');
+
+  });
+
+
+  item.addEventListener('wheel', (event) => {
+    pickerCorrections(item, scrollTop, activeItem, itemHeight)
+  });
+
+
+  item.addEventListener('touchend', (event) => {
+    pickerCorrections(item, scrollTop, activeItem, itemHeight)
+  });
+
+})
+
+
+function pickerCorrections(item, scrollTop, activeItem, itemHeight){
+  const top = activeItem * itemHeight;
+
+
+  console.log(scrollTop, activeItem * itemHeight)
+
+  item.scrollTo({ top: top, behavior: 'smooth' });
+
+
+}
