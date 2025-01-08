@@ -1607,6 +1607,10 @@ video {
   top: 8px;
 }
 
+.left-\[calc\(100\%_-_40px\)\]{
+  left: calc(100% - 40px);
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2292,6 +2296,22 @@ video {
   width: 100%;
 }
 
+.w-\[calc\(100\%_\/_6\)\]{
+  width: calc(100% / 6);
+}
+
+.w-\[180px\]{
+  width: 180px;
+}
+
+.w-\[150px\]{
+  width: 150px;
+}
+
+.w-\[130px\]{
+  width: 130px;
+}
+
 .min-w-\[100px\]{
   min-width: 100px;
 }
@@ -2414,6 +2434,14 @@ video {
 
 .max-w-\[960px\]{
   max-width: 960px;
+}
+
+.max-w-\[calc\(100\%_\/_6\)\]{
+  max-width: calc(100% / 6);
+}
+
+.max-w-\[calc\(100\%_\/_2\)\]{
+  max-width: calc(100% / 2);
 }
 
 .translate-x-\[-50\%\]{
@@ -4051,6 +4079,18 @@ video {
   }
 }
 
+@media (min-width: 1178px){
+  .min-\[1178px\]\:w-\[164px\]{
+    width: 164px;
+  }
+}
+
+@media (min-width: 1188px){
+  .min-\[1188px\]\:w-\[237px\]{
+    width: 237px;
+  }
+}
+
 @media (min-width: 1280px){
   .xl\:relative{
     position: relative;
@@ -4062,6 +4102,10 @@ video {
 
   .xl\:left-\[-30px\]{
     left: -30px;
+  }
+
+  .xl\:left-\[-10px\]{
+    left: -10px;
   }
 
   .xl\:block{
@@ -4078,6 +4122,14 @@ video {
 
   .xl\:w-\[calc\(100\%_\/_3\)\]{
     width: calc(100% / 3);
+  }
+
+  .xl\:max-w-\[calc\(100\%_\/_2\)\]{
+    max-width: calc(100% / 2);
+  }
+
+  .xl\:max-w-\[calc\(100\%_\/_6\)\]{
+    max-width: calc(100% / 6);
   }
 
   .xl\:flex-row{
