@@ -67,7 +67,7 @@
 
     <div class="w-full">
 
-      <div class="flex-jsb-c mb-6">
+      <div class="flex-jsb-c mb-6 target-modal" data-targetid="#modal-select-currency">
         <div class="flex-js-s">
           <img class="mr-2" src="images/icons/bank.svg" alt="bank" width="24" height="24">
           <div>
@@ -80,7 +80,7 @@
           <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
         </div>
       </div>
-      <div class="flex-jsb-c mb-16">
+      <div class="flex-jsb-c mb-16 target-modal" data-targetid="#modal-select-language">
         <div class="flex-js-c">
           <img class="mr-2" src="images/icons/earth.svg" alt="bank" width="24" height="24">
           <div>
@@ -886,22 +886,42 @@
 <div class="modal" id="modal-select-currency">
   <div class="modal-fon" data-modalid="#modal-select-currency"></div>
   <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-currency">+</div>
+    <div class="h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals" data-modalid="#modal-select-currency"></i>
+      <h4 class="text-[18px] font-bold">Выбрать язык</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#modal-select-currency">+</div>
+    </div>
+
+    <div class="modal-close hidden sm:block" data-modalid="#modal-select-currency">+</div>
 
     <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры валюты интерфейса
-      </p>
+     <div class="hidden sm:block">
+       <h4 class="text-[18px] font-bold mb-2">Выбрать валюту</h4>
+       <p class="text-[16px] leading-[130%] mb-4">
+         Выберите предпочтительные параметры валюты интерфейса
+       </p>
 
-      <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>RUB - Российский рубль</option>
-          <option value="" selected>UZS - Узбекский сом</option>
-          <option value="" selected>USD - Доллар США</option>
-        </select>
-      </label>
+       <h4 class="text-[18px] font-bold mb-2">Валюта</h4>
+       <label>
+         <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+           <option value="" selected>RUB - Российский рубль</option>
+           <option value="" selected>UZS - Узбекский сом</option>
+           <option value="" selected>USD - Доллар США</option>
+         </select>
+       </label>
+     </div>
+
+      <div class="block sm:hidden w-full border rounded-[16px]">
+        <div class="w-full h-[56px] px-4 border-b flex-js-c font-bold">
+          UZS - Узбекский сом
+        </div>
+        <div class="w-full h-[56px] px-4 border-b flex-js-c">
+          RUB - Российский рубль
+        </div>
+        <div class="w-full h-[56px] px-4 flex-js-c">
+          USD - Доллар США
+        </div>
+      </div>
 
     </div>
   </div>
@@ -910,22 +930,45 @@
 <div class="modal" id="modal-select-language">
   <div class="modal-fon" data-modalid="#modal-select-language"></div>
   <div class="modal-body max-w-[396px]">
-    <div class="modal-close" data-modalid="#modal-select-language">+</div>
+    <div class="h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals" data-modalid="#modal-select-language"></i>
+      <h4 class="text-[18px] font-bold">Выбрать язык</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#modal-select-language">+</div>
+    </div>
+
+    <div class="modal-close hidden sm:block" data-modalid="#modal-select-language">+</div>
 
     <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
-        Выберите предпочтительные параметры языка интерфейса
-      </p>
+      <div class="hidden sm:block">
+        <h4 class="text-[18px] font-bold mb-2">Выбрать язык</h4>
+        <p class="text-[16px] leading-[130%] mb-4">
+          Выберите предпочтительные параметры языка интерфейса
+        </p>
 
-      <h4 class="text-[18px] font-bold mb-2">Язык</h4>
-      <label>
-        <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
-          <option value="" selected>Русский</option>
-          <option value="">O'zbek</option>
-          <option value="">English</option>
-        </select>
-      </label>
+        <h4 class="text-[18px] font-bold mb-2">Язык</h4>
+        <label>
+          <select class="w-full h-[64px] border border-[#E6E8EB] rounded-[8px] pl-3">
+            <option value="" selected>Русский</option>
+            <option value="">O'zbek</option>
+            <option value="">English</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="block sm:hidden w-full border rounded-[16px]">
+        <div class="w-full h-[56px] px-4 border-b flex-js-c font-bold">
+          <img src="images/ru-flag.png" alt="flag ru" width="24" height="24" class="mr-[12px] rounded-full">
+          Русский
+        </div>
+        <div class="w-full h-[56px] px-4 border-b flex-js-c">
+          <img src="images/flag_uz.png" alt="flag ru" width="24" height="24" class="mr-[12px] rounded-full">
+          O'zbek
+        </div>
+        <div class="w-full h-[56px] px-4 flex-js-c">
+          <img src="images/flag-en.png" alt="flag ru" width="24" height="24" class="mr-[12px] rounded-full">
+          English
+        </div>
+      </div>
 
     </div>
   </div>

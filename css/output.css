@@ -186,6 +186,12 @@ input:focus {
   }
 }
 
+@media (max-width: 640px) {
+  .modal-content {
+    padding: 16px;
+  }
+}
+
 .def-input {
   width: 100%;
   height: 44px;
@@ -505,6 +511,8 @@ input:focus {
   width: 100%;
   height: 5.125rem;
   background-color: #fff;
+  position: relative;
+  z-index: 9;
 }
 
 @media (max-width: 768px) {
@@ -1781,6 +1789,10 @@ video {
 
 .mr-\[-5px\]{
   margin-right: -5px;
+}
+
+.mr-\[12px\]{
+  margin-right: 12px;
 }
 
 .mr-\[14px\]{
