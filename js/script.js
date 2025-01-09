@@ -569,3 +569,28 @@ desktopSelectTimeFon?.addEventListener('click', function (){
   desktopSelectTimeFon.classList.toggle('show');
   document.body.classList.toggle('overflow-hidden');
 })
+
+
+const tabs = $('.tabs');
+const tabContent = $('.tab-content');
+
+tabs.forEach((item) => {
+  item.addEventListener('click', e => {
+    tabs.forEach((_tab) => {
+      _tab.classList.remove('active');
+    })
+    item.classList.add('active');
+
+
+    tabContent.forEach((_tabContent) => {
+      _tabContent.classList.add('hidden');
+    })
+
+    const id = item.dataset.tabid;
+
+    console.log(id)
+
+    $el(id).classList.remove('hidden');
+
+  })
+})
