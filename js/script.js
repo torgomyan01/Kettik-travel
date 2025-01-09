@@ -67,6 +67,7 @@ targetsModals.forEach((target) => {
 
     if(getModalId){
       $el(getModalId).classList.add('show');
+      document.body.classList.add('overflow-hidden');
     }
   })
 })
@@ -77,6 +78,7 @@ modalChangeRate.forEach((target) => {
 
     if(getModalId){
       $el(getModalId).classList.add('show');
+      document.body.classList.add('overflow-hidden');
     }
   })
 })
@@ -95,6 +97,7 @@ function closeModal(modalId){
 
     if(getModalId){
       $el(getModalId).classList.remove('show');
+      document.body.classList.remove('overflow-hidden');
     }
   })
 }
