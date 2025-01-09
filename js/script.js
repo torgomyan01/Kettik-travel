@@ -595,3 +595,16 @@ tabs.forEach((item) => {
 
   })
 })
+
+
+const parentNavDropdown = $el('#parent-nav-dropdown');
+const nawDropDown = $el('#nav-dropdown');
+const fontForClose = $el('#font-for-close');
+
+nawDropDown.addEventListener('click', (e) => {
+  parentNavDropdown.classList.toggle('active');
+})
+
+fontForClose.addEventListener('click', (e) => {
+  parentNavDropdown.classList.toggle('active');
+})
