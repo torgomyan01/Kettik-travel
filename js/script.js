@@ -127,6 +127,7 @@ const mobileMenuBody = $el('.mobile-menu-body');
 mobileMenu?.addEventListener('click', e => {
   mobileMenu.classList.toggle('active')
   mobileMenuBody.classList.toggle('active')
+  document.body.classList.toggle('overflow-hidden')
 })
 
 
