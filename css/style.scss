@@ -377,7 +377,7 @@ input:focus {
   z-index: 10;
   padding: 5px 8px;
   border-radius: 6px;
-  transform: translate(-10px, calc(-100% - 10px));
+  transform: translate(-15px, calc(-100% - 10px));
   max-width: 223px;
   height: auto;
   text-align: center;
@@ -529,6 +529,47 @@ input:focus {
 }
 
 
+.def-checkbox{
+
+
+  input{
+    display: none;
+  }
+
+  input:checked ~ span{
+    border: 1px solid #1150CB;
+    background: #1150CB;
+  }
+
+  input:checked ~ span:after{
+    opacity: 1;
+  }
+
+
+  span{
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    gap: 8px;
+    border-radius: 4px;
+    background: #EDF8FF;
+    border: 1px solid #C1C8CD;;
+    @include flex('c', 'c');
+    transition: 0.3s;
+
+
+    &:after{
+      content: "\e901";
+      font-family: "icomoon" !important;
+      color: #fff;
+      margin-top: 0;
+      display: block;
+      font-size: 15px;
+      transition: 0.3s;
+      opacity: 0;
+    }
+  }
+}
 
 
 // NAVBAR

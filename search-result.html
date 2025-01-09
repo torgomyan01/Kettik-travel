@@ -452,42 +452,55 @@
           </div>
           <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
 
-          <label class="flex justify-start items-start mb-3">
-            <input type="checkbox" class="mt-1 block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-            <span>
-              <span class="font-bold">
-              Несколько авиакомпаний
-              </span>
-              <span class="text-[14px] text-[#687076] leading-[116%]">
-                Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
-              </span>
-            </span>
-          </label>
-          <label class="flex justify-start items-center mb-2">
-            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
+          <div class="flex justify-start items-start mb-3">
+
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2 mt-1"></span>
+
+              <div>
+                <div class="font-bold">
+                  Несколько авиакомпаний
+                </div>
+                <div class="text-[14px] text-[#687076] leading-[116%]">
+                  Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+                </div>
+              </div>
+            </label>
+
+          </div>
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
             <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
             UZBEKISTAN AIR
           </label>
-          <label class="flex justify-start items-center mb-2">
-            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
             <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
             AZERBAIJAN AIR
           </label>
-          <label class="flex justify-start items-center mb-2">
-            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
             <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
             S7 Airlines
           </label>
-          <label class="flex justify-start items-center mb-2">
-            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
             <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
             Turkish Airlines
           </label>
-          <label class="flex justify-start items-center mb-2">
-            <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
             <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
             AIR ASTANA
           </label>
+
 
           <div class="text-blue mt-4 text-[14px] cursor-pointer">
             Показать все
@@ -518,7 +531,7 @@
             <div>
               <div class="flex-jsb-c mb-4">
                 <div class="flex-js-c">
-                  <img src="images/icons/uz-air.svg" alt="uz-air">
+                  <img src="images/icons/uz-air.svg" alt="uz-air" class="def-tooltip" title="UZBEKISTAN AIR">
                 </div>
                 <div class="flex-je-c">
                   <svg class="mb-[2px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -713,7 +726,7 @@
                 <span class="text-[14px] text-[#687076]">Отправление</span>
               </div>
               <div class="text-center text-[14px] mb-[-15px]">
-                3 ч 05 мин
+                <b>8</b> ч <b>40</b> мин
               </div>
               <div class="flex-jsb-c">
                 <span class="text-[18px] font-bold mr-6">16:30</span>
@@ -725,13 +738,13 @@
                   <div
                       class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
                     <span
-                        class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                        class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white def-tooltip" title="Стыковка: 1 ч 20 мин Афинский международный аэропорт «Элефтериос Венизелос» (ATN) "></span>
                   </div>
                 </div>
                 <span class="text-[18px] font-bold ml-6">
                   1:10
                 </span>
-                <sup class="ml-2 text-[#687076]">+1</sup>
+                <sup class="ml-2 text-[#687076] def-tooltip cursor-default" title="Вы прибудете в пункт назначения на следующий день — cб 26 окт">+1</sup>
               </div>
               <div class="flex-jsb-c">
                 <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
@@ -808,7 +821,7 @@
                 <span class="text-[14px] text-[#687076]">Отправление</span>
               </div>
               <div class="text-center text-[14px] mb-[-15px]">
-                3 ч 05 мин
+                <b>12</b> ч <b>25</b> мин
               </div>
               <div class="flex-jsb-c">
                 <span class="text-[18px] font-bold mr-6">16:30</span>
@@ -820,9 +833,11 @@
                   <div
                       class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
                     <span
-                        class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                        title="Стыковка: 1 ч 20 мин Афинский международный аэропорт «Элефтериос Венизелос» (ATN)"
+                        class="def-tooltip w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
                     <span
-                        class="w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
+                        title="Стыковка: 55 мин Аэропорт Ханья́ «Иоаннис Даскалояннис» (CHQ)"
+                        class="def-tooltip w-[10px] h-[10px]  bg-white cursor-default border-2 border-orange rounded-full outline outline-[3px] outline-white"></span>
                   </div>
                 </div>
                 <span class="text-[18px] font-bold ml-6">
@@ -917,7 +932,7 @@
                 <span class="text-[14px] text-[#687076]">Ташкент (TAS)</span>
                 <span class="text-[14px] text-[#687076] bg-[#F1F3F5] px-1 rounded-[6px]">прямой</span>
                 <span class="text-[14px] text-[#687076]">
-                  <i class="icon-exclamation-solid mr-1 text-[12px] text-orange mobile-filter" data-targetid="#arrive-depart"></i>
+                  <i class="icon-exclamation-solid mr-1 text-[12px] text-orange mobile-filter def-tooltip" title="Вы прибываете и отправляетесь из разных аэропортов" data-targetid="#arrive-depart"></i>
                   Москва (VKO)
                 </span>
               </div>
@@ -2256,16 +2271,16 @@
       <h5 class="text-[18px] font-bold mb-4">Пересадки</h5>
 
       <div class="flex justify-start items-center gap-[8px]">
-        <div class="p-[7px_16px] bg-purple text-white text-[14px] rounded-[6px] cursor-pointer">
+        <div class="transplants-tabs p-[7px_16px] bg-purple text-white text-[14px] rounded-[6px] cursor-pointer">
           Неважно
         </div>
-        <div class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+        <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
           0
         </div>
-        <div class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+        <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
           1
         </div>
-        <div class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+        <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
           2+
         </div>
       </div>
@@ -2348,7 +2363,7 @@
       <div class="w-full mb-4 flex justify-between items-center">
         <h5 class="text-[18px] font-bold">Время в пути</h5>
 
-        <div class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+        <div class="select-button text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
           до 24 ч 00 мин
           <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
         </div>
@@ -2365,7 +2380,7 @@
       <div class="w-full mb-4 flex justify-between items-center">
         <h5 class="text-[18px] font-bold">Цена</h5>
 
-        <div class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+        <div class="select-button text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
           до 9 000 000 000 сум
           <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
         </div>
@@ -2396,51 +2411,64 @@
           </div>
         </div>
         <div class="flex justify-between items-center">
-          <div class="w-full text-[16px] flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
+          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
             Отправление
           </div>
-          <div class="w-full text-[16px] flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
+          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
             Возвращение
           </div>
         </div>
         <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
 
-        <label class="flex justify-start items-start mb-3">
-          <input type="checkbox" class="mt-1 block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-          <span>
-              <span class="font-bold block text-[16px]">
-              Несколько авиакомпаний
-              </span>
-              <span class="text-[14px] text-[#687076] leading-[116%]">
+        <div class="flex justify-start items-start mb-3">
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2 mt-1"></span>
+
+            <div>
+              <div class="font-bold">
+                Несколько авиакомпаний
+              </div>
+              <div class="text-[14px] text-[#687076] leading-[116%]">
                 Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
-              </span>
-            </span>
-        </label>
-        <label class="flex justify-start items-center mb-3 text-[16px]">
-          <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+              </div>
+            </div>
+          </label>
+
+        </div>
+
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
           <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
           UZBEKISTAN AIR
         </label>
-        <label class="flex justify-start items-center mb-3 text-[16px]">
-          <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
           <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
           AZERBAIJAN AIR
         </label>
-        <label class="flex justify-start items-center mb-3 text-[16px]">
-          <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
           <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
           S7 Airlines
         </label>
-        <label class="flex justify-start items-center mb-3 text-[16px]">
-          <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
           <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
           Turkish Airlines
         </label>
-        <label class="flex justify-start items-center mb-3 text-[16px]">
-          <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2">
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
           <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
           AIR ASTANA
         </label>
+
 
         <div class="text-blue mt-4 text-[14px] cursor-pointer">
           Показать все

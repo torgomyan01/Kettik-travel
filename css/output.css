@@ -470,7 +470,7 @@ input:focus {
   z-index: 10;
   padding: 5px 8px;
   border-radius: 6px;
-  transform: translate(-10px, calc(-100% - 10px));
+  transform: translate(-15px, calc(-100% - 10px));
   max-width: 223px;
   height: auto;
   text-align: center;
@@ -621,6 +621,44 @@ input:focus {
 
 .desktop-select-time-fon.show {
   display: block;
+}
+
+.def-checkbox input {
+  display: none;
+}
+
+.def-checkbox input:checked ~ span {
+  border: 1px solid #1150CB;
+  background: #1150CB;
+}
+
+.def-checkbox input:checked ~ span:after {
+  opacity: 1;
+}
+
+.def-checkbox span {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  gap: 8px;
+  border-radius: 4px;
+  background: #EDF8FF;
+  border: 1px solid #C1C8CD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.def-checkbox span:after {
+  content: "\e901";
+  font-family: "icomoon" !important;
+  color: #fff;
+  margin-top: 0;
+  display: block;
+  font-size: 15px;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 .nav {
@@ -1619,10 +1657,6 @@ video {
   left: 0px;
 }
 
-.left-\[-15px\]{
-  left: -15px;
-}
-
 .left-\[16px\]{
   left: 16px;
 }
@@ -1877,10 +1911,6 @@ video {
 
 .ml-\[-1px\]{
   margin-left: -1px;
-}
-
-.ml-\[-20px\]{
-  margin-left: -20px;
 }
 
 .ml-\[8px\]{
@@ -2256,12 +2286,12 @@ video {
   min-height: 20px;
 }
 
-.min-h-\[47px\]{
-  min-height: 47px;
-}
-
 .min-h-\[413px\]{
   min-height: 413px;
+}
+
+.min-h-\[47px\]{
+  min-height: 47px;
 }
 
 .\!w-\[16px\]{
@@ -3321,10 +3351,6 @@ video {
   padding-left: 24px;
 }
 
-.pr-0{
-  padding-right: 0px;
-}
-
 .pr-2{
   padding-right: 0.5rem;
 }
@@ -3343,10 +3369,6 @@ video {
 
 .pr-\[12px\]{
   padding-right: 12px;
-}
-
-.pr-\[15px\]{
-  padding-right: 15px;
 }
 
 .pt-12{
@@ -3725,11 +3747,6 @@ video {
 .after\:hidden::after{
   content: var(--tw-content);
   display: none;
-}
-
-.after\:h-\[24px\]::after{
-  content: var(--tw-content);
-  height: 24px;
 }
 
 .hover\:border-blue:hover{
@@ -4237,10 +4254,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:left-\[-10px\]{
-    left: -10px;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -4277,10 +4290,6 @@ video {
     align-items: center;
   }
 
-  .lg\:pr-0{
-    padding-right: 0px;
-  }
-
   .lg\:text-left{
     text-align: left;
   }
@@ -4306,12 +4315,6 @@ video {
   }
 }
 
-@media (min-width: 1279px){
-  .min-\[1279px\]\:max-w-\[calc\(100\%_\/_6\)\]{
-    max-width: calc(100% / 6);
-  }
-}
-
 @media (min-width: 1280px){
   .xl\:relative{
     position: relative;
@@ -4319,18 +4322,6 @@ video {
 
   .xl\:left-\[-10px\]{
     left: -10px;
-  }
-
-  .xl\:left-\[-30px\]{
-    left: -30px;
-  }
-
-  .xl\:block{
-    display: block;
-  }
-
-  .xl\:hidden{
-    display: none;
   }
 
   .xl\:w-\[calc\(\(100\%_\/_3\)_-_17px\)\]{
