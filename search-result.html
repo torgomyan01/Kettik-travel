@@ -138,7 +138,7 @@
 <div class="search no-anim py-[6px] md:pt-12 md:pb-4 z-10 relative rounded-[0px]">
   <div class="container">
 
-    <div class="tab-content " id="form-Search-ticket">
+    <div class="tab-content hidden md:block" id="form-Search-ticket">
       <form action="/" method="post" class="search-form">
         <label class="search-form-inp there min-[1281px]:max-w-[calc(100%_/_6)]">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -295,19 +295,16 @@
         <h5 class="text-[18px] font-bold mb-4">Пересадки</h5>
 
         <div class="flex justify-start items-center gap-[8px]">
-          <div class="p-[7px_16px] bg-purple text-white text-[14px] rounded-[6px] cursor-pointer">
+          <div class="transplants-tabs p-[7px_16px] bg-purple text-white text-[14px] rounded-[6px] cursor-pointer">
             Неважно
           </div>
-          <div
-              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+          <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
             0
           </div>
-          <div
-              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+          <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
             1
           </div>
-          <div
-              class="p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition hover:bg-[#c6d2e6] cursor-pointer">
+          <div class="transplants-tabs p-[7px_16px] bg-[#DEEAFF] text-[#11181C] text-[14px] rounded-[6px] transition  cursor-pointer">
             2+
           </div>
         </div>
@@ -396,7 +393,7 @@
           <h5 class="text-[18px] font-bold">Время в пути</h5>
 
           <div
-              class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+              class="select-button text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
             до 24 ч 00 мин
             <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
           </div>
@@ -414,7 +411,7 @@
           <h5 class="text-[18px] font-bold">Цена</h5>
 
           <div
-              class="text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
+              class="select-button text-[14px] text-white bg-purple h-[38px] px-[12px] rounded-[6px] flex justify-between items-center cursor-default">
             до 9 000 000 000 сум
             <i class="icon-close ml-2 cursor-pointer text-white text-[18px]"></i>
           </div>

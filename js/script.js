@@ -601,10 +601,35 @@ const parentNavDropdown = $el('#parent-nav-dropdown');
 const nawDropDown = $el('#nav-dropdown');
 const fontForClose = $el('#font-for-close');
 
-nawDropDown.addEventListener('click', (e) => {
+nawDropDown?.addEventListener('click', (e) => {
   parentNavDropdown.classList.toggle('active');
 })
 
-fontForClose.addEventListener('click', (e) => {
+fontForClose?.addEventListener('click', (e) => {
   parentNavDropdown.classList.toggle('active');
+})
+
+
+const transplantsTabs = $('.transplants-tabs');
+
+transplantsTabs.forEach((item) => {
+  item.addEventListener('click', e => {
+    transplantsTabs.forEach((_tab) => {
+      _tab.classList.remove('bg-purple', 'text-white');
+      _tab.classList.add('bg-[#DEEAFF]', 'text-[#11181C]');
+    })
+
+    item.classList.add('bg-purple', 'text-white');
+  })
+})
+
+
+const selectButton = $('.select-button');
+
+selectButton.forEach((item) => {
+    item.addEventListener('click', e => {
+      ['text-white', 'bg-purple', 'border'].forEach(cls => item.classList.toggle(cls));
+      item.querySelector('i').classList.toggle('hidden');
+
+    })
 })
