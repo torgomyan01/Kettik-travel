@@ -2002,7 +2002,7 @@
   </div>
 </footer>
 
-<div class="change-rate" id="change-rate">
+<div class="change-rate show" id="change-rate">
   <div class="change-rate-header">
     <h3 class="text-[26px] font-bold">Сведения о поездке</h3>
     <i class="icon-close" data-modalid="#change-rate"></i>
@@ -2033,15 +2033,18 @@
                 <i class="icon-arrow-right mx-3 text-[10px]"></i>
                 <span class="font-bold">Москва</span>
               </div>
-              <div class="text-[14px] flex-js-c">
+              <div class="text-[14px] flex-js-c flex-wrap">
                 пт 25 окт — пт 25 окт
                 <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
                 4ч 25 мин
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                <img src="images/icons/user.svg" alt="user icon" class="mr-1">
+                4
               </div>
             </div>
           </div>
 
-          <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
+          <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
             <i class="icon-down"></i>
           </div>
         </div>
@@ -2078,7 +2081,7 @@
           </div>
 
           <div class="relative">
-            <div class="w-[1px] h-[calc(100%_-_66px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
+            <div class="w-[1px] h-[calc((100%_/_2)_+_15px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
 
             <div class="flex-js-s mt-6 mb-4 relative z-10">
               <div
@@ -2156,10 +2159,13 @@
                 <i class="icon-arrow-right mx-3 text-[10px]"></i>
                 <span class="font-bold">Москва</span>
               </div>
-              <div class="text-[14px] flex-js-c">
+              <div class="text-[14px] flex-js-c flex-wrap">
                 пт 25 окт — пт 25 окт
                 <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
                 4ч 25 мин
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                <img src="images/icons/user.svg" alt="user icon" class="mr-1">
+                4
               </div>
             </div>
           </div>
@@ -2172,7 +2178,7 @@
 
 
       <div class="flex-js-s md:flex-jsb-c flex-col sm:flex-row mb-[-30px] md:mb-0 p-4 pb-10 md:p-0 bg-white md:bg-transparent rounded-[24px_24px_0_0]">
-        <h3 class="text-[18px] font-bold mb-3 sm:mb-0">Доступные тарифы</h3>
+        <h3 class="text-[18px] font-bold mb-3 sm:mb-0 mr-2">Доступные тарифы</h3>
         <div class="text-[#1150CB] text-[14px] flex-je-c cursor-pointer target-modal" data-targetid="#info-rate">
           Полная информация о тарифе
           <svg class="ml-2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
