@@ -316,72 +316,137 @@
 
         <h5 class="text-[18px] font-bold mb-4">Время</h5>
 
-        <div class="flex justify-between items-center mb-6">
-          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
-            Отправление
-          </div>
-          <div
-              class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
-            Возвращение
-          </div>
-        </div>
 
-        <div class="flex justify-between items-center">
-          <div>
-            <h5 class="font-bold ">Время</h5>
-            <div class="flex justify-start items-center text-[14px] text-black/50">
-              из Ташкента
-              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-              cр 17 июл
+        <div class="tab-body">
+          <div class="flex justify-between items-center mb-6 border-b">
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2  tabs tab-filter active" data-tabid="#sends">
+              Отправление
+            </div>
+            <div
+                class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter" data-tabid="#sends-back">
+              Возвращение
             </div>
           </div>
-          <div
-              class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-            00:05 — 23:54
+
+          <div class="tab-content" id="sends">
+            <div class="flex justify-between items-center">
+              <div>
+                <h5 class="font-bold ">Вылет </h5>
+                <div class="flex justify-start items-center text-[14px] text-black/50">
+                  из Ташкента
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                  cр 17 июл
+                </div>
+              </div>
+              <div
+                  class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+                00:05 — 23:54
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center py-6 relative">
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+              <div class="w-full h-[2px] bg-blue"></div>
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+              <div
+                  class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                <span class="text-[14px] bg-white px-1 cursor-default">08:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">14:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">20:00</span>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <h5 class="font-bold ">Прилет </h5>
+                <div class="flex justify-start items-center text-[14px] text-black/50">
+                  из Ташкента
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                  cр 17 июл
+                </div>
+              </div>
+              <div
+                  class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+                00:05 — 23:54
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center py-6 relative">
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+              <div class="w-full h-[2px] bg-blue"></div>
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+              <div
+                  class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+              </div>
+            </div>
+
           </div>
-        </div>
 
-        <div class="flex justify-between items-center py-6 relative">
-          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-          <div class="w-full h-[2px] bg-blue"></div>
-          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="tab-content hidden" id="sends-back">
+            <div class="flex justify-between items-center">
+              <div>
+                <h5 class="font-bold ">Вылет 1</h5>
+                <div class="flex justify-start items-center text-[14px] text-black/50">
+                  из Ташкента
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                  cр 17 июл
+                </div>
+              </div>
+              <div
+                  class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+                00:05 — 23:54
+              </div>
+            </div>
 
-          <div
-              class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
-          </div>
-        </div>
+            <div class="flex justify-between items-center py-6 relative">
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+              <div class="w-full h-[2px] bg-blue"></div>
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
 
+              <div
+                  class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+              </div>
+            </div>
 
-        <div class="flex justify-between items-center">
-          <div>
-            <h5 class="font-bold ">Прилет</h5>
-            <div class="flex justify-start items-center text-[14px] text-black/50">
-              в Москву
-              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-              cр 17 июл
+            <div class="flex justify-between items-center">
+              <div>
+                <h5 class="font-bold ">Прилет 1</h5>
+                <div class="flex justify-start items-center text-[14px] text-black/50">
+                  из Ташкента
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                  cр 17 июл
+                </div>
+              </div>
+              <div
+                  class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+                00:05 — 23:54
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center py-6 relative">
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+              <div class="w-full h-[2px] bg-blue"></div>
+              <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+              <div
+                  class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+                <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+                <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+              </div>
             </div>
           </div>
-          <div
-              class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-            02:25 — 21:30
-          </div>
         </div>
 
-        <div class="flex justify-between items-center py-6 relative">
-          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-          <div class="w-full h-[2px] bg-blue"></div>
-          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
 
-          <div
-              class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
-          </div>
-        </div>
 
         <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
 
@@ -428,80 +493,128 @@
           </div>
         </div>
         <div class="w-full h-[1px] bg-[#D7DBDF] my-2"></div>
-
-        <div>
-          <div class="flex justify-between items-center py-4 cursor-pointer">
-            <h5 class="text-[18px] font-bold">Авиакомпании</h5>
-            <div>
-              <span class="text-blue text-[14px] mr-2">Сбросить</span>
-              <i class="icon-down text-[9px] inline-block transform rotate-180 transition"></i>
-            </div>
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Авиакомпании</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Сбросить</span>
+            <i class="icon-down text-[9px] inline-block transform rotate-180 transition"></i>
           </div>
+        </div>
+        <div class="tab-body">
           <div class="flex justify-between items-center">
-            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tab-filter tabs active" data-tabid="#select-air">
               Отправление
             </div>
             <div
-                class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
+                class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tab-filter tabs" data-tabid="#select-air-back">
               Возвращение
             </div>
           </div>
-          <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
+           <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
 
-          <div class="flex justify-start items-start mb-3">
+         <div class="tab-content" id="select-air">
+           <div class="flex justify-start items-start mb-3">
+
+             <label class="def-checkbox flex-js-s mb-2">
+               <input type="checkbox">
+               <span class="mr-2 mt-1"></span>
+
+               <div>
+                 <div class="font-bold">
+                   Несколько авиакомпаний
+                 </div>
+                 <div class="text-[14px] text-[#687076] leading-[116%]">
+                   Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+                 </div>
+               </div>
+             </label>
+
+           </div>
+
+           <label class="def-checkbox flex-js-s mb-2">
+             <input type="checkbox">
+             <span class="mr-2"></span>
+             <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+             UZBEKISTAN AIR
+           </label>
+           <label class="def-checkbox flex-js-s mb-2">
+             <input type="checkbox">
+             <span class="mr-2"></span>
+             <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+             AZERBAIJAN AIR
+           </label>
+           <label class="def-checkbox flex-js-s mb-2">
+             <input type="checkbox">
+             <span class="mr-2"></span>
+             <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+             S7 Airlines
+           </label>
+           <label class="def-checkbox flex-js-s mb-2">
+             <input type="checkbox">
+             <span class="mr-2"></span>
+             <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
+             Turkish Airlines
+           </label>
+           <label class="def-checkbox flex-js-s mb-2">
+             <input type="checkbox">
+             <span class="mr-2"></span>
+             <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
+             AIR ASTANA
+           </label>
+
+
+           <div class="text-blue mt-4 text-[14px] cursor-pointer">
+             Показать все
+             <i class="icon-down text-[7px] text-blue ml-2"></i>
+           </div>
+         </div>
+
+
+          <div class="tab-content hidden" id="select-air-back">
+            <div class="flex justify-start items-start mb-3">
+
+              <label class="def-checkbox flex-js-s mb-2">
+                <input type="checkbox">
+                <span class="mr-2 mt-1"></span>
+
+                <div>
+                  <div class="font-bold">
+                    Несколько авиакомпаний
+                  </div>
+                  <div class="text-[14px] text-[#687076] leading-[116%]">
+                    Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+                  </div>
+                </div>
+              </label>
+
+            </div>
 
             <label class="def-checkbox flex-js-s mb-2">
               <input type="checkbox">
-              <span class="mr-2 mt-1"></span>
-
-              <div>
-                <div class="font-bold">
-                  Несколько авиакомпаний
-                </div>
-                <div class="text-[14px] text-[#687076] leading-[116%]">
-                  Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
-                </div>
-              </div>
+              <span class="mr-2"></span>
+              <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+              UZBEKISTAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+              AZERBAIJAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+              S7 Airlines
             </label>
 
+
+            <div class="text-blue mt-4 text-[14px] cursor-pointer">
+              Показать все
+              <i class="icon-down text-[7px] text-blue ml-2"></i>
+            </div>
           </div>
 
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2"></span>
-            <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
-            UZBEKISTAN AIR
-          </label>
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2"></span>
-            <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
-            AZERBAIJAN AIR
-          </label>
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2"></span>
-            <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
-            S7 Airlines
-          </label>
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2"></span>
-            <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
-            Turkish Airlines
-          </label>
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2"></span>
-            <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
-            AIR ASTANA
-          </label>
-
-
-          <div class="text-blue mt-4 text-[14px] cursor-pointer">
-            Показать все
-            <i class="icon-down text-[7px] text-blue ml-2"></i>
-          </div>
           <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
 
         </div>
@@ -2249,7 +2362,7 @@
   </div>
 </div>
 
-<div class="fixed top-0 left-0 bg-white w-full h-[100vh] z-[1000] mobile-filter-body" id="max-filter">
+<div class="fixed top-0 left-0 bg-white w-full h-[100vh] z-[1000] mobile-filter-body show" id="max-filter">
     <div class="w-full h-[57px] border-b flex-jsb-c p-4">
       <i class="icon-arrow-thin-left cursor-pointer text-[18px] close-modals" data-modalid="#max-filter"></i>
       <h4 class="text-center text-[18px] font-bold">Фильтры</h4>
@@ -2298,65 +2411,120 @@
 
       <h5 class="text-[18px] font-bold mb-4">Время</h5>
 
-      <div class="flex justify-between items-center mb-6">
-        <div class="w-full cursor-pointer text-[16px] flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
-          Отправление
-        </div>
-        <div class="w-full cursor-pointer text-[16px] flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
-          Возвращение
-        </div>
-      </div>
-
-      <div class="flex justify-between items-center">
-        <div>
-          <h5 class="font-bold text-[16px]">Время</h5>
-          <div class="flex justify-start items-center text-[14px] text-black/50">
-            из Ташкента
-            <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-            cр 17 июл
+      <div class="tab-body">
+        <div class="flex justify-between items-center mb-6 border-b">
+          <div class="w-full cursor-pointer text-[16px] flex justify-center items-center h-9 font-bold border-b-2 tabs active tab-filter" data-tabid="#tab-filter-mobile-send">
+            Отправление
+          </div>
+          <div class="w-full cursor-pointer text-[16px] flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter" data-tabid="#tab-filter-mobile-back">
+            Возвращение
           </div>
         </div>
-        <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-          00:05 — 23:54
-        </div>
-      </div>
 
-      <div class="flex justify-between items-center py-6 relative">
-        <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-        <div class="w-full h-[2px] bg-blue"></div>
-        <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+        <div class="tab-content" id="tab-filter-mobile-send">
+          <div class="flex justify-between items-center">
+            <div>
+              <h5 class="font-bold text-[16px]">Время</h5>
+              <div class="flex justify-start items-center text-[14px] text-black/50">
+                из Ташкента
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                cр 17 июл
+              </div>
+            </div>
+            <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+              00:05 — 23:54
+            </div>
+          </div>
 
-        <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-          <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-          <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-          <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
-        </div>
-      </div>
+          <div class="flex justify-between items-center py-6 relative">
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+            <div class="w-full h-[2px] bg-blue"></div>
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
 
+            <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+              <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+            </div>
+          </div>
 
-      <div class="flex justify-between items-center">
-        <div>
-          <h5 class="font-bold ">Прилет</h5>
-          <div class="flex justify-start items-center text-[14px] text-black/50">
-            в Москву
-            <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-            cр 17 июл
+          <div class="flex justify-between items-center">
+            <div>
+              <h5 class="font-bold ">Прилет</h5>
+              <div class="flex justify-start items-center text-[14px] text-black/50">
+                в Москву
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                cр 17 июл
+              </div>
+            </div>
+            <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+              02:25 — 21:30
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-6 relative">
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+            <div class="w-full h-[2px] bg-blue"></div>
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+            <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+              <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+            </div>
           </div>
         </div>
-        <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-          02:25 — 21:30
-        </div>
-      </div>
 
-      <div class="flex justify-between items-center py-6 relative">
-        <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-        <div class="w-full h-[2px] bg-blue"></div>
-        <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+        <div class="tab-content hidden" id="tab-filter-mobile-back">
+          <div class="flex justify-between items-center">
+            <div>
+              <h5 class="font-bold text-[16px]">Время 2</h5>
+              <div class="flex justify-start items-center text-[14px] text-black/50">
+                из Ташкента
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                cр 17 июл
+              </div>
+            </div>
+            <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+              00:05 — 23:54
+            </div>
+          </div>
 
-        <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-          <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-          <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-          <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          <div class="flex justify-between items-center py-6 relative">
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+            <div class="w-full h-[2px] bg-blue"></div>
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+            <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+              <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div>
+              <h5 class="font-bold ">Прилет 2</h5>
+              <div class="flex justify-start items-center text-[14px] text-black/50">
+                в Москву
+                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+                cр 17 июл
+              </div>
+            </div>
+            <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+              02:25 — 21:30
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-6 relative">
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+            <div class="w-full h-[2px] bg-blue"></div>
+            <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+            <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+              <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+              <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -2412,64 +2580,107 @@
             <i class="icon-down text-[9px] inline-block transform rotate-180 transition"></i>
           </div>
         </div>
-        <div class="flex justify-between items-center">
-          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
-            Отправление
-          </div>
-          <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
-            Возвращение
-          </div>
-        </div>
-        <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
 
-        <div class="flex justify-start items-start mb-3">
-
-          <label class="def-checkbox flex-js-s mb-2">
-            <input type="checkbox">
-            <span class="mr-2 mt-1"></span>
-
-            <div>
-              <div class="font-bold">
-                Несколько авиакомпаний
-              </div>
-              <div class="text-[14px] text-[#687076] leading-[116%]">
-                Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
-              </div>
+        <div class="tab-body">
+          <div class="flex justify-between items-center border-b mb-6">
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter active" data-tabid="#air-filter-mobile">
+              Отправление
             </div>
-          </label>
+            <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter" data-tabid="#air-filter-mobile-back">
+              Возвращение
+            </div>
+          </div>
 
+          <div class="tab-content" id="air-filter-mobile">
+            <div class="flex justify-start items-start mb-3">
+
+              <label class="def-checkbox flex-js-s mb-2">
+                <input type="checkbox">
+                <span class="mr-2 mt-1"></span>
+
+                <div>
+                  <div class="font-bold">
+                    Несколько авиакомпаний
+                  </div>
+                  <div class="text-[14px] text-[#687076] leading-[116%]">
+                    Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+                  </div>
+                </div>
+              </label>
+
+            </div>
+
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+              UZBEKISTAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+              AZERBAIJAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+              S7 Airlines
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
+              Turkish Airlines
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
+              AIR ASTANA
+            </label>
+          </div>
+
+          <div class="tab-content hidden" id="air-filter-mobile-back">
+            <div class="flex justify-start items-start mb-3">
+
+              <label class="def-checkbox flex-js-s mb-2">
+                <input type="checkbox">
+                <span class="mr-2 mt-1"></span>
+
+                <div>
+                  <div class="font-bold">
+                    Несколько авиакомпаний
+                  </div>
+                  <div class="text-[14px] text-[#687076] leading-[116%]">
+                    Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+                  </div>
+                </div>
+              </label>
+
+            </div>
+
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+              UZBEKISTAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+              AZERBAIJAN AIR
+            </label>
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2"></span>
+              <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+              S7 Airlines
+            </label>
+          </div>
         </div>
-
-        <label class="def-checkbox flex-js-s mb-2">
-          <input type="checkbox">
-          <span class="mr-2"></span>
-          <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
-          UZBEKISTAN AIR
-        </label>
-        <label class="def-checkbox flex-js-s mb-2">
-          <input type="checkbox">
-          <span class="mr-2"></span>
-          <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
-          AZERBAIJAN AIR
-        </label>
-        <label class="def-checkbox flex-js-s mb-2">
-          <input type="checkbox">
-          <span class="mr-2"></span>
-          <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
-          S7 Airlines
-        </label>
-        <label class="def-checkbox flex-js-s mb-2">
-          <input type="checkbox">
-          <span class="mr-2"></span>
-          <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
-          Turkish Airlines
-        </label>
-        <label class="def-checkbox flex-js-s mb-2">
-          <input type="checkbox">
-          <span class="mr-2"></span>
-          <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
-          AIR ASTANA
-        </label>
 
 
         <div class="text-blue mt-4 text-[14px] cursor-pointer">

@@ -589,6 +589,13 @@ input:focus {
   opacity: 0;
 }
 
+.tab-filter {
+  border-color: transparent !important;
+}
+.tab-filter.active {
+  border-color: #1150CB !important;
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;

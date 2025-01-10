@@ -661,6 +661,14 @@ input:focus {
   opacity: 0;
 }
 
+.tab-filter {
+  border-color: transparent !important;
+}
+
+.tab-filter.active {
+  border-color: #1150CB !important;
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;
@@ -3775,11 +3783,6 @@ video {
 .hover\:bg-\[\#F8F9FA\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(248 249 250 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#c6d2e6\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 210 230 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-\[\#EDF3FF\]:hover{

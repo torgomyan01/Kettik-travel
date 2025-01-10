@@ -571,6 +571,13 @@ input:focus {
   }
 }
 
+.tab-filter{
+  border-color: transparent !important;
+    &.active{
+      border-color: #1150CB !important;
+    }
+}
+
 
 // NAVBAR
 @import "components/navbar";

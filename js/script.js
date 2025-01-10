@@ -116,6 +116,7 @@ mobileFilter.forEach((target) => {
 
     if(getModalId){
       $el(getModalId).classList.add('show');
+      document.body.classList.add('overflow-hidden');
     }
   })
 })
@@ -575,29 +576,35 @@ desktopSelectTimeFon?.addEventListener('click', function (){
 })
 
 
-const tabs = $('.tabs');
-const tabContent = $('.tab-content');
+const tabBody = $('.tab-body');
 
-tabs.forEach((item) => {
-  item.addEventListener('click', e => {
-    tabs.forEach((_tab) => {
-      _tab.classList.remove('active');
+
+tabBody.forEach((_body) => {
+  const tabs = _body.querySelectorAll('.tabs');
+  const tabContent = _body.querySelectorAll('.tab-content');
+
+  tabs.forEach((item) => {
+    item.addEventListener('click', e => {
+      tabs.forEach((_tab) => {
+        _tab.classList.remove('active');
+      })
+      item.classList.add('active');
+
+      tabContent.forEach((_tabContent) => {
+        _tabContent.classList.add('hidden');
+      })
+
+      const id = item.dataset.tabid;
+
+      console.log(id)
+
+      $el(id).classList.remove('hidden');
+
     })
-    item.classList.add('active');
-
-
-    tabContent.forEach((_tabContent) => {
-      _tabContent.classList.add('hidden');
-    })
-
-    const id = item.dataset.tabid;
-
-    console.log(id)
-
-    $el(id).classList.remove('hidden');
-
   })
 })
+
+
 
 
 const parentNavDropdown = $el('#parent-nav-dropdown');
