@@ -2065,6 +2065,10 @@ video {
   margin-top: 60px;
 }
 
+.mt-\[33px\]{
+  margin-top: 33px;
+}
+
 .block{
   display: block;
 }
@@ -3287,6 +3291,11 @@ video {
   padding-bottom: 6px;
 }
 
+.py-\[33px\]{
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -3421,6 +3430,10 @@ video {
 
 .pt-\[80px\]{
   padding-top: 80px;
+}
+
+.pb-\[35px\]{
+  padding-bottom: 35px;
 }
 
 .text-center{
@@ -4299,6 +4312,10 @@ video {
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:pb-16{
+    padding-bottom: 4rem;
   }
 
   .lg\:text-left{
