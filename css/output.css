@@ -636,6 +636,16 @@ input:focus {
   opacity: 1;
 }
 
+.def-checkbox.green input:checked ~ span {
+  border: 1px solid #3FC431;
+  background: #3FC431;
+}
+
+.def-checkbox.green span:after {
+  font-size: 14px;
+  margin-top: -1px;
+}
+
 .def-checkbox span {
   width: 20px;
   min-width: 20px;
@@ -2480,6 +2490,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.\!min-w-\[16px\]{
+  min-width: 16px !important;
 }
 
 .min-w-\[100px\]{

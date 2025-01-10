@@ -545,6 +545,21 @@ input:focus {
     opacity: 1;
   }
 
+  &.green{
+    input:checked ~ span{
+      border: 1px solid #3FC431;
+      background: #3FC431;
+    }
+
+
+    span{
+      &:after{
+        font-size: 14px;
+        margin-top: -1px;
+      }
+    }
+  }
+
 
   span{
     width: 20px;
