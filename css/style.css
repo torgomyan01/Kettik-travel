@@ -596,6 +596,10 @@ input:focus {
   border-color: #1150CB !important;
 }
 
+.shadow-btn-slider {
+  box-shadow: 0px 2px 4px 0px rgba(23, 74, 189, 0.1), 0px 24px 60px 0px rgba(23, 74, 189, 0.05), 0px 12px 24px 0px rgba(23, 74, 189, 0.05);
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;

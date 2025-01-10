@@ -669,6 +669,10 @@ input:focus {
   border-color: #1150CB !important;
 }
 
+.shadow-btn-slider {
+  box-shadow: 0px 2px 4px 0px rgba(23, 74, 189, 0.1), 0px 24px 60px 0px rgba(23, 74, 189, 0.05), 0px 12px 24px 0px rgba(23, 74, 189, 0.05);
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;
@@ -2057,16 +2061,16 @@ video {
   margin-top: 2px;
 }
 
+.mt-\[33px\]{
+  margin-top: 33px;
+}
+
 .mt-\[3px\]{
   margin-top: 3px;
 }
 
 .mt-\[60px\]{
   margin-top: 60px;
-}
-
-.mt-\[33px\]{
-  margin-top: 33px;
 }
 
 .block{
@@ -2257,6 +2261,10 @@ video {
   height: 8px;
 }
 
+.h-\[calc\(\(100\%_\/_2\)_\+_15px\)\]{
+  height: calc((100% / 2) + 15px);
+}
+
 .h-\[calc\(100\%_-_66px\)\]{
   height: calc(100% - 66px);
 }
@@ -2284,10 +2292,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[calc\(\(100\%_\/_2\)_\+_15px\)\]{
-  height: calc((100% / 2) + 15px);
 }
 
 .max-h-\[calc\(100vh_-_100px\)\]{
@@ -3291,11 +3295,6 @@ video {
   padding-bottom: 6px;
 }
 
-.py-\[33px\]{
-  padding-top: 33px;
-  padding-bottom: 33px;
-}
-
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -3330,6 +3329,10 @@ video {
 
 .pb-\[30px\]{
   padding-bottom: 30px;
+}
+
+.pb-\[35px\]{
+  padding-bottom: 35px;
 }
 
 .pb-\[40px\]{
@@ -3430,10 +3433,6 @@ video {
 
 .pt-\[80px\]{
   padding-top: 80px;
-}
-
-.pb-\[35px\]{
-  padding-bottom: 35px;
 }
 
 .text-center{
