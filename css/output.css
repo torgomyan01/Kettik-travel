@@ -2087,6 +2087,18 @@ video {
   margin-top: 60px;
 }
 
+.ml-\[32px\]{
+  margin-left: 32px;
+}
+
+.ml-\[34px\]{
+  margin-left: 34px;
+}
+
+.ml-\[40px\]{
+  margin-left: 40px;
+}
+
 .block{
   display: block;
 }
@@ -3947,6 +3959,10 @@ video {
 
   .sm\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .sm\:ml-0{
+    margin-left: 0px;
   }
 
   .sm\:block{
