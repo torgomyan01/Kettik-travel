@@ -113,16 +113,25 @@
 </div>
 
 <section>
-  <div class="container max-w-[960px] py-8">
+  <div class="container max-w-[960px] sm:py-8 h-[56px] sm:h-auto flex-jsb-c sm:block">
 
-    <div class="flex-js-c gap-4">
+    <div class="flex-js-c gap-4 hidden sm:flex">
       <div class="w-[40px] min-w-[40px] h-[40px] rounded-full bg-[#EDF3FF] flex-jc-c cursor-pointer">
         <i class="icon-chevron-left mr-[2px] text-[18px]"></i>
       </div>
       <h4 class="text-[18px] font-bold">Заказы</h4>
     </div>
-    <h3 class="text-[26px] font-bold mt-6">Заказ №488789697</h3>
+    <h3 class="text-[18px] sm:text-[26px] font-bold sm:mt-6">
+      <span class="hidden sm:inline-block">Заказ</span>
+      №488789697
+    </h3>
+
+    <div class="flex-jc-c sm:hidden w-[140px] bg-[#D8EEFF] rounded-[32px] text-[#1150CB] text-[14px] h-[32px] cursor-default">
+      <i class="icon-time-ok mr-2 text-[#1150CB]"></i>
+      Забронирован
+    </div>
   </div>
+
 </section>
 
 
@@ -139,7 +148,7 @@
           <span class="text-gray w-[90px]">Тариф</span>
           Название тарифа
         </div>
-        <div class="flex-js-c gap-2 mt-2">
+        <div class="flex-js-c gap-1 sm:gap-2 mt-2 text-[14px] sm:text-[16px]">
           <i class="icon-time mr-2 text-blue"></i>
           вс, 4 авг – чт, 15 авг
 
@@ -150,7 +159,7 @@
           пассажира
         </div>
       </div>
-      <div class="flex-jc-c w-[104px] bg-[#3FC431] rounded-[32px] text-white text-[14px] h-[32px] cursor-default">
+      <div class="hidden sm:flex-jc-c w-[104px] bg-[#3FC431] rounded-[32px] text-white text-[14px] h-[32px] cursor-default">
         <img src="images/icons/push-sucessed-white.svg" alt="push-successed" width="17" height="17" class="mr-2">
         Оплачен
       </div>
@@ -160,7 +169,7 @@
       <div class="w-full h-[56px] flex-js-c pl-[24px] border-b">
         <h3 class="text-[22px] font-bold">Маршрут</h3>
       </div>
-      <div class="p-6">
+      <div class="pb-6 sm:p-6">
         <div class="w-full bg-white rounded-[24px_24px_0_0] md:rounded-[24px] p-6">
           <div>
             <div class="flex-jsb-c mb-4">
@@ -369,7 +378,7 @@
         <div class="w-full border-b py-4 flex-js-c">
           <img src="images/icons/uz-air.svg" alt="uz-air" width="24" height="24" class="mr-4">
           <div>
-            <div class="flex-js-c">
+            <div class="flex-js-c flex-wrap gap-[8px]">
               <h4 class="font-bold mr-2">Ташкент (TAS) → Москва (SVO)</h4>
               <div class="text-[#9D110F] text-[12px] px-3 py-1 bg-[#FFE3D4] rounded-[8px] flex-jc-c gap-[8px]">
                 <img src="images/icons/warning-wounded-red.svg" alt="warning-wounded-red.svg">
@@ -378,7 +387,7 @@
             </div>
             <div class="flex-js-c text-[14px] mt-1">
               Другим пассажирам нужно регистрироваться через авиакомпанию
-              <i class="icon-arrow_drop_down ml-2 text-[16px]"></i>
+              <i class="icon-arrow_drop_down ml-2 text-[20px] sm:text-[16px]"></i>
             </div>
             <button class="h-[36px] text-white bg-[#3FC431] rounded-[12px] flex-jc-c mt-3 px-3 text-[14px]">
               <i class="icon-download mr-2 text-white text-[15px]"></i>
@@ -462,7 +471,7 @@
       </div>
       <div class="p-6">
 
-        <div class="w-full grid grid-cols-2 gap-[8px]">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-[8px]">
           <div>
             <h5 class="text-[14px] text-gray">Электронная почта</h5>
             <h4 class="text-[16px] font-bold">koloma@ukr.net</h4>
@@ -511,17 +520,17 @@
 
 <section>
   <div class="container py-16">
-    <div class="flex-js-c gap-16">
+    <div class="flex-js-c flex-col lg:flex-row gap-16">
       <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
       <div class="w-full">
-        <h3 class="text-[26px] font-bold mb-4">Заголовок для формы</h3>
+        <h3 class="text-[26px] font-bold mb-4 text-center lg:text-left">Заголовок для формы</h3>
         <form action="/" class="w-full">
-          <div class="w-full flex-jsb-c rounded-[16px] px-6 h-[64px] bg-[#EDF3FF] overflow-hidden">
-            <input type="text" class="w-full h-full bg-transparent" placeholder="Ваше имя">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <input type="email" class="w-full h-full bg-transparent pl-6" placeholder="Ваш email">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <select class="w-full h-full bg-transparent pl-6">
+          <div class="w-full flex-jsb-c flex-col md:flex-row rounded-[16px] px-6 py-6 md:py-0 md:h-[64px] bg-[#EDF3FF] overflow-hidden">
+            <input type="text" class="w-full h-[64px] md:h-full bg-transparent" placeholder="Ваше имя">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <input type="email" class="w-full h-[64px] md:h-full bg-transparent md:pl-6" placeholder="Ваш email">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <select class="w-full h-[64px] md:h-full bg-transparent md:pl-6">
               <option value="Выбрать тему собщения">Выбрать тему собщения</option>
               <option value="Выбрать тему собщения">1</option>
               <option value="Выбрать тему собщения">2</option>
@@ -532,7 +541,7 @@
 
           <textarea class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4" placeholder="О чем вы хотите спросить?"></textarea>
 
-          <button class="w-[300px] bg-orange h-[64px] text-[18px] text-white rounded-[12px] mt-6">
+          <button class="w-full sm:w-[300px] bg-orange h-[44px] sm:h-[64px] text-[18px] text-white rounded-[12px] mt-6">
             Отправить
           </button>
         </form>
@@ -746,6 +755,14 @@
 
     </div>
   </div>
+</div>
+
+
+
+<div class="w-full h-[57px] bg-white flex-jsb-c border-b fixed top-0 left-0 z-[1000] px-4 flex md:hidden">
+  <i class="icon-arrow-right inline-block transform rotate-180"></i>
+  <h4 class="text-[18px] font-bold text-center">Заказы</h4>
+  <i class="icon-close text-[20px]"></i>
 </div>
 
 <script src="js/script.js"></script>

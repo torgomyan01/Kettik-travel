@@ -112,22 +112,31 @@
   </div>
 </div>
 
-<section>
-  <div class="container max-w-[960px] pt-8">
+<div class="w-full min-h-[57px] bg-white flex-jsb-c border-b fixed top-0 left-0 z-[1000] p-4 flex md:hidden">
+  <i class="icon-arrow-right inline-block transform rotate-180"></i>
+  <h4 class="text-[18px] font-bold text-center leading-[140%]">
+    Заказ №488789697 <br>
+    Данные пассажира
+  </h4>
+  <i class="icon-close text-[20px]"></i>
+</div>
 
-    <div class="flex-js-c gap-4">
+<section>
+  <div class="container max-w-[960px] h-[56px] sm:h-auto mt-4 sm:pt-8 px-0 sm:px-4">
+
+    <div class="flex-js-c gap-4  hidden sm:flex">
       <div class="w-[40px] min-w-[40px] h-[40px] rounded-full bg-[#EDF3FF] flex-jc-c cursor-pointer">
         <i class="icon-chevron-left mr-[2px] text-[18px]"></i>
       </div>
       <h4 class="text-[18px] font-bold">Заказы</h4>
     </div>
-    <h3 class="text-[26px] font-bold mt-6">Данные пассажира</h3>
+    <h3 class="text-[26px] font-bold mt-6 hidden sm:block">Данные пассажира</h3>
 
-    <div class="w-full flex-js-c mt-8">
-      <div class="w-[220px] h-[45px] transition cursor-pointer flex-jc-c border-b-[2px] border-[#FF7A00] font-bold">
+    <div class="w-full h-[66px] sm:h-auto flex-js-c sm:mt-8 overflow-x-auto scroll-bottom-none">
+      <div class="px-6 h-[45px] transition cursor-pointer flex-jc-c border-b-[2px] border-[#FF7A00] font-bold text-nowrap ">
         Hanna Kolomiitseva-Terets
       </div>
-      <div class="w-[200px] h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent">
+      <div class="px-6 h-[45px] transition cursor-pointer hover:border-gray/30 flex-jc-c border-b-[2px] border-transparent text-nowrap">
         Alla GUZHVA
       </div>
     </div>
@@ -144,7 +153,7 @@
       </div>
       <div class="p-6">
 
-        <div class="w-full grid grid-cols-2 gap-[8px] mb-6">
+        <div class="w-full grid grid-1 sm:grid-cols-2 gap-[8px] mb-6">
           <div>
             <h5 class="text-[14px] text-gray">ФИО</h5>
             <h4 class="text-[16px] font-bold">Hanna Kolomiitseva-Terets</h4>
@@ -174,7 +183,7 @@
       </div>
       <div class="p-6">
 
-        <div class="w-full grid grid-cols-3 gap-[8px] mb-6">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-[8px] mb-6">
           <div>
             <h5 class="text-[14px] text-gray">Тип документа</h5>
             <h4 class="text-[16px] font-bold">Паспорт заграничный</h4>
@@ -198,7 +207,7 @@
       </div>
       <div class="p-6">
 
-        <div class="w-full grid grid-cols-2 gap-[8px] mb-6">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-[8px] mb-6">
           <div>
             <h5 class="text-[14px] text-gray">Электронная почта</h5>
             <h4 class="text-[16px] font-bold">koloma@ukr.net</h4>
@@ -218,17 +227,17 @@
 
 <section>
   <div class="container py-16">
-    <div class="flex-js-c gap-16">
+    <div class="flex-js-c flex-col lg:flex-row gap-16">
       <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
       <div class="w-full">
-        <h3 class="text-[26px] font-bold mb-4">Заголовок для формы</h3>
+        <h3 class="text-[26px] font-bold mb-4 text-center lg:text-left">Заголовок для формы</h3>
         <form action="/" class="w-full">
-          <div class="w-full flex-jsb-c rounded-[16px] px-6 h-[64px] bg-[#EDF3FF] overflow-hidden">
-            <input type="text" class="w-full h-full bg-transparent" placeholder="Ваше имя">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <input type="email" class="w-full h-full bg-transparent pl-6" placeholder="Ваш email">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <select class="w-full h-full bg-transparent pl-6">
+          <div class="w-full flex-jsb-c flex-col md:flex-row rounded-[16px] px-6 py-6 md:py-0 md:h-[64px] bg-[#EDF3FF] overflow-hidden">
+            <input type="text" class="w-full h-[64px] md:h-full bg-transparent" placeholder="Ваше имя">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <input type="email" class="w-full h-[64px] md:h-full bg-transparent md:pl-6" placeholder="Ваш email">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <select class="w-full h-[64px] md:h-full bg-transparent md:pl-6">
               <option value="Выбрать тему собщения">Выбрать тему собщения</option>
               <option value="Выбрать тему собщения">1</option>
               <option value="Выбрать тему собщения">2</option>
@@ -239,7 +248,7 @@
 
           <textarea class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4" placeholder="О чем вы хотите спросить?"></textarea>
 
-          <button class="w-[300px] bg-orange h-[64px] text-[18px] text-white rounded-[12px] mt-6">
+          <button class="w-full sm:w-[300px] bg-orange h-[44px] sm:h-[64px] text-[18px] text-white rounded-[12px] mt-6">
             Отправить
           </button>
         </form>
@@ -249,7 +258,7 @@
 </section>
 
 
-<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
+<footer class="bg-blue rounded-[32px_32px_0_0]">
   <div class="container pt-[49px] pb-16">
     <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
       <a href="/" class="block md:hidden mb-6">

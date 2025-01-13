@@ -2316,6 +2316,10 @@ video {
   height: 100vh;
 }
 
+.h-\[66px\]{
+  height: 66px;
+}
+
 .max-h-\[calc\(100vh_-_100px\)\]{
   max-height: calc(100vh - 100px);
 }
@@ -2334,6 +2338,10 @@ video {
 
 .min-h-\[47px\]{
   min-height: 47px;
+}
+
+.min-h-\[57px\]{
+  min-height: 57px;
 }
 
 .\!w-\[16px\]{
@@ -3313,6 +3321,11 @@ video {
   padding-bottom: 6px;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -3758,6 +3771,12 @@ video {
     justify-content: flex-start;
     align-items: center;
   }
+
+  .sm\:flex-jc-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px){
@@ -3957,8 +3976,24 @@ video {
     margin-top: 1.5rem;
   }
 
+  .sm\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:mt-8{
+    margin-top: 2rem;
+  }
+
   .sm\:block{
     display: block;
+  }
+
+  .sm\:inline-block{
+    display: inline-block;
+  }
+
+  .sm\:flex{
+    display: flex;
   }
 
   .sm\:hidden{
@@ -3997,6 +4032,10 @@ video {
     height: 64px;
   }
 
+  .sm\:h-auto{
+    height: auto;
+  }
+
   .sm\:min-h-\[252px\]{
     min-height: 252px;
   }
@@ -4033,6 +4072,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -4043,6 +4086,14 @@ video {
 
   .sm\:justify-start{
     justify-content: flex-start;
+  }
+
+  .sm\:gap-\[8px\]{
+    gap: 8px;
+  }
+
+  .sm\:gap-2{
+    gap: 0.5rem;
   }
 
   .sm\:rounded-3xl{
@@ -4073,6 +4124,20 @@ video {
     padding: 32px;
   }
 
+  .sm\:p-6{
+    padding: 1.5rem;
+  }
+
+  .sm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .sm\:pb-3{
     padding-bottom: 0.75rem;
   }
@@ -4089,12 +4154,20 @@ video {
     padding-top: 0px;
   }
 
+  .sm\:pt-8{
+    padding-top: 2rem;
+  }
+
   .sm\:text-\[22px\]{
     font-size: 22px;
   }
 
   .sm\:text-\[26px\]{
     font-size: 26px;
+  }
+
+  .sm\:text-\[16px\]{
+    font-size: 16px;
   }
 }
 
