@@ -137,19 +137,19 @@
 
 <section class="bg-[#EDF3FF] pb-16">
   <div class="container py-8">
-    <div class="flex-jsb-c w-full">
-      <div class="flex-js-c gap-10">
+    <div class="flex-js-s md:flex-jsb-c w-full flex-col md:flex-row">
+      <div class="flex-js-s md:flex-js-c gap-4 md:gap-10  flex-col md:flex-row">
         <img src="images/settings/couple-going-to-dhaka.svg" alt="couple-going-to-dhaka" width="180" height="120">
         <div>
-          <h3 class="text-[22px] font-bold mb-1">Вас пока нет оформленных заказов</h3>
-          <h4 class="text-[16px] text-gray">Забронируйте свою следующую поездку, и она появится здесь.</h4>
+          <h3 class="text-[18px] md:text-[22px] font-bold mb-1">Вас пока нет оформленных заказов</h3>
+          <h4 class="md:text-[16px] text-gray">Забронируйте свою следующую поездку, и она появится здесь.</h4>
         </div>
       </div>
-      <a href="home.html" class="text-blue">Поиск поездок</a>
+      <a href="home.html" class="text-blue mt-2 md:mt-0">Поиск поездок</a>
     </div>
 
 
-    <div class="grid grid-cols-4 gap-6 mt-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
       <div class="bg-white rounded-[24px] p-6 h-[151px]">
         <div class="flex-jc-c w-[140px] bg-[#D8EEFF] rounded-[32px] text-[#1150CB] text-[14px] h-[32px] cursor-default">
           <i class="icon-time-ok mr-2 text-[#1150CB]"></i>
@@ -224,7 +224,7 @@
     </div>
 
     <h3 class="text-[22px] font-bold mb-8 mt-20">История поездок</h3>
-    <div class="grid grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-white rounded-[24px] p-6 h-[151px]">
         <div class="flex-jc-c w-[173px] bg-[#F1F3F5] rounded-[32px] text-[#687076] text-[14px] h-[32px]">
           <img src="images/icons/calendar-check.svg" alt="calendar-check" width="17" height="17" class="mr-2">
@@ -278,17 +278,17 @@
 
 <section>
   <div class="container py-16">
-    <div class="flex-js-c gap-16">
+    <div class="flex-js-c flex-col lg:flex-row gap-16">
       <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
       <div class="w-full">
-        <h3 class="text-[26px] font-bold mb-4">Заголовок для формы</h3>
+        <h3 class="text-[26px] font-bold mb-4 text-center lg:text-left">Заголовок для формы</h3>
         <form action="/" class="w-full">
-          <div class="w-full flex-jsb-c rounded-[16px] px-6 h-[64px] bg-[#EDF3FF] overflow-hidden">
-            <input type="text" class="w-full h-full bg-transparent" placeholder="Ваше имя">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <input type="email" class="w-full h-full bg-transparent pl-6" placeholder="Ваш email">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <select class="w-full h-full bg-transparent pl-6">
+          <div class="w-full flex-jsb-c flex-col md:flex-row rounded-[16px] px-6 py-6 md:py-0 md:h-[64px] bg-[#EDF3FF] overflow-hidden">
+            <input type="text" class="w-full h-[64px] md:h-full bg-transparent" placeholder="Ваше имя">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <input type="email" class="w-full h-[64px] md:h-full bg-transparent md:pl-6" placeholder="Ваш email">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <select class="w-full h-[64px] md:h-full bg-transparent md:pl-6">
               <option value="Выбрать тему собщения">Выбрать тему собщения</option>
               <option value="Выбрать тему собщения">1</option>
               <option value="Выбрать тему собщения">2</option>
@@ -299,7 +299,7 @@
 
           <textarea class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4" placeholder="О чем вы хотите спросить?"></textarea>
 
-          <button class="w-[300px] bg-orange h-[64px] text-[18px] text-white rounded-[12px] mt-6">
+          <button class="w-full sm:w-[300px] bg-orange h-[44px] sm:h-[64px] text-[18px] text-white rounded-[12px] mt-6">
             Отправить
           </button>
         </form>
