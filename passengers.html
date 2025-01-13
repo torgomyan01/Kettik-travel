@@ -112,7 +112,15 @@
   </div>
 </div>
 
-<section>
+<div class="w-full min-h-[57px] bg-white flex-jsb-c border-b fixed top-0 left-0 z-[1000] p-4 flex md:hidden">
+  <i class="icon-arrow-right inline-block transform rotate-180"></i>
+  <h4 class="text-[18px] font-bold text-center leading-[140%]">
+    Пассажиры
+  </h4>
+  <i class="icon-close text-[20px]"></i>
+</div>
+
+<section class="hidden sm:block">
   <div class="container max-w-[960px] py-8">
 
     <div class="flex-js-c gap-4">
@@ -126,39 +134,46 @@
 
 
 <section class="bg-[#EDF3FF] pb-16">
-  <div class="container py-8 max-w-[960px]">
-    <div class="w-full bg-white rounded-[24px] overflow-hidden mt-6">
-      <div class="p-6">
-        <span class="text-[12px] bg-[#FFFAEC] rounded-[8px] px-2 py-1">
-          Владелец учетной записи
-        </span>
+  <div class="container py-4 sm:py-8 max-w-[960px]">
+    <div class="w-full sm:bg-white rounded-[24px] overflow-hidden sm:mt-6">
+      <div class="sm:p-6">
 
-        <div class="flex-jsb-c border-b">
-          <div class="flex-js-c py-4 cursor-pointer">
-            <img src="images/user-avatar-menu.svg" alt="user-avatar-menu" class="mr-4" width="34" height="34">
-            <div>
-              <h3 class="uppercase text-blue text-[16px] font-bold">Hanna Kolomiitseva-Terets</h3>
-              <h4 class="text-gray text-[14px]">27 июня 1998 г. </h4>
+        <div class="bg-white rounded-[24px] sm:rounded-[0] p-4 sm:p-0 mb-4">
+
+          <span class="text-[12px] bg-[#FFFAEC] rounded-[8px] px-2 py-1 mb-2 sm:mb-0 inline-block">
+            Владелец учетной записи
+          </span>
+
+          <div class="flex-js-s sm:flex-jsb-c sm:border-b flex-col sm:flex-row">
+            <div class="flex-js-c sm:py-4 cursor-pointer">
+              <img src="images/icons/user-avatar-blue-border.svg" alt="user-avatar-menu" class="mr-4" width="34" height="34">
+              <div>
+                <h3 class="uppercase text-blue text-[16px] font-bold">Hanna Kolomiitseva-Terets</h3>
+                <h4 class="text-gray text-[14px]">27 июня 1998 г. </h4>
+              </div>
             </div>
-          </div>
 
-          <span class="text-[15px] text-blue cursor-pointer target-modal" data-targetid="#change-owner-info">Изменить</span>
+            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-owner-info">Изменить</span>
+          </div>
         </div>
-        <div class="flex-jsb-c">
-          <div class="flex-js-c py-4 cursor-pointer">
-            <img src="images/user-avatar-menu.svg" alt="user-avatar-menu" class="mr-4" width="34" height="34">
-            <div>
-              <h3 class="uppercase text-blue text-[16px] font-bold">Alla GUZHVA</h3>
-              <h4 class="text-gray text-[14px]">30 мая 1999 г. </h4>
+        <div class="bg-white rounded-[24px] sm:rounded-[0] p-4 sm:p-0 mb-4">
+          <div class="flex-js-s sm:flex-jsb-c flex-col sm:flex-row">
+            <div class="flex-js-c sm:py-4 cursor-pointer">
+              <img src="images/icons/user-avatar-blue-border.svg" alt="user-avatar-menu" class="mr-4" width="34" height="34">
+              <div>
+                <h3 class="uppercase text-blue text-[16px] font-bold">Alla GUZHVA</h3>
+                <h4 class="text-gray text-[14px]">30 мая 1999</h4>
+              </div>
             </div>
+
+            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-owner-info">Изменить</span>
           </div>
-          <span class="text-[15px] text-blue cursor-pointer target-modal" data-targetid="#change-passengers-info">Изменить</span>
         </div>
 
       </div>
     </div>
 
-    <button class="h-[44px] text-white bg-[#3FC431] text-[15px] rounded-[12px] px-4 flex-jc-c mt-6 target-modal"
+    <button class="w-full sm:w-auto h-[44px] text-white bg-[#3FC431] text-[15px] rounded-[12px] px-4 flex-jc-c mt-6 target-modal"
             data-targetid="#create-passengers">
       <i class="icon-plus mr-2 text-white"></i>
       Добавить пассажира
@@ -170,17 +185,17 @@
 
 <section>
   <div class="container py-16">
-    <div class="flex-js-c gap-16">
+    <div class="flex-js-c flex-col lg:flex-row gap-16">
       <img src="images/settings/support.svg" alt="support" class="w-full max-w-[379px] h-auto">
       <div class="w-full">
-        <h3 class="text-[26px] font-bold mb-4">Заголовок для формы</h3>
+        <h3 class="text-[26px] font-bold mb-4 text-center lg:text-left">Заголовок для формы</h3>
         <form action="/" class="w-full">
-          <div class="w-full flex-jsb-c rounded-[16px] px-6 h-[64px] bg-[#EDF3FF] overflow-hidden">
-            <input type="text" class="w-full h-full bg-transparent" placeholder="Ваше имя">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <input type="email" class="w-full h-full bg-transparent pl-6" placeholder="Ваш email">
-            <div class="w-[1px] h-[48px] bg-[#A0BDFF]"></div>
-            <select class="w-full h-full bg-transparent pl-6">
+          <div class="w-full flex-jsb-c flex-col md:flex-row rounded-[16px] px-6 py-6 md:py-0 md:h-[64px] bg-[#EDF3FF] overflow-hidden">
+            <input type="text" class="w-full h-[64px] md:h-full bg-transparent" placeholder="Ваше имя">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <input type="email" class="w-full h-[64px] md:h-full bg-transparent md:pl-6" placeholder="Ваш email">
+            <div class="w-full md:w-[1px] h-[1px] md:h-[48px] bg-[#A0BDFF]"></div>
+            <select class="w-full h-[64px] md:h-full bg-transparent md:pl-6">
               <option value="Выбрать тему собщения">Выбрать тему собщения</option>
               <option value="Выбрать тему собщения">1</option>
               <option value="Выбрать тему собщения">2</option>
@@ -189,11 +204,9 @@
             </select>
           </div>
 
-          <textarea
-              class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4"
-              placeholder="О чем вы хотите спросить?"></textarea>
+          <textarea class="w-full rounded-[16px] px-6 h-[88px] bg-[#EDF3FF] overflow-hidden resize-none mt-6 placeholder:text-[#687076] pt-4" placeholder="О чем вы хотите спросить?"></textarea>
 
-          <button class="w-[300px] bg-orange h-[64px] text-[18px] text-white rounded-[12px] mt-6">
+          <button class="w-full sm:w-[300px] bg-orange h-[44px] sm:h-[64px] text-[18px] text-white rounded-[12px] mt-6">
             Отправить
           </button>
         </form>
@@ -203,7 +216,7 @@
 </section>
 
 
-<footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
+<footer class="bg-blue rounded-[32px_32px_0_0]">
   <div class="container pt-[49px] pb-16">
     <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
       <a href="/" class="block md:hidden mb-6">
@@ -337,13 +350,13 @@
     <div class="modal-close" data-modalid="#create-passengers">+</div>
 
     <div class="modal-content p-6">
-      <h4 class="text-[26px] font-bold mb-2">Внести данные пассажира</h4>
+      <h4 class="text-[22px] md:text-[26px] font-bold mb-2">Внести данные пассажира</h4>
       <p class="text-[16px] leading-[130%] mb-4">
         Внесите все данные точно так, как они указаны в паспорте / удостоверении личности для регистрации пассажиров в
         авиакомпаниях.
       </p>
 
-      <div>
+      <div class="h-[calc(100vh_-_250px)] overflow-y-auto">
         <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
           <div class="def-checkout-input">
             <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
