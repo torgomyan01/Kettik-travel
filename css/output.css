@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   height: 8px;
   border-radius: 5px;
 }
@@ -149,12 +149,6 @@ input:focus {
   background-color: #fff;
   border-radius: 24px;
   position: relative;
-}
-
-@media (max-width: 768px) {
-  .modal-body {
-    width: calc(100% - 20px);
-  }
 }
 
 @media (max-width: 576px) {
@@ -2318,18 +2312,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[calc\(100vh_-_200px\)\]{
-  height: calc(100vh - 200px);
-}
-
-.h-\[calc\(100vh_-_250px\)\]{
-  height: calc(100vh - 250px);
 }
 
 .max-h-\[calc\(100vh_-_100px\)\]{
