@@ -610,11 +610,51 @@ input:focus {
 }
 
 .btn-back-shadow {
-  box-shadow: 0px -1px 0px 0px #B5B5B5 inset, -1px 0px 0px 0px #E3E3E3 inset, 1px 0px 0px 0px #E3E3E3 inset, 0px 1px 0px 0px #E3E3E3 inset;
+  box-shadow: 0px -1px 0px 0px #B5B5B5 inset, -1px 0px 0px 0px #E3E3E3 inset, 1px 0px 0px 0px #E3E3E3 inset, 0px 1px 0px 0px #E3E3E3;
 }
 
 .scroll-gray::-webkit-scrollbar-thumb {
   background-color: #d3d3d3;
+}
+
+.def-radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+.def-radio input {
+  display: none;
+}
+.def-radio span {
+  display: block;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C1C8CD;
+  background-color: #EDF3FF;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.def-radio span:after {
+  content: "";
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  min-height: 10px;
+  background: #1150CB;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0;
+}
+.def-radio input:checked ~ span {
+  border: 1px solid #1150CB;
+}
+.def-radio input:checked ~ span:after {
+  opacity: 1;
 }
 
 .nav {
@@ -688,7 +728,6 @@ input:focus {
   width: 100%;
   height: 4rem;
   background: transparent;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -729,12 +768,11 @@ input:focus {
 .search-form-inp.focus:after {
   opacity: 0;
 }
-.search-form-inp.focus path {
+.search-form-inp.focus .air-icon path {
   stroke: #FF7A00;
 }
 .search-form-inp.there {
   margin-right: -2px;
-  overflow: hidden;
   border-radius: 16px 0 0 16px;
 }
 @media (max-width: 1280px) {
@@ -854,7 +892,7 @@ input:focus {
 .search-form-select-body {
   width: 100%;
 }
-.search-form-select i {
+.search-form-select .icon-down {
   font-size: 8px;
   margin-left: 8px;
 }

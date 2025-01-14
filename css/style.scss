@@ -600,12 +600,51 @@ input:focus {
 
 
 .btn-back-shadow{
-  box-shadow: 0px -1px 0px 0px #B5B5B5 inset, -1px 0px 0px 0px #E3E3E3 inset, 1px 0px 0px 0px #E3E3E3 inset, 0px 1px 0px 0px #E3E3E3 inset;
+  box-shadow: 0px -1px 0px 0px #B5B5B5 inset, -1px 0px 0px 0px #E3E3E3 inset, 1px 0px 0px 0px #E3E3E3 inset, 0px 1px 0px 0px #E3E3E3;
 }
 
 .scroll-gray{
   &::-webkit-scrollbar-thumb{
     background-color: #d3d3d3;
+  }
+}
+
+.def-radio{
+  @include flex('s', 'c');
+  gap: 8px;
+  input{
+    display: none;
+  }
+  span{
+    display: block;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid  #C1C8CD;
+    background-color: #EDF3FF;
+    transition: 0.3s;
+    @include flex('c', 'c');
+
+    &:after{
+      content: "";
+      width: 10px;
+      min-width: 10px;
+      height: 10px;
+      min-height: 10px;
+      background: #1150CB;
+      border-radius: 50%;
+      transition: 0.3s;
+      opacity: 0;
+    }
+  }
+
+  input:checked ~ span{
+    border: 1px solid #1150CB;
+  }
+
+  input:checked ~ span:after{
+    opacity: 1;
   }
 }
 
