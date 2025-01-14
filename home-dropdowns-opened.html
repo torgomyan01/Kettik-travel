@@ -139,7 +139,7 @@
 
 
   <div class="container relative tab-body">
-    <h1 class="text-[26px] md:text-[36px] lg:text-[58px] text-center text-white mb-8 md:md-0 leading-[116%] delay-[3.5s]"
+    <h1 class="text-[26px] md:text-[36px] lg:text-[58px] text-center text-white mb-8 md:md-0 leading-[116%]"
         data-aos="fade" data-aos-duration="1000">Начни своё путешествие сейчас!</h1>
     <div class="flex justify-center sm:justify-start gap-8 sm:pl-6 delay-[4.4s] pr-4 group" data-aos="fade"
          data-aos-duration="1000">
@@ -541,19 +541,61 @@
       </div>
     </div>
 
-    <div
-        class="hidden w-full bg-white sm:h-[48px] mt-4 flex-jsb-c rounded-[20px] sm:rounded-[8px] flex-col sm:flex-row overflow-hidden tab-content delay-[4.4s]"
-        id="search-country" data-aos="fade" data-aos-duration="1000">
-      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[9px_0_0_8px] border-b sm:border-0">
-        <i class="icon-search text-[22px]"></i>
-        <input type="text" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray">
-      </label>
-      <div class="w-full sm:w-auto p-4 sm:p-0 sm:h-full">
-        <button
-            class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[15px] text-white rounded-[8px] sm:rounded-[0_8px_8px_0]">
-          Изменить поиск
-        </button>
+
+    <div>
+
+      <div
+          class="hidden w-full bg-white sm:h-[48px] mt-4 flex-jsb-c rounded-[20px] sm:rounded-[8px] flex-col sm:flex-row tab-content relative z-[100]"
+          id="search-country" data-aos="fade" data-aos-duration="1000">
+        <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[9px_0_0_8px] border-b sm:border-0">
+          <i class="icon-search text-[22px]"></i>
+          <input type="text" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray">
+        </label>
+        <div class="w-full sm:w-auto p-4 sm:p-0 sm:h-full">
+          <button
+              class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[15px] text-white rounded-[8px] sm:rounded-[0_8px_8px_0]">
+            Изменить поиск
+          </button>
+        </div>
+
+        <div class="w-[396px] bg-white min-h-[100px] rounded-[8px] absolute left-0 top-[calc(100%_+_4px)] p-4 z-[100] shadow">
+
+          <div class="w-full flex-jsb-c border-b h-[52px]">
+            <h4 class="text-[16px] leading-[130%]">Málaga-Costa del Sol </h4>
+
+            <div class="flex-je-e flex-col">
+              <h5 class="text-[14px] text-right">AGP</h5>
+              <h5 class="text-[14px] text-gray text-right">Málaga</h5>
+            </div>
+          </div>
+          <div class="w-full flex-jsb-c border-b h-[52px]">
+            <h4 class="text-[16px] leading-[130%]">Alicante</h4>
+            <div class="flex-je-e flex-col">
+              <h5 class="text-[14px] text-right">ALC</h5>
+              <h5 class="text-[14px] text-gray text-right">Alicante</h5>
+            </div>
+          </div>
+
+          <div class="w-full flex-jsb-c border-b h-[52px]">
+            <h4 class="text-[16px] leading-[130%]">Winnipeg James Armstrong Richardson International Airport</h4>
+            <div class="flex-je-e flex-col">
+              <h5 class="text-[14px] text-right">YWG</h5>
+              <h5 class="text-[14px] text-gray text-right">Winnipeg</h5>
+            </div>
+          </div>
+          <div class="w-full flex-jsb-c border-b h-[52px]">
+            <h4 class="text-[16px] leading-[130%]">Alicante</h4>
+            <div class="flex-je-e flex-col">
+              <h5 class="text-[14px] text-right">ALC</h5>
+              <h5 class="text-[14px] text-gray text-right">Alicante</h5>
+            </div>
+          </div>
+
+
+        </div>
       </div>
+
+
     </div>
 
   </div>
