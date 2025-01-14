@@ -789,7 +789,7 @@ input:focus {
   top: 0;
   transform: translateX(-50%);
   height: 100%;
-  width: 110%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -2954,6 +2954,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-\[0_24px_0_0\]{
+  border-radius: 0 24px 0 0;
+}
+
+.rounded-\[0_16px_0_0\]{
+  border-radius: 0 16px 0 0;
+}
+
 .border{
   border-width: 1px;
 }
@@ -4466,10 +4474,6 @@ video {
 
   .md\:gap-\[32px\]{
     gap: 32px;
-  }
-
-  .md\:overflow-visible{
-    overflow: visible;
   }
 
   .md\:rounded-\[24px\]{
