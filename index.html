@@ -191,6 +191,14 @@
       <input type="checkbox">
       <span class="mt-1 mr-2"></span>
     </label>
+
+    <br>
+
+    <label class="def-radio h-[38px]">
+      <input type="radio" class="w-[20px] h-[20px] bg-[#EDF3FF]" name="class-ser">
+      <span></span>
+      Эконом
+    </label>
   </div>
 
   <h3 id="modals" class="mt-[200px] text-[30px] font-bold mb-3">#Modals</h3>
@@ -207,6 +215,25 @@
 
     <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-select-currency">Изменить валюта</button>
     <button class="target-modal bg-blue/80 text-white p-[8px_24px] rounded-[8px]" data-targetid="#modal-select-language">Изменить язык</button>
+
+
+
+    <button class="target-modal bg-orange text-white p-[8px_24px] rounded-[8px]" data-targetid="#mobile-input-to">Откуда</button>
+    <button class="target-modal bg-orange text-white p-[8px_24px] rounded-[8px]" data-targetid="#mobile-input-to-no-result">
+      Откуда
+
+      No Result
+    </button>
+
+    <button class="target-modal bg-orange text-white p-[8px_24px] rounded-[8px]" data-targetid="#mobile-input-from">Куда</button>
+    <button class="target-modal bg-orange text-white p-[8px_24px] rounded-[8px]" data-targetid="#mobile-input-from-no-result">
+      Куда
+
+      No Result
+    </button>
+    <button class="target-modal bg-orange text-white p-[8px_24px] rounded-[8px]" data-targetid="#mobile-input-passengers">
+      Пассажиры
+    </button>
   </div>
 
 </div>
@@ -485,6 +512,544 @@
   </div>
 </div>
 
+
+<div class="modal" id="mobile-input-to">
+  <div class="modal-fon" data-modalid="#mobile-input-to"></div>
+  <div class="modal-body max-w-[396px]">
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#mobile-input-to"></i>
+      <h4 class="text-[18px] font-bold">Откуда</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#mobile-input-to">+</div>
+    </div>
+
+
+    <div class="modal-content p-6">
+
+      <label class="def-input mb-4">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_4206_58073)">
+            <path d="M15.139 10.2577L19.9687 8.96358C20.481 8.82629 21.0269 8.89816 21.4863 9.16338C21.9457 9.4286 22.2809 9.86543 22.4182 10.3778C22.5554 10.8902 22.4836 11.4361 22.2184 11.8954C21.9531 12.3548 21.5163 12.69 21.0039 12.8273L6.51505 16.7096L2.06436 11.6905L4.96214 10.914L7.41163 12.3282L10.3094 11.5518L6.56582 5.30793L9.4636 4.53147L15.139 10.2577Z" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 21H21.5" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_4206_58073">
+              <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" required="" placeholder="Откуда">
+      </label>
+
+
+      <div class="bg-white">
+        <h4 class="text-[18px] mb-2 font-bold">Вы искали</h4>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Омск</h3>
+              <h5 class="text-[14px] text-gray">Россия</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">ОMS</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Самарканд</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">SKD</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Саратов</h3>
+              <h5 class="text-[14px] text-gray">Россия</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">RTW</span>
+        </div>
+
+
+
+        <h4 class="text-[18px] mb-2 font-bold mt-6">Популярные направления</h4>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Ташкент</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">TAS</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Самарканд</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">SKD</span>
+        </div>
+
+        <div>
+          <div class="flex-jsb-c cursor-pointer group h-[52px]">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div>
+                <h3 class="text-[16px] leading-[130%]">Москва</h3>
+                <h5 class="text-[14px] text-gray">Россия</h5>
+              </div>
+            </div>
+            <span class="text-[14px] text-gray">MOW</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Домодедово</span>
+            </div>
+            <span class="text-[14px] text-gray">DME</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Шереметьево</span>
+            </div>
+            <span class="text-[14px] text-gray">SVO</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Внуково</span>
+            </div>
+            <span class="text-[14px] text-gray">VKO</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Жуковский</span>
+            </div>
+            <span class="text-[14px] text-gray">ZIA</span>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="mobile-input-to-no-result">
+  <div class="modal-fon" data-modalid="#mobile-input-to-no-result"></div>
+  <div class="modal-body max-w-[396px]">
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#mobile-input-to-no-result"></i>
+      <h4 class="text-[18px] font-bold">Откуда</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#mobile-input-to-no-result">+</div>
+    </div>
+
+
+    <div class="modal-content p-6">
+
+      <label class="def-input mb-4">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_4206_58073)">
+            <path d="M15.139 10.2577L19.9687 8.96358C20.481 8.82629 21.0269 8.89816 21.4863 9.16338C21.9457 9.4286 22.2809 9.86543 22.4182 10.3778C22.5554 10.8902 22.4836 11.4361 22.2184 11.8954C21.9531 12.3548 21.5163 12.69 21.0039 12.8273L6.51505 16.7096L2.06436 11.6905L4.96214 10.914L7.41163 12.3282L10.3094 11.5518L6.56582 5.30793L9.4636 4.53147L15.139 10.2577Z" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 21H21.5" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_4206_58073">
+              <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" required="" placeholder="Откуда">
+      </label>
+
+      <div class="flex-jc-c flex-col mt-8">
+        <img class="mb-4" src="images/icons/search-no-result.svg" alt="search-no-result.svg" width="40" height="40">
+        <h3 class="text-[18px] font-bold text-center">Ничего не найдено</h3>
+        <h5 class="text-[16px] text-gray text-center leading-[130%]">
+          Пожалуйста, проверьте свой ввод на наличие ошибок
+        </h5>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal" id="mobile-input-from">
+  <div class="modal-fon" data-modalid="#mobile-input-from"></div>
+  <div class="modal-body max-w-[396px]">
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#mobile-input-from"></i>
+      <h4 class="text-[18px] font-bold">Куда</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#mobile-input-from">+</div>
+    </div>
+
+
+    <div class="modal-content p-6">
+
+      <label class="def-input mb-4">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_4206_58073)">
+            <path d="M15.139 10.2577L19.9687 8.96358C20.481 8.82629 21.0269 8.89816 21.4863 9.16338C21.9457 9.4286 22.2809 9.86543 22.4182 10.3778C22.5554 10.8902 22.4836 11.4361 22.2184 11.8954C21.9531 12.3548 21.5163 12.69 21.0039 12.8273L6.51505 16.7096L2.06436 11.6905L4.96214 10.914L7.41163 12.3282L10.3094 11.5518L6.56582 5.30793L9.4636 4.53147L15.139 10.2577Z" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 21H21.5" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_4206_58073">
+              <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" required="" placeholder="Куда">
+      </label>
+
+
+      <div class="bg-white">
+        <h4 class="text-[18px] mb-2 font-bold">Вы искали</h4>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Омск</h3>
+              <h5 class="text-[14px] text-gray">Россия</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">ОMS</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Самарканд</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">SKD</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Саратов</h3>
+              <h5 class="text-[14px] text-gray">Россия</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">RTW</span>
+        </div>
+
+
+
+        <h4 class="text-[18px] mb-2 font-bold mt-6">Популярные направления</h4>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Ташкент</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">TAS</span>
+        </div>
+
+        <div class="flex-jsb-c cursor-pointer group h-[52px]">
+          <div class="flex-js-c">
+            <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h3 class="text-[16px] leading-[130%]">Самарканд</h3>
+              <h5 class="text-[14px] text-gray">Узбекистан</h5>
+            </div>
+          </div>
+          <span class="text-[14px] text-gray">SKD</span>
+        </div>
+
+        <div>
+          <div class="flex-jsb-c cursor-pointer group h-[52px]">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M6.5 9H3.6C3.03995 9 2.75992 9 2.54601 9.10899C2.35785 9.20487 2.20487 9.35785 2.10899 9.54601C2 9.75992 2 10.0399 2 10.6V19M15.5 9H18.4C18.9601 9 19.2401 9 19.454 9.10899C19.6422 9.20487 19.7951 9.35785 19.891 9.54601C20 9.75992 20 10.0399 20 10.6V19M15.5 19V4.2C15.5 3.0799 15.5 2.51984 15.282 2.09202C15.0903 1.71569 14.7843 1.40973 14.408 1.21799C13.9802 1 13.4201 1 12.3 1H9.7C8.57989 1 8.01984 1 7.59202 1.21799C7.21569 1.40973 6.90973 1.71569 6.71799 2.09202C6.5 2.51984 6.5 3.0799 6.5 4.2V19M21 19H1M10 5H12M10 9H12M10 13H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div>
+                <h3 class="text-[16px] leading-[130%]">Москва</h3>
+                <h5 class="text-[14px] text-gray">Россия</h5>
+              </div>
+            </div>
+            <span class="text-[14px] text-gray">MOW</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Домодедово</span>
+            </div>
+            <span class="text-[14px] text-gray">DME</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Шереметьево</span>
+            </div>
+            <span class="text-[14px] text-gray">SVO</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Внуково</span>
+            </div>
+            <span class="text-[14px] text-gray">VKO</span>
+          </div>
+
+          <div class="flex-jsb-c w-full pl-[32px] h-[36px] mb-[6px] cursor-pointer group">
+            <div class="flex-js-c">
+              <svg class="mr-2" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-[#C1C8CD] group-hover:stroke-orange transition" d="M15 8H19C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12H15L11 19H8L10 12H6L4 14H1L3 10L1 6H4L6 8H10L8 1H11L15 8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text-[16px]">Жуковский</span>
+            </div>
+            <span class="text-[14px] text-gray">ZIA</span>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="mobile-input-from-no-result">
+  <div class="modal-fon" data-modalid="#mobile-input-from-no-result"></div>
+  <div class="modal-body max-w-[396px]">
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="mobile-input-from-no-result"></i>
+      <h4 class="text-[18px] font-bold">Куда</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#mobile-input-from-no-result">+</div>
+    </div>
+
+
+    <div class="modal-content p-6">
+
+      <label class="def-input mb-4">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_4206_58073)">
+            <path d="M15.139 10.2577L19.9687 8.96358C20.481 8.82629 21.0269 8.89816 21.4863 9.16338C21.9457 9.4286 22.2809 9.86543 22.4182 10.3778C22.5554 10.8902 22.4836 11.4361 22.2184 11.8954C21.9531 12.3548 21.5163 12.69 21.0039 12.8273L6.51505 16.7096L2.06436 11.6905L4.96214 10.914L7.41163 12.3282L10.3094 11.5518L6.56582 5.30793L9.4636 4.53147L15.139 10.2577Z" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 21H21.5" stroke="#FE3A11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_4206_58073">
+              <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <input type="text" required="" placeholder="Куда">
+      </label>
+
+      <div class="flex-jc-c flex-col mt-8">
+        <img class="mb-4" src="images/icons/search-no-result.svg" alt="search-no-result.svg" width="40" height="40">
+        <h3 class="text-[18px] font-bold text-center">Ничего не найдено</h3>
+        <h5 class="text-[16px] text-gray text-center leading-[130%]">
+          Пожалуйста, проверьте свой ввод на наличие ошибок
+        </h5>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="mobile-input-passengers">
+  <div class="modal-fon" data-modalid="#mobile-input-passengers"></div>
+  <div class="modal-body max-w-[396px]">
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#mobile-input-passengers"></i>
+      <h4 class="text-[18px] font-bold">Пассажиры</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#mobile-input-passengers">+</div>
+    </div>
+
+
+    <div class="modal-content p-6">
+
+      <div class="bg-white">
+        <h4 class="text-[18px] mb-2 font-bold">Пассажиры</h4>
+
+
+        <div class="flex-jsb-c h-[57px]">
+          <div>
+            <h5 class="text-[16px]">Взрослые</h5>
+            <h5 class="text-[14px] text-gray">Старше 18 лет</h5>
+          </div>
+
+          <div class="flex-je-c">
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
+              <i class="icon-minus text-[20px] text-[#889096] block"></i>
+            </button>
+            <div class="text-[16px] mx-3">1</div>
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px]">
+              <i class="icon-plus text-[20px] block"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-jsb-c h-[57px]">
+          <div>
+            <h5 class="text-[16px]">Дети</h5>
+            <h5 class="text-[14px] text-gray">2—12 лет</h5>
+          </div>
+
+          <div class="flex-je-c">
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
+              <i class="icon-minus text-[20px] text-[#889096] block"></i>
+            </button>
+            <div class="text-[16px] mx-3">0</div>
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px]">
+              <i class="icon-plus text-[20px] block"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-jsb-c h-[57px]">
+          <div>
+            <h5 class="text-[16px]">
+              Младенцы
+
+              <i class="icon-alert-circle1 text-[#8391AA] relative top-[1px] left-1 inline-block target-modal" data-targetid="#tooltip-passagers"></i>
+            </h5>
+            <h5 class="text-[14px] text-gray">Младше 2 лет, без места</h5>
+          </div>
+
+          <div class="flex-je-c">
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
+              <i class="icon-minus text-[20px] text-[#889096] block"></i>
+            </button>
+            <div class="text-[16px] mx-3">0</div>
+            <button class="w-[36px] h-[36px] border bg-white rounded-[8px]">
+              <i class="icon-plus text-[20px] block"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="w-full p-[10px] bg-[#FFD9D466] rounded-[8px] flex-js-s gap-2 text-[14px] leading-[18px] text-[#252A31] mb-4">
+          <i class="icon-alert-circle1 text-[#FF592C] relative top-[2px] left-1 inline-block "></i>
+          Количество пассажиров не может превышать 9, пожалуста, измените параметры.
+        </div>
+
+        <h4 class="text-[18px] mb-2 font-bold">
+          Класс обслуживания
+        </h4>
+
+        <label class="def-radio h-[38px]">
+          <input type="radio" class="w-[20px] h-[20px] bg-[#EDF3FF]" name="class-ser">
+          <span></span>
+          Эконом
+        </label>
+
+        <label class="def-radio h-[38px]">
+          <input type="radio" class="w-[20px] h-[20px] bg-[#EDF3FF]" name="class-ser">
+          <span></span>
+          Первый класс
+        </label>
+
+        <label class="def-radio h-[38px]">
+          <input type="radio" class="w-[20px] h-[20px] bg-[#EDF3FF]" name="class-ser">
+          <span></span>
+          Бизнес
+        </label>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal-tooltip z-[100000] fixed" id="tooltip-passagers">
+  <div class="modal-tooltip-fon"></div>
+  <div class="modal-tooltip-content">
+
+    Количество младенцев не должно превыщать количество взрослых пассажиров. Если младенцев больще, чем взрослых, добавьте еще пассажиров в категории «Дети (2-12)»
+
+    <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[8px] text-[#1150CB] mt-4 close-modals" data-modalid="#tooltip-passagers" >Закрыть</button>
+
+  </div>
+</div>
 
 <br><br>
 <br><br>
