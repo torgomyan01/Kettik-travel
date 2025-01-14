@@ -3571,6 +3571,14 @@ video {
   font-weight: 600;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
+.\!font-light{
+  font-weight: 300 !important;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -4189,6 +4197,15 @@ video {
 
   .sm\:text-\[26px\]{
     font-size: 26px;
+  }
+
+  .sm\:font-light{
+    font-weight: 300;
+  }
+
+  .sm\:text-gray{
+    --tw-text-opacity: 1;
+    color: rgb(104 112 118 / var(--tw-text-opacity, 1));
   }
 }
 
