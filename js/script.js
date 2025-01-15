@@ -646,3 +646,23 @@ selectButton.forEach((item) => {
 
     })
 })
+
+
+
+const faqQuestion = $('.faq-question');
+
+
+faqQuestion.forEach((item) => {
+
+  item.id = `And_project_${Math.floor(Math.random() * 1000000)}`;
+
+  item.addEventListener('click', e => {
+    faqQuestion.forEach((_faqItem) => {
+      if(_faqItem.id !== item.id) {
+        _faqItem.parentElement.classList.remove('active');
+      }
+    })
+
+    item.parentElement.classList.toggle('active');
+  })
+})
