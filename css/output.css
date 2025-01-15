@@ -1849,6 +1849,10 @@ video {
   z-index: 20;
 }
 
+.z-\[100000\]{
+  z-index: 100000;
+}
+
 .z-\[1000\]{
   z-index: 1000;
 }
@@ -1859,10 +1863,6 @@ video {
 
 .z-\[1\]{
   z-index: 1;
-}
-
-.z-\[100000\]{
-  z-index: 100000;
 }
 
 .mx-1{
@@ -2718,6 +2718,10 @@ video {
   max-width: 960px;
 }
 
+.max-w-\[296px\]{
+  max-width: 296px;
+}
+
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2858,6 +2862,10 @@ video {
   gap: 8px;
 }
 
+.gap-\[30px\]{
+  gap: 30px;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -2884,6 +2892,10 @@ video {
 
 .rounded-\[0_0_24px_24px\]{
   border-radius: 0 0 24px 24px;
+}
+
+.rounded-\[0_16px_0_0\]{
+  border-radius: 0 16px 0 0;
 }
 
 .rounded-\[0_16px_16px_0\]{
@@ -2956,14 +2968,6 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-\[0_24px_0_0\]{
-  border-radius: 0 24px 0 0;
-}
-
-.rounded-\[0_16px_0_0\]{
-  border-radius: 0 16px 0 0;
 }
 
 .border{
@@ -3379,6 +3383,11 @@ video {
   padding-right: 12px;
 }
 
+.px-\[25px\]{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -3576,6 +3585,10 @@ video {
   text-align: right;
 }
 
+.\!text-\[22px\]{
+  font-size: 22px !important;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -3662,10 +3675,6 @@ video {
   line-height: 1.75rem;
 }
 
-.\!text-\[22px\]{
-  font-size: 22px !important;
-}
-
 .\!font-light{
   font-weight: 300 !important;
 }
@@ -3721,6 +3730,11 @@ video {
 .\!text-\[\#889096\]{
   --tw-text-opacity: 1 !important;
   color: rgb(136 144 150 / var(--tw-text-opacity, 1)) !important;
+}
+
+.\!text-orange{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 122 0 / var(--tw-text-opacity, 1)) !important;
 }
 
 .text-\[\#11181C\]{
@@ -3829,11 +3843,6 @@ video {
 
 .text-white\/70{
   color: rgb(255 255 255 / 0.7);
-}
-
-.\!text-orange{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 122 0 / var(--tw-text-opacity, 1)) !important;
 }
 
 .underline{

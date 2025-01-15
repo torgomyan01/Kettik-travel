@@ -423,10 +423,10 @@ addDocModal.forEach((doc) => {
 
 if($el(".mySwiper")){
   new Swiper(".mySwiper", {
-    slidesPerView: 3, // Ցուցադրվող սլայդերի քանակը
-    slidesPerGroup: 1, // Միաժամանակ անցնող սլայդերի քանակը
-    spaceBetween: 10, // Սլայդերի միջև հեռավորություն (ըստ անհրաժեշտության)
-    loop: true, // Սլայդերի անվերջ պտույտ
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+    loop: true,
 
     breakpoints: {
       300: {
@@ -435,8 +435,11 @@ if($el(".mySwiper")){
       768: {
         slidesPerView: 2,
       },
+      1024: {
+        slidesPerView: 1,
+      },
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
     },
     navigation: {
