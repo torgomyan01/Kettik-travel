@@ -789,12 +789,12 @@ input:focus {
   top: 0;
   transform: translateX(-50%);
   height: 100%;
-  width: 100%;
+  width: 110%;
 }
 
 @media (max-width: 768px) {
   .search .vector {
-    top: -18%;
+    top: -30%;
   }
 }
 
@@ -2678,6 +2678,10 @@ video {
   max-width: 250px;
 }
 
+.max-w-\[296px\]{
+  max-width: 296px;
+}
+
 .max-w-\[352px\]{
   max-width: 352px;
 }
@@ -2716,10 +2720,6 @@ video {
 
 .max-w-\[960px\]{
   max-width: 960px;
-}
-
-.max-w-\[296px\]{
-  max-width: 296px;
 }
 
 .translate-x-\[-50\%\]{
@@ -2860,10 +2860,6 @@ video {
 
 .gap-\[8px\]{
   gap: 8px;
-}
-
-.gap-\[30px\]{
-  gap: 30px;
 }
 
 .overflow-hidden{
