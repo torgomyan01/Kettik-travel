@@ -666,3 +666,10 @@ faqQuestion.forEach((item) => {
     item.parentElement.classList.toggle('active');
   })
 })
+
+
+const userProfileDropdown = $el('#user-profile-dropdown');
+
+userProfileDropdown.addEventListener('click', function (){
+  userProfileDropdown.classList.toggle('active')
+})
