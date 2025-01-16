@@ -1359,6 +1359,20 @@
     <div class="w-full text-center text-[15px] cursor-pointer mt-[33px] text-blue font-semibold block lg:hidden">
       Показать еще варианты
     </div>
+
+    <div id="mobile-filter-block-position"></div>
+    <div id="mobile-filter-block" class="flex lg:hidden w-[calc(100%_+_31px)] ml-[-16px] sticky bottom-0 p-4 gap-[8px]">
+      <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px] target-modal" data-targetid="#max-filter">
+        <i class="icon-filter mr-2 text-white relative top-[1px]"></i>
+        Фильтр
+      </button>
+      <button class="w-full h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] mobile-filter"
+              data-targetid="#sort">
+        <i class="icon-sort-amount-asc mr-2 relative top-1"></i>
+        Сортировка
+      </button>
+    </div>
+
   </div>
 </section>
 
@@ -1434,17 +1448,6 @@
 </section>
 
 
-<div class="flex lg:hidden w-full bg-gradient-to-b from-transparent to-white fixed bottom-0 left-0 p-4 gap-[8px]">
-  <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px] target-modal" data-targetid="#max-filter">
-    <i class="icon-filter mr-2 text-white relative top-[1px]"></i>
-    Фильтр
-  </button>
-  <button class="w-full h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] mobile-filter"
-          data-targetid="#sort">
-    <i class="icon-sort-amount-asc mr-2 relative top-1"></i>
-    Сортировка
-  </button>
-</div>
 
 
 <div class="w-full h-full fixed top-0 left-0 z-20 mobile-filter-body" id="transplants">
@@ -2174,7 +2177,7 @@
             </div>
           </div>
 
-          <div class="w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
+          <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
             <i class="icon-down"></i>
           </div>
         </div>

@@ -670,6 +670,30 @@ faqQuestion.forEach((item) => {
 
 const userProfileDropdown = $el('#user-profile-dropdown');
 
-userProfileDropdown.addEventListener('click', function (){
+userProfileDropdown?.addEventListener('click', function (){
   userProfileDropdown.classList.toggle('active')
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const mobileFilterBlockOld = $el("#mobile-filter-block-position");
+  const offsetTopOld = mobileFilterBlockOld.offsetTop;
+
+  document.addEventListener("scroll", function () {
+    checkAndFixed(offsetTopOld, $el("#mobile-filter-block"))
+  });
+
+  checkAndFixed(offsetTopOld, $el("#mobile-filter-block"))
+
+})
+
+
+function checkAndFixed(Old, Block){
+  const offsetTop = Block.offsetTop;
+
+  if (Old <= offsetTop) {
+    Block.classList.remove("filter-is-sticky");
+  } else {
+    Block.classList.add("filter-is-sticky");
+  }
+}

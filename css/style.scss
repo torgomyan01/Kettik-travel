@@ -648,6 +648,21 @@ input:focus {
   }
 }
 
+.filter-is-sticky{
+  background-color: #fff;
+
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(0deg, #fff, transparent);
+
+  }
+}
+
 
 // NAVBAR
 @import "components/navbar";
