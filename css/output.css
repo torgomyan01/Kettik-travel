@@ -1894,6 +1894,11 @@ video {
   margin-right: 0.75rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-\[-2px\]{
   margin-left: -2px;
   margin-right: -2px;
@@ -2977,6 +2982,10 @@ video {
   border-radius: 32px 32px 0 0;
 }
 
+.rounded-\[44px\]{
+  border-radius: 44px;
+}
+
 .rounded-\[6px\]{
   border-radius: 6px;
 }
@@ -3367,6 +3376,10 @@ video {
   padding: 7px 16px;
 }
 
+.p-\[8px_16px_10px_16px\]{
+  padding: 8px 16px 10px 16px;
+}
+
 .p-\[8px_24px\]{
   padding: 8px 24px;
 }
@@ -3615,14 +3628,6 @@ video {
 
 .pt-\[80px\]{
   padding-top: 80px;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pb-7{
-  padding-bottom: 1.75rem;
 }
 
 .text-center{
@@ -4008,15 +4013,6 @@ video {
 .after\:hidden::after{
   content: var(--tw-content);
   display: none;
-}
-
-.after\:transition::after{
-  content: var(--tw-content);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
 }
 
 .hover\:border-blue:hover{
@@ -4681,6 +4677,10 @@ video {
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -4777,6 +4777,10 @@ video {
 
   .xl\:pb-14{
     padding-bottom: 3.5rem;
+  }
+
+  .xl\:text-\[16px\]{
+    font-size: 16px;
   }
 }
 
