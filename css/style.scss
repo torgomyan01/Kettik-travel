@@ -664,6 +664,14 @@ input:focus {
 }
 
 
+.swiper-button-disabled{
+  cursor: default !important;
+  i{
+    color: #DFE3E6 !important;
+  }
+}
+
+
 // NAVBAR
 @import "components/navbar";
 

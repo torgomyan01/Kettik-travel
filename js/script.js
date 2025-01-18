@@ -422,11 +422,11 @@ addDocModal.forEach((doc) => {
 
 
 if($el(".mySwiper")){
-  new Swiper(".mySwiper", {
+  const swiper =  new Swiper(".mySwiper", {
     slidesPerView: 2,
     slidesPerGroup: 1,
     spaceBetween: 10,
-    loop: true,
+    loop: false,
 
     breakpoints: {
       300: {
@@ -444,7 +444,24 @@ if($el(".mySwiper")){
     },
     navigation: {
       nextEl: '#next-slider',
+      prevEl: '#prev-slider',
     },
+  });
+
+  // Ստուգում ենք երբ հասնում ենք վերջ
+  swiper.on('reachEnd', () => {
+    document.querySelector('#next-slider').setAttribute('disabled', 'true');
+  });
+
+// Ստուգում ենք երբ հասնում ենք սկիզբ
+  swiper.on('reachBeginning', () => {
+    document.querySelector('#prev-slider').setAttribute('disabled', 'true');
+  });
+
+// Երբ սկիզբը կամ վերջը չեն
+  swiper.on('fromEdge', () => {
+    document.querySelector('#next-slider').removeAttribute('disabled');
+    document.querySelector('#prev-slider').removeAttribute('disabled');
   });
 }
 

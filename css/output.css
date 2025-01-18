@@ -745,6 +745,14 @@ input:focus {
   background: linear-gradient(0deg, #fff, transparent);
 }
 
+.swiper-button-disabled {
+  cursor: default !important;
+}
+
+.swiper-button-disabled i {
+  color: #DFE3E6 !important;
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;
@@ -1753,6 +1761,10 @@ video {
 
 .left-\[50\%\]{
   left: 50%;
+}
+
+.left-\[5px\]{
+  left: 5px;
 }
 
 .left-\[calc\(100\%_-_30px\)\]{
