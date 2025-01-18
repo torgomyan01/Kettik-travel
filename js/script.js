@@ -220,22 +220,35 @@ let idT = '';
 
 defTooltip.forEach((tooltipId) => {
   tooltipId.addEventListener('mouseenter', e => {
-    idT = `and_tooltip_${Math.floor(Math.random() * 5000)}`;
-    const getElemPos = tooltipId.getBoundingClientRect();
-    const getTitle = tooltipId.title;
 
-    const contentType = tooltipId.dataset.img;
+    if(window.innerWidth > 768){
+      idT = `and_tooltip_${Math.floor(Math.random() * 5000)}`;
+      const getElemPos = tooltipId.getBoundingClientRect();
+      const getTitle = tooltipId.title;
 
-    document.body.insertAdjacentHTML('beforeend', `
+      const contentType = tooltipId.dataset.img;
+
+      document.body.insertAdjacentHTML('beforeend', `
       <div id="${idT}" class="def-tooltip-body" style="left: ${getElemPos.x}px; top: ${getElemPos.y}px">
           ${PrintBodyTooltip(contentType, getTitle)}
       </div>
     `)
+    } else {
+      console.log('sss')
+      const getTitle = tooltipId.title;
+      setTimeout(() => {
+        $el('#mobile-filter-body-all').classList.add('show');
+      }, 100)
+      $el('#mobile-filter-body-text').innerText = getTitle;
+    }
+
   })
 
   tooltipId.addEventListener('mouseout', e => {
-    const getElem = $el(`#${idT}`);
-    getElem.outerHTML = '';
+    if(window.innerWidth > 768){
+      const getElem = $el(`#${idT}`);
+      getElem.outerHTML = '';
+    }
   })
 })
 
