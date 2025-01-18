@@ -3642,6 +3642,10 @@ video {
   padding-top: 80px;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -4407,6 +4411,14 @@ video {
 
   .sm\:text-\[26px\]{
     font-size: 26px;
+  }
+
+  .sm\:text-\[24px\]{
+    font-size: 24px;
+  }
+
+  .sm\:text-\[36px\]{
+    font-size: 36px;
   }
 
   .sm\:font-light{
