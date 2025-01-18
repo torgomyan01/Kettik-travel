@@ -220,34 +220,45 @@ let idT = '';
 
 defTooltip.forEach((tooltipId) => {
   tooltipId.addEventListener('mouseenter', e => {
+    const contentType = tooltipId.dataset.img;
+    const getTitle = tooltipId.title;
 
     if(window.innerWidth > 768){
-      idT = `and_tooltip_${Math.floor(Math.random() * 5000)}`;
-      const getElemPos = tooltipId.getBoundingClientRect();
-      const getTitle = tooltipId.title;
-
-      const contentType = tooltipId.dataset.img;
-
-      document.body.insertAdjacentHTML('beforeend', `
-      <div id="${idT}" class="def-tooltip-body" style="left: ${getElemPos.x}px; top: ${getElemPos.y}px">
-          ${PrintBodyTooltip(contentType, getTitle)}
-      </div>
-    `)
+      printTooltip(contentType, getTitle)
     } else {
-      console.log('sss')
-      const getTitle = tooltipId.title;
-      setTimeout(() => {
-        $el('#mobile-filter-body-all').classList.add('show');
-      }, 100)
-      $el('#mobile-filter-body-text').innerText = getTitle;
+
+      if(contentType){
+        printTooltip(contentType, getTitle)
+      } else {
+        setTimeout(() => {
+          $el('#mobile-filter-body-all').classList.add('show');
+        }, 50)
+        $el('#mobile-filter-body-text').innerText = getTitle;
+      }
     }
 
   })
 
+
+  function printTooltip(contentType, getTitle){
+
+    idT = `and_tooltip_${Math.floor(Math.random() * 5000)}`;
+    const getElemPos = tooltipId.getBoundingClientRect();
+    const xPos = tooltipId.dataset.x;
+
+    document.body.insertAdjacentHTML('beforeend', `
+      <div id="${idT}" class="def-tooltip-body" style="left: ${getElemPos.x}px; top: ${getElemPos.y}px; --xpos: ${xPos};">
+          ${PrintBodyTooltip(contentType, getTitle)}
+      </div>
+    `)
+  }
+
   tooltipId.addEventListener('mouseout', e => {
+    const contentType = tooltipId.dataset.img;
+
     if(window.innerWidth > 768){
-      const getElem = $el(`#${idT}`);
-      getElem.outerHTML = '';
+        const getElem = $el(`#${idT}`);
+        getElem.outerHTML = '';
     }
   })
 })
@@ -255,7 +266,7 @@ defTooltip.forEach((tooltipId) => {
 
 function PrintBodyTooltip(type, content){
   if(type){
-    return `<img src="${content}" alt="Image tooltip" />`
+    return `<img src="${content}" alt="Image tooltip" style="min-width: 100px" />`
   } else {
     return content
   }
@@ -717,7 +728,7 @@ userProfileDropdown?.addEventListener('click', function (){
 document.addEventListener("DOMContentLoaded", function () {
 
   const mobileFilterBlockOld = $el("#mobile-filter-block-position");
-  const offsetTopOld = mobileFilterBlockOld.offsetTop;
+  const offsetTopOld = mobileFilterBlockOld?.offsetTop;
 
   document.addEventListener("scroll", function () {
     checkAndFixed(offsetTopOld, $el("#mobile-filter-block"))
@@ -729,11 +740,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function checkAndFixed(Old, Block){
-  const offsetTop = Block.offsetTop;
+  const offsetTop = Block?.offsetTop;
 
   if (Old <= offsetTop) {
-    Block.classList.remove("filter-is-sticky");
+    Block?.classList.remove("filter-is-sticky");
   } else {
-    Block.classList.add("filter-is-sticky");
+    Block?.classList.add("filter-is-sticky");
   }
 }

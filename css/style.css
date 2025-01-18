@@ -425,6 +425,7 @@ input:focus {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.5px;
+  margin-left: calc(0px - var(--xpos));
 }
 .def-tooltip-body:after {
   content: "";
@@ -435,6 +436,7 @@ input:focus {
   height: 9px;
   background: #6a7076;
   clip-path: polygon(50% 100%, 1% 0, 100% 0);
+  transform: translateX(var(--xpos));
 }
 
 .box-shadow-user {

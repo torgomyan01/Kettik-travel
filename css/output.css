@@ -473,6 +473,7 @@ input:focus {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.5px;
+  margin-left: calc(0px - var(--xpos));
 }
 
 .def-tooltip-body:after {
@@ -484,6 +485,7 @@ input:focus {
   height: 9px;
   background: #6a7076;
   clip-path: polygon(50% 100%, 1% 0, 100% 0);
+  transform: translateX(var(--xpos));
 }
 
 .box-shadow-user {
@@ -2044,6 +2046,10 @@ video {
   margin-left: -1px;
 }
 
+.ml-\[1px\]{
+  margin-left: 1px;
+}
+
 .ml-\[40px\]{
   margin-left: 40px;
 }
@@ -2198,10 +2204,6 @@ video {
 
 .mt-\[60px\]{
   margin-top: 60px;
-}
-
-.ml-\[1px\]{
-  margin-left: 1px;
 }
 
 .block{
@@ -2625,6 +2627,10 @@ video {
   width: calc(100% + 31px);
 }
 
+.w-\[calc\(100\%_-_2px\)\]{
+  width: calc(100% - 2px);
+}
+
 .w-\[calc\(100\%_-_32px\)\]{
   width: calc(100% - 32px);
 }
@@ -2635,14 +2641,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[calc\(100\%_-_2pxpx\)\]{
-  width: calc(100% - 2pxpx);
-}
-
-.w-\[calc\(100\%_-_2px\)\]{
-  width: calc(100% - 2px);
 }
 
 .\!min-w-\[16px\]{
@@ -4473,6 +4471,10 @@ video {
     margin-bottom: 40px;
   }
 
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
   .md\:mr-3{
     margin-right: 0.75rem;
   }
@@ -4487,10 +4489,6 @@ video {
 
   .md\:mt-\[46px\]{
     margin-top: 46px;
-  }
-
-  .md\:ml-0{
-    margin-left: 0px;
   }
 
   .md\:block{
