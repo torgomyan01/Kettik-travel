@@ -4219,6 +4219,10 @@ video {
     margin-top: 2rem;
   }
 
+  .sm\:mt-3{
+    margin-top: 0.75rem;
+  }
+
   .sm\:block{
     display: block;
   }
