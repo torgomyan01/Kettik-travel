@@ -4499,6 +4499,10 @@ video {
     margin-top: 46px;
   }
 
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -4699,6 +4703,10 @@ video {
 
   .md\:pt-\[40px\]{
     padding-top: 40px;
+  }
+
+  .md\:pt-8{
+    padding-top: 2rem;
   }
 
   .md\:text-left{
