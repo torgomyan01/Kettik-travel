@@ -346,7 +346,7 @@
 
 <div class="modal" id="create-passengers">
   <div class="modal-fon" data-modalid="#create-passengers"></div>
-  <div class="modal-body max-w-[900px]">
+  <div class="modal-body max-w-[950px]">
     <div class="modal-close" data-modalid="#create-passengers">+</div>
 
     <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
@@ -368,25 +368,26 @@
           <div class=" pr-2">
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Имя <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text">
                   <span class="def-checkout-input-pl">Имя</span>
                 </label>
               </div>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Фамилия <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text">
                   <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
                 </label>
               </div>
               <div class="def-checkout-input">
-              <span class="text-[14px] mb-1 text-gray flex-jsb-c active">
+              <span class="text-[14px] mb-1 font-bold flex-jsb-c active">
                 Отчество
 
-                <label class="flex-je-c text-[14px]">
-                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                  <input type="checkbox">
+                  <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
                   Нет отчества
                 </label>
               </span>
@@ -398,14 +399,14 @@
             </div>
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан">Узбекистан</option>
                   <option value="Узбекистан">Руссия</option>
                 </select>
               </label>
               <div class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Пол <i class="text-[red]">*</i></span>
                 <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
                   <div
                       class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
@@ -417,7 +418,7 @@
                 </div>
               </div>
               <div class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Дата рождения <i class="text-[red]">*</i></span>
                 <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                   <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
                     ДД
@@ -444,7 +445,7 @@
             </div>
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан">Заграничный паспорт</option>
                   <option value="Узбекистан">Национальный паспорт</option>
@@ -455,18 +456,19 @@
                 </select>
               </label>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Номер документа <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text">
                   <span class="def-checkout-input-pl">Серия и номер документа</span>
                 </label>
               </div>
               <div class="w-full block">
-                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span class="text-[14px] mb-1 font-bold flex-jsb-c">
                   <span>Действителен до <i class="text-[red]">*</i></span>
 
-                  <label class="flex-je-c text-[14px]">
-                    <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                    <input type="checkbox">
+                    <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
                     Без срока действия
                   </label>
               </span>
@@ -502,7 +504,7 @@
 
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 example hidden pr-2">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Тип документа  <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Тип документа  <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан">Заграничный паспорт</option>
                   <option value="Узбекистан">Национальный паспорт</option>
@@ -513,20 +515,21 @@
                 </select>
               </label>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Номер документа <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text" value="ИС 123456">
                   <span class="def-checkout-input-pl">Серия и номер документа</span>
                 </label>
               </div>
               <div class="w-full block">
-                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span class="text-[14px] mb-1 font-bold flex-jsb-c">
                 <span>Действителен до <i class="text-[red]">*</i></span>
 
-                <label class="flex-je-c text-[14px]">
-                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
-                  Без срока действия
-                </label>
+                <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                    <input type="checkbox">
+                    <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
+                    Без срока действия
+                  </label>
               </span>
                 <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                   <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
@@ -605,25 +608,26 @@
           <div>
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Имя <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text" value="NIKOLAY">
                   <span class="def-checkout-input-pl">Имя</span>
                 </label>
               </div>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Фамилия <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text" value="Bernd Ottovordemgentschenfelde">
                   <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
                 </label>
               </div>
               <div class="def-checkout-input">
-              <span class="text-[14px] mb-1 text-gray flex-jsb-c active">
+              <span class="text-[14px] mb-1 font-bold flex-jsb-c active">
                 Отчество
 
-                <label class="flex-je-c text-[14px]">
-                  <input type="checkbox" checked width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                <label class="def-checkbox text-[14px] flex-js-c green">
+                  <input type="checkbox">
+                  <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
                   Нет отчества
                 </label>
               </span>
@@ -635,14 +639,14 @@
             </div>
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Гражданство <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан" selected>Узбекистан</option>
                   <option value="Узбекистан">Руссия</option>
                 </select>
               </label>
               <div class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Пол <i class="text-[red]">*</i></span>
                 <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
                   <div
                       class="w-[50%] h-full border border-[#3FC431] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer bg-[#E6FCD6]">
@@ -654,7 +658,7 @@
                 </div>
               </div>
               <div class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Дата рождения <i class="text-[red]">*</i></span>
                 <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                   <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
                     ДД
@@ -681,7 +685,7 @@
             </div>
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Тип документа <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Тип документа <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан">Заграничный паспорт</option>
                   <option value="Узбекистан">Национальный паспорт</option>
@@ -692,18 +696,19 @@
                 </select>
               </label>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Номер документа <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text">
                   <span class="def-checkout-input-pl">Серия и номер документа</span>
                 </label>
               </div>
               <div class="w-full block">
-                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span class="text-[14px] mb-1 font-bold flex-jsb-c">
                   <span>Действителен до <i class="text-[red]">*</i></span>
 
-                  <label class="flex-je-c text-[14px]">
-                    <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
+                  <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                    <input type="checkbox">
+                    <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
                     Без срока действия
                   </label>
               </span>
@@ -739,7 +744,7 @@
 
             <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6 example hidden">
               <label class="w-full block">
-                <span class="block text-[14px] mb-1 text-gray">Тип документа  <i class="text-[red]">*</i></span>
+                <span class="block text-[14px] mb-1 font-bold">Тип документа  <i class="text-[red]">*</i></span>
                 <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                   <option value="Узбекистан">Заграничный паспорт</option>
                   <option value="Узбекистан">Национальный паспорт</option>
@@ -750,20 +755,21 @@
                 </select>
               </label>
               <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray">Номер документа <i class="text-[red]">*</i></span>
+                <span class="text-[14px] mb-1 font-bold">Номер документа <i class="text-[red]">*</i></span>
                 <label>
                   <input type="text" value="ИС 123456">
                   <span class="def-checkout-input-pl">Серия и номер документа</span>
                 </label>
               </div>
               <div class="w-full block">
-                <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                <span class="text-[14px] mb-1 font-bold flex-jsb-c">
                 <span>Действителен до <i class="text-[red]">*</i></span>
 
-                <label class="flex-je-c text-[14px]">
-                  <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
-                  Без срока действия
-                </label>
+                <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                    <input type="checkbox">
+                    <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
+                    Без срока действия
+                  </label>
               </span>
                 <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                   <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
@@ -803,7 +809,7 @@
 
           <div class="flex-jsb-c flex-col xl:flex-row mt-6 gap-6">
             <div class="def-checkout-input">
-          <span class="text-[14px] mb-1 text-gray flex-js-c">
+          <span class="text-[14px] mb-1 font-bold flex-js-c">
             Email <i class="text-[red]">*</i>
           </span>
               <label>
@@ -813,16 +819,16 @@
             </div>
 
             <div class="w-full block ">
-          <span class="text-[14px] mb-1 text-gray flex-js-c">
+          <span class="text-[14px] mb-1 font-bold flex-js-c">
             Номер телефона <i class="text-[red]">*</i>
           </span>
-              <div class="flex-js-c border border-[#C1C8CD] rounded-[8px] h-[44px] overflow-hidden">
+              <div class="flex-js-c border border-[#C1C8CD] rounded-[8px] h-[44px] overflow-hidden transition">
                 <div class="flex-jsb-c pl-2 w-[115px] border-r border-[#C1C8CD] pr-2 cursor-pointer">
                   <img src="images/icons/uzbekistan-fleg.svg" alt="uzbekistan-fleg" width="20" height="20">
                   +998
                   <i class="icon-down text-[6px]"></i>
                 </div>
-                <input type="text" class="w-full pl-2 h-full" value="99 9999 9999" placeholder="Номер телефона">
+                <input type="text" class="w-full pl-2 h-full input-for-number-tel" value="99 9999 9999" placeholder="Номер телефона">
               </div>
             </div>
           </div>
@@ -831,7 +837,7 @@
 
           <div class="flex-js-e mt-4">
             <div class="def-checkout-input w-[calc(50%_-_12px)] mr-4">
-              <span class="text-[14px] mb-1 text-gray">Пароль <i class="text-[red]">*</i></span>
+              <span class="text-[14px] mb-1 font-bold">Пароль <i class="text-[red]">*</i></span>
               <label class="relative">
                 <input type="password" value="112233">
                 <span class="def-checkout-input-pl">Пароль</span>
@@ -868,7 +874,7 @@
       <h4 class="text-[26px] font-bold mb-2">Изменить пароль</h4>
 
         <div class="def-checkout-input">
-          <span class="text-[14px] mb-1 text-gray">Пароль</span>
+          <span class="text-[14px] mb-1 font-bold">Пароль</span>
           <label class="relative">
             <input type="password" value="112233">
             <span class="def-checkout-input-pl">Пароль</span>
@@ -913,27 +919,28 @@
 
           <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
             <div class="def-checkout-input">
-              <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+              <span class="text-[14px] mb-1 font-bold">Имя <i class="text-[red]">*</i></span>
               <label>
                 <input type="text" value="GALINA">
                 <span class="def-checkout-input-pl">Имя</span>
               </label>
             </div>
             <div class="def-checkout-input">
-              <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+              <span class="text-[14px] mb-1 font-bold">Фамилия <i class="text-[red]">*</i></span>
               <label>
                 <input type="text" value="PETROVA">
                 <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
               </label>
             </div>
             <div class="def-checkout-input">
-                <span class="text-[14px] mb-1 text-gray flex-jsb-c active">
+                <span class="text-[14px] mb-1 font-bold flex-jsb-c active">
                   Отчество
 
-                  <label class="flex-je-c text-[14px]">
-                    <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
-                    Нет отчества
-                  </label>
+                  <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                  <input type="checkbox">
+                  <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
+                  Нет отчества
+                </label>
                 </span>
               <label>
                 <input type="text" value="VIKTOROVNA">
@@ -943,14 +950,14 @@
           </div>
           <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
             <label class="w-full block">
-              <span class="block text-[14px] mb-1 text-gray">Гражданство <i class="text-[red]">*</i></span>
+              <span class="block text-[14px] mb-1 font-bold">Гражданство <i class="text-[red]">*</i></span>
               <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                 <option value="Узбекистан" selected>Узбекистан</option>
                 <option value="Узбекистан">Руссия</option>
               </select>
             </label>
             <div class="w-full block">
-              <span class="block text-[14px] mb-1 text-gray">Пол <i class="text-[red]">*</i></span>
+              <span class="block text-[14px] mb-1 font-bold">Пол <i class="text-[red]">*</i></span>
               <div class="w-full h-[44px] flex-jsb-c overflow-hidden">
                 <div
                     class="w-[50%] h-full border border-[#C1C8CD] rounded-[8px_0_0_8px] flex-jc-c cursor-pointer ">
@@ -962,7 +969,7 @@
               </div>
             </div>
             <div class="w-full block">
-              <span class="block text-[14px] mb-1 text-gray">Дата рождения <i class="text-[red]">*</i></span>
+              <span class="block text-[14px] mb-1 font-bold">Дата рождения <i class="text-[red]">*</i></span>
               <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                 <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
                   ДД
@@ -989,7 +996,7 @@
           </div>
           <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
             <label class="w-full block">
-              <span class="block text-[14px] mb-1 text-gray">Тип документа</span>
+              <span class="block text-[14px] mb-1 font-bold">Тип документа</span>
               <select class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] pl-2">
                 <option value="Узбекистан">Заграничный паспорт</option>
                 <option value="Узбекистан">Национальный паспорт</option>
@@ -1000,20 +1007,21 @@
               </select>
             </label>
             <div class="def-checkout-input">
-              <span class="text-[14px] mb-1 text-gray">Номер документа </span>
+              <span class="text-[14px] mb-1 font-bold">Номер документа </span>
               <label>
                 <input type="text">
                 <span class="def-checkout-input-pl">Серия и номер документа</span>
               </label>
             </div>
             <div class="w-full block">
-                  <span class="text-[14px] mb-1 text-gray flex-jsb-c">
+                  <span class="text-[14px] mb-1 font-bold flex-jsb-c">
                     <span>Действителен до</span>
 
-                    <label class="flex-je-c text-[14px]">
-                      <input type="checkbox" width="16" height="16" class="!w-[16px] !h-[16px] mr-2">
-                      Без срока действия
-                    </label>
+                    <label class="def-checkbox text-[14px] flex-js-c green font-light">
+                    <input type="checkbox">
+                    <span class="mr-1 !min-w-[16px] !w-[16px] !h-[16px]"></span>
+                    Без срока действия
+                  </label>
                 </span>
               <div class="w-full h-[44px] border border-[#C1C8CD] rounded-[8px] flex-jsb-c">
                 <div class="w-[50%] h-full text-gray border-r border-[#C1C8CD] flex-jc-c cursor-pointer">
