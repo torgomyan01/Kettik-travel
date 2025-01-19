@@ -4423,6 +4423,10 @@ video {
     padding-top: 2rem;
   }
 
+  .sm\:pl-\[24px\]{
+    padding-left: 24px;
+  }
+
   .sm\:text-\[16px\]{
     font-size: 16px;
   }
