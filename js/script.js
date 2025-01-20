@@ -748,3 +748,33 @@ function checkAndFixed(Old, Block){
     Block?.classList.add("filter-is-sticky");
   }
 }
+
+
+const search = $el('.search');
+const selectMe = $el('.selectMe');
+const nav = $el('.nav');
+const searchBilet = $el('#search-bilet');
+const headerHeight = search.getBoundingClientRect();
+const homeSearchContainer = $el('#home-search-container');
+selectMe.style.marginTop = `${headerHeight.height}px`;
+
+window.addEventListener('scroll', function (){
+  const scrollTop = window.scrollY;
+  const currentPercent = (scrollTop * 100) / (headerHeight.height - (headerHeight.height / 1.5));
+
+
+  if(currentPercent < 120){
+    const op = ((100 - currentPercent) / 100);
+
+    searchBilet.style.opacity = `${1 - op}`
+    selectMe.style.marginTop = `${headerHeight.height - scrollTop}px`;
+    // search.style.height = `${headerHeight.height - scrollTop}px`;
+    homeSearchContainer.style.opacity = `${op}`;
+    homeSearchContainer.style.transform = `translateY(${currentPercent}%)`;
+  } else {
+    const afterAnim = (-120 + currentPercent) * 2;
+
+    nav.style.transform = `translateY(-${afterAnim}px)`;
+    search.style.transform = `translateY(-${afterAnim}px)`;
+  }
+})

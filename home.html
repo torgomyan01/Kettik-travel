@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<nav class="nav flex justify-between items-center ">
+<nav class="nav flex justify-between items-center fixed top-0">
   <div class="container flex justify-between items-center">
     <a href="/index.html" class="nav-logo">
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
@@ -129,7 +129,7 @@
   </div>
 </div>
 
-<div class="search bg-blue pt-12 pb-8 xl:pb-14 overflow-hidden min-h-[413px]">
+<div class="search bg-blue pt-12 xl:pb-14 overflow-hidden mb-[-24px] pb-[50px] min-h-[175px] fixed top-[57px]">
 
   <svg class="vector" width="1336" height="380" viewBox="0 0 1336 380" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -137,8 +137,12 @@
         stroke="white" stroke-opacity="0.05" stroke-width="25"/>
   </svg>
 
+  <div class="container absolute top-[20px] opacity-0" id="search-bilet">
+    <button class="w-full bg-orange h-[44px] text-[15px] text-white rounded-[8px]">Найти билеты</button>
+  </div>
 
-  <div class="container relative tab-body">
+
+  <div class="container relative tab-body" id="home-search-container">
     <h1 class="text-[26px] md:text-[36px] lg:text-[58px] text-center text-white mb-8 md:md-0 leading-[116%] delay-[3.5s]"
         data-aos="fade" data-aos-duration="1000">Начни своё путешествие сейчас!</h1>
     <div class="flex justify-center sm:justify-start gap-8 sm:pl-6 delay-[4.4s] pr-4 group" data-aos="fade"
@@ -293,471 +297,473 @@
   </div>
 </div>
 
-<section class="selectMe mt-16">
-  <div class="container max-w-7xl">
-    <div class="grid grid-cols-1 md:grid-cols-3 md:h-[335px] gap-6">
-      <div class="h-full p-6 rounded-3xl bg-[#DEEAFF] relative flex md:block justify-start items-center"
-           data-aos="fade-up" data-aos-delay="100">
-        <img class="block md:hidden mr-4" src="images/home/best-star.svg" alt="best-star" width="52" height="52">
-        <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">Лучшие цены на рынке
-          Узбекистана</h3>
-        <p class="text-black w-full max-w-[220px] relative hidden md:block">
-          Найдите выгодные авиабилеты без переплат — лучшие предложения для вашего комфортного путешествия!
-        </p>
-        <img class="absolute right-0 bottom-0 w-[180px] min-[1188px]:w-[237px] h-auto hidden lg:block"
-             src="images/home/woman-with-ticket-sitting-on-her-luggage.svg" alt="Лучшие цены на рынке Узбекистана"
-             width="300" height="300">
-      </div>
-      <div class="h-full p-6 rounded-3xl bg-[#D8EEFF] relative flex md:block justify-start items-center"
-           data-aos="fade-up" data-aos-delay="400">
-        <img class="block md:hidden mr-4" src="images/home/online-booking.svg" alt="best-star" width="52" height="52">
-        <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
-          Удобное онлайн бронирование
-        </h3>
-        <p class="text-black w-full max-w-[170px] hidden md:block">
-          Легко и быстро бронируйте билеты на любые рейсы c удобными фильтрами и календарём цен.
-        </p>
-        <img class="absolute right-[10px] bottom-0 w-[130px] min-[1178px]:w-[164px] h-auto hidden lg:block"
-             src="images/home/the-girl-dreams-of-traveling.svg" alt="Удобное онлайн бронирование" width="300"
-             height="300">
-      </div>
-      <div class="h-full p-6 rounded-3xl bg-[#FFF3D3] relative flex md:block justify-start items-center"
-           data-aos="fade-up" data-aos-delay="800">
-        <img class="block md:hidden mr-4" src="images/home/247hr-call-service.svg" alt="best-star" width="52"
-             height="52">
-        <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
-          Круглосуточная поддержка 24/7
-        </h3>
-        <p class="text-black w-full max-w-[210px] relative hidden md:block">
-          Мы готовы помочь вам в решении всех вопросов связанных с путешествием в любое время суток.
-        </p>
-        <img class="absolute right-[10px] bottom-0 w-[225px] h-auto hidden lg:block" src="images/home/soild-III.png"
-             alt="Удобное онлайн бронирование" width="338" height="217">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="populars mt-16 font-bold">
-  <div class="container">
-    <h3 class="text-[24px] md:text-[36px] text-black mb-6" data-aos="fade">Популярное сейчас</h3>
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class="w-full">
-        <div class="w-full h-[340px] rounded-[24px] overflow-hidden group" data-aos="fade-up">
-          <div
-              class=" bg-[#EDF3FF] w-full flex justify-start items-center h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-            <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-            <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-            <span class="text-[18px] font-bold group-hover:text-white transition">Москва</span>
-          </div>
-          <img class="rounded-[24px] mt-[-30px] w-full h-full object-cover object-center" src="images/home/moscow.png"
-               alt="moscow" width="770" height="490">
+<div class="bg-white selectMe relative z-10 rounded-[24px_24px_0_0] overflow-hidden top-[24px]">
+  <section class="pt-16 overflow-hidden  bg-white">
+    <div class="container max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 md:h-[335px] gap-6">
+        <div class="h-full p-6 rounded-3xl bg-[#DEEAFF] relative flex md:block justify-start items-center"
+             data-aos="fade-up" data-aos-delay="100">
+          <img class="block md:hidden mr-4" src="images/home/best-star.svg" alt="best-star" width="52" height="52">
+          <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">Лучшие цены на рынке
+            Узбекистана</h3>
+          <p class="text-black w-full max-w-[220px] relative hidden md:block">
+            Найдите выгодные авиабилеты без переплат — лучшие предложения для вашего комфортного путешествия!
+          </p>
+          <img class="absolute right-0 bottom-0 w-[180px] min-[1188px]:w-[237px] h-auto hidden lg:block"
+               src="images/home/woman-with-ticket-sitting-on-her-luggage.svg" alt="Лучшие цены на рынке Узбекистана"
+               width="300" height="300">
         </div>
-
-        <div class="w-full flex justify-start items-start gap-6 mt-6">
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-            <div
-                class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-              <div class="flex-js-c">
-                <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-              </div>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Алматы</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
-                 src="images/home/Алматы.png" alt="moscow" width="1040" height="694">
-          </div>
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
-            <div
-                class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-              <div class="flex-js-c">
-                <span class="text-black-500 text-[14px]  group-hover:text-white transition">Ташкент</span>
-                <i class="icon-left-right mx-2 text-black-500 group-hover:text-white transition"></i>
-              </div>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Душанбе</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
-                 src="images/home/Душанбе.png" alt="moscow" width="720" height="405">
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-6 flex-col sm:flex-row">
-        <div class="w-full sm:w-[50%]" data-aos="fade-up" data-aos-delay="500">
-          <div class="w-full h-[296px] sm:h-[662px] rounded-[24px] overflow-hidden group">
-            <div
-                class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-              <div class="flex-js-c">
-                <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-              </div>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Стамбул</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[250px] sm:h-[600px] object-cover"
-                 src="images/home/Стамбул.png" alt="moscow" width="1272" height="1920">
-          </div>
-        </div>
-        <div class="w-full sm:w-[50%] flex sm:block gap-6">
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
-            <div
-                class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-              <div class="flex-js-c">
-                <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-              </div>
-              <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Бишкек</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
-                 src="images/home/Бишкек.png" alt="moscow" width="800" height="485">
-          </div>
-          <div class="w-full h-[316px] rounded-[24px] overflow-hidden sm:mt-6 group" data-aos="fade-up"
-               data-aos-delay="700">
-            <div
-                class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-              <div class="flex-js-c">
-                <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-              </div>
-              <span
-                  class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Шарм-эль-Шейх </span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
-                 src="images/home/Шарм-эль-Шейх.png" alt="moscow" width="1920" height="1130">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mt-16">
-  <div class="container">
-    <div class="flex justify-center items-center gap-10 flex-col lg:flex-row">
-      <div class=" w-full max-w-[532px]">
-        <h2 class="text-[24px]  sm:text-[36px] text-black font-bold mb-6 text-left leading-[116%]">
-          Летайте надежными авиакомпаниями
-        </h2>
-        <h4 class="text-[16px] text-black-700 text-left">
-          Мы сотрудничаем только с проверенными и надёжными авиаперевозчиками, которые обеспечивают высокий уровень
-          комфорта и безопастности.
-        </h4>
-      </div>
-      <div class="flex gap-10 mt-[60px] lg:mt-0">
-        <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/logo-partner-uz-airways.svg"
-                 alt="logo-partner-uz-airways" width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/газпром.svg" alt="logo-partner-uz-airways" width="160"
-                 height="40">
-            <img class="w-full h-auto" src="images/home/partners/airlines.svg" alt="logo-partner-uz-airways" width="160"
-                 height="40">
-            <img class="w-full h-auto" src="images/home/partners/роскосмос.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-          </div>
-        </div>
-        <div class="w-full md:w-[150px] h-[500px] mt-[-50px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/Ржд.svg" alt="logo-partner-uz-airways" width="160"
-                 height="40">
-            <img class="w-full h-auto" src="images/home/partners/air-arabia.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/полииметал.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/polish-airlines.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/centerumair.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-          </div>
-        </div>
-        <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
-          <div class="w-full flex flex-col justify-center items-center slider-partners">
-            <img class="w-full h-auto" src="images/home/partners/qatar.svg" alt="logo-partner-uz-airways" width="160"
-                 height="40">
-            <img class="w-full h-auto" src="images/home/partners/emirats.svg" alt="logo-partner-uz-airways" width="160"
-                 height="40">
-            <img class="w-full h-auto" src="images/home/partners/korean-air.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/china-soutern.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-            <img class="w-full h-auto" src="images/home/partners/fly-arystan.svg" alt="logo-partner-uz-airways"
-                 width="160" height="40">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mt-16">
-  <div class="container">
-    <h3 class="text-[24px] md:text-[36px] text-black mb-6 font-bold">Вопросы и ответы</h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="flex flex-col gap-6">
-        <div data-aos="fade-up">
-          <div
-              class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
-            <h3 class="text-[18px] sm:text-[26px] text-black w-full max-w-[160px] font-bold relative z-10 leading-[116%]">
-              Как купить у нас билет?
-            </h3>
-            <img src="images/home/quation-1.svg" class="absolute right-0 bottom-0" alt="quation-1" width="406"
-                 height="250">
-          </div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="200">
-          <div
-              class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
-            <h3 class="text-[18px] sm:text-[26px] text-black w-full max-w-[180px] font-bold relative z-10 leading-[116%]">
-              Как оплатить заказ на Kettik?
-            </h3>
-            <img src="images/home/quation-2.png" class="absolute right-[-20px] bottom-[-30px] sm:bottom-[-40px] w-[440px] h-auto" alt="quation-2.svg"
-                 width="963" height="565">
-          </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="400">
-        <div
-            class="w-full h-[238px] md:h-[500px] rounded-[24px] overflow-hidden p-4 md:p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
-          <h3 class="text-[18px] sm:text-[26px] text-black w-full font-bold relative z-10 leading-[116%]">
-            Как выбрать виакомпанию для перелёта?
+        <div class="h-full p-6 rounded-3xl bg-[#D8EEFF] relative flex md:block justify-start items-center"
+             data-aos="fade-up" data-aos-delay="400">
+          <img class="block md:hidden mr-4" src="images/home/online-booking.svg" alt="best-star" width="52" height="52">
+          <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
+            Удобное онлайн бронирование
           </h3>
-          <img src="images/home/quation-3-mobile.svg"
-               class="absolute left-[50%] transform translate-x-[-50%] bottom-[-50px] w-full min-w-[400px] max-w-[440px] block md:hidden"
-               alt="quation-3" width="406" height="250">
-          <img src="images/home/quation-3.svg" class="absolute right-0 bottom-[-20px] w-full hidden md:block"
-               alt="quation-3" width="406" height="250">
+          <p class="text-black w-full max-w-[170px] hidden md:block">
+            Легко и быстро бронируйте билеты на любые рейсы c удобными фильтрами и календарём цен.
+          </p>
+          <img class="absolute right-[10px] bottom-0 w-[130px] min-[1178px]:w-[164px] h-auto hidden lg:block"
+               src="images/home/the-girl-dreams-of-traveling.svg" alt="Удобное онлайн бронирование" width="300"
+               height="300">
         </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="600">
-        <div
-            class="w-full h-[238px] md:h-[412px] rounded-[24px] overflow-hidden p-4 md:p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
-          <h3 class="text-[18px] sm:text-[26px] text-black w-full font-bold relative z-10 leading-[116%]">
-            Как купить у нас лаунж?
+        <div class="h-full p-6 rounded-3xl bg-[#FFF3D3] relative flex md:block justify-start items-center"
+             data-aos="fade-up" data-aos-delay="800">
+          <img class="block md:hidden mr-4" src="images/home/247hr-call-service.svg" alt="best-star" width="52"
+               height="52">
+          <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
+            Круглосуточная поддержка 24/7
           </h3>
-          <img src="images/home/quation-vector.svg" class="absolute right-0 top-[20%] w-full" alt="quation-3"
-               width="406" height="250">
-          <img src="images/home/quation-4.svg"
-               class="absolute max-w-[250px] md:max-w-full left-[50%] bottom-[-20px] md:bottom-5 transform translate-x-[-50%] w-[80%]"
-               alt="quation-4" width="406" height="250">
-        </div>
-
-        <button class="btn w-full h-[64px] text-[18px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB] mt-6" data-aos="fade"
-                data-aos-delay="1000">Посмотреть все
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mt-16">
-  <div class="container">
-    <h3 class="text-[24px] md:text-[36px] text-black mb-6 font-bold">
-      Платите удобным способом
-    </h3>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div class="sm:min-h-[252px]  rounded-[24px] overflow-hidden border border-[#FFE3A5] relative ">
-        <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
-          <div
-              class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all  hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
-          <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60"
-               class="mt-7 absolute top-[18px] right-[60px] hidden sm:block">
-
-          <div
-              class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-            <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60"
-                 class="w-[64px] h-auto block sm:hidden">
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
-              Оплата онлайн через наш сайт
-            </h3>
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Оплата онлайн</h3>
-            <h4 class="text-[18px] text-black hidden sm:block">Быстро и безопасно через наш сайт</h4>
-          </div>
-        </div>
-      </div>
-      <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden border border-[#FFE3A5] relative "
-           data-aos="fade-up" data-aos-delay="500">
-        <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
-          <div
-              class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all  hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
-          <img src="images/home/beepul.svg" alt="logo site" width="135" height="60"
-               class="absolute right-[66px] w-[105px] h-auto  hidden sm:block">
-
-
-          <div
-              class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-            <img src="images/home/beepul.svg" alt="logo site" width="135" height="60"
-                 class="w-[64px] h-auto block sm:hidden">
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
-              Оплата через приложение Beepul
-            </h3>
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Приложение Beepul</h3>
-            <h4 class="text-[18px] text-black hidden sm:block">Платите через мобильное приложение</h4>
-          </div>
-        </div>
-      </div>
-      <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden border border-[#FFE3A5] relative "
-           data-aos="fade-up" data-aos-delay="800">
-        <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
-          <div
-              class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
-          <img src="images/home/belline.svg" alt="logo site" width="175" height="41"
-               class="absolute right-[30px] hidden sm:block">
-
-          <div
-              class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
-            <img src="images/home/belline.svg" alt="logo site" width="135" height="60"
-                 class="w-[64px] h-auto block sm:hidden">
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
-              Оплата в ближайшем офисе Билайн
-            </h3>
-            <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Офисы Билайн</h3>
-            <h4 class="text-[18px] text-black hidden sm:block">Оплатите на месте в ближайшем офисе.</h4>
-          </div>
+          <p class="text-black w-full max-w-[210px] relative hidden md:block">
+            Мы готовы помочь вам в решении всех вопросов связанных с путешествием в любое время суток.
+          </p>
+          <img class="absolute right-[10px] bottom-0 w-[225px] h-auto hidden lg:block" src="images/home/soild-III.png"
+               alt="Удобное онлайн бронирование" width="338" height="217">
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="mt-16 hidden lg:block">
-  <div class="container">
-    <div class="flex justify-start items-center">
-      <div class="w-[30%]">
-        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
-        <div class="w-full flex justify-center items-center mt-6">
-          <a href="#">
-            <div class="tg-icon-anim">
-              <img src="images/icons/telegram-svgrepo-com.svg" alt="telegram-svgrepo-com" width="200" height="200">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative">
-        <img class="absolute right-0 bottom-0 rounded-[0_0_24px_0]" src="images/home/feedback-vector.svg"
-             alt="Удобное время для звонка — выберите сами!" width="356" height="204">
-        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
+  <section class="populars mt-16 font-bold bg-white">
+    <div class="container">
+      <h3 class="text-[24px] md:text-[36px] text-black mb-6" data-aos="fade">Популярное сейчас</h3>
 
-        <div
-            class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] rounded-[16px] relative h-[64px]">
-          <label class="w-full h-full">
-            <input
-                class="w-full h-full pl-[24px] rounded-[16px_0_0_16px] relative z-1 transition focus:z-10 focus:border focus:border-orange"
-                type="text" placeholder="Имя">
-          </label>
-          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative ml-[-1px] z-[1]"></div>
-          <label class="w-full h-full">
-            <input class="w-full h-full pl-[24px] relative z-1 transition focus:border focus:border-orange" type="text"
-                   placeholder="Номер телефона">
-          </label>
-          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative z-[1]"></div>
-          <label class="w-full h-full flex justify-between items-center relative input-select-time">
-            <input
-                class="w-full h-full pl-[24px] relative z-1 transition rounded-[0_16px_16px_0] focus:border focus:border-orange focus:z-10"
-                type="text" placeholder="Удобное время">
-            <i class="icon-time-ok text-blue text-[24px] absolute right-6 z-20"></i>
-
-            <div class="desktop-select-time-fon"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="w-full">
+          <div class="w-full h-[340px] rounded-[24px] overflow-hidden group" data-aos="fade-up">
             <div
-                class="w-[328px] bg-white rounded-[8px] p-4 absolute top-[100%] right-0 mt-[3px] z-20 shadow select-body-time hidden">
-              <h3 class="text-[18px] font-bold mb-4">Удобное время</h3>
-
-              <div class="time-picker desktop-select-time">
-                <div class="picker days">
-                  <div class="item active">ПН</div>
-                  <div class="item">ВТ</div>
-                  <div class="item">СР</div>
-                  <div class="item">ЧТ</div>
-                  <div class="item">ПТ</div>
-                  <div class="item">СБ</div>
-                  <div class="item">ВС</div>
-                </div>
-                <div class="picker hours">
-                  <div class="item active">00</div>
-                  <div class="item">01</div>
-                  <div class="item">02</div>
-                  <div class="item">03</div>
-                  <div class="item">04</div>
-                  <div class="item">05</div>
-                  <div class="item">06</div>
-                  <div class="item">07</div>
-                  <div class="item">08</div>
-                  <div class="item">09</div>
-                  <div class="item">10</div>
-                  <div class="item">11</div>
-                  <div class="item">12</div>
-                  <div class="item">13</div>
-                  <div class="item">14</div>
-                  <div class="item">15</div>
-                  <div class="item">16</div>
-                  <div class="item">17</div>
-                  <div class="item">18</div>
-                  <div class="item">19</div>
-                  <div class="item">20</div>
-                  <div class="item">21</div>
-                  <div class="item">22</div>
-                  <div class="item">23</div>
-                </div>
-                <div class="picker minutes">
-                  <div class="item active">00</div>
-                  <div class="item">15</div>
-                  <div class="item">30</div>
-                  <div class="item">45</div>
-                </div>
-
-                <div class="active-massa">
-                  <div class="active-massa-item"></div>
-                  /
-                  <div class="active-massa-item"></div>
-                  :
-                  <div class="active-massa-item"></div>
-                </div>
-              </div>
-
-
+                class=" bg-[#EDF3FF] w-full flex justify-start items-center h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
+              <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
+              <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
+              <span class="text-[18px] font-bold group-hover:text-white transition">Москва</span>
             </div>
-          </label>
+            <img class="rounded-[24px] mt-[-30px] w-full h-full object-cover object-center" src="images/home/moscow.png"
+                 alt="moscow" width="770" height="490">
+          </div>
+
+          <div class="w-full flex justify-start items-start gap-6 mt-6">
+            <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+              <div
+                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
+                <div class="flex-js-c">
+                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
+                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
+                </div>
+                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Алматы</span>
+              </div>
+              <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
+                   src="images/home/Алматы.png" alt="moscow" width="1040" height="694">
+            </div>
+            <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+              <div
+                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
+                <div class="flex-js-c">
+                  <span class="text-black-500 text-[14px]  group-hover:text-white transition">Ташкент</span>
+                  <i class="icon-left-right mx-2 text-black-500 group-hover:text-white transition"></i>
+                </div>
+                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Душанбе</span>
+              </div>
+              <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
+                   src="images/home/Душанбе.png" alt="moscow" width="720" height="405">
+            </div>
+          </div>
         </div>
-
-        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
-
-
+        <div class="flex gap-6 flex-col sm:flex-row">
+          <div class="w-full sm:w-[50%]" data-aos="fade-up" data-aos-delay="500">
+            <div class="w-full h-[296px] sm:h-[662px] rounded-[24px] overflow-hidden group">
+              <div
+                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
+                <div class="flex-js-c">
+                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
+                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
+                </div>
+                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Стамбул</span>
+              </div>
+              <img class="rounded-[24px] mt-[-30px] w-full h-[250px] sm:h-[600px] object-cover"
+                   src="images/home/Стамбул.png" alt="moscow" width="1272" height="1920">
+            </div>
+          </div>
+          <div class="w-full sm:w-[50%] flex sm:block gap-6">
+            <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
+              <div
+                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
+                <div class="flex-js-c">
+                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
+                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
+                </div>
+                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Бишкек</span>
+              </div>
+              <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
+                   src="images/home/Бишкек.png" alt="moscow" width="800" height="485">
+            </div>
+            <div class="w-full h-[316px] rounded-[24px] overflow-hidden sm:mt-6 group" data-aos="fade-up"
+                 data-aos-delay="700">
+              <div
+                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
+                <div class="flex-js-c">
+                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
+                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
+                </div>
+                <span
+                    class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Шарм-эль-Шейх </span>
+              </div>
+              <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
+                   src="images/home/Шарм-эль-Шейх.png" alt="moscow" width="1920" height="1130">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="block lg:hidden mt-16">
-  <div class="container">
-    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
-      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
-      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+  <section class="mt-16">
+    <div class="container">
+      <div class="flex justify-center items-center gap-10 flex-col lg:flex-row">
+        <div class=" w-full max-w-[532px]">
+          <h2 class="text-[24px]  sm:text-[36px] text-black font-bold mb-6 text-left leading-[116%]">
+            Летайте надежными авиакомпаниями
+          </h2>
+          <h4 class="text-[16px] text-black-700 text-left">
+            Мы сотрудничаем только с проверенными и надёжными авиаперевозчиками, которые обеспечивают высокий уровень
+            комфорта и безопастности.
+          </h4>
+        </div>
+        <div class="flex gap-10 mt-[60px] lg:mt-0">
+          <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
+            <div class="w-full flex flex-col justify-center items-center slider-partners">
+              <img class="w-full h-auto" src="images/home/partners/logo-partner-uz-airways.svg"
+                   alt="logo-partner-uz-airways" width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/газпром.svg" alt="logo-partner-uz-airways" width="160"
+                   height="40">
+              <img class="w-full h-auto" src="images/home/partners/airlines.svg" alt="logo-partner-uz-airways" width="160"
+                   height="40">
+              <img class="w-full h-auto" src="images/home/partners/роскосмос.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+            </div>
+          </div>
+          <div class="w-full md:w-[150px] h-[500px] mt-[-50px] overflow-hidden">
+            <div class="w-full flex flex-col justify-center items-center slider-partners">
+              <img class="w-full h-auto" src="images/home/partners/Ржд.svg" alt="logo-partner-uz-airways" width="160"
+                   height="40">
+              <img class="w-full h-auto" src="images/home/partners/air-arabia.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/полииметал.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/polish-airlines.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/centerumair.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+            </div>
+          </div>
+          <div class="w-full md:w-[150px] h-[400px] overflow-hidden">
+            <div class="w-full flex flex-col justify-center items-center slider-partners">
+              <img class="w-full h-auto" src="images/home/partners/qatar.svg" alt="logo-partner-uz-airways" width="160"
+                   height="40">
+              <img class="w-full h-auto" src="images/home/partners/emirats.svg" alt="logo-partner-uz-airways" width="160"
+                   height="40">
+              <img class="w-full h-auto" src="images/home/partners/korean-air.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/china-soutern.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+              <img class="w-full h-auto" src="images/home/partners/fly-arystan.svg" alt="logo-partner-uz-airways"
+                   width="160" height="40">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-center items-center flex-col mt-16">
-      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232"
-           height="146">
-      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
-        Удобное время для звонка — выберите сами!
+  </section>
+
+  <section class="mt-16">
+    <div class="container">
+      <h3 class="text-[24px] md:text-[36px] text-black mb-6 font-bold">Вопросы и ответы</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="flex flex-col gap-6">
+          <div data-aos="fade-up">
+            <div
+                class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
+              <h3 class="text-[18px] sm:text-[26px] text-black w-full max-w-[160px] font-bold relative z-10 leading-[116%]">
+                Как купить у нас билет?
+              </h3>
+              <img src="images/home/quation-1.svg" class="absolute right-0 bottom-0" alt="quation-1" width="406"
+                   height="250">
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div
+                class="w-full h-[238px] rounded-[24px] overflow-hidden p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
+              <h3 class="text-[18px] sm:text-[26px] text-black w-full max-w-[180px] font-bold relative z-10 leading-[116%]">
+                Как оплатить заказ на Kettik?
+              </h3>
+              <img src="images/home/quation-2.png" class="absolute right-[-20px] bottom-[-30px] sm:bottom-[-40px] w-[440px] h-auto" alt="quation-2.svg"
+                   width="963" height="565">
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <div
+              class="w-full h-[238px] md:h-[500px] rounded-[24px] overflow-hidden p-4 md:p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
+            <h3 class="text-[18px] sm:text-[26px] text-black w-full font-bold relative z-10 leading-[116%]">
+              Как выбрать виакомпанию для перелёта?
+            </h3>
+            <img src="images/home/quation-3-mobile.svg"
+                 class="absolute left-[50%] transform translate-x-[-50%] bottom-[-50px] w-full min-w-[400px] max-w-[440px] block md:hidden"
+                 alt="quation-3" width="406" height="250">
+            <img src="images/home/quation-3.svg" class="absolute right-0 bottom-[-20px] w-full hidden md:block"
+                 alt="quation-3" width="406" height="250">
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div
+              class="w-full h-[238px] md:h-[412px] rounded-[24px] overflow-hidden p-4 md:p-[32px] transition bg-[#EDF8FF] hover:bg-[#51B5FF] relative">
+            <h3 class="text-[18px] sm:text-[26px] text-black w-full font-bold relative z-10 leading-[116%]">
+              Как купить у нас лаунж?
+            </h3>
+            <img src="images/home/quation-vector.svg" class="absolute right-0 top-[20%] w-full" alt="quation-3"
+                 width="406" height="250">
+            <img src="images/home/quation-4.svg"
+                 class="absolute max-w-[250px] md:max-w-full left-[50%] bottom-[-20px] md:bottom-5 transform translate-x-[-50%] w-[80%]"
+                 alt="quation-4" width="406" height="250">
+          </div>
+
+          <button class="btn w-full h-[64px] text-[18px] bg-[#D8EEFF] rounded-[15px] text-[#1150CB] mt-6" data-aos="fade"
+                  data-aos-delay="1000">Посмотреть все
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-16">
+    <div class="container">
+      <h3 class="text-[24px] md:text-[36px] text-black mb-6 font-bold">
+        Платите удобным способом
       </h3>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="sm:min-h-[252px]  rounded-[24px] overflow-hidden border border-[#FFE3A5] relative ">
+          <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
+            <div
+                class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all  hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
+            <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60"
+                 class="mt-7 absolute top-[18px] right-[60px] hidden sm:block">
+
+            <div
+                class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
+              <img src="images/logo-nvbar.svg" alt="logo site" width="135" height="60"
+                   class="w-[64px] h-auto block sm:hidden">
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
+                Оплата онлайн через наш сайт
+              </h3>
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Оплата онлайн</h3>
+              <h4 class="text-[18px] text-black hidden sm:block">Быстро и безопасно через наш сайт</h4>
+            </div>
+          </div>
+        </div>
+        <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden border border-[#FFE3A5] relative "
+             data-aos="fade-up" data-aos-delay="500">
+          <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
+            <div
+                class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all  hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
+            <img src="images/home/beepul.svg" alt="logo site" width="135" height="60"
+                 class="absolute right-[66px] w-[105px] h-auto  hidden sm:block">
+
+
+            <div
+                class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
+              <img src="images/home/beepul.svg" alt="logo site" width="135" height="60"
+                   class="w-[64px] h-auto block sm:hidden">
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
+                Оплата через приложение Beepul
+              </h3>
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Приложение Beepul</h3>
+              <h4 class="text-[18px] text-black hidden sm:block">Платите через мобильное приложение</h4>
+            </div>
+          </div>
+        </div>
+        <div class="sm:min-h-[252px] bg-[#FFF3D3] rounded-[24px] overflow-hidden border border-[#FFE3A5] relative "
+             data-aos="fade-up" data-aos-delay="800">
+          <div class="w-full h-full bg-[#FFF3D3] transition-all duration-800 p-[16px_24px] sm:p-[32px] group relative">
+            <div
+                class="w-[220px] h-[220px] rounded-full bg-white absolute right-[10px] top-[-70px] transition-all hidden sm:block group-hover:right-[-160px] group-hover:top-[-60px] group-hover:w-[900px] group-hover:h-[600px]"></div>
+            <img src="images/home/belline.svg" alt="logo site" width="175" height="41"
+                 class="absolute right-[30px] hidden sm:block">
+
+            <div
+                class="w-full sm:absolute left-0 bottom-0 sm:pl-8 sm:pb-3 flex sm:block justify-start items-center gap-6">
+              <img src="images/home/belline.svg" alt="logo site" width="135" height="60"
+                   class="w-[64px] h-auto block sm:hidden">
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black block sm:hidden leading-[140%]">
+                Оплата в ближайшем офисе Билайн
+              </h3>
+              <h3 class="text-[18px] sm:text-[26px] font-bold text-black hidden sm:block">Офисы Билайн</h3>
+              <h4 class="text-[18px] text-black hidden sm:block">Оплатите на месте в ближайшем офисе.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <form action="/" method="post" class="mt-6">
-      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
-        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
-      </label>
-      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
-        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
-      </label>
-      <label
-          class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3 target-tooltip"
-          data-targetid="#select-time">
-        <input type="text" class="w-full h-full bg-transparent pl-3 select-time-input" placeholder="Удобное время">
-        <i class="icon-time-ok text-blue"></i>
-      </label>
+  <section class="mt-16 hidden lg:block">
+    <div class="container">
+      <div class="flex justify-start items-center">
+        <div class="w-[30%]">
+          <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
+          <div class="w-full flex justify-center items-center mt-6">
+            <a href="#">
+              <div class="tg-icon-anim">
+                <img src="images/icons/telegram-svgrepo-com.svg" alt="telegram-svgrepo-com" width="200" height="200">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative">
+          <img class="absolute right-0 bottom-0 rounded-[0_0_24px_0]" src="images/home/feedback-vector.svg"
+               alt="Удобное время для звонка — выберите сами!" width="356" height="204">
+          <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
 
-      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
-    </form>
-  </div>
-</section>
+          <div
+              class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] rounded-[16px] relative h-[64px]">
+            <label class="w-full h-full">
+              <input
+                  class="w-full h-full pl-[24px] rounded-[16px_0_0_16px] relative z-1 transition focus:z-10 focus:border focus:border-orange"
+                  type="text" placeholder="Имя">
+            </label>
+            <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative ml-[-1px] z-[1]"></div>
+            <label class="w-full h-full">
+              <input class="w-full h-full pl-[24px] relative z-1 transition focus:border focus:border-orange" type="text"
+                     placeholder="Номер телефона">
+            </label>
+            <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative z-[1]"></div>
+            <label class="w-full h-full flex justify-between items-center relative input-select-time">
+              <input
+                  class="w-full h-full pl-[24px] relative z-1 transition rounded-[0_16px_16px_0] focus:border focus:border-orange focus:z-10"
+                  type="text" placeholder="Удобное время">
+              <i class="icon-time-ok text-blue text-[24px] absolute right-6 z-20"></i>
+
+              <div class="desktop-select-time-fon"></div>
+              <div
+                  class="w-[328px] bg-white rounded-[8px] p-4 absolute top-[100%] right-0 mt-[3px] z-20 shadow select-body-time hidden">
+                <h3 class="text-[18px] font-bold mb-4">Удобное время</h3>
+
+                <div class="time-picker desktop-select-time">
+                  <div class="picker days">
+                    <div class="item active">ПН</div>
+                    <div class="item">ВТ</div>
+                    <div class="item">СР</div>
+                    <div class="item">ЧТ</div>
+                    <div class="item">ПТ</div>
+                    <div class="item">СБ</div>
+                    <div class="item">ВС</div>
+                  </div>
+                  <div class="picker hours">
+                    <div class="item active">00</div>
+                    <div class="item">01</div>
+                    <div class="item">02</div>
+                    <div class="item">03</div>
+                    <div class="item">04</div>
+                    <div class="item">05</div>
+                    <div class="item">06</div>
+                    <div class="item">07</div>
+                    <div class="item">08</div>
+                    <div class="item">09</div>
+                    <div class="item">10</div>
+                    <div class="item">11</div>
+                    <div class="item">12</div>
+                    <div class="item">13</div>
+                    <div class="item">14</div>
+                    <div class="item">15</div>
+                    <div class="item">16</div>
+                    <div class="item">17</div>
+                    <div class="item">18</div>
+                    <div class="item">19</div>
+                    <div class="item">20</div>
+                    <div class="item">21</div>
+                    <div class="item">22</div>
+                    <div class="item">23</div>
+                  </div>
+                  <div class="picker minutes">
+                    <div class="item active">00</div>
+                    <div class="item">15</div>
+                    <div class="item">30</div>
+                    <div class="item">45</div>
+                  </div>
+
+                  <div class="active-massa">
+                    <div class="active-massa-item"></div>
+                    /
+                    <div class="active-massa-item"></div>
+                    :
+                    <div class="active-massa-item"></div>
+                  </div>
+                </div>
+
+
+              </div>
+            </label>
+          </div>
+
+          <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block lg:hidden mt-16">
+    <div class="container">
+      <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+        <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+        <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+      </div>
+      <div class="flex justify-center items-center flex-col mt-16">
+        <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232"
+             height="146">
+        <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+          Удобное время для звонка — выберите сами!
+        </h3>
+      </div>
+
+      <form action="/" method="post" class="mt-6">
+        <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+          <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+        </label>
+        <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+          <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+        </label>
+        <label
+            class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3 target-tooltip"
+            data-targetid="#select-time">
+          <input type="text" class="w-full h-full bg-transparent pl-3 select-time-input" placeholder="Удобное время">
+          <i class="icon-time-ok text-blue"></i>
+        </label>
+
+        <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+      </form>
+    </div>
+  </section>
+</div>
 
 <footer class="bg-blue rounded-[32px_32px_0_0] mt-16">
   <div class="container pt-[49px] pb-16">

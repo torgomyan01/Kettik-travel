@@ -714,7 +714,6 @@ input:focus {
 
 .search {
   width: 100%;
-  border-radius: 0 0 32px 32px;
   background: #1150CB;
   position: relative;
 }
