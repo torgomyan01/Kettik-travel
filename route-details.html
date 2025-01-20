@@ -386,35 +386,46 @@
 </div>
 
 
-<div class="modal" id="change-owner-info">
+<div class="modal show" id="change-owner-info">
   <div class="modal-fon" data-modalid="#change-owner-info"></div>
-  <div class="modal-body max-w-[868px]">
+  <div class="modal-body max-w-[950px] bg-[#EDF3FF]">
     <div class="modal-close" data-modalid="#change-owner-info">+</div>
 
-    <div class="modal-content">
-      <h4 class="text-[18px] font-bold mb-2">Редактирование данных владельца учетной записи</h4>
-      <p class="text-[16px] leading-[130%] mb-4">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden bg-white">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#change-owner-info"></i>
+      <h4 class="text-[18px] font-bold text-center">Редактирование данных владельца учетной записи</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#change-owner-info">+</div>
+    </div>
+
+    <div class="modal-content p-4 sm:p-6 bg-[#EDF3FF] sm:bg-white">
+      <h4 class="text-[22px] md:text-[26px] font-bold mb-2 hidden sm:block">Редактирование данных владельца учетной записи</h4>
+      <p class="text-[14px] sm:text-[16px] leading-[130%] mb-4">
         Внесите все данные точно так, как они указаны в паспорте / удостоверении личности для регистрации пассажиров в
         авиакомпаниях. Изменения не отразяться на бронированиях сделаных ранее.
       </p>
 
-      <div class="mt-6">
-        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
-          <div class="def-checkout-input">
-            <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
-            <label>
-              <input type="text" value="АРТЕМ">
-              <span class="def-checkout-input-pl">Имя</span>
-            </label>
-          </div>
-          <div class="def-checkout-input">
-            <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
-            <label>
-              <input type="text" value="Архангельский">
-              <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
-            </label>
-          </div>
-          <div class="def-checkout-input">
+      <div class="bg-white p-4 pr-2 rounded-[24px] ">
+        <div class="max-h-[calc(100vh_-_300px)] overflow-y-auto scroll-gray pr-2">
+
+          <div>
+            <div class="mt-6">
+              <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+                <div class="def-checkout-input">
+                  <span class="text-[14px] mb-1 text-gray">Имя <i class="text-[red]">*</i></span>
+                  <label>
+                    <input type="text" value="АРТЕМ">
+                    <span class="def-checkout-input-pl">Имя</span>
+                  </label>
+                </div>
+                <div class="def-checkout-input">
+                  <span class="text-[14px] mb-1 text-gray">Фамилия <i class="text-[red]">*</i></span>
+                  <label>
+                    <input type="text" value="Архангельский">
+                    <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+                  </label>
+                </div>
+                <div class="def-checkout-input">
               <span class="text-[14px] mb-1 text-gray flex-jsb-c">
                 Отчество
 
@@ -424,31 +435,36 @@
                   Нет отчества
                 </label>
               </span>
-            <label>
-              <input type="text">
-              <span class="def-checkout-input-pl">Отчество</span>
-            </label>
+                  <label>
+                    <input type="text">
+                    <span class="def-checkout-input-pl">Отчество</span>
+                  </label>
+                </div>
+              </div>
+
+
+              <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
+                <div class="def-checkout-input">
+                  <span class="text-[14px] mb-1 text-gray">Email <i class="text-[red]">*</i></span>
+                  <label>
+                    <input type="text" value="tartyom.arkhangelsky@gmail.com">
+                    <span class="def-checkout-input-pl">Email</span>
+                  </label>
+                </div>
+                <div class="def-checkout-input">
+                  <span class="text-[14px] mb-1 text-gray">Текущий Пароль <i class="text-[red]">*</i></span>
+                  <label class="relative">
+                    <input type="password" value="112233">
+                    <span class="def-checkout-input-pl">Пароль</span>
+                    <i class="icon-eye absolute right-2 top-[38px] cursor-pointer z-10 text-[#6E7491]"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
 
-        <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
-          <div class="def-checkout-input">
-            <span class="text-[14px] mb-1 text-gray">Email <i class="text-[red]">*</i></span>
-            <label>
-              <input type="text" value="tartyom.arkhangelsky@gmail.com">
-              <span class="def-checkout-input-pl">Email</span>
-            </label>
-          </div>
-          <div class="def-checkout-input">
-            <span class="text-[14px] mb-1 text-gray">Текущий Пароль <i class="text-[red]">*</i></span>
-            <label class="relative">
-              <input type="password" value="112233">
-              <span class="def-checkout-input-pl">Пароль</span>
-              <i class="icon-eye absolute right-2 top-[38px] cursor-pointer z-10 text-[#6E7491]"></i>
-            </label>
-          </div>
-        </div>
       </div>
 
       <div class="flex-js-s gap-[8px] mt-10">
@@ -464,6 +480,7 @@
     </div>
   </div>
 </div>
+
 
 <script src="js/script.js"></script>
 </body>
