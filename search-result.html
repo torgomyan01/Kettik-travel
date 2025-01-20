@@ -649,6 +649,8 @@
         </button>
 
 
+
+
       </div>
 
       <div class="w-full lg:w-[calc(100%_-_310px)]">
@@ -1349,13 +1351,15 @@
             </div>
           </div>
         </div>
+
+        <div class="w-full text-center text-[15px] cursor-pointer mt-[33px] text-blue font-semibold block lg:w-[calc(100%_-_197px)]">
+          Показать еще варианты
+        </div>
+
       </div>
 
     </div>
 
-    <div class="w-full text-center text-[15px] cursor-pointer mt-[33px] text-blue font-semibold block lg:hidden">
-      Показать еще варианты
-    </div>
 
     <div id="mobile-filter-block-position"></div>
     <div id="mobile-filter-block" class="flex lg:hidden w-[calc(100%_+_31px)] ml-[-16px] sticky bottom-0 p-4 gap-[8px]">
@@ -1626,50 +1630,57 @@
     <h3 class="text-[16px] font-bold mb-1">TAS ‒ MOW</h3>
     <p class="text-[14px] text-[#687076] mb-3">Прилет в Москва 18 октября</p>
 
-    <label class="flex-jsb-c">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+    <div class="flex-jsb-c">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Ташкент
-      </span>
+      </label>
       <span class="text-[14px] text-[#687076]">TAS</span>
-    </label>
+    </div>
 
     <p class="text-[14px] text-[#687076] my-4">Вылет из Ташкент 18 октября</p>
 
-    <label class="flex-jsb-c mb-4">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+    <div class="flex-jsb-c mb-2">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Все аэропорты
-      </span>
-    </label>
-    <label class="flex-jsb-c mb-4">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+      </label>
+      <span class="text-[14px] text-[#687076]">TAS</span>
+    </div>
+    <div class="flex-jsb-c mb-2">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Москва
-      </span>
-      <span class="text-[14px] text-[#687076]">VKO</span>
-    </label>
-    <label class="flex-jsb-c mb-4">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+      </label>
+      <span class="text-[14px] text-[#687076]">TAS</span>
+    </div>
+    <div class="flex-jsb-c mb-2">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Москва
-      </span>
-      <span class="text-[14px] text-[#687076]">VKO</span>
-    </label>
-    <label class="flex-jsb-c mb-4">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+      </label>
+      <span class="text-[14px] text-[#687076]">TAS</span>
+    </div>
+    <div class="flex-jsb-c mb-2">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Москва
-      </span>
-      <span class="text-[14px] text-[#687076]">DME</span>
-    </label>
-    <label class="flex-jsb-c mb-4">
-      <span class="flex-js-c text-[16px]">
-        <input type="checkbox" width="20" height="20" class="w-[20px] min-w-[20px] h-[20px] mr-3">
+      </label>
+      <span class="text-[14px] text-[#687076]">TAS</span>
+    </div>
+    <div class="flex-jsb-c mb-2">
+      <label class="flex-js-c gap-[8px] def-checkbox w-full">
+        <input type="checkbox">
+        <span></span>
         Москва
-      </span>
-      <span class="text-[14px] text-[#687076]">SVO</span>
-    </label>
+      </label>
+      <span class="text-[14px] text-[#687076]">TAS</span>
+    </div>
 
     <div class="flex-jsb-c gap-[12px] mt-5">
       <button class="w-[30%] h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] close"
@@ -1693,59 +1704,112 @@
     </div>
 
 
-    <div class="flex justify-between items-center">
-      <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
-        Отправление
+    <div class="tab-body">
+      <div class="flex justify-between items-center border-b mb-6">
+        <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter active" data-tabid="#mobile-air-filter-mobile">
+          Отправление
+        </div>
+        <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter" data-tabid="#mobile-air-filter-mobile-back">
+          Возвращение
+        </div>
       </div>
-      <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
-        Возвращение
+
+      <div class="tab-content" id="mobile-air-filter-mobile">
+        <div class="flex justify-start items-start mb-3">
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2 mt-1"></span>
+
+            <div>
+              <div class="font-bold">
+                Несколько авиакомпаний
+              </div>
+              <div class="text-[14px] text-[#687076] leading-[116%]">
+                Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+              </div>
+            </div>
+          </label>
+
+        </div>
+
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+          UZBEKISTAN AIR
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+          AZERBAIJAN AIR
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+          S7 Airlines
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
+          Turkish Airlines
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
+          AIR ASTANA
+        </label>
+      </div>
+
+      <div class="tab-content hidden" id="mobile-air-filter-mobile-back">
+        <div class="flex justify-start items-start mb-3">
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2 mt-1"></span>
+
+            <div>
+              <div class="font-bold">
+                Несколько авиакомпаний
+              </div>
+              <div class="text-[14px] text-[#687076] leading-[116%]">
+                Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
+              </div>
+            </div>
+          </label>
+
+        </div>
+
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
+          UZBEKISTAN AIR
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
+          AZERBAIJAN AIR
+        </label>
+        <label class="def-checkbox flex-js-s mb-2">
+          <input type="checkbox">
+          <span class="mr-2"></span>
+          <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
+          S7 Airlines
+        </label>
       </div>
     </div>
-    <div class="w-full h-[1px] bg-[#D7DBDF] mb-4"></div>
 
-    <label class="flex justify-start items-start mb-3">
-      <input type="checkbox" class="mt-1 block min-w-[20px] min-h-[20px] bg-blue mr-2">
-      <span>
-        <span class="font-bold block text-[16px]">
-          Несколько авиакомпаний
-        </span>
-        <span class="text-[14px] text-[#687076] leading-[116%]">
-          Показывать билеты с перелётами, выполняемыми несколькими авиакомпаниями, включая выбранные
-        </span>
-      </span>
-    </label>
-    <label class="flex justify-start items-center mb-3 text-[16px]">
-      <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-      <img src="images/icons/aircarrise-logo.svg" alt="aircarrise-logo" class="mr-2">
-      UZBEKISTAN AIR
-    </label>
-    <label class="flex justify-start items-center mb-3 text-[16px]">
-      <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-      <img src="images/icons/az-logo.svg" alt="aircarrise-logo" class="mr-2">
-      AZERBAIJAN AIR
-    </label>
-    <label class="flex justify-start items-center mb-3 text-[16px]">
-      <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-      <img src="images/icons/s7-logo.svg" alt="aircarrise-logo" class="mr-2">
-      S7 Airlines
-    </label>
-    <label class="flex justify-start items-center mb-3 text-[16px]">
-      <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-      <img src="images/icons/t-logo.svg" alt="aircarrise-logo" class="mr-2">
-      Turkish Airlines
-    </label>
-    <label class="flex justify-start items-center mb-3 text-[16px]">
-      <input type="checkbox" class="block min-w-[20px] min-h-[20px] bg-blue mr-2 text-[16px]">
-      <img src="images/icons/as-logo.svg" alt="aircarrise-logo" class="mr-2">
-      AIR ASTANA
-    </label>
 
     <div class="text-blue mt-4 text-[14px] cursor-pointer">
       Показать все
       <i class="icon-down text-[7px] text-blue ml-2"></i>
     </div>
-    <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
-
 
     <div class="flex-jsb-c gap-[12px] mt-5">
       <button class="w-[30%] h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] close"
@@ -1757,7 +1821,11 @@
         Применить
       </button>
     </div>
+
   </div>
+
+
+
 </div>
 
 
@@ -1799,70 +1867,123 @@
       <h5 class="text-[18px] font-bold">Время</h5>
     </div>
 
-    <div class="flex justify-between items-center mb-6">
-      <div class="w-full text-[16px] cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-blue">
-        Отправление
-      </div>
-      <div class="w-full text-[16px] cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 border-b-transparent">
-        Возвращение
-      </div>
-    </div>
-
-
-    <div class="flex justify-between items-center">
-      <div>
-        <h5 class="font-bold text-[16px]">Время</h5>
-        <div class="flex justify-start items-center text-[14px] text-black/50">
-          из Ташкента
-          <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-          cр 17 июл
+    <div class="tab-body">
+      <div class="flex justify-between items-center mb-6 border-b">
+        <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter active" data-tabid="#mobile-sends">
+          Отправление
+        </div>
+        <div class="w-full cursor-pointer flex justify-center items-center h-9 font-bold border-b-2 tabs tab-filter" data-tabid="#mobile-sends-back">
+          Возвращение
         </div>
       </div>
-      <div
-          class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-        00:05 — 23:54
-      </div>
-    </div>
 
-    <div class="flex justify-between items-center py-6 relative">
-      <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-      <div class="w-full h-[2px] bg-blue"></div>
-      <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-
-      <div
-          class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-        <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-        <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-        <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
-      </div>
-    </div>
-
-
-    <div class="flex justify-between items-center">
-      <div>
-        <h5 class="font-bold text-[16px]">Прилет</h5>
-        <div class="flex justify-start items-center text-[14px] text-black/50">
-          в Москву
-          <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
-          cр 17 июл
+      <div class="tab-content" id="mobile-sends">
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Вылет </h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              из Ташкента
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            00:05 — 23:54
+          </div>
         </div>
-      </div>
-      <div
-          class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
-        02:25 — 21:30
-      </div>
-    </div>
 
-    <div class="flex justify-between items-center py-6 relative">
-      <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
-      <div class="w-full h-[2px] bg-blue"></div>
-      <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
 
-      <div
-          class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
-        <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
-        <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
-        <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">08:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">14:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">20:00</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Прилет </h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              из Ташкента
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            00:05 — 23:54
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+          <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tab-content hidden" id="mobile-sends-back">
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Вылет 1</h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              из Ташкента
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            00:05 — 23:54
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+          <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <h5 class="font-bold ">Прилет 1</h5>
+            <div class="flex justify-start items-center text-[14px] text-black/50">
+              из Ташкента
+              <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-1"></span>
+              cр 17 июл
+            </div>
+          </div>
+          <div class="flex justify-center items-center text-[14px] border border-[#C1C8CD] hover:border-blue transition rounded-[8px] h-[38px] px-[12px] cursor-pointer">
+            00:05 — 23:54
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center py-6 relative">
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+          <div class="w-full h-[2px] bg-blue"></div>
+          <div class="min-w-[16px] h-[16px] bg-white rounded-full border-[2px] border-blue"></div>
+
+          <div class="absolute left-[50%] transform translate-x-[-50%] w-[calc(100%_-_32px)] flex justify-evenly items-center">
+            <span class="text-[14px] bg-white px-1 cursor-default">06:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">12:00</span>
+            <span class="text-[14px] bg-white px-1 cursor-default">18:00</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -2027,362 +2148,366 @@
   </div>
 
   <div class="change-rate-body">
-    <div class="container overflow-y-auto h-[100%] overflow-hidden">
-      <div class="w-full p-6 bg-white rounded-[24px] mb-7">
-        <div class="border-b flex-jsb-s pb-4">
-          <div class="flex-jsb-s">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3081_84705)">
-                <path
-                    d="M12.2004 8.5485L16.2254 7.47017C16.4383 7.40868 16.6613 7.39027 16.8814 7.416C17.1015 7.44174 17.3142 7.5111 17.5072 7.62003C17.7002 7.72896 17.8695 7.87528 18.0052 8.05043C18.1409 8.22557 18.2404 8.42602 18.2977 8.64006C18.3551 8.8541 18.3692 9.07743 18.3392 9.29697C18.3092 9.51652 18.2357 9.72789 18.1231 9.9187C18.0104 10.1095 17.8609 10.276 17.6831 10.4083C17.5054 10.5406 17.303 10.6361 17.0879 10.6893L5.01375 13.9252L1.30542 9.74183L3.71959 9.09517L5.76125 10.2735L8.17542 9.62683L5.05625 4.4235L7.47125 3.776L12.2004 8.5485Z"
-                    stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2.5 17.5H17.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_3081_84705">
-                  <rect width="20" height="20" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-            <div class="ml-[8px]">
-              <div class="flex-js-c">
-                <span class="font-bold">Ташкент</span>
-                <i class="icon-arrow-right mx-3 text-[10px]"></i>
-                <span class="font-bold">Москва</span>
-              </div>
-              <div class="text-[14px] flex-js-c flex-wrap">
-                пт 25 окт — пт 25 окт
-                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
-                4ч 25 мин
-                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
-                <img src="images/icons/user.svg" alt="user icon" class="mr-1">
-                4
-              </div>
-            </div>
-          </div>
 
-          <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
-            <i class="icon-down"></i>
-          </div>
-        </div>
-        <div class="w-full pt-4">
-          <div class="flex-jsb-s">
-            <div class="flex-js-s">
-              <img src="images/icons/uz-air.svg" alt="uz air" width="32" height="32"
-                   class="w-[24px] h-[24px] mr-4 mt-1">
-              <div>
-                <h4 class="text-[16px]">UZBEKISTAN AIR</h4>
-                <div class="text-[14px] text-[#687076] flex-js-c">
-                  рейс SU 1871
+    <div class="overflow-y-auto h-[100%] overflow-hidden">
+      <div class="container">
+        <div class="w-full p-6 bg-white rounded-[24px] mb-7">
+          <div class="border-b flex-jsb-s pb-4">
+            <div class="flex-jsb-s">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3081_84705)">
+                  <path
+                      d="M12.2004 8.5485L16.2254 7.47017C16.4383 7.40868 16.6613 7.39027 16.8814 7.416C17.1015 7.44174 17.3142 7.5111 17.5072 7.62003C17.7002 7.72896 17.8695 7.87528 18.0052 8.05043C18.1409 8.22557 18.2404 8.42602 18.2977 8.64006C18.3551 8.8541 18.3692 9.07743 18.3392 9.29697C18.3092 9.51652 18.2357 9.72789 18.1231 9.9187C18.0104 10.1095 17.8609 10.276 17.6831 10.4083C17.5054 10.5406 17.303 10.6361 17.0879 10.6893L5.01375 13.9252L1.30542 9.74183L3.71959 9.09517L5.76125 10.2735L8.17542 9.62683L5.05625 4.4235L7.47125 3.776L12.2004 8.5485Z"
+                      stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.5 17.5H17.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3081_84705">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="ml-[8px]">
+                <div class="flex-js-c">
+                  <span class="font-bold">Ташкент</span>
+                  <i class="icon-arrow-right mx-3 text-[10px]"></i>
+                  <span class="font-bold">Москва</span>
+                </div>
+                <div class="text-[14px] flex-js-c flex-wrap">
+                  пт 25 окт — пт 25 окт
                   <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
-                  Airbus A320 neo
+                  4ч 25 мин
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                  <img src="images/icons/user.svg" alt="user icon" class="mr-1">
+                  4
                 </div>
               </div>
             </div>
-            <div class="flex-jc-c text-[14px]">
-              <svg class="mr-[6px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_3081_84741)">
+
+            <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
+              <i class="icon-down"></i>
+            </div>
+          </div>
+          <div class="w-full pt-4">
+            <div class="flex-jsb-s">
+              <div class="flex-js-s">
+                <img src="images/icons/uz-air.svg" alt="uz air" width="32" height="32"
+                     class="w-[24px] h-[24px] mr-4 mt-1">
+                <div>
+                  <h4 class="text-[16px]">UZBEKISTAN AIR</h4>
+                  <div class="text-[14px] text-[#687076] flex-js-c">
+                    рейс SU 1871
+                    <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                    Airbus A320 neo
+                  </div>
+                </div>
+              </div>
+              <div class="flex-jc-c text-[14px]">
+                <svg class="mr-[6px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3081_84741)">
+                    <path
+                        d="M10.6667 6.66691H13.3334C13.687 6.66691 14.0261 6.80739 14.2762 7.05744C14.5262 7.30748 14.6667 7.64662 14.6667 8.00024C14.6667 8.35387 14.5262 8.69301 14.2762 8.94305C14.0261 9.1931 13.687 9.33358 13.3334 9.33358H10.6667L8.00004 14.0002H6.00004L7.33337 9.33358H4.66671L3.33337 10.6669H1.33337L2.66671 8.00024L1.33337 5.33358H3.33337L4.66671 6.66691H7.33337L6.00004 2.00024H8.00004L10.6667 6.66691Z"
+                        stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3081_84741">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                4ч 25 мин
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="w-[1px] h-[calc((100%_/_2)_+_15px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
+
+              <div class="flex-js-s mt-6 mb-4 relative z-10">
+                <div
+                    class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-1"></div>
+                <div class="w-[80px]">
+                  <h4 class="font-bold">18:30</h4>
+                  <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                </div>
+                <div>
+                  <h4 class="font-bold">Ташкент</h4>
+                  <p class="text-[14px] text-[#687076]">
+                    Международный аэропорт Ташкент имени Ислама Каримова
+                  </p>
+                  <p class="text-[14px] text-[#687076]">
+                    Терминал А
+                  </p>
+                </div>
+              </div>
+              <div class="flex-js-s mt-6 mb-4 relative z-10">
+                <div
+                    class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-2"></div>
+                <div class="w-[80px]">
+                  <h4 class="font-bold">20:55</h4>
+                  <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
+                </div>
+                <div>
+                  <h4 class="font-bold">Ташкент</h4>
+                  <p class="text-[14px] text-[#687076]">
+                    Международный аэропорт Ташкент имени Ислама Каримова
+                  </p>
+                  <p class="text-[14px] text-[#687076]">
+                    Терминал А
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full bg-[#F8F9FA] p-[10px] rounded-[8px] text-[14px] flex-js-c gap-[8px]">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3081_84793)">
                   <path
-                      d="M10.6667 6.66691H13.3334C13.687 6.66691 14.0261 6.80739 14.2762 7.05744C14.5262 7.30748 14.6667 7.64662 14.6667 8.00024C14.6667 8.35387 14.5262 8.69301 14.2762 8.94305C14.0261 9.1931 13.687 9.33358 13.3334 9.33358H10.6667L8.00004 14.0002H6.00004L7.33337 9.33358H4.66671L3.33337 10.6669H1.33337L2.66671 8.00024L1.33337 5.33358H3.33337L4.66671 6.66691H7.33337L6.00004 2.00024H8.00004L10.6667 6.66691Z"
+                      d="M8.00004 10.6668V8.00016M8.00004 5.3335H8.00671M14.6667 8.00016C14.6667 11.6821 11.6819 14.6668 8.00004 14.6668C4.31814 14.6668 1.33337 11.6821 1.33337 8.00016C1.33337 4.31826 4.31814 1.3335 8.00004 1.3335C11.6819 1.3335 14.6667 4.31826 14.6667 8.00016Z"
                       stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
                 <defs>
-                  <clipPath id="clip0_3081_84741">
+                  <clipPath id="clip0_3081_84793">
                     <rect width="16" height="16" fill="white"/>
                   </clipPath>
                 </defs>
               </svg>
-              4ч 25 мин
+              Местное время отправления и прибытия
             </div>
+
+            <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
           </div>
-
-          <div class="relative">
-            <div class="w-[1px] h-[calc((100%_/_2)_+_15px)] bg-[#C1C8CD] absolute left-[4px] top-[8px]"></div>
-
-            <div class="flex-js-s mt-6 mb-4 relative z-10">
-              <div
-                  class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-1"></div>
-              <div class="w-[80px]">
-                <h4 class="font-bold">18:30</h4>
-                <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
-              </div>
-              <div>
-                <h4 class="font-bold">Ташкент</h4>
-                <p class="text-[14px] text-[#687076]">
-                  Международный аэропорт Ташкент имени Ислама Каримова
-                </p>
-                <p class="text-[14px] text-[#687076]">
-                  Терминал А
-                </p>
-              </div>
-            </div>
-            <div class="flex-js-s mt-6 mb-4 relative z-10">
-              <div
-                  class="min-w-[8px] w-[8px] h-[8px] rounded-full bg-white border border-[#C1C8CD] mr-[8px] mt-2"></div>
-              <div class="w-[80px]">
-                <h4 class="font-bold">20:55</h4>
-                <span class="text-[14px] text-[#687076]">чт 31 окт  </span>
-              </div>
-              <div>
-                <h4 class="font-bold">Ташкент</h4>
-                <p class="text-[14px] text-[#687076]">
-                  Международный аэропорт Ташкент имени Ислама Каримова
-                </p>
-                <p class="text-[14px] text-[#687076]">
-                  Терминал А
-                </p>
+          <div class="flex-jsb-s pb-4">
+            <div class="flex-jsb-s">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3081_84705)">
+                  <path
+                      d="M12.2004 8.5485L16.2254 7.47017C16.4383 7.40868 16.6613 7.39027 16.8814 7.416C17.1015 7.44174 17.3142 7.5111 17.5072 7.62003C17.7002 7.72896 17.8695 7.87528 18.0052 8.05043C18.1409 8.22557 18.2404 8.42602 18.2977 8.64006C18.3551 8.8541 18.3692 9.07743 18.3392 9.29697C18.3092 9.51652 18.2357 9.72789 18.1231 9.9187C18.0104 10.1095 17.8609 10.276 17.6831 10.4083C17.5054 10.5406 17.303 10.6361 17.0879 10.6893L5.01375 13.9252L1.30542 9.74183L3.71959 9.09517L5.76125 10.2735L8.17542 9.62683L5.05625 4.4235L7.47125 3.776L12.2004 8.5485Z"
+                      stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.5 17.5H17.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3081_84705">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="ml-[8px]">
+                <div class="flex-js-c">
+                  <span class="font-bold">Ташкент</span>
+                  <i class="icon-arrow-right mx-3 text-[10px]"></i>
+                  <span class="font-bold">Москва</span>
+                </div>
+                <div class="text-[14px] flex-js-c flex-wrap">
+                  пт 25 окт — пт 25 окт
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                  4ч 25 мин
+                  <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
+                  <img src="images/icons/user.svg" alt="user icon" class="mr-1">
+                  4
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="w-full bg-[#F8F9FA] p-[10px] rounded-[8px] text-[14px] flex-js-c gap-[8px]">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3081_84793)">
-                <path
-                    d="M8.00004 10.6668V8.00016M8.00004 5.3335H8.00671M14.6667 8.00016C14.6667 11.6821 11.6819 14.6668 8.00004 14.6668C4.31814 14.6668 1.33337 11.6821 1.33337 8.00016C1.33337 4.31826 4.31814 1.3335 8.00004 1.3335C11.6819 1.3335 14.6667 4.31826 14.6667 8.00016Z"
-                    stroke="#1150CB" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_3081_84793">
-                  <rect width="16" height="16" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Местное время отправления и прибытия
+            <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
+              <i class="icon-down"></i>
+            </div>
           </div>
-
-          <div class="w-full h-[1px] bg-[#D7DBDF] my-6"></div>
         </div>
-        <div class="flex-jsb-s pb-4">
-          <div class="flex-jsb-s">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3081_84705)">
-                <path
-                    d="M12.2004 8.5485L16.2254 7.47017C16.4383 7.40868 16.6613 7.39027 16.8814 7.416C17.1015 7.44174 17.3142 7.5111 17.5072 7.62003C17.7002 7.72896 17.8695 7.87528 18.0052 8.05043C18.1409 8.22557 18.2404 8.42602 18.2977 8.64006C18.3551 8.8541 18.3692 9.07743 18.3392 9.29697C18.3092 9.51652 18.2357 9.72789 18.1231 9.9187C18.0104 10.1095 17.8609 10.276 17.6831 10.4083C17.5054 10.5406 17.303 10.6361 17.0879 10.6893L5.01375 13.9252L1.30542 9.74183L3.71959 9.09517L5.76125 10.2735L8.17542 9.62683L5.05625 4.4235L7.47125 3.776L12.2004 8.5485Z"
-                    stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2.5 17.5H17.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
+
+
+        <div class="flex-js-s md:flex-jsb-c flex-col sm:flex-row mb-[-30px] md:mb-0 p-4 pb-10 md:p-0 bg-white md:bg-transparent rounded-[24px_24px_0_0]">
+          <h3 class="text-[18px] font-bold mb-3 sm:mb-0 mr-2">Доступные тарифы</h3>
+          <div class="text-[#1150CB] text-[14px] flex-je-c cursor-pointer target-modal" data-targetid="#info-rate">
+            Полная информация о тарифе
+            <svg class="ml-2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10.5002" r="7.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_3081_84705">
-                  <rect width="20" height="20" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-            <div class="ml-[8px]">
-              <div class="flex-js-c">
-                <span class="font-bold">Ташкент</span>
-                <i class="icon-arrow-right mx-3 text-[10px]"></i>
-                <span class="font-bold">Москва</span>
-              </div>
-              <div class="text-[14px] flex-js-c flex-wrap">
-                пт 25 окт — пт 25 окт
-                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
-                4ч 25 мин
-                <span class="w-[2px] h-[2px] bg-black/50 rounded-full mx-2"></span>
-                <img src="images/icons/user.svg" alt="user icon" class="mr-1">
-                4
-              </div>
-            </div>
-          </div>
-
-          <div class="w-[36px] min-w-[36px] h-[36px] rounded-full bg-[#D8EEFF] flex-jc-c text-[10px] cursor-pointer">
-            <i class="icon-down"></i>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="flex-js-s md:flex-jsb-c flex-col sm:flex-row mb-[-30px] md:mb-0 p-4 pb-10 md:p-0 bg-white md:bg-transparent rounded-[24px_24px_0_0]">
-        <h3 class="text-[18px] font-bold mb-3 sm:mb-0 mr-2">Доступные тарифы</h3>
-        <div class="text-[#1150CB] text-[14px] flex-je-c cursor-pointer target-modal" data-targetid="#info-rate">
-          Полная информация о тарифе
-          <svg class="ml-2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="10" cy="10.5002" r="7.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
+              <path d="M10 7.16687V10.5002" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round"/>
-            <path d="M10 7.16687V10.5002" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-            <path d="M9.9999 13.8335H10.0082" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="w-full overflow-x-auto scroll-bottom-none mt-4 flex-js-s gap-[8px] flex-col md:flex-row">
-        <div
-            class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#3FC431] p-4 bg-white flex-jsb-s flex-col">
-          <div>
-            <h4 class="text-[16px] mb-2">ECONOMY FLEX</h4>
-            <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
-            <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
-
-            <ul>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
-                        fill="#3FC431"/>
-                </svg>
-                1хРучная кладь до 10 кг
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
-                      stroke="#7E868C"/>
-                  <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-                Без багажа
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
-                      stroke="#7E868C"/>
-                  <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-                Без возврата
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
-                      stroke="#7E868C"/>
-                  <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-                Без обмена
-              </li>
-            </ul>
+              <path d="M9.9999 13.8335H10.0082" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
           </div>
-          <button class="w-full bg-[#E6FCD6] rounded-[8px] text-[15px] font-bold h-[36px]">
-            Выбран
-          </button>
         </div>
-        <div
-            class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#C4D7FF] p-4 bg-white flex-jsb-s flex-col">
-          <div>
-            <h4 class="text-[16px] mb-2">ECONOMY MEDIUM</h4>
-            <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
-            <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
 
-            <ul>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
-                        fill="#3FC431"/>
-                </svg>
-                1хРучная кладь до 10 кг
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
-                        fill="#3FC431"/>
-                </svg>
-                1хРегистрируемый багаж до 20 кг
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
-                      stroke="#7E868C"/>
-                  <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-                Без возврата
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
-                      stroke="#7E868C"/>
-                  <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-                Без обмена
-              </li>
-            </ul>
-          </div>
-          <button class="w-full bg-[#D8EEFF] rounded-[8px] text-[15px] font-bold h-[36px]">
-            Выбрать
-          </button>
-        </div>
-        <div
-            class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#C4D7FF] p-4 bg-white flex-jsb-s flex-col">
-          <div>
-            <h4 class="text-[16px] mb-2">ECONOMY MAX</h4>
-            <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
-            <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
+        <div class="w-full overflow-x-auto scroll-bottom-none mt-4 flex-js-s gap-[8px] flex-col md:flex-row">
+          <div
+              class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#3FC431] p-4 bg-white flex-jsb-s flex-col">
+            <div>
+              <h4 class="text-[16px] mb-2">ECONOMY FLEX</h4>
+              <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
+              <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
 
-            <ul>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
-                        fill="#3FC431"/>
-                </svg>
-                1хРучная кладь до 10 кг
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
-                        fill="#3FC431"/>
-                </svg>
-                1хРегистрируемый багаж до 20 кг
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M8.99565 18.0002C13.9285 18.0002 18 13.9267 18 9.00024C18 4.07375 13.9198 0.000244141 8.98695 0.000244141C4.06283 0.000244141 0 4.07375 0 9.00024C0 13.9267 4.07153 18.0002 8.99565 18.0002ZM8.98695 14.0834C8.75205 14.0834 8.57806 13.9093 8.57806 13.6656V13.0476C7.28178 12.9432 6.32479 12.2643 6.0638 11.3068C6.029 11.1937 6.0116 11.0892 6.0116 10.9848C6.0116 10.6192 6.2639 10.3668 6.63799 10.3668C6.95118 10.3668 7.15998 10.5322 7.29048 10.8542C7.42968 11.3852 7.85597 11.7768 8.57806 11.8813V9.51378L8.42146 9.47897C6.91638 9.13081 6.1334 8.43448 6.1334 7.25943C6.1334 5.98864 7.15128 5.11823 8.57806 4.98767V4.37839C8.57806 4.12597 8.75205 3.96059 8.98695 3.96059C9.22185 3.96059 9.40454 4.13467 9.40454 4.37839V4.98767C10.6225 5.10953 11.5273 5.77974 11.7709 6.71108C11.797 6.81552 11.8231 6.91997 11.8231 7.02442C11.8231 7.37258 11.5708 7.625 11.2054 7.625C10.8835 7.625 10.6747 7.44222 10.5442 7.14628C10.3702 6.61533 9.97873 6.27587 9.40454 6.17142V8.40837L9.60464 8.45189C11.1793 8.74783 11.971 9.47026 11.971 10.7062C11.971 12.0815 10.8748 12.9258 9.40454 13.0563V13.6656C9.40454 13.9093 9.22185 14.0834 8.98695 14.0834ZM8.57806 8.19947V6.16272C7.89077 6.27587 7.47318 6.68496 7.47318 7.17239C7.47318 7.65982 7.79507 7.97317 8.51716 8.18206L8.57806 8.19947ZM9.40454 9.71398V11.8813C10.231 11.7855 10.6399 11.3677 10.6399 10.802C10.6399 10.2971 10.3528 9.9664 9.56984 9.7575L9.40454 9.71398Z"
-                      fill="#11181C"/>
-                </svg>
-                Возврат
-              </li>
-              <li class="text-[14px] flex-js-c mb-[12px]">
-                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M8.99565 18.0002C13.9285 18.0002 18 13.9267 18 9.00024C18 4.07375 13.9198 0.000244141 8.98695 0.000244141C4.06283 0.000244141 0 4.07375 0 9.00024C0 13.9267 4.07153 18.0002 8.99565 18.0002ZM8.98695 14.0834C8.75205 14.0834 8.57806 13.9093 8.57806 13.6656V13.0476C7.28178 12.9432 6.32479 12.2643 6.0638 11.3068C6.029 11.1937 6.0116 11.0892 6.0116 10.9848C6.0116 10.6192 6.2639 10.3668 6.63799 10.3668C6.95118 10.3668 7.15998 10.5322 7.29048 10.8542C7.42968 11.3852 7.85597 11.7768 8.57806 11.8813V9.51378L8.42146 9.47897C6.91638 9.13081 6.1334 8.43448 6.1334 7.25943C6.1334 5.98864 7.15128 5.11823 8.57806 4.98767V4.37839C8.57806 4.12597 8.75205 3.96059 8.98695 3.96059C9.22185 3.96059 9.40454 4.13467 9.40454 4.37839V4.98767C10.6225 5.10953 11.5273 5.77974 11.7709 6.71108C11.797 6.81552 11.8231 6.91997 11.8231 7.02442C11.8231 7.37258 11.5708 7.625 11.2054 7.625C10.8835 7.625 10.6747 7.44222 10.5442 7.14628C10.3702 6.61533 9.97873 6.27587 9.40454 6.17142V8.40837L9.60464 8.45189C11.1793 8.74783 11.971 9.47026 11.971 10.7062C11.971 12.0815 10.8748 12.9258 9.40454 13.0563V13.6656C9.40454 13.9093 9.22185 14.0834 8.98695 14.0834ZM8.57806 8.19947V6.16272C7.89077 6.27587 7.47318 6.68496 7.47318 7.17239C7.47318 7.65982 7.79507 7.97317 8.51716 8.18206L8.57806 8.19947ZM9.40454 9.71398V11.8813C10.231 11.7855 10.6399 11.3677 10.6399 10.802C10.6399 10.2971 10.3528 9.9664 9.56984 9.7575L9.40454 9.71398Z"
-                      fill="#11181C"/>
-                </svg>
-                Обмен
-              </li>
-            </ul>
+              <ul>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
+                          fill="#3FC431"/>
+                  </svg>
+                  1хРучная кладь до 10 кг
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
+                        stroke="#7E868C"/>
+                    <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  Без багажа
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
+                        stroke="#7E868C"/>
+                    <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  Без возврата
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
+                        stroke="#7E868C"/>
+                    <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  Без обмена
+                </li>
+              </ul>
+            </div>
+            <button class="w-full bg-[#E6FCD6] rounded-[8px] text-[15px] font-bold h-[36px]">
+              Выбран
+            </button>
           </div>
-          <button class="w-full bg-[#D8EEFF] rounded-[8px] text-[15px] font-bold h-[36px]">
-            Выбрать
-          </button>
+          <div
+              class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#C4D7FF] p-4 bg-white flex-jsb-s flex-col">
+            <div>
+              <h4 class="text-[16px] mb-2">ECONOMY MEDIUM</h4>
+              <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
+              <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
+
+              <ul>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
+                          fill="#3FC431"/>
+                  </svg>
+                  1хРучная кладь до 10 кг
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
+                          fill="#3FC431"/>
+                  </svg>
+                  1хРегистрируемый багаж до 20 кг
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
+                        stroke="#7E868C"/>
+                    <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  Без возврата
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.00024C0.5 4.30839 4.30814 0.500244 9 0.500244C13.6919 0.500244 17.5 4.30839 17.5 9.00024C17.5 13.6921 13.6919 17.5002 9 17.5002C4.30814 17.5002 0.5 13.6921 0.5 9.00024Z"
+                        stroke="#7E868C"/>
+                    <path d="M10.7782 6.99353L3.00002 14.7717" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.7782 3.00024L7.00002 10.7784" stroke="#7E868C" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  Без обмена
+                </li>
+              </ul>
+            </div>
+            <button class="w-full bg-[#D8EEFF] rounded-[8px] text-[15px] font-bold h-[36px]">
+              Выбрать
+            </button>
+          </div>
+          <div
+              class="w-full md:w-[240px] min-w-[240px] h-[288px] rounded-[16px] border border-[#C4D7FF] p-4 bg-white flex-jsb-s flex-col">
+            <div>
+              <h4 class="text-[16px] mb-2">ECONOMY MAX</h4>
+              <h3 class="text-[18px] font-bold leading-[7px]">9 000 000 000 UZS</h3>
+              <p class="text-[14px] text-[#687076] mb-[12px]">за всех пассажиров</p>
+
+              <ul>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
+                          fill="#3FC431"/>
+                  </svg>
+                  1хРучная кладь до 10 кг
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 9.00024C0 4.03224 4.032 0.000244141 9 0.000244141C13.968 0.000244141 18 4.03224 18 9.00024C18 13.9682 13.968 18.0002 9 18.0002C4.032 18.0002 0 13.9682 0 9.00024ZM12.2533 6.47357C12.5144 6.21243 12.9381 6.21318 13.1983 6.47524C13.4572 6.736 13.4565 7.15706 13.1966 7.41691L8.33331 12.2802L5.4703 9.41723C5.21055 9.15748 5.21055 8.73633 5.4703 8.47658C5.7298 8.21708 6.15044 8.21678 6.4103 8.47592L8.33331 10.3936L12.2533 6.47357Z"
+                          fill="#3FC431"/>
+                  </svg>
+                  1хРегистрируемый багаж до 20 кг
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.99565 18.0002C13.9285 18.0002 18 13.9267 18 9.00024C18 4.07375 13.9198 0.000244141 8.98695 0.000244141C4.06283 0.000244141 0 4.07375 0 9.00024C0 13.9267 4.07153 18.0002 8.99565 18.0002ZM8.98695 14.0834C8.75205 14.0834 8.57806 13.9093 8.57806 13.6656V13.0476C7.28178 12.9432 6.32479 12.2643 6.0638 11.3068C6.029 11.1937 6.0116 11.0892 6.0116 10.9848C6.0116 10.6192 6.2639 10.3668 6.63799 10.3668C6.95118 10.3668 7.15998 10.5322 7.29048 10.8542C7.42968 11.3852 7.85597 11.7768 8.57806 11.8813V9.51378L8.42146 9.47897C6.91638 9.13081 6.1334 8.43448 6.1334 7.25943C6.1334 5.98864 7.15128 5.11823 8.57806 4.98767V4.37839C8.57806 4.12597 8.75205 3.96059 8.98695 3.96059C9.22185 3.96059 9.40454 4.13467 9.40454 4.37839V4.98767C10.6225 5.10953 11.5273 5.77974 11.7709 6.71108C11.797 6.81552 11.8231 6.91997 11.8231 7.02442C11.8231 7.37258 11.5708 7.625 11.2054 7.625C10.8835 7.625 10.6747 7.44222 10.5442 7.14628C10.3702 6.61533 9.97873 6.27587 9.40454 6.17142V8.40837L9.60464 8.45189C11.1793 8.74783 11.971 9.47026 11.971 10.7062C11.971 12.0815 10.8748 12.9258 9.40454 13.0563V13.6656C9.40454 13.9093 9.22185 14.0834 8.98695 14.0834ZM8.57806 8.19947V6.16272C7.89077 6.27587 7.47318 6.68496 7.47318 7.17239C7.47318 7.65982 7.79507 7.97317 8.51716 8.18206L8.57806 8.19947ZM9.40454 9.71398V11.8813C10.231 11.7855 10.6399 11.3677 10.6399 10.802C10.6399 10.2971 10.3528 9.9664 9.56984 9.7575L9.40454 9.71398Z"
+                        fill="#11181C"/>
+                  </svg>
+                  Возврат
+                </li>
+                <li class="text-[14px] flex-js-c mb-[12px]">
+                  <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.99565 18.0002C13.9285 18.0002 18 13.9267 18 9.00024C18 4.07375 13.9198 0.000244141 8.98695 0.000244141C4.06283 0.000244141 0 4.07375 0 9.00024C0 13.9267 4.07153 18.0002 8.99565 18.0002ZM8.98695 14.0834C8.75205 14.0834 8.57806 13.9093 8.57806 13.6656V13.0476C7.28178 12.9432 6.32479 12.2643 6.0638 11.3068C6.029 11.1937 6.0116 11.0892 6.0116 10.9848C6.0116 10.6192 6.2639 10.3668 6.63799 10.3668C6.95118 10.3668 7.15998 10.5322 7.29048 10.8542C7.42968 11.3852 7.85597 11.7768 8.57806 11.8813V9.51378L8.42146 9.47897C6.91638 9.13081 6.1334 8.43448 6.1334 7.25943C6.1334 5.98864 7.15128 5.11823 8.57806 4.98767V4.37839C8.57806 4.12597 8.75205 3.96059 8.98695 3.96059C9.22185 3.96059 9.40454 4.13467 9.40454 4.37839V4.98767C10.6225 5.10953 11.5273 5.77974 11.7709 6.71108C11.797 6.81552 11.8231 6.91997 11.8231 7.02442C11.8231 7.37258 11.5708 7.625 11.2054 7.625C10.8835 7.625 10.6747 7.44222 10.5442 7.14628C10.3702 6.61533 9.97873 6.27587 9.40454 6.17142V8.40837L9.60464 8.45189C11.1793 8.74783 11.971 9.47026 11.971 10.7062C11.971 12.0815 10.8748 12.9258 9.40454 13.0563V13.6656C9.40454 13.9093 9.22185 14.0834 8.98695 14.0834ZM8.57806 8.19947V6.16272C7.89077 6.27587 7.47318 6.68496 7.47318 7.17239C7.47318 7.65982 7.79507 7.97317 8.51716 8.18206L8.57806 8.19947ZM9.40454 9.71398V11.8813C10.231 11.7855 10.6399 11.3677 10.6399 10.802C10.6399 10.2971 10.3528 9.9664 9.56984 9.7575L9.40454 9.71398Z"
+                        fill="#11181C"/>
+                  </svg>
+                  Обмен
+                </li>
+              </ul>
+            </div>
+            <button class="w-full bg-[#D8EEFF] rounded-[8px] text-[15px] font-bold h-[36px]">
+              Выбрать
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
