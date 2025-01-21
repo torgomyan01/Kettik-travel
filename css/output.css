@@ -2462,6 +2462,22 @@ video {
   height: 100vh;
 }
 
+.h-\[319px\]{
+  height: 319px;
+}
+
+.h-\[320px\]{
+  height: 320px;
+}
+
+.h-\[321px\]{
+  height: 321px;
+}
+
+.h-\[322px\]{
+  height: 322px;
+}
+
 .max-h-\[100vh\]{
   max-height: 100vh;
 }
@@ -4327,6 +4343,10 @@ video {
     height: 100%;
   }
 
+  .sm\:h-\[607px\]{
+    height: 607px;
+  }
+
   .sm\:min-h-\[252px\]{
     min-height: 252px;
   }
@@ -4909,6 +4929,14 @@ video {
 
   .xl\:flex-row{
     flex-direction: row;
+  }
+
+  .xl\:overflow-clip{
+    overflow: clip;
+  }
+
+  .xl\:overflow-visible{
+    overflow: visible;
   }
 
   .xl\:pb-14{
