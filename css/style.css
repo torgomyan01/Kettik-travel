@@ -720,11 +720,19 @@ input:focus {
   width: 100%;
   background: #1150CB;
   position: relative;
+  transition: 0.3s border-radius;
 }
 @media (max-width: 1280px) {
   .search {
     height: auto;
   }
+}
+.search.fixed-top {
+  height: 82px;
+  padding: 0;
+  border-radius: 0 0 24px 24px;
+  z-index: 999999;
+  box-shadow: 0 1px 17px 6px rgba(0, 0, 0, 0.16);
 }
 .search.no-anim {
   background: #1150CB url("../images/search-bg.jpg") no-repeat center center;

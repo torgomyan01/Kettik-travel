@@ -792,9 +792,6 @@ searchTabs.forEach((item) => {
 let lastKnownScrollY = 0;
 let ticking = false;
 
-window.addEventListener('scroll', function () {
-  AnimationHeaderHome()
-});
 
 window.addEventListener('load', function () {
 
@@ -808,11 +805,14 @@ window.addEventListener('load', function () {
 
 })
 
+window.addEventListener('scroll', function () {
+  AnimationHeaderHome()
+});
+
 function AnimationHeaderHome(){
   if(window.innerWidth > 1280){
     return;
   }
-
 
 
   lastKnownScrollY = window.scrollY;
@@ -826,6 +826,9 @@ function AnimationHeaderHome(){
       if (currentPercent < 120) {
         const op = ((100 - currentPercent) / 100);
 
+        search.classList.remove('fixed-top');
+
+        // search.style.height = `${headerHeight.height - scrollTop}px`;
         searchBilet.style.opacity = `${1 - op}`;
         searchVector.style.opacity = `${op}`;
         selectMe.style.marginTop = `${headerHeight.height - scrollTop}px`;
@@ -839,10 +842,18 @@ function AnimationHeaderHome(){
 
       if (currentPercent > tabRes) {
         let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);
-        afterAnim = Math.max(0, afterAnim); // Համոզվում ենք, որ արժեքը 0-ից փոքր չէ
+        afterAnim = Math.max(0, afterAnim);
+        search.classList.add('fixed-top');
 
-        nav.style.transform = `translateY(-${afterAnim}px)`;
-        search.style.transform = `translateY(-${afterAnim}px)`;
+        if(afterAnim < 60){
+          nav.style.transform = `translateY(-${afterAnim}px)`;
+          search.style.transform = `translateY(-${afterAnim}px)`;
+        }
+
+        if(afterAnim > 70){
+          search.style.transform = `translateY(-59px)`;
+          search.style.transition = `transition: 0.3s transform, border-radius`;
+        }
       } else {
         nav.style.transform = 'translateY(0px)';
         search.style.transform = 'translateY(0px)';
