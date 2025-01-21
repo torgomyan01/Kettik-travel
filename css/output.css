@@ -496,6 +496,10 @@ input:focus {
   box-shadow: 0px 2px 0px #E6E8EB;
 }
 
+.white-btn-shadow {
+  box-shadow: 0px 1px 0px #E6E8EB;
+}
+
 .tg-icon-anim {
   width: 200px;
   height: 200px;
@@ -1868,6 +1872,10 @@ video {
   top: 38px;
 }
 
+.top-\[39px\]{
+  top: 39px;
+}
+
 .top-\[50\%\]{
   top: 50%;
 }
@@ -1888,20 +1896,8 @@ video {
   top: calc(100% + 4px);
 }
 
-.top-\[50px\]{
-  top: 50px;
-}
-
-.bottom-\[-5px\]{
-  bottom: -5px;
-}
-
-.top-\[45px\]{
-  top: 45px;
-}
-
-.top-\[39px\]{
-  top: 39px;
+.z-0{
+  z-index: 0;
 }
 
 .z-10{
@@ -1926,14 +1922,6 @@ video {
 
 .z-\[1\]{
   z-index: 1;
-}
-
-.z-\[-1\]{
-  z-index: -1;
-}
-
-.z-0{
-  z-index: 0;
 }
 
 .mx-1{
@@ -2694,10 +2682,6 @@ video {
   width: 100%;
 }
 
-.w-\[152px\]{
-  width: 152px;
-}
-
 .\!min-w-\[16px\]{
   min-width: 16px !important;
 }
@@ -3063,6 +3047,10 @@ video {
   border-radius: 32px 32px 0 0;
 }
 
+.rounded-\[40px\]{
+  border-radius: 40px;
+}
+
 .rounded-\[44px\]{
   border-radius: 44px;
 }
@@ -3081,10 +3069,6 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-\[40px\]{
-  border-radius: 40px;
 }
 
 .border{
@@ -4530,10 +4514,6 @@ video {
     bottom: 1.25rem;
   }
 
-  .md\:top-\[50px\]{
-    top: 50px;
-  }
-
   .md\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -4813,10 +4793,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:top-\[50px\]{
-    top: 50px;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -4905,10 +4881,6 @@ video {
 
   .xl\:left-\[-10px\]{
     left: -10px;
-  }
-
-  .xl\:top-\[50px\]{
-    top: 50px;
   }
 
   .xl\:top-0{
