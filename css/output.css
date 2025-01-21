@@ -1896,6 +1896,10 @@ video {
   top: calc(100% + 4px);
 }
 
+.top-\[\]{
+  top: ;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -4606,6 +4610,10 @@ video {
     left: 50%;
   }
 
+  .md\:top-0{
+    top: 0px;
+  }
+
   .md\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -4892,6 +4900,12 @@ video {
 
   .md\:text-\[36px\]{
     font-size: 36px;
+  }
+
+  .md\:shadow-none{
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
