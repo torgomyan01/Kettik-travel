@@ -754,27 +754,99 @@ const search = $el('.search');
 const selectMe = $el('.selectMe');
 const nav = $el('.nav');
 const searchBilet = $el('#search-bilet');
-const headerHeight = search.getBoundingClientRect();
+let headerHeight = search.getBoundingClientRect();
 const homeSearchContainer = $el('#home-search-container');
-selectMe.style.marginTop = `${headerHeight.height}px`;
 
-window.addEventListener('scroll', function (){
-  const scrollTop = window.scrollY;
-  const currentPercent = (scrollTop * 100) / (headerHeight.height - (headerHeight.height / 1.5));
+if(window.innerWidth < 1280){
+  selectMe.style.marginTop = `${headerHeight.height}px`;
+}
 
+let avia = true;
 
-  if(currentPercent < 120){
-    const op = ((100 - currentPercent) / 100);
+const searchTabs = $('.search .tabs');
+searchTabs.forEach((item) => {
+  item.addEventListener('click', e => {
 
-    searchBilet.style.opacity = `${1 - op}`
-    selectMe.style.marginTop = `${headerHeight.height - scrollTop}px`;
-    // search.style.height = `${headerHeight.height - scrollTop}px`;
-    homeSearchContainer.style.opacity = `${op}`;
-    homeSearchContainer.style.transform = `translateY(${currentPercent}%)`;
-  } else {
-    const afterAnim = (-120 + currentPercent) * 2;
+    avia = item.dataset.tabid === '#form-Search-ticket';
 
-    nav.style.transform = `translateY(-${afterAnim}px)`;
-    search.style.transform = `translateY(-${afterAnim}px)`;
-  }
+    const search = $el('.search');
+    headerHeight = search.getBoundingClientRect();
+    selectMe.style.marginTop = `${headerHeight.height}px`;
+  })
 })
+
+
+
+let lastKnownScrollY = 0;
+let ticking = false;
+
+window.addEventListener('scroll', function () {
+  AnimationHeaderHome()
+});
+
+window.addEventListener('load', function () {
+
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+
+    AnimationHeaderHome();
+
+    document.body.style.opacity = '1';
+  }, 10)
+
+})
+
+function AnimationHeaderHome(){
+  if(window.innerWidth > 1280){
+    return;
+  }
+
+
+
+  lastKnownScrollY = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      const scrollTop = lastKnownScrollY;
+      const currentPercent = (scrollTop * 100) / (headerHeight.height - (headerHeight.height / 1.5));
+
+
+      if (currentPercent < 120) {
+        const op = ((100 - currentPercent) / 100);
+
+        searchBilet.style.opacity = `${1 - op}`;
+        searchVector.style.opacity = `${op}`;
+        selectMe.style.marginTop = `${headerHeight.height - scrollTop}px`;
+        homeSearchContainer.style.opacity = `${op}`;
+        homeSearchContainer.style.transform = `translateY(${currentPercent}%)`;
+      }
+
+      const tabRes = avia ?
+        checkWindowsWidth(window.innerWidth, 768, 105, 120) :
+        checkWindowsWidth(window.innerWidth, 768, 75, 95);
+
+      if (currentPercent > tabRes) {
+        let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);
+        afterAnim = Math.max(0, afterAnim); // Համոզվում ենք, որ արժեքը 0-ից փոքր չէ
+
+        nav.style.transform = `translateY(-${afterAnim}px)`;
+        search.style.transform = `translateY(-${afterAnim}px)`;
+      } else {
+        nav.style.transform = 'translateY(0px)';
+        search.style.transform = 'translateY(0px)';
+      }
+
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+}
+
+function checkWindowsWidth(windowWidth, needWidth, count, def){
+  if(windowWidth > needWidth){
+    return count
+  } else {
+    return def
+  }
+}

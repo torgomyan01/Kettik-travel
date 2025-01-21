@@ -14,9 +14,9 @@
   <script src="js/aos.js"></script>
   <title>Kettik</title>
 </head>
-<body>
+<body style="opacity: 0;">
 
-<nav class="nav flex justify-between items-center fixed top-0">
+<nav class="nav flex justify-between items-center fixed xl:relative top-0">
   <div class="container flex justify-between items-center">
     <a href="/index.html" class="nav-logo">
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
@@ -129,7 +129,7 @@
   </div>
 </div>
 
-<div class="search bg-blue pt-12 xl:pb-14 overflow-hidden mb-[-24px] pb-[50px] min-h-[175px] fixed top-[57px]">
+<div class="search bg-blue pt-12 xl:pb-14 overflow-hidden mb-[-24px] pb-[50px] min-h-[175px] fixed xl:relative top-[57px] xl:top-0">
 
   <svg class="vector" width="1336" height="380" viewBox="0 0 1336 380" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -137,7 +137,7 @@
         stroke="white" stroke-opacity="0.05" stroke-width="25"/>
   </svg>
 
-  <div class="container absolute top-[20px] opacity-0" id="search-bilet">
+  <div class="container absolute top-[20px] min-[769px]:top-[50px] opacity-0 left-[50%] transform translate-x-[-50%] block xl:hidden" id="search-bilet">
     <button class="w-full bg-orange h-[44px] text-[15px] text-white rounded-[8px]">Найти билеты</button>
   </div>
 
