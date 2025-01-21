@@ -153,7 +153,7 @@
               </div>
             </div>
 
-            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-owner-info">Изменить</span>
+            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-passengers-info">Изменить</span>
           </div>
         </div>
         <div class="bg-white rounded-[24px] sm:rounded-[0] p-4 sm:p-0 mb-4">
@@ -166,7 +166,7 @@
               </div>
             </div>
 
-            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-owner-info">Изменить</span>
+            <span class="text-[15px] text-blue cursor-pointer ml-[50px] sm:ml-0 mt-2 sm:mt-0 target-modal" data-targetid="#change-passengers-info">Изменить</span>
           </div>
         </div>
 
@@ -582,12 +582,12 @@
   </div>
 </div>
 
-<div class="modal" id="change-owner-info">
+<div class="modal show" id="change-owner-info">
   <div class="modal-fon" data-modalid="#change-owner-info"></div>
-  <div class="modal-body max-w-[950px]">
-    <div class="modal-close" data-modalid="#change-owner-info">+</div>
+  <div class="modal-body max-w-[950px] bg-[#EDF3FF] sm:bg-white">
+    <div class="modal-close hidden sm:block" data-modalid="#change-owner-info">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden relative bg-white">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#change-owner-info"></i>
       <h4 class="text-[18px] font-bold">Редактирование пассажира</h4>
@@ -835,8 +835,8 @@
 
           <button class="text-[15px] text-blue mt-4">Добавить пароль</button>
 
-          <div class="flex-js-e mt-4">
-            <div class="def-checkout-input w-[calc(50%_-_12px)] mr-4">
+          <div class="flex-js-e mt-4 flex-wrap">
+            <div class="def-checkout-input w-[calc(50%_-_12px)] mr-4 mb-3">
               <span class="text-[14px] mb-1 font-bold">Пароль <i class="text-[red]">*</i></span>
               <label class="relative">
                 <input type="password" value="112233">
@@ -850,12 +850,12 @@
         </div>
       </div>
 
-      <div class="mt-12">
+      <div class="mt-12 flex-js-c gap-2">
         <button class="h-[44px] bg-white border  text-[15px] rounded-[8px] px-4 close-modals"
                 data-modalid="#change-owner-info">
           Закрыть
         </button>
-        <button class="h-[44px] px-6 text-white bg-[#3FC431] text-[15px] rounded-[12px] close-modals"
+        <button class="h-[44px] px-6 text-white bg-[#3FC431] text-[15px] rounded-[12px] close-modals w-full sm:w-auto"
                 data-modalid="#change-owner-info">
           Сохранить
         </button>
@@ -906,7 +906,7 @@
     <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#change-passengers-info"></i>
-      <h4 class="text-[18px] font-bold">Редактирование данных пассажира</h4>
+      <h4 class="text-[18px] font-bold text-center">Редактирование данных пассажира</h4>
       <div class="modal-close relative top-0 right-0" data-modalid="#change-passengers-info">+</div>
     </div>
 
@@ -917,7 +917,7 @@
       </p>
 
       <div class="bg-white p-4 pr-2 rounded-[24px] ">
-        <div class="max-h-[calc(100vh_-_280px)] overflow-y-auto scroll-gray pr-2">
+        <div class="max-h-[calc(100vh_-_300px)] overflow-y-auto scroll-gray pr-2">
           <div class="flex-js-s flex-col xl:flex-row gap-6 mb-6">
             <div class="def-checkout-input">
               <span class="text-[14px] mb-1 font-bold">Имя <i class="text-[red]">*</i></span>

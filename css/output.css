@@ -123,7 +123,7 @@ input:focus {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 1000000;
   display: none;
 }
 
@@ -2349,6 +2349,14 @@ video {
   height: 316px;
 }
 
+.h-\[321px\]{
+  height: 321px;
+}
+
+.h-\[322px\]{
+  height: 322px;
+}
+
 .h-\[32px\]{
   height: 32px;
 }
@@ -2460,22 +2468,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[319px\]{
-  height: 319px;
-}
-
-.h-\[320px\]{
-  height: 320px;
-}
-
-.h-\[321px\]{
-  height: 321px;
-}
-
-.h-\[322px\]{
-  height: 322px;
 }
 
 .max-h-\[100vh\]{
@@ -4327,6 +4319,10 @@ video {
     height: 600px;
   }
 
+  .sm\:h-\[607px\]{
+    height: 607px;
+  }
+
   .sm\:h-\[64px\]{
     height: 64px;
   }
@@ -4341,10 +4337,6 @@ video {
 
   .sm\:h-full{
     height: 100%;
-  }
-
-  .sm\:h-\[607px\]{
-    height: 607px;
   }
 
   .sm\:min-h-\[252px\]{
@@ -4929,10 +4921,6 @@ video {
 
   .xl\:flex-row{
     flex-direction: row;
-  }
-
-  .xl\:overflow-clip{
-    overflow: clip;
   }
 
   .xl\:overflow-visible{
