@@ -582,7 +582,7 @@
   </div>
 </div>
 
-<div class="modal show" id="change-owner-info">
+<div class="modal" id="change-owner-info">
   <div class="modal-fon" data-modalid="#change-owner-info"></div>
   <div class="modal-body max-w-[950px] bg-[#EDF3FF] sm:bg-white">
     <div class="modal-close hidden sm:block" data-modalid="#change-owner-info">+</div>
@@ -1067,8 +1067,34 @@
   </div>
 </div>
 
-
 <div class="modal" id="delete-passengers">
+  <div class="modal-fon" data-modalid="#change-password"></div>
+  <div class="modal-body max-w-[396px] bg-black/70 sm:bg-white flex-js-e sm:block">
+    <div class="modal-close" data-modalid="#change-password">+</div>
+
+    <div class="modal-content p-4 sm:p-6 ">
+      <div class="bg-white p-4 sm:p-0 rounded-[16px]">
+
+        <p class="leading-[130%]">
+          Посде удаления этого пассажира все соответствующие данные будут утеряны безвозвратно. Это не повлияет на текущий процесс бронирования.
+        </p>
+
+        <div class="mt-12 flex-jsb-c gap-[8px]">
+          <button class="h-[44px] bg-white border text-[15px] rounded-[8px] px-4 close-modals"
+                  data-modalid="#delete-passengers">
+            Закрыть
+          </button>
+          <button class="w-full bg-orange h-[44px] text-[15px] text-white rounded-[12px] close-modals" data-modalid="#delete-passengers">
+            Удалить
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" >
   <div class="modal-fon" data-modalid="#delete-passengers"></div>
   <div class="modal-body max-w-[396px]">
     <div class="modal-content p-6">
