@@ -658,20 +658,32 @@ tabBody.forEach((_body) => {
   })
 })
 
+const dropdownNav = $('.dropdown-nav');
+openCloseDropDownNavbar('#parent-nav-dropdown', '#nav-dropdown', '#font-for-close');
+openCloseDropDownNavbar('#parent-change-language', '#drop-change-language', '#fon-change-language');
+openCloseDropDownNavbar('#parent-change-currency', '#drop-change-currency', '#fon-change-currency');
+
+function openCloseDropDownNavbar(parent, dropdown, fon) {
+  const parentNavDropdown = $el(parent);
+  const nawDropDown = $el(dropdown);
+  const fontForClose = $el(fon);
+
+
+  nawDropDown?.addEventListener('click', (e) => {
+    dropdownNav.forEach((item) => {
+      item.classList.remove('active');
+    })
+    parentNavDropdown.classList.toggle('active');
+  })
+
+  fontForClose?.addEventListener('click', (e) => {
+    parentNavDropdown.classList.toggle('active');
+  })
+}
 
 
 
-const parentNavDropdown = $el('#parent-nav-dropdown');
-const nawDropDown = $el('#nav-dropdown');
-const fontForClose = $el('#font-for-close');
 
-nawDropDown?.addEventListener('click', (e) => {
-  parentNavDropdown.classList.toggle('active');
-})
-
-fontForClose?.addEventListener('click', (e) => {
-  parentNavDropdown.classList.toggle('active');
-})
 
 
 const transplantsTabs = $('.transplants-tabs');

@@ -28,7 +28,7 @@
       <span></span>
     </div>
     <div class="justify-between gap-10 hidden md:flex">
-      <div class="text-black-800 cursor-pointer flex items-center relative group" id="parent-nav-dropdown">
+      <div class="text-black-800 cursor-pointer flex items-center relative group dropdown-nav" id="parent-nav-dropdown">
         <div class="relative z-20" id="nav-dropdown">
           Авиабилеты
           <i class="icon-down ms-2 text-[8px] transition group-[.active]:-rotate-180 inline-block"></i>
@@ -44,10 +44,40 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center items-center cursor-pointer target-modal" data-targetid="#modal-select-language">
-        <img src="images/ru-flag.png" alt="ru flag to change language site" width="24"
-             height="24" class="rounded-full me-2 border">
-        UZS
+      <div class="h-[40px] rounded-[40px] border px-4 flex-jc-c">
+        <div class="flex-jc-c cursor-pointer relative group dropdown-nav" id="parent-change-language">
+          <div id="drop-change-language">
+            RU
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-language"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              Русский
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              O'zbek
+            </div>
+          </div>
+        </div>
+        <div class="w-[1px] min-w-[1px] h-full bg-[#D7DBDF] mx-4"></div>
+        <div class="flex-jc-c cursor-pointer relative z-0 group dropdown-nav" id="parent-change-currency">
+          <div id="drop-change-currency">
+            UZS
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-currency"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              UZS - Узбекский сом
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              USD - Доллар США
+            </div>
+          </div>
+        </div>
       </div>
       <div data-targetid="#sign-in"
            class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
