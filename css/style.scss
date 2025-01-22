@@ -684,6 +684,9 @@ input:focus {
   border-color: #484747 !important;
 }
 
+.shadow-free-item{
+  box-shadow: 0 2px 4px 0 rgba(17, 80, 203, 0.10), 0px 24px 60px 0px rgba(17, 80, 203, 0.05), 0px 12px 24px 0px rgba(17, 80, 203, 0.05);
+}
 
 // NAVBAR
 @import "components/navbar";

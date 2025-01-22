@@ -767,6 +767,10 @@ input:focus {
   border-color: #484747 !important;
 }
 
+.shadow-free-item {
+  box-shadow: 0 2px 4px 0 rgba(17, 80, 203, 0.1), 0px 24px 60px 0px rgba(17, 80, 203, 0.05), 0px 12px 24px 0px rgba(17, 80, 203, 0.05);
+}
+
 .nav {
   width: 100%;
   height: 5.125rem;
@@ -825,6 +829,10 @@ input:focus {
     background: #1150CB;
     background-size: cover;
   }
+}
+
+.search.popular {
+  background: #1150CB;
 }
 
 .search .vector {
@@ -1905,6 +1913,14 @@ video {
   top: calc(100% + 4px);
 }
 
+.right-4{
+  right: 1rem;
+}
+
+.top-6{
+  top: 1.5rem;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -2154,6 +2170,10 @@ video {
   margin-inline-start: 0.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -2242,12 +2262,24 @@ video {
   margin-top: 3px;
 }
 
+.mt-\[42px\]{
+  margin-top: 42px;
+}
+
 .mt-\[57px\]{
   margin-top: 57px;
 }
 
 .mt-\[60px\]{
   margin-top: 60px;
+}
+
+.mt-\[64px\]{
+  margin-top: 64px;
+}
+
+.mt-\[104px\]{
+  margin-top: 104px;
 }
 
 .block{
@@ -2418,6 +2450,10 @@ video {
   height: 52px;
 }
 
+.h-\[538px\]{
+  height: 538px;
+}
+
 .h-\[56px\]{
   height: 56px;
 }
@@ -2489,6 +2525,14 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[269px\]{
+  height: 269px;
+}
+
+.h-\[80px\]{
+  height: 80px;
 }
 
 .max-h-\[100vh\]{
@@ -2631,6 +2675,10 @@ video {
   width: 310px;
 }
 
+.w-\[316px\]{
+  width: 316px;
+}
+
 .w-\[328px\]{
   width: 328px;
 }
@@ -2719,6 +2767,10 @@ video {
   width: 100%;
 }
 
+.w-\[190px\]{
+  width: 190px;
+}
+
 .\!min-w-\[16px\]{
   min-width: 16px !important;
 }
@@ -2779,8 +2831,16 @@ video {
   min-width: 8px;
 }
 
+.min-w-\[24px\]{
+  min-width: 24px;
+}
+
 .max-w-7xl{
   max-width: 80rem;
+}
+
+.max-w-\[1312px\]{
+  max-width: 1312px;
 }
 
 .max-w-\[160px\]{
@@ -2839,6 +2899,10 @@ video {
   max-width: 700px;
 }
 
+.max-w-\[768px\]{
+  max-width: 768px;
+}
+
 .max-w-\[868px\]{
   max-width: 868px;
 }
@@ -2859,6 +2923,18 @@ video {
   max-width: unset;
 }
 
+.max-w-\[50\%\]{
+  max-width: 50%;
+}
+
+.max-w-\[70\%\]{
+  max-width: 70%;
+}
+
+.max-w-\[217px\]{
+  max-width: 217px;
+}
+
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2866,6 +2942,31 @@ video {
 
 .translate-y-\[-50\%\]{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-40\%\]{
+  --tw-translate-y: -40%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-33\%\]{
+  --tw-translate-y: -33%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[-30\%\]{
+  --tw-translate-x: -30%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[30\%\]{
+  --tw-translate-x: 30%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[40\%\]{
+  --tw-translate-x: 40%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2906,6 +3007,18 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -3112,6 +3225,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-\[0_8px_0_0\]{
+  border-radius: 0 8px 0 0;
+}
+
+.\!rounded-\[8px_0_0_8px\]{
+  border-radius: 8px 0 0 8px !important;
+}
+
 .border{
   border-width: 1px;
 }
@@ -3134,6 +3255,10 @@ video {
 
 .border-b-\[2px\]{
   border-bottom-width: 2px;
+}
+
+.border-l-\[2px\]{
+  border-left-width: 2px;
 }
 
 .border-r{
@@ -3808,6 +3933,10 @@ video {
   font-size: 32px;
 }
 
+.text-\[36px\]{
+  font-size: 36px;
+}
+
 .text-\[40px\]{
   font-size: 40px;
 }
@@ -3891,6 +4020,14 @@ video {
 
 .tracking-\[-0\.5px\]{
   letter-spacing: -0.5px;
+}
+
+.tracking-\[\]{
+  letter-spacing: ;
+}
+
+.tracking-\[-0\.4px\]{
+  letter-spacing: -0.4px;
 }
 
 .\!text-\[\#889096\]{
@@ -4161,6 +4298,11 @@ video {
   background-color: rgb(255 250 236 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-blue:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 80 203 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-\[\#EDF3FF\]:hover{
   --tw-text-opacity: 1;
   color: rgb(237 243 255 / var(--tw-text-opacity, 1));
@@ -4222,6 +4364,12 @@ video {
 
 .group:hover .group-hover\:w-\[900px\]{
   width: 900px;
+}
+
+.group:hover .group-hover\:scale-105{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:bg-\[\#6A8AFF\]{
@@ -4680,6 +4828,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[562px\]{
+    height: 562px;
+  }
+
   .md\:w-\[110\%\]{
     width: 110%;
   }
@@ -4987,6 +5139,14 @@ video {
     display: none;
   }
 
+  .xl\:h-\[48px\]{
+    height: 48px;
+  }
+
+  .xl\:h-\[80px\]{
+    height: 80px;
+  }
+
   .xl\:h-\[95\%\]{
     height: 95%;
   }
@@ -5011,8 +5171,16 @@ video {
     flex-direction: row;
   }
 
+  .xl\:gap-10{
+    gap: 2.5rem;
+  }
+
   .xl\:overflow-visible{
     overflow: visible;
+  }
+
+  .xl\:rounded-none{
+    border-radius: 0px;
   }
 
   .xl\:pb-14{

@@ -795,13 +795,15 @@ let ticking = false;
 
 window.addEventListener('load', function () {
 
-  setTimeout(function () {
-    window.scrollTo(0, 0);
+  if(document.body.dataset.page === 'home'){
+    setTimeout(function () {
+      window.scrollTo(0, 0);
 
-    AnimationHeaderHome();
+      AnimationHeaderHome();
 
-    document.body.style.opacity = '1';
-  }, 10)
+      document.body.style.opacity = '1';
+    }, 10)
+  }
 
 })
 
