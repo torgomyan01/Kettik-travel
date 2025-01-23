@@ -1957,6 +1957,10 @@ video {
   left: 15px;
 }
 
+.top-\[-30px\]{
+  top: -30px;
+}
+
 .z-0{
   z-index: 0;
 }
