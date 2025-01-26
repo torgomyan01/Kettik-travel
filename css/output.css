@@ -4474,6 +4474,20 @@ video {
   }
 }
 
+@media (min-width: 584px){
+  .min-\[584px\]\:w-\[50\%\]{
+    width: 50%;
+  }
+
+  .min-\[584px\]\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .min-\[584px\]\:w-\[60\%\]{
+    width: 60%;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:absolute{
     position: absolute;
