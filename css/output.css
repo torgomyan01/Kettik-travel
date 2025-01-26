@@ -2578,6 +2578,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100px\]{
+  height: 100px;
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
@@ -4989,6 +4993,10 @@ video {
 
   .md\:h-full{
     height: 100%;
+  }
+
+  .md\:h-\[80px\]{
+    height: 80px;
   }
 
   .md\:w-\[110\%\]{
