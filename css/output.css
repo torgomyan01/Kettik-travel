@@ -4218,6 +4218,14 @@ video {
   transition-duration: 300ms;
 }
 
+@media (min-width: 397px){
+  .min-\[397px\]\:flex-js-c{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:flex-jsb-c{
     display: flex;
@@ -4420,6 +4428,12 @@ video {
 
 .group.active .group-\[\.active\]\:fill-blue{
   fill: #1150CB;
+}
+
+@media (min-width: 397px){
+  .min-\[397px\]\:flex-row{
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 435px){
