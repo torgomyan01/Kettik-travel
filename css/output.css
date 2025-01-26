@@ -2590,6 +2590,10 @@ video {
   height: 100px;
 }
 
+.h-\[54px\]{
+  height: 54px;
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
@@ -3734,6 +3738,11 @@ video {
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.px-\[24px\]{
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .pb-1{
