@@ -4512,6 +4512,10 @@ video {
     margin-top: 104px;
   }
 
+  .sm\:mt-\[180px\]{
+    margin-top: 180px;
+  }
+
   .sm\:block{
     display: block;
   }
