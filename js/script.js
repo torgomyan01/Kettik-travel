@@ -848,13 +848,13 @@ function AnimationHeaderHome(){
         search.classList.add('fixed-top');
 
         if(afterAnim < 60){
-          nav.style.transform = `translateY(-${afterAnim}px)`;
-          search.style.transform = `translateY(-${afterAnim}px)`;
+          // nav.style.transform = `translateY(-${afterAnim}px)`;
+          // search.style.transform = `translateY(-${afterAnim}px)`;
         }
 
         if(afterAnim > 70){
-          search.style.transform = `translateY(-59px)`;
-          search.style.transition = `transition: 0.3s transform, border-radius`;
+          // search.style.transform = `translateY(-59px)`;
+          // search.style.transition = `transition: 0.3s transform, border-radius`;
         }
       } else {
         nav.style.transform = 'translateY(0px)';
