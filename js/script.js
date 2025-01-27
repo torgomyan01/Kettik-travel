@@ -767,9 +767,6 @@ const searchBilet = $el('#search-bilet');
 let headerHeight = search.getBoundingClientRect();
 const homeSearchContainer = $el('#home-search-container');
 
-if(window.innerWidth < 1280){
-  selectMe.style.marginTop = `${headerHeight.height}px`;
-}
 
 let avia = true;
 
@@ -795,7 +792,13 @@ let ticking = false;
 
 window.addEventListener('load', function () {
 
-  if(document.body.dataset.page === 'home'){
+  if(document.body.dataset.page === 'home' || document.body.dataset.page === 'launges'){
+
+    if(window.innerWidth < 1280){
+      console.log(headerHeight.height)
+      selectMe.style.marginTop = `${headerHeight.height + 50}px`;
+    }
+
     setTimeout(function () {
       window.scrollTo(0, 0);
 
@@ -803,6 +806,8 @@ window.addEventListener('load', function () {
 
       document.body.style.opacity = '1';
     }, 10)
+  } else {
+    document.body.style.opacity = '1';
   }
 
 })
@@ -842,7 +847,6 @@ function AnimationHeaderHome(){
         checkWindowsWidth(window.innerWidth, 768, 115, 120) :
         checkWindowsWidth(window.innerWidth, 768, 75, 95);
 
-      console.log(currentPercent, tabRes)
       if (currentPercent > tabRes) {
         let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);
         afterAnim = Math.max(0, afterAnim);
