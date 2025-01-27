@@ -650,8 +650,6 @@ tabBody.forEach((_body) => {
 
       const id = item.dataset.tabid;
 
-      console.log(id)
-
       $el(id).classList.remove('hidden');
 
     })
@@ -779,11 +777,13 @@ const searchTabs = $('.search .tabs');
 searchTabs.forEach((item) => {
   item.addEventListener('click', e => {
 
-    avia = item.dataset.tabid === '#form-Search-ticket';
+    if(window.innerWidth < 1281){
+      avia = item.dataset.tabid === '#form-Search-ticket';
 
-    const search = $el('.search');
-    headerHeight = search.getBoundingClientRect();
-    selectMe.style.marginTop = `${headerHeight.height}px`;
+      const search = $el('.search');
+      headerHeight = search.getBoundingClientRect();
+      selectMe.style.marginTop = `${headerHeight.height}px`;
+    }
   })
 })
 
@@ -839,9 +839,10 @@ function AnimationHeaderHome(){
       }
 
       const tabRes = avia ?
-        checkWindowsWidth(window.innerWidth, 768, 105, 120) :
+        checkWindowsWidth(window.innerWidth, 768, 115, 120) :
         checkWindowsWidth(window.innerWidth, 768, 75, 95);
 
+      console.log(currentPercent, tabRes)
       if (currentPercent > tabRes) {
         let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);
         afterAnim = Math.max(0, afterAnim);
