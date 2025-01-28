@@ -843,9 +843,17 @@ function AnimationHeaderHome(){
         homeSearchContainer.style.transform = `translateY(${currentPercent}%)`;
       }
 
-      const tabRes = avia ?
-        checkWindowsWidth(window.innerWidth, 768, 115, 120) :
-        checkWindowsWidth(window.innerWidth, 768, 75, 95);
+      let tabRes;
+
+      if(document.body.dataset.page === 'home'){
+        tabRes = avia ?
+          checkWindowsWidth(window.innerWidth, 768, 120, 120) :
+          checkWindowsWidth(window.innerWidth, 768, 75, 95);
+      } else if(document.body.dataset.page === 'launges'){
+        tabRes = checkWindowsWidth(window.innerWidth, 768, 100, 100)
+      }
+
+      console.log(tabRes)
 
       if (currentPercent > tabRes) {
         let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);

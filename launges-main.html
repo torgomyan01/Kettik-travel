@@ -159,7 +159,7 @@
   </div>
 </div>
 
-<div class="search bg-blue pt-12 lg:pb-[120px] overflow-hidden mb-[-24px] pb-[50px] fixed xl:relative top-[55px] md:top-[80px] xl:top-0">
+<div class="search h-[440px] min-[413px]:h-[400px] xl:h-[450px] bg-blue pt-12 lg:pb-[120px] overflow-hidden mb-[-24px] pb-[50px] fixed xl:relative top-[55px] md:top-[80px] xl:top-0">
 
   <svg class="vector" width="1336" height="380" viewBox="0 0 1336 380" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -229,7 +229,7 @@
     <div
         class="w-full bg-white sm:h-[64px] mt-4 flex-jsb-c rounded-[16px] flex-col sm:flex-row overflow-hidden delay-[2s]"
          data-aos="fade" data-aos-duration="1000">
-      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[16px_0_0_16px] border-[2px] border-orange">
+      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[16px_0_0_16px] border-b sm:border-[2px] sm:border-orange">
         <i class="icon-search text-[22px] text-orange"></i>
         <input type="text" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray rounded-[16px_0_0_16px]">
       </label>
@@ -245,7 +245,7 @@
 </div>
 
 <div class="bg-white selectMe relative z-10 rounded-[24px_24px_0_0] top-[24px] overflow-hidden">
-  <section class="pt-16 bg-white">
+  <section class="pt-16 pb-[41px] bg-white">
     <div class="container max-w-[1160px]">
       <div class="grid grid-cols-1 md:grid-cols-3 md:h-[335px] gap-6">
         <div class="h-full p-6 lg:p-8 rounded-3xl bg-[#DEEAFF] relative flex md:block justify-start items-center">
@@ -280,109 +280,24 @@
           <img class="absolute right-[14px] bottom-[19px] w-[231px] h-auto hidden lg:block"
                src="images/launges/man-remotely-working.png" alt="Удобное онлайн бронирование" width="462" height="278">
         </div>
-        <div class="h-full p-6 rounded-3xl bg-[#FFF3D3] relative flex md:block justify-start items-center">
+        <div class="h-full p-6 lg:p-8 rounded-3xl bg-[#FFF3D3] relative flex md:block justify-start items-center">
           <img class="block md:hidden mr-4" src="images/home/247hr-call-service.svg" alt="best-star" width="52"
                height="52">
           <h3 class="text-black text-[18px] md:text-[26px] font-bold leading-none md:mb-4">
-            Круглосуточная поддержка 24/7
+            Простой доступ <br>
+            в лаунж
           </h3>
           <p class="text-black w-full max-w-[210px] relative hidden md:block">
-            Мы готовы помочь вам в решении всех вопросов связанных с путешествием в любое время суток.
+            Получите доступ <br class="hidden lg:block">
+            онлайн на нашем сайте, <br class="hidden lg:block">
+            на месте с картами <br class="hidden lg:block">
+            Priority Pass и др., <br class="hidden lg:block">
+            или пройдите <br class="hidden lg:block">
+            бесплатно <br class="hidden lg:block">
+            с бизнес-классом <br class="hidden lg:block">
           </p>
-          <img class="absolute right-[10px] bottom-0 w-[225px] h-auto hidden lg:block" src="images/home/soild-III.png"
-               alt="Удобное онлайн бронирование" width="338" height="217">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="populars mt-16 font-bold bg-white">
-    <div class="container">
-      <h3 class="text-[24px] md:text-[36px] text-black mb-6" data-aos="fade">Популярное сейчас</h3>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="w-full">
-          <div class="w-full h-[340px] rounded-[24px] overflow-hidden group" data-aos="fade-up">
-            <div
-                class=" bg-[#EDF3FF] w-full flex justify-start items-center h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition">
-              <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-              <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-              <span class="text-[18px] font-bold group-hover:text-white transition">Москва</span>
-            </div>
-            <img class="rounded-[24px] mt-[-30px] w-full h-full object-cover object-center" src="images/home/moscow.png"
-                 alt="moscow" width="770" height="490">
-          </div>
-
-          <div class="w-full flex justify-start items-start gap-6 mt-6">
-            <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-              <div
-                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-                <div class="flex-js-c">
-                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-                </div>
-                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Алматы</span>
-              </div>
-              <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
-                   src="images/home/Алматы.png" alt="moscow" width="1040" height="694">
-            </div>
-            <div class="w-full h-[316px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
-              <div
-                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-                <div class="flex-js-c">
-                  <span class="text-black-500 text-[14px]  group-hover:text-white transition">Ташкент</span>
-                  <i class="icon-left-right mx-2 text-black-500 group-hover:text-white transition"></i>
-                </div>
-                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Душанбе</span>
-              </div>
-              <img class="rounded-[24px] mt-[-30px] w-full h-[243px] object-cover object-center"
-                   src="images/home/Душанбе.png" alt="moscow" width="720" height="405">
-            </div>
-          </div>
-        </div>
-        <div class="flex gap-6 flex-col sm:flex-row">
-          <div class="w-full sm:w-[50%]" data-aos="fade-up" data-aos-delay="500">
-            <div class="w-full h-[296px] sm:h-[662px] rounded-[24px] overflow-hidden group">
-              <div
-                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-                <div class="flex-js-c">
-                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-                </div>
-                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Стамбул</span>
-              </div>
-              <img class="rounded-[24px] mt-[-30px] w-full h-[250px] sm:h-[607px] object-cover"
-                   src="images/home/Стамбул.png" alt="moscow" width="1272" height="1920">
-            </div>
-          </div>
-          <div class="w-full sm:w-[50%] flex sm:block gap-6">
-            <div class="w-full h-[321px] rounded-[24px] overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
-              <div
-                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-                <div class="flex-js-c">
-                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-                </div>
-                <span class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Бишкек</span>
-              </div>
-              <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
-                   src="images/home/Бишкек.png" alt="moscow" width="800" height="485">
-            </div>
-            <div class="w-full h-[322px] rounded-[24px] overflow-hidden sm:mt-6 group" data-aos="fade-up"
-                 data-aos-delay="700">
-              <div
-                  class=" bg-[#EDF3FF] w-full flex-js-s sm:flex-js-c flex-col sm:flex-row h-[83px] pl-6 pb-[30px] group-hover:bg-[#6A8AFF] transition pt-2 sm:pt-0">
-                <div class="flex-js-c">
-                  <span class="text-black-500 text-[14px] group-hover:text-white transition">Ташкент</span>
-                  <i class="icon-left-right mx-2 text-black-500 text-[#687076] group-hover:text-white transition"></i>
-                </div>
-                <span
-                    class="md:text-[18px] font-bold group-hover:text-white transition mt-[-5px] sm:mt-0">Шарм-эль-Шейх </span>
-              </div>
-              <img class="rounded-[24px] mt-[-30px] w-full h-[260px] object-cover object-center"
-                   src="images/home/Шарм-эль-Шейх.png" alt="moscow" width="1920" height="1130">
-            </div>
-          </div>
+          <img class="absolute right-0 bottom-[14px] w-[196px] h-auto hidden lg:block" src="images/launges/easy-access.png"
+               alt="Удобное онлайн бронирование" width="372" height="458">
         </div>
       </div>
     </div>
@@ -445,6 +360,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="mt-16">
     <div class="container">
@@ -577,115 +493,116 @@
     </div>
   </section>
 
-  <section class="mt-16 hidden lg:block">
-    <div class="container">
-      <div class="flex justify-start items-center">
-        <div class="w-[30%]">
-          <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
-          <div class="w-full flex justify-center items-center mt-6">
-            <a href="#">
-              <div class="tg-icon-anim">
-                <img src="images/icons/telegram-svgrepo-com.svg" alt="telegram-svgrepo-com" width="200" height="200">
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative">
-          <img class="absolute right-0 bottom-0 rounded-[0_0_24px_0]" src="images/home/feedback-vector.svg"
-               alt="Удобное время для звонка — выберите сами!" width="356" height="204">
-          <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
 
-          <div
-              class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] rounded-[16px] relative h-[64px]">
-            <label class="w-full h-full">
-              <input
-                  class="w-full h-full pl-[24px] rounded-[16px_0_0_16px] relative z-1 transition focus:z-10 focus:border focus:border-orange"
-                  type="text" placeholder="Имя">
-            </label>
-            <div class="w-[1px] min-w-[1px] h-[48px] bg-[#B9E1FF] relative ml-[-1px] z-[1]"></div>
-            <label class="w-full h-full">
-              <input class="w-full h-full pl-[24px] relative z-1 transition focus:border focus:border-orange" type="text"
-                     placeholder="Номер телефона">
-            </label>
-            <div class="w-[1px] min-w-[1px] h-[48px] bg-[#B9E1FF] relative z-[1]"></div>
-            <label class="w-full h-full flex justify-between items-center relative input-select-time">
-              <input
-                  class="w-full h-full pl-[24px] relative z-1 transition rounded-[0_16px_16px_0] focus:border focus:border-orange focus:z-10"
-                  type="text" placeholder="Удобное время">
-              <i class="icon-time-ok text-blue text-[24px] absolute right-6 z-20"></i>
-
-              <div class="desktop-select-time-fon"></div>
-              <div
-                  class="w-[328px] bg-white rounded-[8px] p-4 absolute top-[100%] right-0 mt-[3px] z-20 shadow select-body-time hidden">
-                <h3 class="text-[18px] font-bold mb-4">Удобное время</h3>
-
-                <div class="time-picker desktop-select-time">
-                  <div class="picker days">
-                    <div class="item active">ПН</div>
-                    <div class="item">ВТ</div>
-                    <div class="item">СР</div>
-                    <div class="item">ЧТ</div>
-                    <div class="item">ПТ</div>
-                    <div class="item">СБ</div>
-                    <div class="item">ВС</div>
-                  </div>
-                  <div class="picker hours">
-                    <div class="item active">00</div>
-                    <div class="item">01</div>
-                    <div class="item">02</div>
-                    <div class="item">03</div>
-                    <div class="item">04</div>
-                    <div class="item">05</div>
-                    <div class="item">06</div>
-                    <div class="item">07</div>
-                    <div class="item">08</div>
-                    <div class="item">09</div>
-                    <div class="item">10</div>
-                    <div class="item">11</div>
-                    <div class="item">12</div>
-                    <div class="item">13</div>
-                    <div class="item">14</div>
-                    <div class="item">15</div>
-                    <div class="item">16</div>
-                    <div class="item">17</div>
-                    <div class="item">18</div>
-                    <div class="item">19</div>
-                    <div class="item">20</div>
-                    <div class="item">21</div>
-                    <div class="item">22</div>
-                    <div class="item">23</div>
-                  </div>
-                  <div class="picker minutes">
-                    <div class="item active">00</div>
-                    <div class="item">15</div>
-                    <div class="item">30</div>
-                    <div class="item">45</div>
-                  </div>
-
-                  <div class="active-massa">
-                    <div class="active-massa-item"></div>
-                    /
-                    <div class="active-massa-item"></div>
-                    :
-                    <div class="active-massa-item"></div>
-                  </div>
-                </div>
-
-
-              </div>
-            </label>
-          </div>
-
-          <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
-
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 </div>
 
+<section class="mt-16 hidden lg:block">
+  <div class="container">
+    <div class="flex justify-start items-center">
+      <div class="w-[30%]">
+        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
+        <div class="w-full flex justify-center items-center mt-6">
+          <a href="#">
+            <div class="tg-icon-anim">
+              <img src="images/icons/telegram-svgrepo-com.svg" alt="telegram-svgrepo-com" width="200" height="200">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative">
+        <img class="absolute right-0 bottom-0 rounded-[0_0_24px_0]" src="images/home/feedback-vector.svg"
+             alt="Удобное время для звонка — выберите сами!" width="356" height="204">
+        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
+
+        <div
+            class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] rounded-[16px] relative h-[64px]">
+          <label class="w-full h-full">
+            <input
+                class="w-full h-full pl-[24px] rounded-[16px_0_0_16px] relative z-1 transition focus:z-10 focus:border focus:border-orange"
+                type="text" placeholder="Имя">
+          </label>
+          <div class="w-[1px] min-w-[1px] h-[48px] bg-[#B9E1FF] relative ml-[-1px] z-[1]"></div>
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px] relative z-1 transition focus:border focus:border-orange" type="text"
+                   placeholder="Номер телефона">
+          </label>
+          <div class="w-[1px] min-w-[1px] h-[48px] bg-[#B9E1FF] relative z-[1]"></div>
+          <label class="w-full h-full flex justify-between items-center relative input-select-time">
+            <input
+                class="w-full h-full pl-[24px] relative z-1 transition rounded-[0_16px_16px_0] focus:border focus:border-orange focus:z-10"
+                type="text" placeholder="Удобное время">
+            <i class="icon-time-ok text-blue text-[24px] absolute right-6 z-20"></i>
+
+            <div class="desktop-select-time-fon"></div>
+            <div
+                class="w-[328px] bg-white rounded-[8px] p-4 absolute top-[100%] right-0 mt-[3px] z-20 shadow select-body-time hidden">
+              <h3 class="text-[18px] font-bold mb-4">Удобное время</h3>
+
+              <div class="time-picker desktop-select-time">
+                <div class="picker days">
+                  <div class="item active">ПН</div>
+                  <div class="item">ВТ</div>
+                  <div class="item">СР</div>
+                  <div class="item">ЧТ</div>
+                  <div class="item">ПТ</div>
+                  <div class="item">СБ</div>
+                  <div class="item">ВС</div>
+                </div>
+                <div class="picker hours">
+                  <div class="item active">00</div>
+                  <div class="item">01</div>
+                  <div class="item">02</div>
+                  <div class="item">03</div>
+                  <div class="item">04</div>
+                  <div class="item">05</div>
+                  <div class="item">06</div>
+                  <div class="item">07</div>
+                  <div class="item">08</div>
+                  <div class="item">09</div>
+                  <div class="item">10</div>
+                  <div class="item">11</div>
+                  <div class="item">12</div>
+                  <div class="item">13</div>
+                  <div class="item">14</div>
+                  <div class="item">15</div>
+                  <div class="item">16</div>
+                  <div class="item">17</div>
+                  <div class="item">18</div>
+                  <div class="item">19</div>
+                  <div class="item">20</div>
+                  <div class="item">21</div>
+                  <div class="item">22</div>
+                  <div class="item">23</div>
+                </div>
+                <div class="picker minutes">
+                  <div class="item active">00</div>
+                  <div class="item">15</div>
+                  <div class="item">30</div>
+                  <div class="item">45</div>
+                </div>
+
+                <div class="active-massa">
+                  <div class="active-massa-item"></div>
+                  /
+                  <div class="active-massa-item"></div>
+                  :
+                  <div class="active-massa-item"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </label>
+        </div>
+
+        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
+
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="block lg:hidden mt-16">
   <div class="container">
@@ -828,7 +745,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#sign-in">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#sign-in"></i>
       <h4 class="text-[18px] font-bold">Вход </h4>
@@ -892,7 +809,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#sign-in-not-pass">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#sign-in-not-pass"></i>
       <h4 class="text-[18px] font-bold">Вход без пароля </h4>
@@ -947,7 +864,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#forgot-password">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#forgot-password"></i>
       <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
@@ -982,7 +899,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#forgot-password-waiting">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#forgot-password"></i>
       <h4 class="text-[18px] font-bold">Восстановление пароля</h4>
@@ -1023,7 +940,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#register">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#register"></i>
       <h4 class="text-[18px] font-bold">Зарегистрироваться сейчас</h4>
@@ -1055,7 +972,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#register-success">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#register-success"></i>
       <h4 class="text-[18px] font-bold">Зарегистрироваться</h4>
@@ -1095,7 +1012,7 @@
   <div class="modal-body max-w-[396px]">
     <div class="modal-close" data-modalid="#modal-thanks">+</div>
 
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#rmodal-thanks"></i>
       <h4 class="text-[18px] font-bold">Код подтвержден</h4>
@@ -1138,11 +1055,10 @@
   </div>
 </div>
 
-
 <div class="modal" id="modal-select-currency">
   <div class="modal-fon" data-modalid="#modal-select-currency"></div>
   <div class="modal-body max-w-[396px]">
-    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hiddenn">
       <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
          data-modalid="#modal-select-currency"></i>
       <h4 class="text-[18px] font-bold">Выбрать язык</h4>
