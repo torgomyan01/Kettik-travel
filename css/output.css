@@ -833,6 +833,10 @@ input:focus {
   }
 }
 
+.search.no-bg {
+  background: #1150CB;
+}
+
 .search.popular {
   background: #1150CB;
 }
@@ -1107,6 +1111,29 @@ input:focus {
     border-radius: 10px;
     height: 44px;
   }
+}
+
+.noUi-horizontal {
+  height: 2px;
+  border: none;
+}
+
+.noUi-connect {
+  background: #1150CB;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: -7px;
+  right: -13px;
+  border: 2px solid #1150CB;
+  background: #fff;
+}
+
+.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+  display: none;
 }
 
 *, ::before, ::after{
@@ -1735,7 +1762,7 @@ video {
 
 .flex-je-c{
   display: flex;
-  justify-content: e;
+  justify-content: end;
   align-items: center;
 }
 
@@ -1769,6 +1796,10 @@ video {
 
 .bottom-\[-50px\]{
   bottom: -50px;
+}
+
+.bottom-\[14px\]{
+  bottom: 14px;
 }
 
 .bottom-\[16px\]{
@@ -1949,10 +1980,6 @@ video {
 
 .top-\[calc\(100\%_\+_4px\)\]{
   top: calc(100% + 4px);
-}
-
-.bottom-\[14px\]{
-  bottom: 14px;
 }
 
 .z-0{
@@ -2497,6 +2524,10 @@ video {
   height: 40px;
 }
 
+.h-\[440px\]{
+  height: 440px;
+}
+
 .h-\[44px\]{
   height: 44px;
 }
@@ -2549,6 +2580,10 @@ video {
   height: 80%;
 }
 
+.h-\[80px\]{
+  height: 80px;
+}
+
 .h-\[83px\]{
   height: 83px;
 }
@@ -2592,34 +2627,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[380px\]{
-  height: 380px;
-}
-
-.h-\[450px\]{
-  height: 450px;
-}
-
-.h-\[600px\]{
-  height: 600px;
-}
-
-.h-\[650px\]{
-  height: 650px;
-}
-
-.h-\[700px\]{
-  height: 700px;
-}
-
-.h-\[430px\]{
-  height: 430px;
-}
-
-.h-\[440px\]{
-  height: 440px;
 }
 
 .max-h-\[calc\(100\%_-_300px\)\]{
@@ -2692,6 +2699,10 @@ video {
 
 .w-\[115px\]{
   width: 115px;
+}
+
+.w-\[120px\]{
+  width: 120px;
 }
 
 .w-\[130px\]{
@@ -3833,6 +3844,10 @@ video {
   padding-bottom: 40px;
 }
 
+.pb-\[41px\]{
+  padding-bottom: 41px;
+}
+
 .pb-\[48px\]{
   padding-bottom: 48px;
 }
@@ -3951,10 +3966,6 @@ video {
 
 .pt-\[80px\]{
   padding-top: 80px;
-}
-
-.pb-\[41px\]{
-  padding-bottom: 41px;
 }
 
 .text-left{
@@ -5428,6 +5439,10 @@ video {
     display: none;
   }
 
+  .xl\:h-\[450px\]{
+    height: 450px;
+  }
+
   .xl\:h-\[48px\]{
     height: 48px;
   }
@@ -5438,14 +5453,6 @@ video {
 
   .xl\:h-\[95\%\]{
     height: 95%;
-  }
-
-  .xl\:h-\[450px\]{
-    height: 450px;
-  }
-
-  .xl\:h-\[400px\]{
-    height: 400px;
   }
 
   .xl\:w-\[calc\(\(100\%_\/_3\)_-_17px\)\]{

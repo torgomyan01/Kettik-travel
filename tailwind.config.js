@@ -46,7 +46,7 @@ const flexClasses = {
   },
   '.flex-je-c': {
     display: 'flex',
-    justifyContent: 'e',
+    justifyContent: 'end',
     alignItems: 'center',
   },
 }

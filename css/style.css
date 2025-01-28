@@ -750,6 +750,9 @@ input:focus {
     background-size: cover;
   }
 }
+.search.no-bg {
+  background: #1150CB;
+}
 .search.popular {
   background: #1150CB;
 }
@@ -982,6 +985,28 @@ input:focus {
     border-radius: 10px;
     height: 44px;
   }
+}
+
+.noUi-horizontal {
+  height: 2px;
+  border: none;
+}
+
+.noUi-connect {
+  background: #1150CB;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: -7px;
+  right: -13px;
+  border: 2px solid #1150CB;
+  background: #fff;
+}
+.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+  display: none;
 }
 
 @tailwind base;

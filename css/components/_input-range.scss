@@ -1,0 +1,22 @@
+.noUi-horizontal{
+  height: 2px;
+  border: none;
+}
+
+.noUi-connect{
+  background: #1150CB;
+}
+
+.noUi-horizontal .noUi-handle{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: -7px;
+  right: -13px;
+  border: 2px solid #1150CB;
+  background: #fff;
+
+  &:before, &:after{
+    display: none;
+  }
+}

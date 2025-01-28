@@ -888,3 +888,27 @@ function checkWindowsWidth(windowWidth, needWidth, count, def){
     return def
   }
 }
+
+const rangeDayHours = $el('#range-day-hours');
+const startTime = $el('#start-time');
+const endTime = $el('#end-time');
+
+noUiSlider.create(rangeDayHours, {
+  start: [0, 1440],
+  connect: true,
+  step: 15,
+  range: {
+    'min': 0,
+    'max': 1440
+  },
+});
+
+rangeDayHours.noUiSlider.on('update', function (values, handle) {
+  const hourStart = (+values[0] / 60).toFixed(2).replace(/[.]/g, ':');
+  const hourEnd = (+values[1] / 60).toFixed(2).replace(/[.]/g, ':');
+
+  startTime.innerText = hourStart;
+  endTime.innerText = hourEnd;
+});
+
+
