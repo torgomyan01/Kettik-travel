@@ -889,26 +889,31 @@ function checkWindowsWidth(windowWidth, needWidth, count, def){
   }
 }
 
-const rangeDayHours = $el('#range-day-hours');
-const startTime = $el('#start-time');
-const endTime = $el('#end-time');
+const rangeDay = $('.range-day');
 
-noUiSlider.create(rangeDayHours, {
-  start: [0, 1440],
-  connect: true,
-  step: 15,
-  range: {
-    'min': 0,
-    'max': 1440
-  },
-});
+rangeDay.forEach((item) => {
 
-rangeDayHours.noUiSlider.on('update', function (values, handle) {
-  const hourStart = (+values[0] / 60).toFixed(2).replace(/[.]/g, ':');
-  const hourEnd = (+values[1] / 60).toFixed(2).replace(/[.]/g, ':');
+  const startTime = $el(item.dataset.starttime);
+  const endTime = $el(item.dataset.endtime);
 
-  startTime.innerText = hourStart;
-  endTime.innerText = hourEnd;
-});
+  noUiSlider.create(item, {
+    start: [0, 1440],
+    connect: true,
+    step: 15,
+    range: {
+      'min': 0,
+      'max': 1440
+    },
+  });
+
+  item.noUiSlider.on('update', function (values, handle) {
+    const hourStart = (+values[0] / 60).toFixed(2).replace(/[.]/g, ':');
+    const hourEnd = (+values[1] / 60).toFixed(2).replace(/[.]/g, ':');
+
+    startTime.innerText = hourStart;
+    endTime.innerText = hourEnd;
+  });
+
+})
 
 
