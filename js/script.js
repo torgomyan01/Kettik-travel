@@ -917,3 +917,32 @@ rangeDay.forEach((item) => {
 })
 
 
+if($el(".slider-hotels-checkout")){
+  const swiper =  new Swiper(".slider-hotels-checkout", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: false,
+    navigation: {
+      nextEl: '#slider-hotels-checkout-next-slider',
+      prevEl: '#slider-hotels-checkout-prev-slider',
+    },
+  });
+
+//   // Ստուգում ենք երբ հասնում ենք վերջ
+//   swiper.on('reachEnd', () => {
+//     document.querySelector('#next-slider').setAttribute('disabled', 'true');
+//   });
+//
+// // Ստուգում ենք երբ հասնում ենք սկիզբ
+//   swiper.on('reachBeginning', () => {
+//     document.querySelector('#prev-slider').setAttribute('disabled', 'true');
+//   });
+//
+// // Երբ սկիզբը կամ վերջը չեն
+//   swiper.on('fromEdge', () => {
+//     document.querySelector('#next-slider').removeAttribute('disabled');
+//     document.querySelector('#prev-slider').removeAttribute('disabled');
+//   });
+}
+
