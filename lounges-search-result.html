@@ -19,7 +19,7 @@
 <body>
 
 <nav class="nav flex justify-between items-center">
-  <div class="container flex justify-between items-center">
+  <div class="container flex justify-between items-center max-w-[1312px]">
     <a href="/index.html" class="nav-logo">
       <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
     </a>
@@ -174,50 +174,34 @@
   </div>
 </div>
 
-<div class="flex-jsb-c lg:hidden border-t p-[4px_16px] font-semibold">
-  <div>
-    <div class="flex-js-c text-[16px]">
-      Тaшкент
-      <i class="icon-arrow-right mx-2"></i>
-      Москва
-    </div>
-    <div class="flex-js-c text-[16px] mt-1">
-      пт 25 окт
-      <span class="w-[2px] h-[2px] bg-black rounded-full mx-1"></span>
-      <svg class="mr-1" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M1.45332 13.046H12.602C12.546 12.318 12.434 11.59 12.098 10.9174C11.818 10.3574 10.5853 9.90871 9.01665 9.29204L8.40065 9.12404L8.28865 9.01204C8.17665 8.84404 8.06465 8.67671 8.06465 8.50871C8.00865 8.17204 8.00865 7.72337 8.12065 7.33137L8.17665 7.21937L8.28865 7.10737C8.96065 6.37937 9.29665 5.42671 9.18465 4.41804C9.18465 2.90537 8.28865 1.89737 7.05598 1.89737C5.82332 1.89737 4.87132 2.90537 4.87132 4.36204C4.81641 4.85706 4.86795 5.35811 5.02248 5.83159C5.17701 6.30507 5.43096 6.74005 5.76732 7.10737L5.87932 7.33137C5.99132 7.72337 6.04732 8.17137 5.93532 8.56404C5.93532 8.67671 5.82332 8.90004 5.71132 9.01204L5.65532 9.12404L5.03932 9.34871C3.47065 9.90871 2.23798 10.4127 1.90198 10.9727C1.60895 11.6248 1.45565 12.3312 1.45332 13.046ZM12.7707 14.166H1.22998C1.1119 14.1677 0.994686 14.1456 0.885258 14.1012C0.775829 14.0568 0.676399 13.9909 0.59283 13.9075C0.509262 13.824 0.443246 13.7247 0.398676 13.6153C0.354105 13.506 0.331882 13.3888 0.333317 13.2707C0.333317 12.3174 0.557317 11.3654 0.893317 10.4694C1.39798 9.46004 2.74198 8.95604 4.64665 8.28404L4.87132 8.22804V7.77937C4.46123 7.31639 4.1503 6.77433 3.95768 6.18661C3.76506 5.59888 3.69483 4.97794 3.75132 4.36204C3.75065 2.34537 5.09465 0.833374 6.99998 0.833374C8.90532 0.833374 10.2493 2.34537 10.2493 4.41804C10.3613 5.59537 9.96932 6.88337 9.12932 7.77937C9.07331 7.92369 9.07331 8.08373 9.12932 8.22804L9.35265 8.28404C11.258 8.95671 12.602 9.46004 13.106 10.4694V10.5247C13.4987 11.4214 13.6667 12.318 13.6667 13.2707C13.6667 13.774 13.2753 14.166 12.7707 14.166Z"
-            fill="#687076"/>
-      </svg>
-      1
-    </div>
-  </div>
+<div class="flex-jsb-c sm:hidden border-t h-[48px] p-[4px_16px] font-semibold">
+  <h4 class="flex-js-c text-[16px]">
+    LHR (London Heathrow)
+  </h4>
   <span class="text-blue text-[14px] cursor-pointer">
     Изменить
   </span>
 </div>
 
-<div class="search no-anim no-bg h-[80px] z-10 relative rounded-[0px] flex-jc-c">
-  <div class="container">
-
-    <div class="w-full bg-white h-[48px] mt-4 flex-jsb-c rounded-[16px] flex-col sm:flex-row overflow-hidden delay-[2s] aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
-      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[16px_0_0_16px] border-b sm:border-[2px] sm:border-orange">
-        <i class="icon-search text-[22px] text-orange"></i>
+<div class="search no-anim no-bg sm:h-[80px] z-10 relative rounded-[0px] hidden sm:flex-jc-c">
+  <div class="container max-w-[1312px]">
+    <div class="w-full bg-white sm:h-[48px] flex-jsb-c rounded-[8px] flex-col sm:flex-row overflow-hidden delay-[2s] aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
+      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[8px_0_0_8px] border-b sm:border-b-0">
+        <i class="icon-search text-[22px] text-blue"></i>
         <input type="text" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray rounded-[16px_0_0_16px]">
       </label>
       <div class="w-full sm:w-auto p-4 sm:p-0 sm:h-full">
-        <button class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[18px] text-white rounded-[8px] sm:rounded-[0_16px_16px_0]">
+        <button class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[18px] text-white rounded-[8px] sm:rounded-[0_8px_8px_0]">
           Найти лаунжи
         </button>
       </div>
     </div>
-
   </div>
 </div>
 
 
-<section class="bg-[#EDF3FF] pb-[35px] lg:pb-16 pt-[80px] mt-[-50px]">
-  <div class="container">
+<section class="bg-[#EDF3FF] pb-[35px] lg:pb-16 pt-10 sm:pt-[80px] sm:mt-[-50px]">
+  <div class="container max-w-[1312px]">
     <div class="w-full flex gap-6">
 
       <div class="w-[310px] bg-white rounded-[24px] p-4 h-[fit-content] hidden lg:block">
@@ -235,11 +219,931 @@
         </div>
 
 
+        <div class="flex-jsb-c mt-6 border-b pb-3">
+          <label class="def-checkbox flex-js-c text-[14px] !font-light">
+            <input type="checkbox">
+            <span class="mr-2 !min-w-[14px] !w-[14px] !h-[14px] after:!text-[13px]"></span>
+            Гибкий график
+          </label>
+          <label class="def-checkbox flex-js-c text-[14px] !font-light">
+            <input type="checkbox">
+            <span class="mr-2 !min-w-[14px] !w-[14px] !h-[14px] after:!text-[13px]"></span>
+            Открыто сейчас
+          </label>
+        </div>
+
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Терминалы</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Сбросить</span>
+            <i class="icon-down text-[9px] mb-1 inline-block transform rotate-180 transition"></i>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-start items-start mb-3">
+
+            <label class="def-checkbox flex-js-s mb-2">
+              <input type="checkbox">
+              <span class="mr-2 mt-1"></span>
+
+              <div>
+                <div>
+                  Несколько терминалов
+                </div>
+                <div class="text-[14px] text-[#687076] leading-[116%]">
+                  Показывать лаунжи в нескольких терминалах, включая выбранные
+                </div>
+              </div>
+            </label>
+
+          </div>
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Терминал 1
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Терминал 1 Зал B
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Терминал 2
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Терминал 2 Зал А
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Терминал 3 Главный зал
+          </label>
+
+
+          <div class="text-blue mt-4 text-[14px] cursor-pointer">
+            Показать все
+            <i class="icon-down text-[7px] text-blue ml-2"></i>
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
+
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Зоны</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Сбросить</span>
+            <i class="icon-down text-[9px] mb-1 inline-block transform rotate-180 transition"></i>
+          </div>
+        </div>
+
+        <div>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            Все зоны
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/air-top-gray.svg" class="mr-2" alt="" width="24" height="24">
+            Отправление
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/air-down-gray.svg" class="mr-2" alt="" width="24" height="24">
+            Прибытие
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/transit-gray.svg" class="mr-2" alt="" width="24" height="24">
+            Транзит
+          </label>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
+
+
+        <div class="flex justify-between items-center py-4 cursor-pointer">
+          <h5 class="text-[18px] font-bold">Доступные услуги</h5>
+          <div>
+            <span class="text-blue text-[14px] mr-2">Сбросить</span>
+            <i class="icon-down text-[9px] mb-1 inline-block transform rotate-180 transition"></i>
+          </div>
+        </div>
+
+        <div>
+
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/vip&meeting.svg" class="mr-2" alt="" width="20" height="21">
+            VIP / Meeting Room
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/massage.svg" class="mr-2" alt="" width="20" height="21">
+            Massage
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/device-laptop.svg" class="mr-2" alt="" width="20" height="20">
+            Work Station
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/smoking.svg" class="mr-2" alt="" width="20" height="20">
+            Smoking Area
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/shower.svg" class="mr-2" alt="" width="20" height="20">
+            Shower
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/drink-alcohol.svg" class="mr-2" alt="" width="20" height="20">
+            Alcoholic Beverages
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/mood-boy.svg" class="mr-2" alt="" width="20" height="20">
+            Children Play Area
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/pray-solid.svg" class="mr-2" alt="" width="20" height="20">
+            Prayer Room
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/flight-Information.svg" class="mr-2" alt="" width="20" height="20">
+            Flight Information
+          </label>
+          <label class="def-checkbox flex-js-s mb-2">
+            <input type="checkbox">
+            <span class="mr-2"></span>
+            <img src="images/icons/battery-charging-2.svg" class="mr-2" alt="" width="20" height="20">
+            Charging Station
+          </label>
+
+
+          <div class="text-blue mt-4 text-[14px] cursor-pointer">
+            Показать все
+            <i class="icon-down text-[7px] text-blue ml-2"></i>
+          </div>
+        </div>
+
+        <button class="w-full h-[64px] bg-[#D8EEFF] rounded-[16px] text-[#1150CB] mt-6">
+          Сбросить все фильтры
+        </button>
 
       </div>
 
+
+
       <div class="w-full lg:w-[calc(100%_-_310px)]">
-        sss
+
+        <div class="grid grid-cols-1 gap-10">
+
+
+          <div>
+            <h3 class="text-[26px] text-bold mb-4 font-bold">Терминал 1</h3>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#3FC431]"></span>
+                      Всегда открыто
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-[26px] text-bold mb-4 font-bold">Терминал 1 Зал B</h3>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#3FC431]"></span>
+                      Всегда открыто
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#3FC431]"></span>
+                      Открыто
+                      <span class="w-[1px] h-[10px] bg-[#D7DBDF] mx-1"></span>
+                      Закроется в 23:59
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-[26px] text-bold mb-4 font-bold">Терминал 3 Главный зал</h3>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#3FC431]"></span>
+                      Всегда открыто
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#EF2007]"></span>
+                      Закрыто
+                      <span class="w-[1px] h-[10px] bg-[#D7DBDF] mx-1"></span>
+                      Откроется в 05:00
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-[24px] min-h-[413px]">
+                <div class="w-full h-[258px] rounded-[24px] overflow-hidden relative">
+                  <img src="images/launges/hotel.png" alt="hotel" width="682" height="290" class="w-full h-full object-center">
+                  <div class="lounges-title w-[calc(100%_-_16px)] px-4 py-2 absolute left-2 bottom-2  rounded-[16px] font-bold text-[18px]">
+                    Plaza Premium Lounge
+                  </div>
+                </div>
+
+                <div class="px-4 md:px-6 py-4 flex-jsb-s flex-col">
+                  <div>
+                    <h3 class="text-[18px] font-bold mb-2">515 577 UZS</h3>
+
+                    <div class="flex-js-c flex-wrap text-[16px]">
+                      Главный терминал
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <div class="flex-js-c mr-2">
+                        <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                        Отправление
+                      </div>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+                      Международный
+                    </div>
+
+                    <div class="flex-js-c gap-1 text-[14px] mt-[2px]">
+                      <span class="w-[7px] h-[7px] min-w-[7px] rounded-full bg-[#EF2007]"></span>
+                      Закрыто
+                      <span class="w-[1px] h-[10px] bg-[#D7DBDF] mx-1"></span>
+                      Откроется в 05:00
+                    </div>
+                  </div>
+
+                  <div class="w-full flex-js-c flex-wrap mt-4 gap-[12px]">
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6H19C19.5523 6 20 6.44772 20 7V18C20 19.1046 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V5C16 4.44772 15.5523 4 15 4H5C4.44772 4 4 4.44772 4 5V17C4 18.6569 5.34315 20 7 20H18" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 8H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1112 18H12.1212" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.2832 15.1721C10.8452 13.6106 13.3772 13.6106 14.9392 15.1721" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.4541 12.343C7.9544 10.8427 9.9893 9.99976 12.1111 9.99976C14.2329 9.99976 16.2678 10.8427 17.7681 12.343" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.62598 9.51501C8.31198 4.82801 15.91 4.82801 20.626 9.51501" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.22217 19H21.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="5.22217" y="6" width="14" height="10" rx="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.2222 8H13.2222" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33325 9C4.33325 7.89543 5.22868 7 6.33325 7H17.3333C18.4378 7 19.3333 7.89543 19.3333 9V9.5C19.3333 9.77614 19.5571 10 19.8333 10C20.1094 10 20.3333 10.2239 20.3333 10.5V13.5C20.3333 13.7761 20.1094 14 19.8333 14C19.5571 14 19.3333 14.2239 19.3333 14.5V15C19.3333 16.1046 18.4378 17 17.3333 17H12.8333" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 15H9.33325V17C9.33325 18.1046 8.43782 19 7.33325 19H5.33325C4.22868 19 3.33325 18.1046 3.33325 17V15Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.33325 22V19" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33325 15V12.5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.1943 16.375L8.50684 20.875M16.7508 20.8125L14.7621 16.4373M5.69433 16.375C4.45169 16.375 3.44434 15.3676 3.44434 14.125V6.25C3.44434 5.00736 4.4517 4 5.69434 4H19.1943C20.437 4 21.4443 5.00736 21.4443 6.25V14.125C21.4443 15.3676 20.437 16.375 19.1943 16.375H5.69433Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.4442 10.1552C18.4442 11.1589 17.9211 11.7572 17.055 11.7572C16.1889 11.7572 15.6658 11.1589 15.6658 10.1552V9.602C15.6658 8.59825 16.1889 8 17.055 8C17.9211 8 18.4442 8.59825 18.4442 9.602V10.1552ZM17.055 11.1264C17.4906 11.1264 17.7208 10.7985 17.7208 10.1477V9.60951C17.7208 8.9587 17.4906 8.63079 17.055 8.63079C16.6195 8.63079 16.3892 8.9587 16.3892 9.60951V10.1477C16.3892 10.7985 16.6195 11.1264 17.055 11.1264Z" fill="#11181C"/>
+                        <path d="M13.5532 11.6846H12.8398V8.07259H15.1227V8.68586H13.5532V9.66458H14.98V10.2528H13.5532V11.6846Z" fill="#11181C"/>
+                        <path d="M10.0665 11.6846H9.45068V8.07259H10.084L11.3255 10.4731H11.3681V8.07259H11.9839V11.6846H11.3531L10.109 9.26909H10.0665V11.6846Z" fill="#11181C"/>
+                        <path d="M8.6521 11.6846H6.44434V11.0738H7.19277V8.68335H6.44434V8.07259H8.6521V8.68335H7.90366V11.0738H8.6521V11.6846Z" fill="#11181C"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.55566" cy="10" rx="3" ry="7" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10C21.5557 6.134 20.2127 3 18.5557 3" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55566 3H18.5557" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5557 10V20L18.5557 19L15.5557 21L12.5557 18L9.55566 20V10" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.55555 10H6.56555" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4167 16.375L8.72925 20.875M16.9733 20.8125L14.9845 16.4373M5.91675 16.375C4.67411 16.375 3.66675 15.3676 3.66675 14.125V6.25C3.66675 5.00736 4.67411 4 5.91675 4H19.4167C20.6594 4 21.6667 5.00736 21.6667 6.25V14.125C21.6667 15.3676 20.6594 16.375 19.4167 16.375H5.91675Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.13672 8.00051L8.51925 12H9.21052L10.5931 8.00051" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 8.00048V12" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4319 12V8.00048H16.8144C17.1811 8.00048 17.5327 8.14094 17.792 8.39096C18.0513 8.64097 18.197 8.98007 18.197 9.33364C18.197 9.68722 18.0513 10.0263 17.792 10.2763C17.5327 10.5263 17.1811 10.6668 16.8144 10.6668H15.4319" stroke="#11181C" stroke-width="1.16651" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4.77783" cy="17" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.77783" cy="5" r="1" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.77783 22L8.77783 20V17H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.7778 20H20.7778" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.77783 14L11.7778 12L12.7778 8C15.7778 9 15.7778 12 15.7778 14" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.38892 5L14.3889 5" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.88892 18H12.8889" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.88892 11V18" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M16.8889 2.5V1H8.88892H0.888916V2.5L8.88892 11L16.8889 2.5Z" stroke="#11181C" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-[8px] border flex-jc-c transition hover:border-black">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27031 13.217C3.13153 12.5924 3.60675 12 4.2465 12H19.7533C20.393 12 20.8682 12.5924 20.7294 13.217L19.1739 20.2169C19.0722 20.6744 18.6664 21 18.1977 21H5.80203C5.33333 21 4.92754 20.6744 4.82587 20.2169L3.27031 13.217Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3215 4.94429C11.0371 4.00408 11.5888 2.70517 11.887 2C12.4088 2.70517 13.542 4.47418 13.8998 5.4144C14.3471 6.58965 13.2289 8 11.887 8C10.5451 8 9.4269 6.11955 10.3215 4.94429Z" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#11181C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
 
@@ -251,11 +1155,6 @@
       <button class="w-full h-[44px] bg-blue text-white text-[15px] font-bold rounded-[8px] target-modal" data-targetid="#max-filter">
         <i class="icon-filter mr-2 text-white relative top-[1px]"></i>
         Фильтр
-      </button>
-      <button class="w-full h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] mobile-filter"
-              data-targetid="#sort">
-        <i class="icon-sort-amount-asc mr-2 relative top-1"></i>
-        Сортировка
       </button>
     </div>
 

@@ -688,6 +688,10 @@ input:focus {
   box-shadow: 0 2px 4px 0 rgba(17, 80, 203, 0.10), 0px 24px 60px 0px rgba(17, 80, 203, 0.05), 0px 12px 24px 0px rgba(17, 80, 203, 0.05);
 }
 
+.lounges-title{
+  background: linear-gradient(90deg, #FFF 50.12%, rgba(255, 255, 255, 0.00) 99.99%);
+}
+
 // NAVBAR
 @import "components/navbar";
 
