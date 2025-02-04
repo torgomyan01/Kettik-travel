@@ -922,10 +922,25 @@ if($el(".slider-hotels-checkout")){
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 20,
+    initialSlide: 1,
     loop: false,
     navigation: {
       nextEl: '#slider-hotels-checkout-next-slider',
       prevEl: '#slider-hotels-checkout-prev-slider',
+    },
+    breakpoints: {
+      // 300: {
+      //   slidesPerView: 1,
+      // },
+      // 768: {
+      //   slidesPerView: 2,
+      // },
+      // 1024: {
+      //   slidesPerView: 1,
+      // },
+      // 1280: {
+      //   slidesPerView: 2,
+      // },
     },
   });
 

@@ -9,6 +9,11 @@ const flexClasses = {
     justifyContent: 'space-between',
     alignItems: 'start',
   },
+  '.flex-jsb-e': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'end',
+  },
   '.flex-js-c': {
     display: 'flex',
     justifyContent: 'flex-start',
