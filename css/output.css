@@ -2002,6 +2002,18 @@ video {
   top: calc(100% + 4px);
 }
 
+.top-\[5px\]{
+  top: 5px;
+}
+
+.bottom-\[11px\]{
+  bottom: 11px;
+}
+
+.right-\[12px\]{
+  right: 12px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -2412,6 +2424,10 @@ video {
   display: flex;
 }
 
+.inline-flex{
+  display: inline-flex;
+}
+
 .grid{
   display: grid;
 }
@@ -2681,6 +2697,14 @@ video {
   height: 100vh;
 }
 
+.h-\[130px\]{
+  height: 130px;
+}
+
+.h-\[140px\]{
+  height: 140px;
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
@@ -2727,6 +2751,10 @@ video {
 
 .min-h-\[57px\]{
   min-height: 57px;
+}
+
+.min-h-full{
+  min-height: 100%;
 }
 
 .\!w-\[14px\]{
@@ -2953,6 +2981,14 @@ video {
   width: 100%;
 }
 
+.w-\[334px\]{
+  width: 334px;
+}
+
+.w-\[172px\]{
+  width: 172px;
+}
+
 .\!min-w-\[14px\]{
   min-width: 14px !important;
 }
@@ -3023,6 +3059,10 @@ video {
 
 .min-w-\[8px\]{
   min-width: 8px;
+}
+
+.min-w-\[173px\]{
+  min-width: 173px;
 }
 
 .max-w-7xl{
@@ -3123,6 +3163,14 @@ video {
 
 .max-w-none{
   max-width: none;
+}
+
+.max-w-\[334px\]{
+  max-width: 334px;
+}
+
+.max-w-\[268px\]{
+  max-width: 268px;
 }
 
 .translate-x-\[-50\%\]{
@@ -3720,6 +3768,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 112 118 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -4101,6 +4158,10 @@ video {
   padding-top: 80px;
 }
 
+.pb-\[88px\]{
+  padding-bottom: 88px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -4383,6 +4444,15 @@ video {
 
 .text-white\/70{
   color: rgb(255 255 255 / 0.7);
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#CC5802\]{
+  --tw-text-opacity: 1;
+  color: rgb(204 88 2 / var(--tw-text-opacity, 1));
 }
 
 .underline{
@@ -4795,6 +4865,10 @@ video {
     margin-top: -50px;
   }
 
+  .sm\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -4913,6 +4987,14 @@ video {
 
   .sm\:max-w-\[50\%\]{
     max-width: 50%;
+  }
+
+  .sm\:max-w-\[334px\]{
+    max-width: 334px;
+  }
+
+  .sm\:max-w-\[268px\]{
+    max-width: 268px;
   }
 
   .sm\:grid-cols-2{
@@ -5339,6 +5421,10 @@ video {
 
   .md\:max-w-full{
     max-width: 100%;
+  }
+
+  .md\:max-w-\[334px\]{
+    max-width: 334px;
   }
 
   .md\:translate-x-\[-50\%\]{
