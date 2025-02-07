@@ -75,6 +75,8 @@ targetsModals.forEach((target) => {
   target.addEventListener('click', e => {
     const getModalId = target.dataset.targetid;
 
+    console.log(getModalId)
+
     if(getModalId){
       $el(getModalId).classList.add('show');
       document.body.classList.add('overflow-hidden');
@@ -853,7 +855,6 @@ function AnimationHeaderHome(){
         tabRes = checkWindowsWidth(window.innerWidth, 768, 100, 100)
       }
 
-      console.log(tabRes)
 
       if (currentPercent > tabRes) {
         let afterAnim = (-tabRes + currentPercent) * (avia ? 2 : 1.4);

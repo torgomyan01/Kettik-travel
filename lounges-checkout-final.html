@@ -247,12 +247,12 @@
           </div>
 
           <div class="p-4 md:p-6">
-            <div class="def-checkout-input sm:max-w-[334px]">
+            <div class="def-checkout-input sm:max-w-[334px] target-modal" data-targetid="#select-calendar-mobile">
               <span class="text-[14px] mb-1 font-bold">Дата визита <i class="text-[red]">*</i></span>
               <label>
                 <input type="text" value="">
                 <span class="def-checkout-input-pl text-[14px]">ДД/MM/ГГГГ</span>
-                <img class="absolute bottom-[11px] right-[12px]" src="images/icons/calendar-search.svg" alt="calendar-search" width="24" height="24">
+                <img class="absolute bottom-[11px] right-[12px] " src="images/icons/calendar-search.svg" alt="calendar-search" width="24" height="24">
               </label>
             </div>
           </div>
@@ -415,7 +415,7 @@
 
       </div>
 
-      <div class="w-full lg:w-[420px] bg-white rounded-[24px] h-[fit-content] sticky top-[24px]">
+      <div class="w-full lg:w-[420px] hidden lg:block bg-white rounded-[24px] h-[fit-content] sticky top-[24px]">
         <h3 class="text-[22px] p-[16px_24px] border-b font-bold">Оплата</h3>
 
 
@@ -454,7 +454,7 @@
     </div>
     <div id="mobile-filter-block-position"></div>
     <div id="mobile-filter-block" class="flex lg:hidden w-[calc(100%_+_31px)] sm:w-full ml-[-16px] sm:ml-0 sticky bottom-0 p-4 gap-[8px] z-[1000] mt-6">
-      <button class="w-full h-[44px] bg-orange text-white text-[15px] font-bold rounded-[8px] flex-jsb-c px-4">
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] font-bold rounded-[8px] flex-jsb-c px-4 target-modal" data-targetid="#checkout-mobile">
         2 500 000 UZS
 
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -640,23 +640,214 @@
   </div>
 </footer>
 
+<div class="modal" id="checkout-mobile">
+  <div class="modal-fon" data-modalid="#checkout-mobile"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close hidden sm:block" data-modalid="#checkout-mobile">+</div>
 
-<div class="modal" id="info-rate">
-  <div class="modal-fon" data-modalid="#info-rate"></div>
-  <div class="modal-body max-w-[700px] max-h-[calc(100vh_-_100px)]">
-    <div class="modal-close" data-modalid="#info-rate">+</div>
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#checkout-mobile"></i>
+      <h4 class="text-[18px] font-bold">Оплата</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#checkout-mobile">+</div>
+    </div>
 
     <div class="modal-content">
-      <h4 class="text-[18px] font-bold">Полная информация о тарифе</h4>
-      <div class="max-h-[calc(100vh_-_300px)] overflow-y-auto">
-        <p class="text-[16px] leading-[130%] mb-4">
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem cumque, distinctio dolorum et expedita facilis harum libero minima nam nesciunt nisi nobis placeat porro quisquam reiciendis sint, sunt totam.</span><span>Dolores saepe totam voluptatem! Eius eligendi eos minus optio possimus quos, recusandae? Aliquid aperiam doloribus, in possimus quod voluptas. Accusamus accusantium, culpa dicta ducimus iste quidem rerum sapiente tempora! Laborum!</span><span>Alias earum natus nobis repudiandae sit voluptatem? Accusantium animi asperiores at atque corporis debitis et exercitationem facere maiores, maxime nihil officia officiis quam quia similique sit tempore ut vitae voluptatem.</span><span>Ab ad aliquid aperiam consectetur hic id magnam optio perferendis, recusandae tenetur totam velit voluptas? Aliquam dolorem, esse ex ipsa nostrum quae quibusdam reiciendis repellat sint suscipit temporibus, vel voluptate.</span><span>Accusamus aliquid asperiores assumenda aut autem beatae corporis deleniti, dignissimos dolor excepturi expedita facilis, fugiat hic ipsa ipsum labore laboriosam omnis placeat provident, quod quos sapiente suscipit tenetur vero vitae?</span><span>A doloremque facilis illum laborum magnam minima officia voluptas voluptates. Asperiores culpa dicta dolores, illum in ipsa laboriosam, laborum magni perspiciatis quas quos sapiente sint ut veniam voluptas. Fugit, nam!</span><span>Adipisci aliquid amet dignissimos fuga ipsa iusto necessitatibus pariatur quia ratione? Accusamus assumenda, debitis eligendi eum iure maxime natus nisi, placeat quaerat quod reprehenderit repudiandae ut vel vero voluptates voluptatibus.</span><span>Asperiores aut cum, debitis deserunt distinctio dolorem ducimus ea eos est fugiat fugit id impedit laboriosam maiores minima numquam odit pariatur quaerat quibusdam quos reprehenderit sapiente soluta suscipit, ullam veniam.</span><span>Ab alias aliquam cupiditate iste minima optio, rem rerum tenetur? Accusamus amet, animi et fuga harum ipsa itaque omnis reiciendis sed. Hic ipsa quis tenetur. Exercitationem explicabo ipsam molestiae veritatis.</span><span>Aspernatur, aut corporis cumque dignissimos in nemo quas velit! Architecto aspernatur at delectus deserunt, dicta dolore eligendi illo inventore laborum libero magni modi obcaecati, provident quas quisquam, repellendus sit tempore.</span><span>Commodi deserunt distinctio ducimus fugit id, natus necessitatibus nesciunt odit ratione rem sequi veniam vero voluptatum. Aut eos illo iste magni numquam, porro praesentium reiciendis repudiandae similique voluptates. Amet, voluptatum!</span><span>Accusamus accusantium alias amet aut cupiditate earum eos eveniet exercitationem facilis, fugit harum, ipsam laborum maiores maxime nam necessitatibus numquam quas, quidem recusandae repellat sint sit unde vel veritatis voluptatum.</span><span>Ab accusantium aliquam ea et illo illum iure provident quia reiciendis, repellendus tenetur vitae? Cum nemo possimus quis quos? Impedit, laudantium maiores modi ratione recusandae reiciendis rem repellendus veniam voluptatum!</span><span>Consequuntur esse fuga hic impedit magni, modi nobis quam quasi saepe ut. A ad facere officia porro repellat rerum soluta temporibus velit veniam. Eos eum maxime nostrum repudiandae sequi sunt?</span><span>Aperiam architecto assumenda aut commodi consectetur cupiditate dignissimos dolor, doloribus eligendi eos excepturi in inventore iusto laudantium minus molestiae molestias, necessitatibus nesciunt, nostrum placeat porro praesentium quasi quibusdam saepe sit.</span><span>Alias amet aperiam blanditiis consequuntur culpa debitis dolore dolorem eligendi eum eveniet excepturi fugiat impedit ipsa nostrum officiis possimus quas quasi recusandae similique tempore temporibus totam ullam vel veniam, voluptate?</span><span>Ad aspernatur beatae consequuntur corporis cum impedit odio quasi quo saepe totam. Alias aliquid asperiores culpa cupiditate delectus enim eveniet fuga iste, maiores omnis quam sint tempora ullam vitae voluptatem!</span><span>Ducimus esse explicabo placeat sed voluptatum. Blanditiis corporis distinctio dolore dolorem ducimus impedit iste maiores omnis possimus recusandae reprehenderit tempore, totam vero. Ducimus eligendi illo in minus, numquam officia placeat!</span><span>A adipisci aspernatur beatae culpa delectus dignissimos doloribus eaque enim esse excepturi facilis harum impedit ipsam, libero molestias necessitatibus, nihil quam quo quos, sapiente sint sunt tenetur ullam unde vitae!</span><span>Aliquam at deserunt dolor ex ipsa modi nesciunt officiis perferendis perspiciatis, quis ratione sint tenetur voluptatum! Accusamus architecto commodi debitis, dolor esse iure laudantium maxime nesciunt nisi sapiente, vero voluptatum!</span><span>Adipisci amet architecto, beatae commodi deserunt doloribus ducimus ea eius eum ex inventore iusto laborum nam nihil non, nulla optio perferendis quam quod quos saepe sequi unde vel, velit voluptates?</span><span>A alias assumenda at beatae consequuntur cumque ea earum esse et fuga in, ipsum laudantium molestias neque officiis omnis perspiciatis quaerat quisquam quos reiciendis saepe sequi sit suscipit voluptate voluptatem.</span><span>Aliquam aperiam aut dignissimos et excepturi exercitationem expedita facere fugiat hic ipsa ipsam iure, laborum laudantium magnam nisi numquam officiis quaerat rem rerum sapiente sed sequi sunt tempore totam voluptatibus.</span><span>A asperiores consequatur dolor, dolorem impedit iste itaque, magni maxime minus nobis nulla optio praesentium, quam quas quis rem tempore vel voluptas voluptates voluptatibus? Autem expedita explicabo quis ratione veniam?</span><span>Consequatur cum, cumque dolorem est eum eveniet exercitationem expedita fugiat incidunt iusto magni natus necessitatibus non quidem quisquam quos, ratione repellat rerum saepe soluta suscipit temporibus unde velit voluptate voluptatum!</span><span>Aliquam animi cumque doloribus eos error impedit minus molestias perspiciatis, quasi rem sit, temporibus velit. Hic iste nam necessitatibus sed vero. Ad architecto delectus eos explicabo illum modi rem tempora?</span><span>Accusamus, animi architecto assumenda culpa cumque cupiditate eligendi, eos error facere illum in incidunt libero magnam minus, molestias nemo omnis perferendis possimus quia vel! Doloribus facere iusto magni nihil perferendis.</span><span>A ab aliquam amet animi consequatur dicta dignissimos dolor eius est harum ipsum iste minima molestiae mollitia nemo quae, quo sit voluptate. A blanditiis cum distinctio fuga harum, quisquam reiciendis?</span><span>Alias autem consequatur deleniti dolores doloribus, explicabo ipsa itaque laudantium magnam nobis nostrum odio odit omnis perspiciatis quia recusandae repellat sit tenetur. Dicta dolor laborum, provident quibusdam soluta tempora voluptatum.</span><span>Consectetur consequuntur dicta eligendi incidunt itaque laboriosam numquam odio optio, pariatur, porro possimus provident qui quod sunt unde veritatis vero. Alias cum et, facere illum minima minus neque numquam quam.</span>
+      <h4 class="text-[18px] font-bold hidden sm:block">Оплатаe</h4>
+      <div class="">
+
+        <h3 class="text-[18px] font-bold tracking-[-0.4px]">Plaza Premium Lounge</h3>
+
+        <div class="flex-jsb-c mb-2">
+          <div class="flex-js-c">
+            1 x пассажир
+            <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+            2 часа
+          </div>
+          <span class="font-bold">2 500 000 UZS </span>
+        </div>
+
+        <p class="text-gray text-[16px] leading-[140%] tracking-[-0.5px]">
+          Гости должны убедиться, что расположение лаунжа соответствует конкретному аэропорту или терминалу, из которого запланирован вылет или прибытие их рейса, и что у них есть все необходимые документы для прохождения контролируемых зон аэропорта (визы, таможенные процедуры, досмотр безопасности и т. д.).
         </p>
+
+        <div class="w-full h-[1px] bg-[#D7DBDF] my-4"></div>
+
+        <div class="flex-jsb-c">
+          <span class="font-bold text-[18px]">Итого</span>
+          <span class="font-bold text-[18px]">2 500 000 UZS</span>
+        </div>
+
+        <a href="checkout-step-3.html" >
+          <button class="w-full mt-9 bg-orange h-[44px] md:h-[64px] text-[18px] text-white rounded-[12px] disabled:bg-[#DFE3E6] btn-go-checkout">
+            Продолжить
+          </button>
+        </a>
       </div>
 
     </div>
   </div>
 </div>
+
+<div class="modal" id="select-calendar-mobile">
+  <div class="modal-fon" data-modalid="#select-calendar-mobilee"></div>
+  <div class="modal-body max-w-[396px]">
+    <div class="modal-close hidden sm:block" data-modalid="#select-calendar-mobile">+</div>
+
+    <div class="min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#select-calendar-mobile"></i>
+      <h4 class="text-[18px] font-bold">Выбрать даты</h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#select-calendar-mobile">+</div>
+    </div>
+
+    <div class="modal-content h-full">
+      <div class="w-full h-[36px] rounded-[8px] bg-[#EDF3FF] px-[14px] flex-jc-c mb-4">
+        <div class="w-full grid grid-cols-7">
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Пн</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Вт</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Ср</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Чт</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Пт</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Сб</span>
+          <span class="text-[14px] text-[#687076] w-full flex-jc-c">Вс</span>
+        </div>
+      </div>
+      <div class="w-full h-[calc(100%_-_240px)]  overflow-y-auto scroll-right-none">
+
+
+        <h3 class="text-[16px] mt-4 font-bold">
+          Июль 2024
+        </h3>
+
+        <div class="grid grid-cols-7 px-[14px] gap-y-2">
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">1</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">2</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">3</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">4</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">5</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">6</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">7</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">8</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">9</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">10</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">11</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">12</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">13</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">14</span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]">15</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">16</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold rounded-[6px] bg-purple text-white">17</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">18</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">19</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">20</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">21</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">22</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">23</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">24</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">25</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">26</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">27</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">28</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">29</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">30</span>
+        </div>
+
+
+        <h3 class="text-[16px] mt-4 font-bold">
+          Август 2024
+        </h3>
+
+        <div class="grid grid-cols-7 px-[14px] gap-y-2">
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">1</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">2</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">3</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">4</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">5</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">6</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">7</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">8</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">9</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">10</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">11</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">12</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">13</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">14</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">15</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">16</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">17</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">18</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">19</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">20</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">21</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">22</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">23</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">24</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">25</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">26</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">27</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">28</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">29</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">30</span>
+        </div>
+
+        <h3 class="text-[16px] mt-4 font-bold">
+          Сентябрь 2024
+        </h3>
+
+        <div class="grid grid-cols-7 px-[14px] gap-y-2">
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c text-[#889096]"></span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">1</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">2</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">3</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">4</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">5</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">6</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">7</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">8</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">9</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">10</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">11</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">12</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">13</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">14</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">15</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">16</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">17</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">18</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">19</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">20</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">21</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">22</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">23</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">24</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">25</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">26</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">27</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">28</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">29</span>
+          <span class="h-[36px] w-full flex-jc-c font-semibold">30</span>
+        </div>
+      </div>
+
+      <div class="flex-jsb-c gap-[12px] mt-5">
+        <button class="w-[30%] h-[44px] bg-white border  text-[15px] font-bold rounded-[8px] close" data-modalid="#select-calendar-mobile">
+          Закрыть
+        </button>
+        <button class="w-[70%] bg-orange h-[44px] text-[15px] text-white rounded-[8px] close" data-modalid="#select-calendar-mobile">
+          Выбрать даты
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <div class="w-full h-full fixed top-0 left-0 z-20 mobile-filter-body" id="mobile-filter-body-all">
   <div class="w-full h-full absolute left-0 top-0 bg-black/70 close" data-modalid="#mobile-filter-body-all"></div>
