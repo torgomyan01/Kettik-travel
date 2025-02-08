@@ -198,14 +198,13 @@
 </div>
 
 
-<section class="bg-[#EDF3FF] pb-[88px] mt-0">
+<section class="bg-[#EDF3FF] pb-6 sm:pb-[88px] mt-0">
   <div class="container pt-[24px]">
     <div class="w-full flex-jsb-s gap-6 flex-col lg:flex-row">
       <div class="w-full lg:w-[calc(100%_-_420px)]">
 
         <div class="w-full bg-white rounded-[24px] mb-6">
           <div class="flex-js-s gap-6 p-4 sm:p-6">
-            <img src="images/launges/hotel.png" alt="Hotel image" class="w-[173px] min-w-[173px] h-[140px] rounded-[8px] object-cover hidden sm:block">
             <div>
               <h1 class="text-[22px] md:text-[26px] font-bold w-full overflow-hidden text-ellipsis">
                 Plaza Premium Lounge
@@ -224,10 +223,6 @@
               </div>
 
               <div class="flex-js-c gap-[8px] mt-2">
-                <div class="h-[32px] rounded-full bg-[#EDF8FF] flex-jc-c text-[14px] gap-[6px] text-blue px-[12px] cursor-default">
-                  <img src="images/icons/map.svg" alt="">
-                  На карте
-                </div>
                 <div class="h-[32px] rounded-full bg-[#FFEBE2] flex-jc-c text-[14px] gap-[6px] text-[#FF592C] px-[12px] cursor-default">
                   <img src="images/icons/alert-circle-orange.svg" alt="alert-circle-orange" width="16" height="16">
                   Sales restrictions
@@ -241,175 +236,179 @@
         <div class="w-full bg-white rounded-[24px] mb-6">
           <div class="p-4 sm:p-[16px_24px] border-b flex-js-s sm:flex-jsb-c flex-col sm:flex-row">
             <h3 class="font-bold text-[18px] lg:text-[22px] w-full">
-              Информация о бронировании
+              Дата визита
             </h3>
             <span class="text-[14px] tracking-[-0.5px] w-full sm:text-right">* Местное время аэропорта</span>
           </div>
 
           <div class="p-4 md:p-6">
-            <div class="def-checkout-input sm:max-w-[334px] target-modal" data-targetid="#select-calendar-mobile">
-              <span class="text-[14px] mb-1 font-bold">Дата визита <i class="text-[red]">*</i></span>
-              <label>
-                <input type="text" value="">
-                <span class="def-checkout-input-pl text-[14px]">ДД/MM/ГГГГ</span>
-                <img class="absolute bottom-[11px] right-[12px] " src="images/icons/calendar-search.svg" alt="calendar-search" width="24" height="24">
+            <div class="flex-js-c gap-4 text-[16px] font-bold">
+              <img class="" src="images/icons/calendar-search.svg" alt="calendar-search" width="24" height="24">
+              17 июня 2024
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full  bg-white rounded-[24px] mb-6">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Пассажиры</h3>
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex-js-s sm:flex-jsb-c min-h-[47px] mb-6 flex-col sm:flex-row">
+              <div class="flex-js-s">
+                <img src="images/icons/user-rounded-blue.svg" alt="user icon" class="mr-4 mt-1">
+                <div>
+                  <h3 class="text-[16px] font-bold uppercase">Hanna Kolomiitseva-Terets</h3>
+                  <h4 class="text-[14px] text-gray">somemail@com.com </h4>
+                </div>
+              </div>
+              <span class="text-blue text-[15px] cursor-pointer font-semibold target-modal ml-[40px] sm:ml-0" data-targetid="#change-owner-info">Изменить</span>
+            </div>
+
+            <div class="flex-js-s sm:flex-jsb-c min-h-[47px] mb-6 flex-col sm:flex-row">
+              <div class="flex-js-s">
+                <img src="images/icons/user-rounded-blue.svg" alt="user icon" class="mr-4 mt-1">
+                <div>
+                  <h3 class="text-[16px] font-bold uppercase">Alla GUZHVA</h3>
+                  <h4 class="text-[14px] text-gray"> </h4>
+                </div>
+              </div>
+              <span class="text-blue text-[15px] cursor-pointer font-semibold target-modal ml-[40px] sm:ml-0" data-targetid="#change-owner-info">Изменить</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="w-full  bg-white rounded-[24px]">
+          <div class="p-[16px_24px] border-b flex-js-c">
+            <h3 class="font-bold text-[18px] lg:text-[22px]">Способ оплаты</h3>
+          </div>
+
+          <div class="p-6">
+
+            <div class="w-full border rounded-[8px] overflow-hidden checkout-shadow">
+              <label class="flex-jsb-c h-16 px-4 hover:bg-[#F8F9FA]">
+                <span class="flex-jsb-c">
+                  <img src="images/icons/visa-master.svg" alt="visa-master" width="62" height="32" class="mr-4">
+                  <span>Visa / Mastercard</span>
+                </span>
+                <input type="radio" class="w-[20px] h-[20px]" name="select-card" value="visa-mastercard">
+                <span class="text-[15px] text-blue cursor-pointer hidden card-back">Изменить</span>
+              </label>
+              <div class="w-full h-[1px] bg-borderColor" id="card-solid"></div>
+              <label class="flex-jsb-c h-16 px-4 hover:bg-[#F8F9FA]">
+                <span class="flex-jsb-c">
+                  <img src="images/icons/humo-ucard.svg" alt="humo-ucard" width="62" height="32" class="mr-4">
+                  <span>Humo / Uzcard</span>
+                </span>
+                <input type="radio" class="w-[20px] h-[20px]" name="select-card" value="humo-uzcard">
+                <span class="text-[15px] text-blue cursor-pointer hidden card-back">Изменить</span>
               </label>
             </div>
-          </div>
-        </div>
 
-        <div class="w-full bg-white rounded-[24px] mb-6">
-          <div class="p-4 sm:p-[16px_24px] border-b flex-js-s sm:flex-jsb-c flex-col sm:flex-row">
-            <h3 class="font-bold text-[18px] lg:text-[22px] w-full">
-              Количество посетителей
-            </h3>
-          </div>
 
-          <div class="p-4 md:p-6">
-
-            <div class="flex-jsb-c">
-              <div class="flex-jsb-c h-[57px] sm:mb-2 w-full sm:max-w-[268px]">
-                <div class="flex-js-c">
-                  <img src="images/icons/lucide-Icon.svg" alt="icon-users" class="mr-[10px]" width="20px" height="20px">
-                  <div>
-                    <h5 class="text-[16px] font-bold">Взрослые</h5>
-                    <h5 class="text-[14px] text-gray">старше 12 лет</h5>
-                  </div>
-                </div>
-
-                <div class="flex-je-c">
-                  <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
-                    <i class="icon-minus text-[20px] text-[#889096] block"></i>
-                  </button>
-                  <div class="text-[16px] mx-3">1</div>
-                  <button class="w-[36px] h-[36px] border bg-white rounded-[8px] white-btn-shadow">
-                    <i class="icon-plus text-[20px] block"></i>
-                  </button>
-                </div>
+            <div class="w-full mt-10 hidden checkout-cards-body" id="visa-mastercard">
+              <div class="w-full flex-jsb-c gap-6 flex-col sm:flex-row">
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">Номер карты</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full">
+                    <input type="text" placeholder="1111 2222 3333 4444" class="pl-[12px] w-full">
+                  </span>
+                </label>
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">Срок действия</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full">
+                    <input type="text" placeholder="ММ" class="pl-[12px] w-[50%] h-full">
+                    <span class="w-[1px] h-[22px] bg-borderColor"></span>
+                    <input type="text" placeholder="ГГ" class="pl-[12px] w-[50%] h-full">
+                  </span>
+                </label>
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">CVV/CVC</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full pr-[12px]">
+                    <input type="text" placeholder="123" class="pl-[12px] w-full">
+                    <img src="images/icons/warning-orange.svg" alt="warning" class="def-tooltip" title="images/card-back-exp.svg" data-img="true" data-x="90px">
+                  </span>
+                </label>
+              </div>
+              <div class="w-full flex-jsb-c gap-6 mt-6">
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">Имя держателя карты (как напечатано на карте)</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full">
+                    <input type="text" placeholder="Например, IVAN PETROV" class="pl-[12px] w-full">
+                  </span>
+                </label>
               </div>
 
-              <div class="w-[172px] hidden sm:block">
-                <h5 class="flex-js-c font-bold text-[14px]">
-                  <img src="images/icons/lucide-Icon.svg" alt="users" width="16" height="16" class="mr-[6px]">
-                  Для взрослых(12+)
-                </h5>
-                <p class="text-[12px] text-gray leading-[116%]">
-                  Отмена невозможна
+              <div class="flex-js-c bg-[#F8F9FA] rounded-[8px] p-[12px] text-[14px] leading-[18px] my-6">
+                <img src="images/icons/lock-blue.svg" alt="warning text" class="mr-[14px]">
+                Мы защищаем ваши данные новейшими методами шифрования платежных транзакций.
+              </div>
+
+              <label class="def-checkbox w-full p-4 border rounded-[8px] h-auto flex-js-s">
+                <input type="checkbox" >
+                <span class="mr-2 mt-1"></span>
+
+                <p class="text-[14px] text-gray cursor-text">
+                  Я прочитал (-а) и принимаю <a href="#" class="font-bold text-black underline">Условия обслуживания</a>, <a href="#" class="font-bold text-black underline">правила Защиты маршрута</a> и <a href="#" class="font-bold text-black underline">Политику конфиденциальности</a>, а также условия перевозчиков, включенных в мое бронирование, в том числе <a href="#" class="font-bold text-black underline">{aircompany name}</a> и я признаю, что не могу отказаться от этого соглашения об оказании услуг из-за его немедленного исполнения. <br><br> Я подтверждаю, что бронирование мной авиабилетов <a href="#" class="font-bold text-black underline">{aircompany name}</a> означает, что я прочитал (-а) и принял (-а) <a href="#" class="font-bold text-black underline">Общие условия перевозки</a>, <a href="#" class="font-bold text-black underline">Условия обслуживания веб-сайта,</a> <a href="#" class="font-bold text-black underline">Политику в отношении файлов cookie</a>, а также <a href="#" class="font-bold text-black underline">Заявление</a> и <a href="#" class="font-bold text-black underline">Уведомление о конфиденциальности.</a> <br><br> Я также признаю, что мне потребуется войти в мою учетную запись {aircompany name} или создать ее для управления моим бронированием и внесения изменений в бронирование после его оформления. Я понимаю, что для создания учетной записи {aircompany name}  мне потребуется пройти процедуру верификации пассажира на веб-сайте  {aircompany name}, используя тот же самый адрес электронной почты, что и на Kettik.com <br><br> Я понимаю, что мой платеж будет обработан компанией Kettik.com, и {aircompany name} не будет иметь доступа к этим данным, за исключением необходимых сведений, содержащихся в подтверждении возврата средств, которое компания Kettik.com отправляет {aircompany name}, когда Kettik.com обрабатывает возврат средств. Kettik.com будет обрабатывать все возвраты средств, связанные с настоящим бронированием, и получать всю корреспонденцию, отправляемую {aircompany name} в связи с настоящим бронированием. <br><br> Я также признаю, что некоторые разделы Политики {aircompany name} будут заменены соглашением на покупку билетов на рейс в рамках пакета Kettik.com.
                 </p>
-              </div>
+              </label>
+
             </div>
 
-            <div class="mb-2 h-[32px] px-3 rounded-[32px] bg-[#FFF3D3] text-[#CC5802] text-[14px] flex-jc-c gap-2 inline-flex sm:hidden">
-              <img src="images/icons/alert-triangle.svg" alt="alert-triangle" width="16" height="16">
-              Отмена невозможна
-            </div>
-
-            <div class="flex-jsb-c">
-              <div class="flex-jsb-c h-[57px] sm:mb-2 w-full sm:max-w-[268px]">
-                <div class="flex-js-c">
-                  <img src="images/icons/lucide-Icon-baby.svg" alt="icon-baby" class="mr-[10px]" width="20px" height="20px">
-                  <div>
-                    <h5 class="text-[16px] font-bold">Ребенок</h5>
-                    <h5 class="text-[14px] text-gray">до 12 лет</h5>
-                  </div>
-                </div>
-
-                <div class="flex-je-c">
-                  <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
-                    <i class="icon-minus text-[20px] text-[#889096] block"></i>
-                  </button>
-                  <div class="text-[16px] mx-3">1</div>
-                  <button class="w-[36px] h-[36px] border bg-white rounded-[8px] white-btn-shadow">
-                    <i class="icon-plus text-[20px] block"></i>
-                  </button>
-                </div>
+            <div class="w-full mt-10 hidden checkout-cards-body" id="humo-uzcard">
+              <div class="sm:w-[calc(100%_-_(100%/3))] flex-jsb-c gap-6 flex-col sm:flex-row">
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">Номер карты</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full">
+                    <input type="text" placeholder="1111 2222 3333 4444" class="pl-[12px] w-full">
+                  </span>
+                </label>
+                <label class="w-full">
+                  <span class="text-[16px] mb-1 font-bold">Срок действия</span>
+                  <span class="flex-jsb-c border rounded-[8px] overflow-hidden h-[44px] w-full">
+                    <input type="text" placeholder="ММ" class="pl-[12px] w-[50%] h-full">
+                    <span class="w-[1px] h-[22px] bg-borderColor"></span>
+                    <input type="text" placeholder="ГГ" class="pl-[12px] w-[50%] h-full">
+                  </span>
+                </label>
               </div>
 
-              <div class="w-[172px] hidden sm:block">
-                <h5 class="flex-js-c font-bold text-[14px]">
-                  <img src="images/icons/lucide-Icon-baby.svg" alt="users" width="16" height="16" class="mr-[6px]">
-                  Для детей (2-11)
-                </h5>
-                <p class="text-[12px] text-gray leading-[116%]">
-                  Отмена невозможна
+              <div class="flex-js-c bg-[#F8F9FA] rounded-[8px] p-[12px] text-[14px] leading-[18px] my-6">
+                <img src="images/icons/lock-blue.svg" alt="warning text" class="mr-[14px]">
+                Мы защищаем ваши данные новейшими методами шифрования платежных транзакций.
+              </div>
+
+              <label class="def-checkbox w-full p-4 border rounded-[8px] h-auto flex-js-s">
+                <input type="checkbox" class="w-[20px] h-[20px] min-w-[20px] mr-2 mt-1">
+                <span class="mt-1 mr-2"></span>
+
+                <p class="text-[14px] text-gray cursor-text">
+                  Я прочитал (-а) и принимаю <a href="#" class="font-bold text-black underline">Условия обслуживания</a>, <a href="#" class="font-bold text-black underline">правила Защиты маршрута</a> и <a href="#" class="font-bold text-black underline">Политику конфиденциальности</a>, а также условия перевозчиков, включенных в мое бронирование, в том числе <a href="#" class="font-bold text-black underline">{aircompany name}</a> и я признаю, что не могу отказаться от этого соглашения об оказании услуг из-за его немедленного исполнения. <br><br> Я подтверждаю, что бронирование мной авиабилетов <a href="#" class="font-bold text-black underline">{aircompany name}</a> означает, что я прочитал (-а) и принял (-а) <a href="#" class="font-bold text-black underline">Общие условия перевозки</a>, <a href="#" class="font-bold text-black underline">Условия обслуживания веб-сайта,</a> <a href="#" class="font-bold text-black underline">Политику в отношении файлов cookie</a>, а также <a href="#" class="font-bold text-black underline">Заявление</a> и <a href="#" class="font-bold text-black underline">Уведомление о конфиденциальности.</a> <br><br> Я также признаю, что мне потребуется войти в мою учетную запись {aircompany name} или создать ее для управления моим бронированием и внесения изменений в бронирование после его оформления. Я понимаю, что для создания учетной записи {aircompany name}  мне потребуется пройти процедуру верификации пассажира на веб-сайте  {aircompany name}, используя тот же самый адрес электронной почты, что и на Kettik.com <br><br> Я понимаю, что мой платеж будет обработан компанией Kettik.com, и {aircompany name} не будет иметь доступа к этим данным, за исключением необходимых сведений, содержащихся в подтверждении возврата средств, которое компания Kettik.com отправляет {aircompany name}, когда Kettik.com обрабатывает возврат средств. Kettik.com будет обрабатывать все возвраты средств, связанные с настоящим бронированием, и получать всю корреспонденцию, отправляемую {aircompany name} в связи с настоящим бронированием. <br><br> Я также признаю, что некоторые разделы Политики {aircompany name} будут заменены соглашением на покупку билетов на рейс в рамках пакета Kettik.com.
                 </p>
-              </div>
+              </label>
             </div>
 
-            <div class="mb-4 h-[32px] px-3 rounded-[32px] bg-[#FFF3D3] text-[#CC5802] text-[14px] flex-jc-c gap-2 inline-flex sm:hidden">
-              <img src="images/icons/alert-triangle.svg" alt="alert-triangle" width="16" height="16">
-              Отмена невозможна
+
+            <div class="flex-jsb-c mt-6">
+              <a href="checkout.html" class="hidden lg:block">
+                <button class="h-[44px] bg-white  text-[15px] font-bold rounded-[8px] px-4 shadow">
+                  <i class="icon-arrow-right inline-block transform -rotate-180 me-2"></i>
+                  Назад
+                </button>
+              </a>
+
+              <button class="w-full sm:w-auto px-4 bg-orange h-[44px] sm:h-[64px] text-18px] text-white rounded-[8px] sm:rounded-[12px] font-semibold disabled:bg-[#ECEEF0] disabled:text-[#889096] buy" disabled>
+                Оплатить 9 000 000 000 UZS
+              </button>
             </div>
-
-            <div class="w-full p-[10px] bg-[#F8F9FA] rounded-[8px] flex-js-s gap-2 text-[14px] leading-[18px] text-[#252A31]">
-              <i class="icon-alert-circle1 text-blue relative top-[2px] left-1 inline-block "></i>
-              Дети <b>до 2 лет</b> вход со взрослым бесплатно
-            </div>
-
-          </div>
-        </div>
-
-        <div class="w-full bg-white rounded-[24px] mb-6">
-          <div class="p-4 sm:p-[16px_24px] border-b flex-js-s sm:flex-jsb-c flex-col sm:flex-row">
-            <h3 class="font-bold text-[18px] lg:text-[22px] w-full">
-              Срок пребывания на 1 человека
-            </h3>
           </div>
 
-          <div class="p-4 md:p-6">
-
-            <div class="w-full flex-jsb-c gap-[7px]">
-              <button class="w-full bg-blue text-white rounded-[8px] text-[15px] font-bold h-[36px]">2 часа</button>
-              <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">3 часа</button>
-              <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">6 часа</button>
-              <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">8 часа</button>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="w-full bg-white rounded-[24px]">
-          <div class="p-4 sm:p-[16px_24px] border-b">
-            <h3 class="font-bold text-[18px] lg:text-[22px] w-full">
-              Посетитель
-              <span class="text-gray text-[16px] font-light">Взрослый (старше 12 лет)</span>
-            </h3>
-            <p class="text-[14px] tracking-[-0.5px] leading-[18px] mt-1">
-              Внесите все данные точно так, как они указаны в паспорте / удостоверении личности <br>
-              для регистрации посетителя
-            </p>
-          </div>
-
-          <div class="p-4 md:p-6">
-
-            <div class="flex-js-s gap-6 flex-col md:flex-row">
-              <div class="def-checkout-input md:max-w-[334px]">
-                <span class="text-[14px] mb-1 font-bold">Имя <i class="text-[red]">*</i></span>
-                <label>
-                  <input type="text" value="NIKOLAY">
-                  <span class="def-checkout-input-pl text-[14px]">Имя</span>
-                </label>
-              </div>
-              <div class="def-checkout-input md:max-w-[334px]">
-                <span class="text-[14px] mb-1 font-bold">Фамилия <i class="text-[red]">*</i></span>
-                <label>
-                  <input type="text">
-                  <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="flex-js-s gap-6 mt-4 flex-col md:flex-row">
-              <div class="def-checkout-input md:max-w-[334px]">
-                <span class="text-[14px] mb-1 font-bold">Електронная почта для подтвержления <i class="text-[red]">*</i></span>
-                <label>
-                  <input type="text" value="">
-                  <span class="def-checkout-input-pl text-[14px]">Електронная почта</span>
-                </label>
-              </div>
-            </div>
-
-          </div>
         </div>
 
 
@@ -443,26 +442,9 @@
             <span class="font-bold text-[18px]">2 500 000 UZS</span>
           </div>
 
-          <a href="checkout-step-3.html" class="hidden lg:block">
-            <button
-                class="w-full mt-9 bg-orange h-[44px] md:h-[64px] text-[18px] text-white rounded-[12px] disabled:bg-[#DFE3E6] btn-go-checkout">
-              Оплатить
-            </button>
-          </a>
         </div>
       </div>
     </div>
-    <div id="mobile-filter-block-position"></div>
-    <div id="mobile-filter-block" class="flex lg:hidden w-[calc(100%_+_31px)] sm:w-full ml-[-16px] sm:ml-0 sticky bottom-0 p-4 gap-[8px] z-[1000] mt-6">
-      <button class="w-full h-[44px] bg-orange text-white text-[15px] font-bold rounded-[8px] flex-jsb-c px-4 target-modal" data-targetid="#checkout-mobile">
-        2 500 000 UZS
-
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52827 3.5286C5.78862 3.26825 6.21073 3.26825 6.47108 3.5286L10.4711 7.5286C10.7314 7.78895 10.7314 8.21106 10.4711 8.47141L6.47108 12.4714C6.21073 12.7318 5.78862 12.7318 5.52827 12.4714C5.26792 12.2111 5.26792 11.7889 5.52827 11.5286L9.05687 8L5.52827 4.47141C5.26792 4.21106 5.26792 3.78895 5.52827 3.5286Z" fill="white"></path>
-        </svg>
-      </button>
-    </div>
-
   </div>
 </section>
 
@@ -848,6 +830,77 @@
   </div>
 </div>
 
+<div class="modal" id="change-owner-info">
+  <div class="modal-fon" data-modalid="#change-owner-info"></div>
+  <div class="modal-body max-w-[900px]">
+    <div class="modal-close hidden sm:block" data-modalid="#change-owner-info">+</div>
+
+    <div class="min-h-[82px] min-[576px]:min-h-[57px] border-b flex-jsb-c px-4 flex sm:hidden">
+      <i class="icon-arrow-right transform rotate-180 inline-block close-modals"
+         data-modalid="#create-passengers"></i>
+      <h4 class="text-[18px] font-bold text-center leading-[140%] tracking-[-0.4px] mx-2">
+        Редактирование данных посетителя
+      </h4>
+      <div class="modal-close relative top-0 right-0" data-modalid="#create-passengers">+</div>
+    </div>
+
+    <div class="modal-content p-6">
+
+      <p class="text-[14px] tracking-[-0.5px] leading-[18px] mb-4 block sm:hidden">
+        Внесите все данные точно так, как они указаны в паспорте / удостоверении личности для регистрации посетителя
+      </p>
+      <h4 class="text-[26px] font-bold mb-2 hidden sm:block">Редактирование данных посетителя</h4>
+
+
+      <div class="">
+        <div class="lg:w-[80%]">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 ">
+            <div class="def-checkout-input">
+              <span class="text-[14px] mb-1  font-bold">Имя <i class="text-[red]">*</i></span>
+              <label>
+                <input type="text" value="NIKOLAY">
+                <span class="def-checkout-input-pl">Имя</span>
+              </label>
+            </div>
+            <div class="def-checkout-input">
+              <span class="text-[14px] mb-1 font-bold">Фамилия <i class="text-[red]">*</i></span>
+              <label>
+                <input type="text" value="Bernd Ottovordemgentschenfelde">
+                <span class="def-checkout-input-pl">Placeholder when extra long passenger Name or Surname</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[80%] mt-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="def-checkout-input">
+              <span class="text-[14px] mb-1  font-bold">Електронная почта для подтвержления <i class="text-[red]">*</i></span>
+              <label>
+                <input type="text" value="">
+                <span class="def-checkout-input-pl">Електронная почта</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="mt-12 flex-js-c gap-2">
+        <button class="h-[44px] bg-white border  text-[15px] rounded-[8px] px-4 close-modals"
+                data-modalid="#change-owner-info">
+          Закрыть
+        </button>
+        <button class="h-[44px] w-full sm:w-auto px-6 text-white bg-[#3FC431] text-[15px] rounded-[12px] close-modals"
+                data-modalid="#change-owner-info">
+          Сохранить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="w-full h-full fixed top-0 left-0 z-20 mobile-filter-body" id="mobile-filter-body-all">
   <div class="w-full h-full absolute left-0 top-0 bg-black/70 close" data-modalid="#mobile-filter-body-all"></div>

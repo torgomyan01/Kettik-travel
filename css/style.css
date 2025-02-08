@@ -135,6 +135,11 @@ input:focus {
   overflow: hidden;
   position: relative;
 }
+@media (min-width: 576px) {
+  .modal-body {
+    margin: 0 15px;
+  }
+}
 @media (max-width: 576px) {
   .modal-body {
     border-radius: 0;

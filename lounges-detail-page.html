@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="fonts/style.css">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/aos.js"></script>
+  <title>Checkout Lounges</title>
+</head>
+<body>
+
+<nav class="nav flex justify-between items-center">
+  <div class="container flex justify-between items-center">
+    <a href="/index.html" class="nav-logo">
+      <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
+    </a>
+
+
+    <div class="justify-center items-center hidden lg:flex">
+      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Результаты поиска
+      </div>
+      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
+      <div class="bg-blue text-white text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Бронирование
+      </div>
+      <i class="icon-arrow-right mx-4 text-[#C1C8CD]"></i>
+      <div class="bg-[#ECEEF0] text-[12px] xl:text-[16px] rounded-[44px] p-[8px_16px_10px_16px] cursor-default">
+        Итоги и оплата
+      </div>
+    </div>
+
+    <div class="mobile-menu-board flex md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="justify-between gap-4 xl:gap-10 hidden md:flex">
+      <div class="text-black-800 cursor-pointer flex items-center relative group dropdown-nav" id="parent-nav-dropdown">
+        <div class="relative z-20" id="nav-dropdown">
+          Авиабилеты
+          <i class="icon-down ms-2 text-[8px] transition group-[.active]:-rotate-180 inline-block"></i>
+        </div>
+
+        <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="font-for-close"></div>
+        <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[100%] right-0 hidden group-[.active]:block">
+          <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+            Авиабилеты
+          </div>
+          <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+            Лаунжи
+          </div>
+        </div>
+      </div>
+      <div class="h-[40px] rounded-[40px] border px-4 flex-jc-c">
+        <div class="flex-jc-c cursor-pointer relative group dropdown-nav" id="parent-change-language">
+          <div id="drop-change-language">
+            RU
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-language"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              Русский
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              O'zbek
+            </div>
+          </div>
+        </div>
+        <div class="w-[1px] min-w-[1px] h-full bg-[#D7DBDF] mx-4"></div>
+        <div class="flex-jc-c cursor-pointer relative z-0 group dropdown-nav" id="parent-change-currency">
+          <div id="drop-change-currency">
+            UZS
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-currency"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              UZS - Узбекский сом
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              USD - Доллар США
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-targetid="#sign-in"
+           class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
+        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                fill="#1150CB"/>
+        </svg>
+        Вход
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="search no-anim no-bg sm:h-[80px] z-10 relative rounded-[0px] hidden sm:flex-jc-c">
+  <div class="container">
+    <div class="w-full bg-white sm:h-[48px] flex-jsb-c rounded-[8px] flex-col sm:flex-row overflow-hidden delay-[2s] aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
+      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[8px_0_0_8px] border-b sm:border-b-0">
+        <i class="icon-search text-[22px] text-blue"></i>
+        <input type="text" value="LHR (London Heathrow)" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray rounded-[16px_0_0_16px]">
+      </label>
+      <div class="w-full sm:w-auto p-4 sm:p-0 sm:h-full">
+        <button class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[18px] text-white rounded-[8px] sm:rounded-[0_8px_8px_0]">
+          Изменить поиск
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu-body bg-white w-full h-[calc(100vh_-56px)] fixed top-[56px] left-0 z-[1000]">
+  <div class="pt-[71px] p-6 flex-jsb-s flex-col h-full">
+    <ul>
+      <li class="mb-10">
+        <a href="#" class="text-[16px] font-bold">Авиабилеты</a>
+      </li>
+      <li class="mb-10">
+        <a href="#" class="text-[16px] font-bold">Лаунжи</a>
+      </li>
+      <li class="mb-10 flex-js-c cursor-pointer target-modal" data-targetid="#sign-in">
+        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                fill="#1150CB"></path>
+        </svg>
+        Вход
+      </li>
+    </ul>
+
+
+    <div class="w-full">
+
+      <div class="flex-jsb-c mb-6">
+        <div class="flex-js-s">
+          <img class="mr-2" src="images/icons/bank.svg" alt="bank" width="24" height="24">
+          <div>
+            <h4 class="font-bold leading-[12px]">Валюта</h4>
+            <h5 class="text-[14px] text-gray">Задайте желаемую валюту</h5>
+          </div>
+        </div>
+        <div class="flex-je-c">
+          <b class="mr-1">UZS</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
+        </div>
+      </div>
+      <div class="flex-jsb-c mb-16">
+        <div class="flex-js-c">
+          <img class="mr-2" src="images/icons/earth.svg" alt="bank" width="24" height="24">
+          <div>
+            <h4 class="font-bold leading-[12px]">Язык</h4>
+            <h5 class="text-[14px] text-gray">Задайте желаемую валюту</h5>
+          </div>
+        </div>
+        <div class="flex-je-c">
+          <b class="mr-1">RU</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
+        </div>
+      </div>
+
+      <div class="flex-jsb-c w-full">
+        <a href="#">
+          <img src="images/icons/insta.svg" alt="insta">
+        </a>
+        <a href="#">
+          <img src="images/icons/facebook.svg" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="images/icons/tg.svg" alt="tg">
+        </a>
+        <a href="#">
+          <img src="images/icons/youtube.svg" alt="youtube">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="overflow-hidden bg-[#EDF3FF] pt-6">
+  <div class="container w-full overflow-hidden md:overflow-visible min-[768px]:max-w-[768px] min-[1024px]:max-w-[952px] relative">
+    <button id="slider-hotels-checkout-prev-slider" class="block w-[40px] h-[40px] rounded-full bg-white flex-jc-c absolute top-[50%] left-[20px] lg:left-[-18px] shadow-btn-slider z-20 transform translate-y-[-50%] cursor-pointer">
+      <i class="icon-chevron-right text-[18px] transform rotate-180 inline-block mt-1"></i>
+    </button>
+    <button id="slider-hotels-checkout-next-slider" class="block w-[40px] h-[40px] rounded-full bg-white flex-jc-c absolute top-[50%] right-[20px] lg:right-[-19px] shadow-btn-slider z-20 transform translate-y-[-50%] cursor-pointer">
+      <i class="icon-chevron-right text-[18px] inline-block mt-1"></i>
+    </button>
+    <div class="slider-hotels-checkout w-full bg-white md:bg-transparent rounded-[24px]">
+      <div class="swiper-wrapper w-full">
+        <div class="swiper-slide">
+          <img src="images/launges/img.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/launges/img_1.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/launges/img_2.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/launges/img.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/launges/img_1.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/launges/img_2.png" alt="" class="w-full h-[258px] sm:h-[336px] object-cover rounded-[24px]">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-[#EDF3FF] pb-4 md:pb-16 mb-[-50px] mt-[-80px] md:mt-0">
+  <div class="container pt-[24px]">
+    <div class="w-full flex-jsb-s gap-6 flex-col lg:flex-row">
+      <div class="w-full lg:w-[calc(100%_-_420px)]">
+        <div class="w-full bg-white rounded-[24px] mb-6 pt-[60px] md:pt-0">
+          <div class="px-4 md:px-6 py-4">
+            <div class="flex-jsb-c mb-1 md:mb-4">
+              <h1 class="text-[22px] md:text-[26px] font-bold w-full overflow-hidden text-ellipsis">
+                Plaza Premium Lounge
+              </h1>
+              <div class="flex-js-c gap-[12px] hidden sm:flex">
+                <a href="#">
+                  <img src="images/icons/download.svg" alt="icon-dwonload" width="24" height="24">
+                </a>
+                <a href="#">
+                  <img src="images/icons/share.svg" alt="icon-share" width="24" height="24">
+                </a>
+              </div>
+            </div>
+
+            <h3 class="text-[16px] text-gray leading-[140%] tracking-[-0.5px]">LHR (London Heathrow)</h3>
+            <div class="flex-js-c flex-wrap text-[16px]">
+              Главный терминал
+              <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+              <div class="flex-js-c mr-2">
+                <img class="mr-1" src="images/icons/air-top-gray.svg" alt="" width="16" height="16">
+                Отправление
+              </div>
+              <span class="w-[1px] h-[14px] bg-[#D7DBDF] mr-2"></span>
+              Международный
+            </div>
+
+            <div class="flex-js-c gap-[8px] mt-2 mb-2">
+              <div class="h-[32px] rounded-full bg-[#EDF8FF] flex-jc-c text-[14px] gap-[6px] text-blue px-[12px] cursor-default">
+                <img src="images/icons/map.svg" alt="">
+                На карте
+              </div>
+              <div class="h-[32px] rounded-full bg-[#FFEBE2] flex-jc-c text-[14px] gap-[6px] text-[#FF592C] px-[12px] cursor-default">
+                <img src="images/icons/alert-circle-orange.svg" alt="alert-circle-orange" width="16" height="16">
+                Sales restrictions
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="w-full bg-white rounded-[24px] mb-6">
+          <div class="p-4 sm:p-[16px_24px] border-b flex-js-s sm:flex-jsb-e flex-col sm:flex-row">
+            <div class="w-full">
+              <h3 class="font-bold text-[18px] lg:text-[22px]">Время работы</h3>
+              <div class="flex-jsb-c sm:flex-js-c w-full text-[14px] sm:text-[16px]">
+                <div class="flex-js-c">
+                  <span class="w-[7px] min-w-[7px] h-[7px] bg-[#2C9821] rounded-full mr-[6px]"></span>
+                  <span>Открыто</span>
+                  <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                  Закроется в 21:30 *
+                </div>
+                <i class="icon-down ml-2 text-[8px] transform rotate-180 mb-1"></i>
+              </div>
+            </div>
+            <span class="text-[14px] tracking-[-0.5px] w-full sm:text-right">* Местное время аэропорта</span>
+          </div>
+
+          <div class="p-4 md:p-6">
+            <div class="w-full flex-jsb-s gap-4 flex-col xl:flex-row">
+              <div class="flex-js-a">
+                <ul class="flex-js-s flex-col gap-2">
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Понедельник
+                    </span>
+                    <span class="text-[16px]">05:20 — до последнего рейса</span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Вторник
+                    </span>
+                    <span class="text-[16px]">90 мин пред первым вылетом — 20:30</span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Среда
+                    </span>
+                    <span class="text-[16px]">05:00 — 21:30</span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Четверг
+                    </span>
+                    <span class="text-[16px]">
+                      90 мин пред первым вылетом — до последнего рейса
+                    </span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Пятница
+                    </span>
+                    <span class="text-[16px] flex-js-c flex-wrap">
+                      <span class="text-nowrap">11:00—13:00</span>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <span class="text-nowrap">15:00—18:00</span>
+                      <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+                      <span class="text-nowrap">20:00—05:00</span>
+                    </span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Суббота
+                    </span>
+                    <span class="text-[16px] flex-js-c">
+                      04:45 — до последнего рейса
+                    </span>
+                  </li>
+                  <li class="flex-js-s sm:flex-js-c flex-col sm:flex-row sm:gap-[40px]">
+                    <span class="text-[16px] text-gray min-w-[100px]">
+                      Воскресенье
+                    </span>
+                    <span class="text-[16px] flex-js-c">
+                      04:45 — до последнего рейса
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="w-full xl:w-[180px] rounded-[8px] bg-[#F8F9FA] flex-js-s px-[13px] py-[15px] gap-[9px]">
+                <i class="icon-alert-circle text-blue mt-[1px]"></i>
+                <h5 class="text-[14px] tracking-[-0.4px] leading-[18px]">
+                  Будет закрыт <b>с 15 Марта по 18 Апреля 2025</b> на реновацию
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="w-full bg-white rounded-[24px] mb-6">
+          <h3 class="font-bold text-[18px] lg:text-[22px] p-4 sm:p-[16px_24px] border-b">
+            Услуги лаунжа
+          </h3>
+
+          <div class="p-4 sm:p-6">
+            <div class="flex-jsb-s gap-x-6 gap-y-2 flex-wrap">
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2">
+                  <img src="images/icons/shower.svg" alt="shower" width="24" height="24">
+                  Душевые кабины
+                </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2">
+                  <img src="images/icons/flight-Information-blue.svg" alt="shower" width="24" height="24">
+                  Табло с информацией о рейсах
+                </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2">
+                  <img src="images/icons/wifi-blue.svg" alt="wifi-blue" width="24" height="24">
+                  Бесплатный Wi-Fi
+                </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+               <div class="flex-js-c gap-2">
+                 <img src="images/icons/device-tv-blue.svg" alt="icon device-tv-blue" width="24" height="24">
+                 Телевизор
+               </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2">
+                  <img src="images/icons/pray-solid.svg" alt="icon pray-solid" width="24" height="24">
+                  Молитвенная комната
+                </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2  leading-[130%]">
+                  <img src="images/icons/disabled-shower-blue.svg" alt="icon disabled-shower-blue" width="24" height="24">
+                  Душ для людей с ограниченными возможностями
+                </div>
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2">
+                  <img src="images/icons/glass-full-icon.svg" alt="icon glass full icon" width="24" height="24">
+                  Шампанское
+                </div>
+                <img src="images/icons/payment-yellow.svg" alt="icon payment-yellow" width="24" height="24" class="def-tooltip" title="Дополнительная плата">
+              </div>
+              <div class="w-full xl:w-[calc(50%_-_12px)] h-[44px] rounded-[8px] border flex-jsb-c gap-2 px-[13px] text-[16px] tracking-[-0.5px]">
+                <div class="flex-js-c gap-2 leading-[130%]">
+                  <img src="images/icons/vip&meeting-blue.svg" alt="icon glass full icon" width="24" height="24">
+                  VIP-залы / Переговорные комнаты
+                </div>
+                <img src="images/icons/payment-yellow.svg" alt="icon payment-yellow" width="24" height="24" class="def-tooltip" title="Дополнительная плата">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full bg-white rounded-[24px] mb-6">
+          <div class="p-4 md:p-[16px_24px] border-b flex-jsb-c">
+            <h3 class="font-bold text-[18px] lg:text-[22px]">
+              Расположение
+            </h3>
+            <div class="h-[32px] rounded-full bg-[#EDF8FF] flex-jc-c text-[14px] gap-[6px] text-blue px-[12px] cursor-default">
+              <img src="images/icons/map.svg" alt="">
+              На карте
+            </div>
+          </div>
+
+          <div class="p-4 md:p-6">
+            <h4 class="text-[16px] tracking-[-0.5px]">Located in Terminal 1, Concourse A Inside Security. Next to Gate A13, Level 2, opposite the Duty Free Shop.</h4>
+          </div>
+        </div>
+
+        <div class="w-full bg-white rounded-[24px]">
+          <div class="p-4 md:p-[16px_24px] border-b flex-jsb-c">
+            <h3 class="font-bold text-[18px] lg:text-[22px]">
+              Описание
+            </h3>
+          </div>
+
+          <div class="p-4 md:p-6">
+            <p class="text-[16px] tracking-[-0.5px]">
+              Spanning 1,260 square meters, Plaza Premium Lounge Dubai is located on Level 4, Concourse A in Terminal 3 of Dubai International Airport.
+              <br> <br>
+              The lounge offers comfortable seating and a delectable array of Arabic, Asian and International cuisines freshly prepared in our kitchen. Brewed tea and coffee, soft drinks and alcoholic beverages from our well-stocked Aerobar are served throughout the day.
+            </p>
+
+            <div class="flex-js-c gap-2 text-[14px] text-blue cursor-pointer font-[500] mt-[14px]">
+              Показать больше
+              <i class="icon-down text-[7px] text-blue"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w-full lg:w-[420px] bg-white rounded-[24px] h-[fit-content] sticky top-[24px]">
+        <h3 class="text-[22px] p-[16px_24px] border-b font-bold">Оплата</h3>
+
+
+        <div class="p-4">
+
+          <h4 class="text-[18px] mb-2 font-bold">Пассажиры</h4>
+
+
+          <div class="flex-jsb-c h-[57px] mb-2">
+           <div class="flex-js-c">
+             <img src="images/icons/lucide-Icon.svg" alt="icon-users" class="mr-[10px]" width="20px" height="20px">
+             <div>
+               <h5 class="text-[16px] font-bold">Взрослые</h5>
+               <h5 class="text-[14px] text-gray">старше 12 лет</h5>
+             </div>
+           </div>
+
+            <div class="flex-je-c">
+              <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
+                <i class="icon-minus text-[20px] text-[#889096] block"></i>
+              </button>
+              <div class="text-[16px] mx-3">1</div>
+              <button class="w-[36px] h-[36px] border bg-white rounded-[8px] white-btn-shadow">
+                <i class="icon-plus text-[20px] block"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-jsb-c h-[57px] mb-2">
+           <div class="flex-js-c">
+             <img src="images/icons/lucide-Icon-baby.svg" alt="icon-baby" class="mr-[10px]" width="20px" height="20px">
+             <div>
+               <h5 class="text-[16px] font-bold">Ребенок</h5>
+               <h5 class="text-[14px] text-gray">до 12 лет</h5>
+             </div>
+           </div>
+
+            <div class="flex-je-c">
+              <button class="w-[36px] h-[36px] border bg-white rounded-[8px] disabled:border-0 disabled:bg-[#ECEEF0]" disabled="">
+                <i class="icon-minus text-[20px] text-[#889096] block"></i>
+              </button>
+              <div class="text-[16px] mx-3">1</div>
+              <button class="w-[36px] h-[36px] border bg-white rounded-[8px] white-btn-shadow">
+                <i class="icon-plus text-[20px] block"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="w-full p-[10px] bg-[#F8F9FA] rounded-[8px] flex-js-s gap-2 text-[14px] leading-[18px] text-[#252A31] mb-4">
+            <i class="icon-alert-circle1 text-blue relative top-[2px] left-1 inline-block "></i>
+            Дети <b>до 2 лет</b> вход со взрослым бесплатно
+          </div>
+
+          <h3 class="text-[18px] font-bold tracking-[-0.4px] my-6">Срок пребывания на 1 человека</h3>
+
+
+          <div class="w-full flex-jsb-c gap-[7px] mb-6">
+            <button class="w-full bg-blue text-white rounded-[8px] text-[15px] font-bold h-[36px]">2 часа</button>
+            <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">3 часа</button>
+            <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">6 часа</button>
+            <button class="w-full bg-[#EDF8FF] rounded-[8px] text-[15px] font-bold h-[36px]">8 часа</button>
+          </div>
+
+
+          <div class="w-full flex-jsb-s gap-6 border-b pb-6">
+            <div>
+              <h5 class="flex-js-c font-bold text-[14px]">
+                <img src="images/icons/lucide-Icon.svg" alt="users" width="16" height="16" class="mr-[6px]">
+                Для взрослых(12+)
+              </h5>
+              <p class="text-[12px] text-gray leading-[116%]">
+                Бесплатная отмена возможна за 24 часа до даты визита
+              </p>
+            </div>
+            <div>
+              <h5 class="flex-js-c font-bold text-[14px]">
+                <img src="images/icons/lucide-Icon-baby.svg" alt="users" width="16" height="16" class="mr-[6px]">
+                Для детей (2-11)
+              </h5>
+              <p class="text-[12px] text-gray leading-[116%]">
+                Бесплатная отмена возможна за 24 часа до даты визита
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-jsb-c mb-2 mt-6">
+            <div class="flex-js-c">
+              1 x пассажир
+              <span class="w-[1px] h-[14px] bg-[#D7DBDF] mx-2"></span>
+              2 часа
+            </div>
+            <span class="font-bold">2 500 000 UZS </span>
+          </div>
+
+          <div class="flex-jsb-c">
+            <span class="font-bold text-[18px]">Итого</span>
+            <span class="font-bold text-[18px]">2 500 000 UZS</span>
+          </div>
+
+          <a href="checkout-step-3.html">
+            <button
+                class="w-full mt-9 bg-orange h-[44px] md:h-[64px] text-[18px] text-white rounded-[12px] disabled:bg-[#DFE3E6] btn-go-checkout">
+              Выбрать
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="mt-16 hidden lg:block bg-white pt-[24px] pb-[40px]">
+  <div class="container">
+    <div class="flex justify-start items-center">
+      <div class="w-[30%] aos-init aos-animate" data-aos="fade">
+        <h3 class="text-[26px] text-center font-bold">Ваш агент всегда на связи </h3>
+        <div class="w-full flex justify-center items-center mt-6">
+          <a href="#">
+            <img src="images/icons/tg.png" alt="tg icon" class="w-[160px] h-auto" width="768" height="768">
+          </a>
+        </div>
+      </div>
+      <div class="w-[70%] rounded-[24px] bg-[#EDF8FF] p-[32px] relative overflow-hidden">
+        <img class="absolute right-0 bottom-0" src="images/home/feedback-vector.svg"
+             alt="Удобное время для звонка — выберите сами!" width="356" height="204">
+        <h3 class="text-[26px] mb-6 font-bold">Удобное время для звонка — выберите сами! </h3>
+
+        <div
+            class="w-full flex justify-between items-center bg-white border border-[#B9E1FF] overflow-hidden rounded-[16px] relative h-[64px]">
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Имя">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Номер телефона">
+          </label>
+          <div class="w-[1px] h-[48px] bg-[#B9E1FF] relative"></div>
+          <label class="w-full h-full flex justify-between items-center pr-6">
+            <input class="w-full h-full pl-[24px]" type="text" placeholder="Удобное время">
+            <i class="icon-time-ok text-blue text-[24px]"></i>
+          </label>
+        </div>
+
+        <button class="btn bg-orange w-[300px] h-[64px] text-[18px] text-white mt-6 rounded-[18px]">Отправить</button>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block lg:hidden mt-16 bg-white pb-[48px]">
+  <div class="container">
+    <div class="w-full flex justify-start items-center gap-[12px] bg-[#2994FF] p-[16px_30px] rounded-[16px]">
+      <img src="images/icons/tg-white.svg" alt="tg icon" width="32" height="32">
+      <h3 class="text-[18px] text-white font-bold">Ваш агент всегда на связи</h3>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-16">
+      <img class="w-full max-w-[400px]" src="images/home/our-servicess-help.svg" alt="our-servicess-help" width="232"
+           height="146">
+      <h3 class="text-[18px] sm:text-[22px] font-bold mt-5 text-center">
+        Удобное время для звонка — выберите сами!
+      </h3>
+    </div>
+
+    <form action="/" method="post" class="mt-6">
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Имя">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] block mb-[8px]">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Номер телефона">
+      </label>
+      <label class="w-full h-[44px] bg-[#EDF3FF] rounded-[8px] mb-[8px] flex justify-between items-center pr-3">
+        <input type="text" class="w-full h-full bg-transparent pl-3" placeholder="Удобное время">
+        <i class="icon-time-ok text-blue"></i>
+      </label>
+
+      <button class="w-full h-[44px] bg-orange text-white text-[15px] rounded-[8px] mt-4">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-blue rounded-[32px_32px_0_0]">
+  <div class="container pt-[49px] pb-16">
+    <div class="w-full flex justify-between items-start lg:items-center flex-col lg:flex-row">
+      <a href="/" class="block md:hidden mb-6">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+      <div class="w-full flex gap-[16px] md:gap-[32px] items-start lg:items-center flex-col lg:flex-row">
+        <a href="#" class="text-white text-[16px]">О сервисе</a>
+        <a href="#" class="text-white text-[16px]">Обратная связь</a>
+        <a href="tel:+998 20 007 007 0" class="text-white text-[18px] font-bold">+998 20 007 007 0</a>
+        <p class="text-white/70 text-[14px] flex sm:block justify-start items-start gap-2">
+          <span class="text-white text-[32px] mt-[-5px] sm:mt-0">007</span> Короткий номер для абонентов Билайн и OQ
+        </p>
+      </div>
+
+      <div class="flex gap-[24px] justify-between items-start lg:items-center mt-6 lg:mt-0">
+        <a href="#" class="transition duration-300">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77184)">
+              <path
+                  d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77184">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77187)">
+              <path
+                  d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.5 7.5V7.501" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77187">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77190)">
+              <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="#EDF3FF" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77190">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3080_77193)">
+              <path
+                  d="M17 5H7C4.79086 5 3 6.79086 3 9V15C3 17.2091 4.79086 19 7 19H17C19.2091 19 21 17.2091 21 15V9C21 6.79086 19.2091 5 17 5Z"
+                  stroke="#EDF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9L15 12L10 15V9Z" stroke="#EDF3FF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3080_77193">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full h-[1px] bg-[#fff]/30 my-8 md:my-16"></div>
+
+    <div class="flex justify-between items-start sm:items-center flex-col-reverse sm:flex-row">
+      <span class="text-[14px] text-white/70">© 2024 Kettik. All rights reserved.</span>
+
+      <a href="/" class="hidden md:block">
+        <img src="images/logo-white.svg" alt="Logo site" width="135" height="30">
+      </a>
+
+      <div class="flex justify-end items-center gap-8 mb-6 sm:mb-0">
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Оферта
+        </a>
+        <a href="#" class="text-[14px] text-white/70 hover:text-[#EDF3FF] transition duration-300">
+          Пожелания
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal" id="info-rate">
+  <div class="modal-fon" data-modalid="#info-rate"></div>
+  <div class="modal-body max-w-[700px] max-h-[calc(100vh_-_100px)]">
+    <div class="modal-close" data-modalid="#info-rate">+</div>
+
+    <div class="modal-content">
+      <h4 class="text-[18px] font-bold">Полная информация о тарифе</h4>
+      <div class="max-h-[calc(100vh_-_300px)] overflow-y-auto">
+        <p class="text-[16px] leading-[130%] mb-4">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem cumque, distinctio dolorum et expedita facilis harum libero minima nam nesciunt nisi nobis placeat porro quisquam reiciendis sint, sunt totam.</span><span>Dolores saepe totam voluptatem! Eius eligendi eos minus optio possimus quos, recusandae? Aliquid aperiam doloribus, in possimus quod voluptas. Accusamus accusantium, culpa dicta ducimus iste quidem rerum sapiente tempora! Laborum!</span><span>Alias earum natus nobis repudiandae sit voluptatem? Accusantium animi asperiores at atque corporis debitis et exercitationem facere maiores, maxime nihil officia officiis quam quia similique sit tempore ut vitae voluptatem.</span><span>Ab ad aliquid aperiam consectetur hic id magnam optio perferendis, recusandae tenetur totam velit voluptas? Aliquam dolorem, esse ex ipsa nostrum quae quibusdam reiciendis repellat sint suscipit temporibus, vel voluptate.</span><span>Accusamus aliquid asperiores assumenda aut autem beatae corporis deleniti, dignissimos dolor excepturi expedita facilis, fugiat hic ipsa ipsum labore laboriosam omnis placeat provident, quod quos sapiente suscipit tenetur vero vitae?</span><span>A doloremque facilis illum laborum magnam minima officia voluptas voluptates. Asperiores culpa dicta dolores, illum in ipsa laboriosam, laborum magni perspiciatis quas quos sapiente sint ut veniam voluptas. Fugit, nam!</span><span>Adipisci aliquid amet dignissimos fuga ipsa iusto necessitatibus pariatur quia ratione? Accusamus assumenda, debitis eligendi eum iure maxime natus nisi, placeat quaerat quod reprehenderit repudiandae ut vel vero voluptates voluptatibus.</span><span>Asperiores aut cum, debitis deserunt distinctio dolorem ducimus ea eos est fugiat fugit id impedit laboriosam maiores minima numquam odit pariatur quaerat quibusdam quos reprehenderit sapiente soluta suscipit, ullam veniam.</span><span>Ab alias aliquam cupiditate iste minima optio, rem rerum tenetur? Accusamus amet, animi et fuga harum ipsa itaque omnis reiciendis sed. Hic ipsa quis tenetur. Exercitationem explicabo ipsam molestiae veritatis.</span><span>Aspernatur, aut corporis cumque dignissimos in nemo quas velit! Architecto aspernatur at delectus deserunt, dicta dolore eligendi illo inventore laborum libero magni modi obcaecati, provident quas quisquam, repellendus sit tempore.</span><span>Commodi deserunt distinctio ducimus fugit id, natus necessitatibus nesciunt odit ratione rem sequi veniam vero voluptatum. Aut eos illo iste magni numquam, porro praesentium reiciendis repudiandae similique voluptates. Amet, voluptatum!</span><span>Accusamus accusantium alias amet aut cupiditate earum eos eveniet exercitationem facilis, fugit harum, ipsam laborum maiores maxime nam necessitatibus numquam quas, quidem recusandae repellat sint sit unde vel veritatis voluptatum.</span><span>Ab accusantium aliquam ea et illo illum iure provident quia reiciendis, repellendus tenetur vitae? Cum nemo possimus quis quos? Impedit, laudantium maiores modi ratione recusandae reiciendis rem repellendus veniam voluptatum!</span><span>Consequuntur esse fuga hic impedit magni, modi nobis quam quasi saepe ut. A ad facere officia porro repellat rerum soluta temporibus velit veniam. Eos eum maxime nostrum repudiandae sequi sunt?</span><span>Aperiam architecto assumenda aut commodi consectetur cupiditate dignissimos dolor, doloribus eligendi eos excepturi in inventore iusto laudantium minus molestiae molestias, necessitatibus nesciunt, nostrum placeat porro praesentium quasi quibusdam saepe sit.</span><span>Alias amet aperiam blanditiis consequuntur culpa debitis dolore dolorem eligendi eum eveniet excepturi fugiat impedit ipsa nostrum officiis possimus quas quasi recusandae similique tempore temporibus totam ullam vel veniam, voluptate?</span><span>Ad aspernatur beatae consequuntur corporis cum impedit odio quasi quo saepe totam. Alias aliquid asperiores culpa cupiditate delectus enim eveniet fuga iste, maiores omnis quam sint tempora ullam vitae voluptatem!</span><span>Ducimus esse explicabo placeat sed voluptatum. Blanditiis corporis distinctio dolore dolorem ducimus impedit iste maiores omnis possimus recusandae reprehenderit tempore, totam vero. Ducimus eligendi illo in minus, numquam officia placeat!</span><span>A adipisci aspernatur beatae culpa delectus dignissimos doloribus eaque enim esse excepturi facilis harum impedit ipsam, libero molestias necessitatibus, nihil quam quo quos, sapiente sint sunt tenetur ullam unde vitae!</span><span>Aliquam at deserunt dolor ex ipsa modi nesciunt officiis perferendis perspiciatis, quis ratione sint tenetur voluptatum! Accusamus architecto commodi debitis, dolor esse iure laudantium maxime nesciunt nisi sapiente, vero voluptatum!</span><span>Adipisci amet architecto, beatae commodi deserunt doloribus ducimus ea eius eum ex inventore iusto laborum nam nihil non, nulla optio perferendis quam quod quos saepe sequi unde vel, velit voluptates?</span><span>A alias assumenda at beatae consequuntur cumque ea earum esse et fuga in, ipsum laudantium molestias neque officiis omnis perspiciatis quaerat quisquam quos reiciendis saepe sequi sit suscipit voluptate voluptatem.</span><span>Aliquam aperiam aut dignissimos et excepturi exercitationem expedita facere fugiat hic ipsa ipsam iure, laborum laudantium magnam nisi numquam officiis quaerat rem rerum sapiente sed sequi sunt tempore totam voluptatibus.</span><span>A asperiores consequatur dolor, dolorem impedit iste itaque, magni maxime minus nobis nulla optio praesentium, quam quas quis rem tempore vel voluptas voluptates voluptatibus? Autem expedita explicabo quis ratione veniam?</span><span>Consequatur cum, cumque dolorem est eum eveniet exercitationem expedita fugiat incidunt iusto magni natus necessitatibus non quidem quisquam quos, ratione repellat rerum saepe soluta suscipit temporibus unde velit voluptate voluptatum!</span><span>Aliquam animi cumque doloribus eos error impedit minus molestias perspiciatis, quasi rem sit, temporibus velit. Hic iste nam necessitatibus sed vero. Ad architecto delectus eos explicabo illum modi rem tempora?</span><span>Accusamus, animi architecto assumenda culpa cumque cupiditate eligendi, eos error facere illum in incidunt libero magnam minus, molestias nemo omnis perferendis possimus quia vel! Doloribus facere iusto magni nihil perferendis.</span><span>A ab aliquam amet animi consequatur dicta dignissimos dolor eius est harum ipsum iste minima molestiae mollitia nemo quae, quo sit voluptate. A blanditiis cum distinctio fuga harum, quisquam reiciendis?</span><span>Alias autem consequatur deleniti dolores doloribus, explicabo ipsa itaque laudantium magnam nobis nostrum odio odit omnis perspiciatis quia recusandae repellat sit tenetur. Dicta dolor laborum, provident quibusdam soluta tempora voluptatum.</span><span>Consectetur consequuntur dicta eligendi incidunt itaque laboriosam numquam odio optio, pariatur, porro possimus provident qui quod sunt unde veritatis vero. Alias cum et, facere illum minima minus neque numquam quam.</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="w-full h-full fixed top-0 left-0 z-20 mobile-filter-body" id="mobile-filter-body-all">
+  <div class="w-full h-full absolute left-0 top-0 bg-black/70 close" data-modalid="#mobile-filter-body-all"></div>
+
+  <div class="w-[calc(100%_-_32px)] p-4 bg-white rounded-[20px] absolute bottom-[16px] left-[16px]">
+    <h4 class="text-[16px]" id="mobile-filter-body-text">
+      Вы прибываете и отправляетесь из разных аэропортов
+    </h4>
+    <button class="w-full h-[40px] text-[15px] bg-[#D8EEFF] rounded-[16px] text-[#1150CB] mt-4 close" data-modalid="#mobile-filter-body-all">
+      Закрыть
+    </button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
