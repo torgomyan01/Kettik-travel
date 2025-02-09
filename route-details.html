@@ -158,41 +158,43 @@
   </div>
 </div>
 
-<section>
-  <div class="container max-w-[960px] sm:py-8 h-[56px] sm:h-auto flex-jsb-c sm:block">
+<section class="hidden md:block">
+  <div class="container max-w-[960px] py-8">
 
-    <div class="flex-js-c gap-4 hidden sm:flex">
-      <div class="w-[40px] min-w-[40px] h-[40px] rounded-full bg-[#EDF3FF] flex-jc-c cursor-pointer">
+    <div class="flex-js-c gap-4">
+      <a href="user-profile.html" class="w-[40px] min-w-[40px] h-[40px] rounded-full bg-[#EDF3FF] flex-jc-c cursor-pointer">
         <i class="icon-chevron-left mr-[2px] text-[18px]"></i>
-      </div>
+      </a>
       <h4 class="text-[18px] font-bold">Заказ №488789697</h4>
     </div>
-    <h3 class="text-[18px] sm:text-[26px] font-bold sm:mt-6">
-      Подробности маршрута
-    </h3>
 
-    <div class="flex-jc-c sm:hidden w-[140px] bg-[#D8EEFF] rounded-[32px] text-[#1150CB] text-[14px] h-[32px] cursor-default">
-      <i class="icon-time-ok mr-2 text-[#1150CB]"></i>
-      Забронирован
-    </div>
+    <h2 class="mt-6 text-[26px] font-bold leading-[140%]">Подробности маршрута</h2>
   </div>
-
 </section>
+
+<div class="w-full min-h-[57px] bg-white flex-jsb-c border-b fixed top-0 left-0 z-[1000] p-4 flex md:hidden">
+  <i class="icon-arrow-right inline-block transform rotate-180"></i>
+  <h4 class="text-[18px] font-bold text-center tracking-[-0.4px] leading-[140%] mx-2">
+    Заказ №488789697 <br>
+    Подробности маршрута
+  </h4>
+  <i class="icon-close text-[20px]"></i>
+</div>
 
 
 <section class="bg-[#EDF3FF] pb-16">
-  <div class="container py-8 max-w-[960px]">
+  <div class="container pb-8 pt-12 md:pt-8 max-w-[960px]">
 
     <div class="w-full bg-white rounded-[24px] overflow-hidden">
-      <div class="w-full h-[56px] px-[24px] border-b flex-jsb-c">
-        <h3 class="text-[22px] font-bold">Ташкент (TAS) → Москва (SVO)</h3>
+      <div class="w-full min-h-[56px] px-[24px] py-2 border-b flex-js-s md:flex-jsb-c flex-col ">
+        <h3 class="mr-2 text-[18px] md:text-[22px] font-bold">Ташкент (TAS) → Москва (SVO)</h3>
 
         <div class="flex-je-c font-bold text-[16px]">
           <img src="images/icons/air-blue.svg" alt="air-blue" width="20" height="18" class="mr-2">
           4ч 30 мин
         </div>
       </div>
-      <div class="pb-6 sm:p-6">
+      <div class="p-4 sm:p-6">
         <div class="w-full pt-4 mileage-cards-body">
           <div class="flex-jsb-s">
             <div class="flex-js-s">
@@ -271,15 +273,15 @@
 
 
     <div class="w-full bg-white rounded-[24px] overflow-hidden">
-      <div class="w-full h-[56px] px-[24px] border-b flex-jsb-c">
-        <h3 class="text-[22px] font-bold">Москва (SVO) → Иркутск (IKT)</h3>
+      <div class="w-full min-h-[56px] px-[24px] py-2 border-b flex-js-s md:flex-jsb-c flex-col ">
+        <h3 class="mr-2 text-[18px] md:text-[22px] font-bold">Москва (SVO) → Иркутск (IKT)</h3>
 
         <div class="flex-je-c font-bold text-[16px]">
           <img src="images/icons/air-blue.svg" alt="air-blue" width="20" height="18" class="mr-2">
           4ч 30 мин
         </div>
       </div>
-      <div class="pb-6 sm:p-6">
+      <div class="p-4 sm:p-6">
         <div class="w-full pt-4 mileage-cards-body">
           <div class="flex-jsb-s">
             <div class="flex-js-s">
@@ -356,15 +358,15 @@
     </div>
 
     <div class="w-full bg-white rounded-[24px] overflow-hidden">
-      <div class="w-full h-[56px] px-[24px] border-b flex-jsb-c">
-        <h3 class="text-[22px] font-bold">Иркутск (IKT) → Ташкент (TAS)</h3>
+      <div class="w-full min-h-[56px] px-[24px] py-2 border-b flex-js-s md:flex-jsb-c flex-col ">
+        <h3 class="mr-2 text-[18px] md:text-[22px] font-bold">Иркутск (IKT) → Ташкент (TAS)</h3>
 
         <div class="flex-je-c font-bold text-[16px]">
           <img src="images/icons/air-blue.svg" alt="air-blue" width="20" height="18" class="mr-2">
           4ч 30 мин
         </div>
       </div>
-      <div class="pb-6 sm:p-6">
+      <div class="p-4 sm:p-6">
         <div class="w-full pt-4 mileage-cards-body">
           <div class="flex-jsb-s">
             <div class="flex-js-s">

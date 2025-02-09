@@ -2760,6 +2760,10 @@ video {
   min-height: 82px;
 }
 
+.min-h-\[56px\]{
+  min-height: 56px;
+}
+
 .\!w-\[14px\]{
   width: 14px !important;
 }
