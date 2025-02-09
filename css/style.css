@@ -826,7 +826,7 @@ input:focus {
 .search-form-inp.focus {
   border: 2px solid #FF7A00;
   position: relative;
-  z-index: 100;
+  z-index: 1000000;
 }
 .search-form-inp.focus:after {
   opacity: 0;
