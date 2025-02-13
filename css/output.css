@@ -2790,6 +2790,14 @@ video {
   max-height: calc(100dvh - 280px);
 }
 
+.max-h-\[calc\(100dvh_-_57px\)\]{
+  max-height: calc(100dvh - 57px);
+}
+
+.max-h-\[calc\(100dvh_-_247px\)\]{
+  max-height: calc(100dvh - 247px);
+}
+
 .min-h-\[100px\]{
   min-height: 100px;
 }
