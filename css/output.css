@@ -2714,6 +2714,18 @@ video {
   height: 100vh;
 }
 
+.h-\[calc\(100dvh_-_56px\)\]{
+  height: calc(100dvh - 56px);
+}
+
+.h-\[calc\(100dvh_-_55px\)\]{
+  height: calc(100dvh - 55px);
+}
+
+.h-\[calc\(100dvh_-_54px\)\]{
+  height: calc(100dvh - 54px);
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
@@ -2744,6 +2756,10 @@ video {
 
 .max-h-\[calc\(100vh_-_57px\)\]{
   max-height: calc(100vh - 57px);
+}
+
+.max-h-\[100vh\]{
+  max-height: 100vh;
 }
 
 .min-h-\[100px\]{
