@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
 
 ::-webkit-scrollbar {
@@ -123,7 +125,7 @@ input:focus {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000000;
+  z-index: 1000000000;
   display: none;
 }
 
@@ -162,8 +164,12 @@ input:focus {
   .modal-body {
     width: 100% !important;
     max-width: 100% !important;
-    height: 100%;
+    height: 100dvh;
+    /* Օգտագործում է փոփոխվող viewport-ի բարձրությունը */
+    max-height: 100vh;
+    /* Որոշ դեպքերում ավելի հուսալի է */
     border-radius: 0;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
@@ -2752,16 +2758,16 @@ video {
   min-height: 47px;
 }
 
+.min-h-\[56px\]{
+  min-height: 56px;
+}
+
 .min-h-\[57px\]{
   min-height: 57px;
 }
 
 .min-h-\[82px\]{
   min-height: 82px;
-}
-
-.min-h-\[56px\]{
-  min-height: 56px;
 }
 
 .\!w-\[14px\]{
