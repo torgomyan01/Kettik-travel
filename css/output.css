@@ -2734,6 +2734,10 @@ video {
   height: calc(100dvh - 100px);
 }
 
+.h-\[calc\(100\%_-_210px\)\]{
+  height: calc(100% - 210px);
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
@@ -2768,6 +2772,14 @@ video {
 
 .max-h-\[100vh\]{
   max-height: 100vh;
+}
+
+.max-h-\[calc\(100\%_-_210px\)\]{
+  max-height: calc(100% - 210px);
+}
+
+.max-h-\[calc\(100dvh_-_300px\)\]{
+  max-height: calc(100dvh - 300px);
 }
 
 .min-h-\[100px\]{
