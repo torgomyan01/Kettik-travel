@@ -2998,6 +2998,18 @@ video {
   width: 100%;
 }
 
+.w-\[330px\]{
+  width: 330px;
+}
+
+.w-\[215px\]{
+  width: 215px;
+}
+
+.w-\[210px\]{
+  width: 210px;
+}
+
 .\!min-w-\[14px\]{
   min-width: 14px !important;
 }
@@ -5727,9 +5739,25 @@ video {
   }
 }
 
+@media (min-width: 1107px){
+  .min-\[1107px\]\:w-\[231px\]{
+    width: 231px;
+  }
+}
+
 @media (min-width: 1117px){
   .min-\[1117px\]\:w-\[189px\]{
     width: 189px;
+  }
+}
+
+@media (min-width: 1133px){
+  .min-\[1133px\]\:w-\[372px\]{
+    width: 372px;
+  }
+
+  .min-\[1133px\]\:w-\[196px\]{
+    width: 196px;
   }
 }
 
