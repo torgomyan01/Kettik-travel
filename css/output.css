@@ -2782,6 +2782,10 @@ video {
   max-height: calc(100dvh - 300px);
 }
 
+.max-h-\[calc\(100dvh_-_350px\)\]{
+  max-height: calc(100dvh - 350px);
+}
+
 .min-h-\[100px\]{
   min-height: 100px;
 }
