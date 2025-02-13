@@ -2726,6 +2726,14 @@ video {
   height: calc(100dvh - 54px);
 }
 
+.h-\[100dvh\]{
+  height: 100dvh;
+}
+
+.h-\[calc\(100dvh_-_100px\)\]{
+  height: calc(100dvh - 100px);
+}
+
 .max-h-\[calc\(100\%_-_300px\)\]{
   max-height: calc(100% - 300px);
 }
