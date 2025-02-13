@@ -45,8 +45,10 @@
     @media  (max-width: 576px) {
       width: 100% !important;
       max-width: 100% !important;
-      height: 100%;
+      height: 100dvh; /* Օգտագործում է փոփոխվող viewport-ի բարձրությունը */
+      max-height: 100vh; /* Որոշ դեպքերում ավելի հուսալի է */
       border-radius: 0;
+      padding-bottom: env(safe-area-inset-bottom);
     }
   }
 
