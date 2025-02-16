@@ -1029,7 +1029,7 @@ input:focus {
   margin-left: -20px;
   position: relative;
   right: -3px;
-  z-index: 1000;
+  z-index: 10000000;
   cursor: pointer;
 }
 
@@ -3869,16 +3869,16 @@ video {
   padding: 7px 16px;
 }
 
+.p-\[8px_12px\]{
+  padding: 8px 12px;
+}
+
 .p-\[8px_16px_10px_16px\]{
   padding: 8px 16px 10px 16px;
 }
 
 .p-\[8px_24px\]{
   padding: 8px 24px;
-}
-
-.p-\[8px_12px\]{
-  padding: 8px 12px;
 }
 
 .px-0{
@@ -4582,6 +4582,14 @@ video {
   }
 }
 
+@media (min-width: 1281px){
+  .min-\[1281px\]\:flex-jc-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .placeholder\:text-\[\#687076\]::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(104 112 118 / var(--tw-text-opacity, 1));
@@ -4602,9 +4610,30 @@ video {
   color: rgb(104 112 118 / var(--tw-text-opacity, 1));
 }
 
+.after\:block::after{
+  content: var(--tw-content);
+  display: block;
+}
+
 .after\:hidden::after{
   content: var(--tw-content);
   display: none;
+}
+
+.after\:h-\[48px\]::after{
+  content: var(--tw-content);
+  height: 48px;
+}
+
+.after\:w-\[1px\]::after{
+  content: var(--tw-content);
+  width: 1px;
+}
+
+.after\:bg-\[\#D7DBDF\]::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 219 223 / var(--tw-bg-opacity, 1));
 }
 
 .after\:\!text-\[13px\]::after{
