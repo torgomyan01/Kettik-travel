@@ -5778,6 +5778,10 @@ video {
     top: 0px;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:hidden{
     display: none;
   }
