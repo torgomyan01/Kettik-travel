@@ -969,3 +969,8 @@ if($el(".slider-hotels-checkout")){
 //   });
 }
 
+
+$el('#select-calendar-desktop')?.addEventListener('click', function(){
+  this.classList.add('active');
+})
+

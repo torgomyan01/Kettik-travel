@@ -197,6 +197,14 @@
   </div>
 </div>
 
+<div class="flex-jsb-c sm:hidden border-t h-[48px] p-[4px_16px] font-semibold">
+  <h4 class="flex-js-c text-[16px]">
+    LHR (London Heathrow)
+  </h4>
+  <span class="text-blue text-[14px] cursor-pointer target-modal" data-targetid="#mobile-search-hotels">
+    Изменить
+  </span>
+</div>
 
 <section class="bg-[#EDF3FF] pb-6 sm:pb-[88px] mt-0">
   <div class="container pt-[24px]">
@@ -246,7 +254,9 @@
             <span class="text-[14px] tracking-[-0.5px] w-full sm:text-right">* Местное время аэропорта</span>
           </div>
 
-          <div class="p-4 md:p-6">
+
+<!--          CALENDAR MOBILE -->
+          <div class="p-4 md:p-6 block sm:hidden">
             <div class="def-checkout-input sm:max-w-[334px] target-modal" data-targetid="#select-calendar-mobile">
               <span class="text-[14px] mb-1 font-bold">Дата визита <i class="text-[red]">*</i></span>
               <label>
@@ -256,6 +266,74 @@
               </label>
             </div>
           </div>
+<!--          CALENDAR MOBILE -->
+
+<!--          CALENDAR DESKTOP -->
+          <div class="p-4 md:p-6 hidden sm:block">
+            <div class="def-checkout-input sm:max-w-[334px] relative group" id="select-calendar-desktop">
+              <span class="text-[14px] mb-1 font-bold">Дата визита <i class="text-[red]">*</i></span>
+              <label>
+                <input type="text" value="">
+                <span class="def-checkout-input-pl text-[14px]">ДД/MM/ГГГГ</span>
+                <img class="absolute bottom-[11px] right-[12px] " src="images/icons/calendar-search.svg" alt="calendar-search" width="24" height="24">
+              </label>
+
+              <div class="w-[338px] bg-white rounded-[8px] shadow-free-item absolute top-[100%] left-0 mt-2 p-4 z-[1000] hidden group-[.active]:block">
+                <div class="w-full h-[36px] rounded-[8px] flex-jc-c mb-2">
+                  <div class="w-full grid grid-cols-7">
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Пн</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Вт</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Ср</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Чт</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Пт</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Сб</span>
+                    <span class="text-[14px] text-[#687076] w-full flex-jc-c">Вс</span>
+                  </div>
+                </div>
+
+                <div class="flex-jsb-c px-2">
+                  <i class="icon-chevron-right text-[20px] block transform rotate-180 cursor-pointer"></i>
+                  <span class="text-[16px] font-bold">Декабрь 2024</span>
+                  <i class="icon-chevron-right text-[20px] cursor-pointer"></i>
+                </div>
+
+                <div class="grid grid-cols-7 gap-y-2 mt-4">
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">1</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">2</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">3</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">4</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">5</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">6</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">7</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">8</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">9</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">10</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">11</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">12</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">13</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">14</span>
+                  <span class="h-[36px] w-full flex-jc-c text-[#889096]">15</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">16</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold rounded-[6px] bg-purple text-white">17</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">18</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">19</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">20</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">21</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">22</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">23</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">24</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">25</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">26</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">27</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">28</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">29</span>
+                  <span class="h-[36px] w-full flex-jc-c font-semibold">30</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+<!--          CALENDAR DESKTOP -->
         </div>
 
         <div class="w-full bg-white rounded-[24px] mb-6">
