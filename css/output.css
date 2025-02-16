@@ -861,9 +861,9 @@ input:focus {
 .search .vector {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -30px;
   transform: translateX(-50%);
-  height: 100%;
+  height: 110%;
   width: 110%;
 }
 
@@ -2575,10 +2575,6 @@ video {
 
 .h-\[316px\]{
   height: 316px;
-}
-
-.h-\[318px\]{
-  height: 318px;
 }
 
 .h-\[321px\]{
