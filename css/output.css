@@ -2730,6 +2730,10 @@ video {
   height: 100vh;
 }
 
+.h-\[275px\]{
+  height: 275px;
+}
+
 .max-h-\[100vh\]{
   max-height: 100vh;
 }
@@ -5765,6 +5769,18 @@ video {
 
   .min-\[1024px\]\:max-w-\[952px\]{
     max-width: 952px;
+  }
+}
+
+@media (min-width: 1025px){
+  .min-\[1025px\]\:h-\[335px\]{
+    height: 335px;
+  }
+}
+
+@media (min-width: 1032px){
+  .min-\[1032px\]\:w-\[200px\]{
+    width: 200px;
   }
 }
 
