@@ -2734,6 +2734,14 @@ video {
   height: 275px;
 }
 
+.h-\[498px\]{
+  height: 498px;
+}
+
+.h-\[240px\]{
+  height: 240px;
+}
+
 .max-h-\[100vh\]{
   max-height: 100vh;
 }
@@ -3255,6 +3263,10 @@ video {
 
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -5877,6 +5889,10 @@ video {
 
   .xl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:flex-row{
