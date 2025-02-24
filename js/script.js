@@ -24,10 +24,10 @@ const searchFormInp = $('.search-form-inp');
 const inputForNumberTel = $('.input-for-number-tel');
 
 searchFormInp.forEach((input, index) => {
-  input.querySelector('input').addEventListener('focus', e => {
+  input.querySelector('input')?.addEventListener('focus', e => {
     input.classList.add('focus');
   })
-  input.querySelector('input').addEventListener('blur', e => {
+  input.querySelector('input')?.addEventListener('blur', e => {
     input.classList.remove('focus');
   })
 })
@@ -803,8 +803,7 @@ window.addEventListener('load', function () {
 
   if(document.body.dataset.page === 'home' || document.body.dataset.page === 'launges'){
 
-    if(window.innerWidth < 1280){
-      console.log(headerHeight.height)
+    if(window.innerWidth < 1280 && selectMe){
       selectMe.style.marginTop = `${headerHeight.height + 50}px`;
     }
 
@@ -974,3 +973,32 @@ $el('#select-calendar-desktop')?.addEventListener('click', function(){
   this.classList.add('active');
 })
 
+
+
+const searchFormDynamic = $el('.search-form-dynamic');
+const addDynmicForm = $el('.add-dynmic-form');
+const dynamicFormContainer = $el('.dynamic-form-container');
+
+searchFormDynamic?.classList.remove('hidden');
+
+const searchFormDynamicHtml = searchFormDynamic.outerHTML;
+searchFormDynamic.outerHTML = '';
+
+
+addDynmicForm.addEventListener('click', function(){
+  dynamicFormContainer.insertAdjacentHTML('beforeend', searchFormDynamicHtml);
+  getAllCloseDynamicFrom()
+})
+
+
+
+function getAllCloseDynamicFrom(){
+  const searchFormDynamicClose = $('.search-form-dynamic-close');
+
+  searchFormDynamicClose.forEach((item) => {
+    item.addEventListener('click', function(){
+      this.parentElement.outerHTML = '';
+    })
+  })
+
+}

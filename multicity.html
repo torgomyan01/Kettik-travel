@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="fonts/style.css">
+  <!--  FONTS -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <script src="js/aos.js"></script>
+  <title>Multiplicity</title>
+</head>
+<body style="opacity: 0;" data-page="home">
+
+<nav class="nav flex justify-between items-center fixed xl:relative z-[10000] top-0">
+  <div class="container flex justify-between items-center">
+    <a href="/index.html" class="nav-logo">
+      <img src="images/logo-nvbar.svg" alt="logo" width="135" height="30">
+    </a>
+
+    <div class="mobile-menu-board flex md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="justify-between gap-10 hidden md:flex">
+      <div class="text-black-800 cursor-pointer flex items-center relative group dropdown-nav" id="parent-nav-dropdown">
+        <div class="relative z-20" id="nav-dropdown">
+          Авиабилеты
+          <i class="icon-down ms-2 text-[8px] transition group-[.active]:-rotate-180 inline-block"></i>
+        </div>
+
+        <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="font-for-close"></div>
+        <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[100%] right-0 hidden group-[.active]:block">
+          <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+            Авиабилеты
+          </div>
+          <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+            Лаунжи
+          </div>
+        </div>
+      </div>
+      <div class="h-[40px] rounded-[40px] border px-4 flex-jc-c">
+        <div class="flex-jc-c cursor-pointer relative group dropdown-nav" id="parent-change-language">
+          <div id="drop-change-language">
+            RU
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-language"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              Русский
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              O'zbek
+            </div>
+          </div>
+        </div>
+        <div class="w-[1px] min-w-[1px] h-full bg-[#D7DBDF] mx-4"></div>
+        <div class="flex-jc-c cursor-pointer relative z-0 group dropdown-nav" id="parent-change-currency">
+          <div id="drop-change-currency">
+            UZS
+            <i class="icon-arrow_drop_down"></i>
+          </div>
+
+          <div class="fixed w-full h-full hidden top-0 left-0 cursor-default group-[.active]:block" id="fon-change-currency"></div>
+          <div class="w-[200px] bg-white p-2 rounded-[8px] shadow absolute top-[39px] right-[-20px] hidden group-[.active]:block">
+            <div class="w-full h-[44px] rounded-[8px] bg-[#FFFAEC] flex-js-c pl-[12px]">
+              UZS - Узбекский сом
+            </div>
+            <div class="w-full h-[44px] rounded-[8px] bg-white flex-js-c pl-[12px]">
+              USD - Доллар США
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-targetid="#sign-in"
+           class="target-modal cursor-pointer px-4 py-2 border border-solid border-gray-400 flex items-center justify-center rounded-3xl text-black-800">
+        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                fill="#1150CB"/>
+        </svg>
+        Вход
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu-body bg-white w-full h-[calc(100dvh_-_54px)] max-h-[100vh] fixed top-[56px] left-0 z-[1000]">
+  <div class="pt-[71px] p-6 flex-jsb-s flex-col h-full">
+    <ul>
+      <li class="mb-10">
+        <a href="#" class="text-[16px] font-bold">Авиабилеты</a>
+      </li>
+      <li class="mb-10">
+        <a href="#" class="text-[16px] font-bold">Лаунжи</a>
+      </li>
+      <li class="mb-10 flex-js-c cursor-pointer target-modal" data-targetid="#sign-in">
+        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 14.2211 3.80461 16.2544 5.13826 17.8241C6.0547 16.7109 7.44368 16 9 16H15C16.5563 16 17.9453 16.7109 18.8617 17.8241C20.1954 16.2544 21 14.2211 21 12C21 7.02944 16.9706 3 12 3ZM19.3702 20.1659C21.5992 18.1528 23 15.24 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 15.24 2.40079 18.1528 4.62979 20.1659C4.64139 20.1769 4.65328 20.1875 4.66545 20.198C6.6117 21.9404 9.18211 23 12 23C14.8179 23 17.3883 21.9404 19.3345 20.198C19.3467 20.1875 19.3586 20.1769 19.3702 20.1659ZM17.4006 19.2002C16.8527 18.4706 15.9806 18 15 18H9C8.01943 18 7.14734 18.4706 6.59938 19.2002C8.10368 20.3303 9.97363 21 12 21C14.0264 21 15.8963 20.3303 17.4006 19.2002ZM12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5ZM7 9.5C7 6.73858 9.23858 4.5 12 4.5C14.7614 4.5 17 6.73858 17 9.5C17 12.2614 14.7614 14.5 12 14.5C9.23858 14.5 7 12.2614 7 9.5Z"
+                fill="#1150CB"></path>
+        </svg>
+        Вход
+      </li>
+    </ul>
+
+
+    <div class="w-full">
+
+      <div class="flex-jsb-c mb-6 target-modal" data-targetid="#modal-select-currency">
+        <div class="flex-js-s">
+          <img class="mr-2" src="images/icons/bank.svg" alt="bank" width="24" height="24">
+          <div>
+            <h4 class="font-bold leading-[12px]">Валюта</h4>
+            <h5 class="text-[14px] text-gray">Задайте желаемую валюту</h5>
+          </div>
+        </div>
+        <div class="flex-je-c">
+          <b class="mr-1">UZS</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
+        </div>
+      </div>
+      <div class="flex-jsb-c mb-16 target-modal" data-targetid="#modal-select-language">
+        <div class="flex-js-c">
+          <img class="mr-2" src="images/icons/earth.svg" alt="bank" width="24" height="24">
+          <div>
+            <h4 class="font-bold leading-[12px]">Язык</h4>
+            <h5 class="text-[14px] text-gray">Задайте желаемую валюту</h5>
+          </div>
+        </div>
+        <div class="flex-je-c">
+          <b class="mr-1">RU</b>
+          <i class="icon-chevron-right text-[20px] mb-[2px] mr-[-5px]"></i>
+        </div>
+      </div>
+
+      <div class="flex-jsb-c w-full">
+        <a href="#">
+          <img src="images/icons/insta.svg" alt="insta">
+        </a>
+        <a href="#">
+          <img src="images/icons/facebook.svg" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="images/icons/tg.svg" alt="tg">
+        </a>
+        <a href="#">
+          <img src="images/icons/youtube.svg" alt="youtube">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="search no-anim bg-blue pt-12 xl:pb-14 overflow-hidden mb-[-24px] pb-[50px] fixed xl:relative top-[55px] md:top-[80px] xl:top-0">
+
+
+  <div class="container absolute top-[20px] opacity-0 left-[50%] transform translate-x-[-50%] block xl:hidden" id="search-bilet">
+    <button class="w-full bg-orange h-[44px] text-[15px] text-white rounded-[8px]">Найти билеты</button>
+  </div>
+
+
+  <div class="container relative tab-body" id="home-search-container">
+    <h1 class="text-[26px] md:text-[36px] lg:text-[58px] text-center text-white mb-8 md:md-0 leading-[116%]"
+        >Начни своё путешествие сейчас!</h1>
+    <div class="flex justify-center sm:justify-start gap-8 sm:pl-6 pr-4 group">
+      <div class="flex justify-center items-center flex-col text-white text-[14px] cursor-pointer tabs group active"
+           data-tabid="#form-Search-ticket">
+        <div
+            class="w-[48px] sm:w-16 h-[48px] sm:h-16 rounded-[18px] sm:rounded-3xl group-[.active]:bg-white flex justify-center items-center mb-1 transition">
+          <svg width="40" height="26" class="w-[30px] h-auto sm:w-[40px] sm:h-[26px]" viewBox="0 0 40 26" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M26.6555 14.9773C24.2503 16.0379 22.0776 16.9387 21.1145 17.2018L18.1453 18.0138L13.715 25.7593L16.0027 25.9868C16.4227 26.0285 16.8465 25.9711 17.2417 25.8188C17.6368 25.6665 17.9928 25.4234 18.2825 25.1081L27.042 15.5746C27.1013 15.5152 27.1385 15.4364 27.1473 15.3518C27.156 15.2672 27.1357 15.1821 27.0898 15.1112C27.044 15.0404 26.9755 14.9882 26.8962 14.9638C26.8169 14.9393 26.7318 14.9441 26.6555 14.9773ZM39.9259 5.43511C38.4272 3.36072 33.3858 3.84985 32.4102 4.11297C32.3505 4.12911 32.2908 4.14526 32.2311 4.16301L32.2358 4.15978L32.2279 4.16301L25.98 7.18502L7.30583 0.217169C6.79441 0.0214465 6.2443 -0.0433582 5.70305 0.0283566C4.30102 0.23106 2.96954 0.786874 1.82715 1.64631L16.2821 11.8762L10.2761 14.7804L2.20943 12.9637C2.17852 12.9567 2.14625 12.9603 2.11751 12.9739L0.0850051 13.9353C0.063126 13.9455 0.0440599 13.9611 0.0295234 13.9808C0.0149869 14.0005 0.00543659 14.0235 0.00173224 14.0479C-0.0019721 14.0723 0.000285917 14.0973 0.00830296 14.1205C0.01632 14.1438 0.0298443 14.1647 0.0476582 14.1812C0.974295 15.0404 5.55327 19.2587 5.55327 19.2587C5.6448 19.3431 5.75312 19.4059 5.87069 19.4428C5.98825 19.4797 6.11224 19.4899 6.23402 19.4726L9.71459 18.9772C9.83276 18.9604 9.94983 18.9361 10.0651 18.9046L20.7988 15.9717C23.0563 15.3551 33.202 10.6429 35.2914 9.55322C36.168 9.18677 40.625 6.85732 39.9259 5.43511Z"
+                class="group-[.active]:fill-blue fill-white  "/>
+          </svg>
+        </div>
+        Авиабилеты
+      </div>
+      <div class="flex justify-center items-center flex-col text-white text-[14px] cursor-pointer tabs group"
+           data-tabid="#search-country">
+        <div
+            class="w-[48px] sm:w-16 h-[48px] sm:h-16 rounded-[18px] sm:rounded-3xl group-[.active]:bg-white flex justify-center items-center mb-1">
+          <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg"
+               class="mb-2 w-[30px] h-auto sm:w-[40px] sm:h-[39px]">
+            <g clip-path="url(#clip0_2249_1041)" class="group-[.active]:fill-blue fill-white  ">
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M30.5944 13.0049C27.3397 13.0049 24.7011 10.3664 24.7011 7.11171C24.7011 3.85699 27.3397 1.21851 30.5944 1.21851C33.8491 1.21851 36.4876 3.85699 36.4876 7.11163C36.4876 10.3663 33.849 13.0049 30.5944 13.0049ZM30.5944 2.50755C28.0516 2.50755 25.9902 4.56891 25.9902 7.11171C25.9902 9.65451 28.0516 11.7158 30.5944 11.7158C33.1371 11.7158 35.1985 9.65451 35.1985 7.11171C35.1985 4.56891 33.1371 2.50755 30.5944 2.50755Z"
+                    fill="white"/>
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M30.6171 7.47654H28.5562C28.3286 7.47654 28.144 7.30422 28.144 7.07654C28.144 6.84886 28.3286 6.67654 28.5562 6.67654H30.2018V3.50054C30.2018 3.27278 30.3742 3.08838 30.6018 3.08838C30.8295 3.08838 31.0018 3.27286 31.0018 3.50054V7.12782C31.0018 7.35542 30.8447 7.47654 30.6171 7.47654ZM9.57215 15.114C8.10767 15.5367 6.31671 13.7803 5.83231 12.1029C5.34783 10.4245 6.25247 9.09982 7.71703 8.6767C9.18223 8.25438 10.653 8.89342 11.1377 10.5717C11.6216 12.2488 11.0373 14.6911 9.57215 15.114Z"
+                    fill="white"/>
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M1.11157 10.6977C1.84669 10.4258 2.66285 10.8018 2.93445 11.537L7.93837 23.3842L20.0966 24.2083C20.9536 24.2663 21.6847 24.8498 21.9314 25.6726L24.4849 36.52C24.7136 37.2831 24.2806 38.087 23.5176 38.3159C23.3793 38.3574 23.2399 38.377 23.1028 38.377C22.4823 38.377 21.9091 37.9689 21.7217 37.3441L21.4799 36.6766H8.03541L8.00405 37.067C8.00405 37.8472 7.37157 38.482 6.59133 38.482C5.81117 38.482 5.17861 37.8506 5.17861 37.0703L4.40669 25.7183L0.272209 12.5203C0.000608444 11.7851 0.376369 10.9693 1.11157 10.6977Z"
+                    fill="white"/>
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M7.99424 20.3383C7.61424 17.897 8.1256 16.536 9.60368 16.0906C10.532 15.8423 11.5446 16.0542 12.2259 16.7315C13.1459 17.553 14.649 21.1123 15.3096 22.6443L8.78144 22.2019L7.99424 20.3383ZM23.1158 25.3174C23.1048 25.2805 23.0929 25.2441 23.0806 25.2078C23.406 25.2355 23.7394 25.2637 24.0841 25.2931C24.6719 25.343 25.2031 25.6613 25.5254 26.1557L31.385 36.0429C31.8225 36.7144 31.6328 37.6131 30.961 38.0499C30.717 38.2093 30.4422 38.2852 30.171 38.2852C29.6972 38.2852 29.232 38.0531 28.9546 37.626L24.5654 31.4657L23.135 25.3891C23.1294 25.3651 23.123 25.3411 23.1158 25.3174ZM30.5082 32.1123C30.4516 29.0004 30.2399 25.6365 29.5901 25.6365H26.6758L26.5891 25.5078C26.5802 25.4927 26.571 25.5189 26.5614 25.5042C26.209 24.9632 25.7118 24.5965 25.135 24.3565H38.4572C38.8386 24.3565 39.1473 24.6154 39.1473 24.9967C39.1473 25.3773 38.8386 25.6365 38.4572 25.6365H32.7694C31.9567 25.6365 31.8291 30.8983 31.8331 34.3555L30.5082 32.1123ZM32.8571 36.8365H35.0818C35.4627 36.8365 35.7715 37.1755 35.7715 37.5565C35.7715 37.9373 35.4627 38.2765 35.0818 38.2765H32.4513C32.6148 38.0365 32.733 37.6918 32.7989 37.38C32.835 37.2091 32.8541 36.9965 32.8571 36.8365Z"
+                    fill="white"/>
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M27.0002 18.8365H29.1561L29.394 19.3165H26.7623L27.0002 18.8365Z" fill="white"/>
+              <path class="group-[.active]:fill-blue fill-white transition"
+                    d="M29.4944 20.2429C29.5144 20.2647 29.5241 20.2999 29.5215 20.3293L29.3668 22.0266C29.362 22.0807 29.3166 22.1166 29.2622 22.1166H29.1203L28.9822 23.4766H27.174L27.0359 22.1166H26.864C26.8096 22.1166 26.7642 22.0837 26.7592 22.0296L26.6046 20.3253C26.602 20.296 26.6118 20.2675 26.6317 20.2457C26.6516 20.224 26.6798 20.1966 26.7093 20.1966H26.8303L26.7622 19.6366H29.3939L29.3258 20.1966H29.4167C29.4463 20.1966 29.4744 20.2212 29.4944 20.2429ZM26.9494 20.5166L27.0712 21.8766H29.0551L29.1768 20.5166H26.9494Z"
+                    fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_2249_1041">
+                <rect width="40.3814" height="40" fill="white" transform="matrix(-1 0 0 1 39.8067 0)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        Лаунжи
+      </div>
+    </div>
+
+    <div class="tab-content " id="form-Search-ticket">
+      <form action="/" method="post" class="search-form" >
+        <label class="search-form-inp there min-[1281px]:max-w-[calc((100%_/_3)_+_4px)] min-[1281px]:!mr-[-4px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2202_5790)">
+              <path
+                  d="M14.639 10.2577L19.4686 8.96358C19.981 8.82629 20.5269 8.89816 20.9862 9.16338C21.4456 9.4286 21.7808 9.86543 21.9181 10.3778C22.0554 10.8902 21.9835 11.4361 21.7183 11.8954C21.4531 12.3548 21.0162 12.69 20.5039 12.8273L6.01499 16.7096L1.5643 11.6905L4.46208 10.914L6.91157 12.3282L9.80934 11.5518L6.06576 5.30793L8.96353 4.53147L14.639 10.2577Z"
+                  stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 21H21" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_2202_5790">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <input type="text" placeholder="Oткуда" class="rounded-[0_16px_0_0] w-full">
+        </label>
+        <label class="search-form-inp back min-[1281px]:max-w-[calc(100%_/_3)] min-[1281px]:mr-[-2px]">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_5023_210)">
+              <path
+                  d="M15.4899 11.8106L20.3195 13.1047C20.8319 13.242 21.2687 13.5772 21.5339 14.0365C21.7992 14.4959 21.871 15.0418 21.7337 15.5542C21.5965 16.0665 21.2613 16.5034 20.8019 16.7686C20.3425 17.0338 19.7966 17.1057 19.2843 16.9684L4.79537 13.0861L3.4505 6.51408L6.34828 7.29053L7.76249 9.74002L10.6603 10.5165L10.5402 3.23736L13.4379 4.01382L15.4899 11.8106Z"
+                  stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.33331 21H21.3333" stroke="#1150CB" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_5023_210">
+                <rect width="24" height="24" fill="white" transform="translate(0.333313)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <input type="text" placeholder="Куда" class="w-full">
+        </label>
+        <label class="search-form-inp back min-[1281px]:max-w-[calc(100%_/_3)] rounded-[0_0_16px_16px] min-[1281px]:rounded-none">
+          <input type="text" placeholder="Отправление" class="w-full">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6505_5204)">
+              <path d="M11.5 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19L4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5L18 5C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V11.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 3V7" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 3V7" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 11L20 11" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 18C15 18.7956 15.3161 19.5587 15.8787 20.1213C16.4413 20.6839 17.2044 21 18 21C18.7956 21 19.5587 20.6839 20.1213 20.1213C20.6839 19.5587 21 18.7956 21 18C21 17.2044 20.6839 16.4413 20.1213 15.8787C19.5587 15.3161 18.7956 15 18 15C17.2044 15 16.4413 15.3161 15.8787 15.8787C15.3161 16.4413 15 17.2044 15 18Z" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.1992 20.2002L21.9992 22.0002" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_6505_5204">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+
+        </label>
+      </form>
+
+      <div class="dynamic-form-container">
+        <form action="/" method="post" class="search-form relative search-form-dynamic hidden" >
+
+          <div class="w-[36px] h-[36px] search-form-dynamic-close rounded-full flex-jc-c absolute bg-[#FE3A11] top-[-5px] md:top-[-10px] right-[-8px] md:right-[-12px] z-[1000] cursor-pointer">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1L1 13M1 1L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <label class="search-form-inp there min-[1281px]:max-w-[calc((100%_/_3)_+_2px)] after:hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2202_5790)">
+                <path
+                    d="M14.639 10.2577L19.4686 8.96358C19.981 8.82629 20.5269 8.89816 20.9862 9.16338C21.4456 9.4286 21.7808 9.86543 21.9181 10.3778C22.0554 10.8902 21.9835 11.4361 21.7183 11.8954C21.4531 12.3548 21.0162 12.69 20.5039 12.8273L6.01499 16.7096L1.5643 11.6905L4.46208 10.914L6.91157 12.3282L9.80934 11.5518L6.06576 5.30793L8.96353 4.53147L14.639 10.2577Z"
+                    stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 21H21" stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_2202_5790">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <input type="text" placeholder="Oткуда" class="rounded-[0_16px_0_0] w-full">
+          </label>
+          <label class="search-form-inp back min-[1281px]:max-w-[calc((100%_/_3)_+_2px)] min-[1281px]:mr-[-2px]">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5023_210)">
+                <path
+                    d="M15.4899 11.8106L20.3195 13.1047C20.8319 13.242 21.2687 13.5772 21.5339 14.0365C21.7992 14.4959 21.871 15.0418 21.7337 15.5542C21.5965 16.0665 21.2613 16.5034 20.8019 16.7686C20.3425 17.0338 19.7966 17.1057 19.2843 16.9684L4.79537 13.0861L3.4505 6.51408L6.34828 7.29053L7.76249 9.74002L10.6603 10.5165L10.5402 3.23736L13.4379 4.01382L15.4899 11.8106Z"
+                    stroke="#1150CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.33331 21H21.3333" stroke="#1150CB" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_5023_210">
+                  <rect width="24" height="24" fill="white" transform="translate(0.333313)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <input type="text" placeholder="Куда" class="w-full">
+          </label>
+          <label class="search-form-inp back min-[1281px]:max-w-[calc(100%_/_3)] rounded-[0_0_16px_16px] min-[1281px]:rounded-none">
+            <input type="text" placeholder="Отправление" class="w-full">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6505_5204)">
+                <path d="M11.5 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19L4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5L18 5C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V11.5" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 3V7" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 3V7" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 11L20 11" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 18C15 18.7956 15.3161 19.5587 15.8787 20.1213C16.4413 20.6839 17.2044 21 18 21C18.7956 21 19.5587 20.6839 20.1213 20.1213C20.6839 19.5587 21 18.7956 21 18C21 17.2044 20.6839 16.4413 20.1213 15.8787C19.5587 15.3161 18.7956 15 18 15C17.2044 15 16.4413 15.3161 15.8787 15.8787C15.3161 16.4413 15 17.2044 15 18Z" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.1992 20.2002L21.9992 22.0002" stroke="#1150CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6505_5204">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+          </label>
+          <!--        <div class="w-[1px] min-w-[1px] h-full after:h-[48px] after:bg-[#D7DBDF] after:w-[1px] after:block relative z-10 hidden min-[1281px]:flex-jc-c bg-white "></div>-->
+        </form>
+      </div>
+
+
+
+      <div class="search-form" >
+        <div class="search-form-select min-[1281px]:max-w-[calc(100%_/_3)] after:hidden  rounded-[16px_16px_0_0] min-[1281px]:rounded-[16px_0_0_16px]">
+          <div class="search-form-select-body">
+            <div class="search-form-select-name">1 пассажир</div>
+            <div class="search-form-select-type">Эконом</div>
+          </div>
+          <i class="icon-down"></i>
+        </div>
+        <div class="w-full flex-jsb-c p-4 min-[1281px]:p-0 flex-col sm:flex-row gap-2 sm:gap-0">
+          <div class="search-form-inp h-[44px] sm:h-[64px] add-dynmic-form back rounded-[8px] sm:rounded-[16px_0_0_16px] min-[1281px]:rounded-none min-[1281px]:max-w-[calc((100%_/_2)_+_4px)] mr-[-2px] after:hidden bg-[#2994FF] hover:bg-[#248aef] text-white flex-jc-c text-[15px] sm:text-[18px] cursor-pointer">
+            <svg class="w-[16px] sm:w-[22px] h-[16px] sm:h-[22px]" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9998 1.6665L10.9998 20.3332M1.6665 10.9998L20.3332 10.9998" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Добавить перелет
+          </div>
+          <div class="search-form-inp h-[44px] sm:h-[64px] back min-[1281px]:max-w-[calc(100%_/_2)] mr-[-2px] after:hidden bg-orange text-white flex-jc-c text-[15px] sm:text-[18px] cursor-pointer rounded-[8px] sm:rounded-[0_16px_16px_0]">
+            Найти билеты
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-start mt-5 gap-5 md:gap-20 flex-col md:flex-row"
+           data-aos="fade" data-aos-duration="1000">
+        <a href="#" class="flex justify-start items-center text-white text-[14px]">
+          <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.75 4.85986C7.75 3.34565 6.51421 2.10986 5 2.10986C3.48579 2.10986 2.25 3.34565 2.25 4.85986C2.25 6.37408 3.48579 7.60986 5 7.60986C6.51421 7.60986 7.75 6.37408 7.75 4.85986ZM1.75 4.85986C1.75 3.06408 3.20421 1.60986 5 1.60986C6.79579 1.60986 8.25 3.06408 8.25 4.85986C8.25 6.65565 6.79579 8.10986 5 8.10986C3.20421 8.10986 1.75 6.65565 1.75 4.85986Z" fill="white" stroke="white" stroke-width="1.5"/>
+            <path d="M21.75 18.8599C21.75 17.3456 20.5142 16.1099 19 16.1099C17.4858 16.1099 16.25 17.3456 16.25 18.8599C16.25 20.3741 17.4858 21.6099 19 21.6099C20.5142 21.6099 21.75 20.3741 21.75 18.8599ZM15.75 18.8599C15.75 17.0641 17.2042 15.6099 19 15.6099C20.7958 15.6099 22.25 17.0641 22.25 18.8599C22.25 20.6556 20.7958 22.1099 19 22.1099C17.2042 22.1099 15.75 20.6556 15.75 18.8599Z" fill="white" stroke="white" stroke-width="1.5"/>
+            <path d="M12.6898 19.5201H7.7998C6.6998 19.5201 5.7998 18.6201 5.7998 17.5201C5.7998 16.2001 7.3198 15.4401 8.2698 14.7401C9.4998 13.8301 14.1798 10.4201 15.2698 9.61012C16.2198 8.91012 17.6198 8.21012 17.6198 6.87012C17.6198 5.77012 16.7198 4.87012 15.6198 4.87012H11.5298" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Вернуться к простому маршруту
+        </a>
+        <div class="flex justify-start items-center">
+          <label class="default-switch flex justify-start items-center text-white text-[14px]">
+            Только прямой рейс
+            <input type="checkbox">
+            <span class="ml-2"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div
+        class="hidden w-full bg-white sm:h-[48px] mt-4 flex-jsb-c rounded-[20px] sm:rounded-[8px] flex-col sm:flex-row overflow-hidden tab-content"
+        id="search-country">
+      <label class="flex-js-c gap-[8px] w-full h-[52px] sm:h-full pl-4 sm:rounded-[9px_0_0_8px] border-b sm:border-0">
+        <i class="icon-search text-[22px]"></i>
+        <input type="text" placeholder="Найти город или аэропорт" class="w-full h-full placeholder:text-gray">
+      </label>
+      <div class="w-full sm:w-auto p-4 sm:p-0 sm:h-full">
+        <button
+            class="w-full sm:w-[169px] bg-orange h-[44px] sm:h-full text-[15px] text-white rounded-[8px] sm:rounded-[0_8px_8px_0]">
+          Изменить поиск
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
