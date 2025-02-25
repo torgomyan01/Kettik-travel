@@ -19,27 +19,29 @@ setTimeout(() => {
   searchVector?.classList.add('active');
 }, 1000)
 
+searchFormInputFunction()
+function searchFormInputFunction(){
+  const searchFormInp = $('.search-form-inp');
+  const inputForNumberTel = $('.input-for-number-tel');
 
-const searchFormInp = $('.search-form-inp');
-const inputForNumberTel = $('.input-for-number-tel');
+  searchFormInp.forEach((input, index) => {
+    input.querySelector('input')?.addEventListener('focus', e => {
+      input.classList.add('focus');
+    })
+    input.querySelector('input')?.addEventListener('blur', e => {
+      input.classList.remove('focus');
+    })
+  })
 
-searchFormInp.forEach((input, index) => {
-  input.querySelector('input')?.addEventListener('focus', e => {
-    input.classList.add('focus');
+  inputForNumberTel.forEach((input, index) => {
+    input.addEventListener('focus', e => {
+      input.parentElement.classList.add('border-tel-input');
+    })
+    input.addEventListener('blur', e => {
+      input.parentElement.classList.remove('border-tel-input');
+    })
   })
-  input.querySelector('input')?.addEventListener('blur', e => {
-    input.classList.remove('focus');
-  })
-})
-
-inputForNumberTel.forEach((input, index) => {
-  input.addEventListener('focus', e => {
-    input.parentElement.classList.add('border-tel-input');
-  })
-  input.addEventListener('blur', e => {
-    input.parentElement.classList.remove('border-tel-input');
-  })
-})
+}
 
 
 const sliderPartners = $('.slider-partners');
@@ -987,7 +989,8 @@ searchFormDynamic.outerHTML = '';
 
 addDynmicForm.addEventListener('click', function(){
   dynamicFormContainer.insertAdjacentHTML('beforeend', searchFormDynamicHtml);
-  getAllCloseDynamicFrom()
+  getAllCloseDynamicFrom();
+  searchFormInputFunction()
 })
 
 
